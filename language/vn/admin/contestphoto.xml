@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+		<lines name="head_list" descr=""><![CDATA[Quản lý Contest Photo]]></lines>
+		<lines name="intro_list" descr=""><![CDATA[Chức năng quản lý Contest Photo trong website.]]></lines>
+		<lines name="title_list" descr=""><![CDATA[Danh sách Contest Photo]]></lines>
+		<lines name="title_listSearch" descr=""><![CDATA[Kết quả tìm kiếm]]></lines>
+		<lines name="pageTitle_list" descr=""><![CDATA[Contest Photo &raquo; Danh sách Contest Photo]]></lines>
+	
+		<lines name="head_edit" descr=""><![CDATA[Cập nhật thông tin Contest Photo]]></lines>
+		<lines name="title_edit" descr=""><![CDATA[Thông tin chi tiết]]></lines>
+		<lines name="pageTitle_edit" descr=""><![CDATA[Contest Photo &raquo; Cập nhật thông tin User]]></lines>
+
+		<lines name="formDateCreatedLabel" descr=""><![CDATA[Ngày tạo]]></lines>
+		<lines name="formUserNameLabel" descr=""><![CDATA[Username]]></lines>
+		<lines name="formKeywordLabel" descr=""><![CDATA[Từ khóa]]></lines>
+		<lines name="formKeywordInUsernameLabel" descr=""><![CDATA[Trong Username]]></lines>
+		<lines name="formKeywordInNameLabel" descr=""><![CDATA[Trong Name]]></lines>
+		<lines name="formKeywordInDescriptionLabel" descr=""><![CDATA[Trong Tag]]></lines>
+		
+		
+        <lines name="errSectionInvalid" descr=""><![CDATA[Ban chua chon Section]]></lines>
+	    <lines name="errNameRequire" descr=""><![CDATA[Photo Name is required]]></lines>
+	
+		<lines name="errNotFound" descr=""><![CDATA[Không tìm thấy Contest Photo đã chọn.]]></lines>
+		<lines name="errDelete" descr=""><![CDATA[Có lỗi khi xóa Contest Photo với tên <strong>###name###</strong>.]]></lines>
+		<lines name="succDelete" descr=""><![CDATA[Xóa thành công Contest Photo có tên <strong>###name###</strong>.]]></lines>
+		<lines name="errEdit" descr=""><![CDATA[Có lỗi khi cập nhật Contest Photo.]]></lines>
+		<lines name="succEdit" descr=""><![CDATA[Cập nhật thành công Contest Photo.]]></lines>
+		
+	
+	
+	
+</data>

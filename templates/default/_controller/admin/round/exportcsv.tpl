@@ -1,0 +1,64 @@
+<h2>{$lang.controller.head_exportcsv} : {$myRound->name}</h2>
+
+<form action="" method="post" name="myform">
+<div class="content-box"><!-- Start Content Box -->
+	<div class="content-box-header">		
+		<h3>{$lang.controller.title_exportcsv}</h3>
+		<ul class="content-box-tabs">
+			<li><a href="#tab1" class="default-tab">{$lang.controllergroup.formFormLabel}</a></li> <!-- href must be unique and match the id of target div -->
+		</ul>
+		<ul class="content-box-link">
+			<li><a href="{$redirectUrl}">{$lang.controllergroup.formBackLabel}</a></li>
+		</ul>
+		<div class="clear"></div>  
+	</div> <!-- End .content-box-header -->
+	
+	<div class="content-box-content">
+		<div class="tab-content default-tab" id="tab1">
+			{include file="notify.tpl" notifyError=$error notifySuccess=$success notifyWarning=$warning}
+			
+				<fieldset>
+				<p>
+					<label>Section <span class="star_require">*</span> : </label>
+					<select id="fsection" name="fsection[]" multiple="multiple" size="4">
+						<option value="">- - - -</option>
+                        <option value="color-c">Color</option>
+						<option value="landscape-c">Color Best Portrait</option>
+                        <option value="idea-c">Color Best Idead</option>
+                        <option value="sport-c">Color Best Action </option>
+                        <option value="mono-m">Mono</option>
+                        <option value="idea-m">Mono Best Creative</option>
+                        <option value="landscape-m">Mono Best Portrait</option>
+						<option value="sport-m">Mono Best Action </option>
+                        <option value="nature-n">Nature</option>
+                        <option value="flower-n">Nature Best Flower</option>
+                        <option value="bird-n">Nature Best Bird</option>
+                        <option value="snow-n">Nature Best Snow</option>
+                        <option value="travel-t">Travel</option>
+						<option value="transportation-t">Travel Best Transportation </option>
+                        <option value="dress-t">Travel Best Traditional</option>
+                        <option value="country-t">Travel Best Country</option>
+
+				  </select>
+				</p>
+				
+				
+				</fieldset>
+			
+		</div>
+		
+	</div>
+	
+	<div class="content-box-content-alt">
+		<fieldset>
+		<p>
+			<input type="submit" name="fsubmit" value="EXPORT" class="button buttonbig">
+			<br /><small><span class="star_require">*</span> : {$lang.controllergroup.formRequiredLabel}</small>
+		</p>
+		</fieldset>
+	</div>
+
+    	
+</div>
+</form>
+

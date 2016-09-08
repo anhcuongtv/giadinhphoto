@@ -1,0 +1,55 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /giadinhphoto
+
+#ErrorDocument 404 / http://giadinhphotocontest.com/
+
+RewriteCond %{REQUEST_URI} tiny_mce/(.*)\.(.*)$ [NC]
+RewriteRule ^(.*)tiny_mce/(.*)$ libs/tiny_mce/$2  [L]
+
+
+RewriteCond %{REQUEST_URI} themes/(.*)\.(gif|png|jpg|ico|css|js)$ [NC]
+RewriteRule ^(.*)themes/(.*)$ $1themes/$2  [L]
+
+
+RewriteCond %{REQUEST_URI} uploads/(.*)\.(.*)$ [NC]
+RewriteRule ^(.*)uploads/(.*)$ $1uploads/$2  [L]
+
+RewriteCond %{REQUEST_URI} \.(gif|png|jpg|ico|css|js|swf)$ [NC]
+RewriteRule ^(.*/)*(.*?)/images/(.*)$ templates/$2/images/$3  [L]
+RewriteRule ^(.*/)*(.*?)/css/(.*)$ templates/$2/css/$3  [L]
+RewriteRule ^(.*/)*(.*?)/js/(.*)$ templates/$2/js/$3  [L]
+
+#note: not under any Rewrite_Cond
+#RewriteRule ^index\.(html)$ / [R=301,NC]   
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
+
+<IfModule mod_expires.c>
+ ExpiresActive On
+ ExpiresByType image/jpg "access plus 60 days"
+ ExpiresByType image/png "access plus 60 days"
+ ExpiresByType image/gif "access plus 60 days"
+ ExpiresByType image/jpeg "access plus 60 days"
+ ExpiresByType text/css "access plus 1 days"
+ ExpiresByType image/x-icon "access plus 1 month"
+ ExpiresByType application/pdf "access plus 1 month"
+ ExpiresByType audio/x-wav "access plus 1 month"
+ ExpiresByType audio/mpeg "access plus 1 month"
+ ExpiresByType video/mpeg "access plus 1 month"
+ ExpiresByType video/mp4 "access plus 1 month"
+ ExpiresByType video/quicktime "access plus 1 month"
+ ExpiresByType video/x-ms-wmv "access plus 1 month"
+ ExpiresByType application/x-shockwave-flash "access 1 month"
+ ExpiresByType text/javascript "access plus 1 week"
+ ExpiresByType application/x-javascript "access plus 1 week"
+ ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+
+
+
+
+

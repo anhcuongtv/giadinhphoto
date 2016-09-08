@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="countdownHeadLabel" descr=""><![CDATA[Entry Closes]]></lines>
+	<lines name="headingNewPhoto" descr=""><![CDATA[NEW SUBMIT PHOTOS]]></lines>
+	<lines name="newPhoto24h" descr=""><![CDATA[24h]]></lines>
+	<lines name="newPhoto3day" descr=""><![CDATA[3 days]]></lines>
+	<lines name="newPhoto1week" descr=""><![CDATA[1 week]]></lines>
+	<lines name="newPhoto1month" descr=""><![CDATA[1 month]]></lines>
+	<lines name="newPhotoAll" descr=""><![CDATA[All]]></lines>
+	<lines name="colorHead" descr=""><![CDATA[COLORS]]></lines>
+	<lines name="monoHead" descr=""><![CDATA[MONOCHROME]]></lines>
+	<lines name="natureHead" descr=""><![CDATA[NATURES]]></lines>
+	<lines name="travelHead" descr=""><![CDATA[TRAVELS]]></lines>
+	<lines name="view" descr=""><![CDATA[view]]></lines>
+	<lines name="views" descr=""><![CDATA[views]]></lines>
+	<lines name="headingRandom" descr=""><![CDATA[RANDOM PHOTOS]]></lines>
+	<lines name="countDay" descr=""><![CDATA[days]]></lines>
+	<lines name="countHour" descr=""><![CDATA[hours]]></lines>
+	<lines name="countMinute" descr=""><![CDATA[mins]]></lines>
+	<lines name="countSecond" descr=""><![CDATA[secs]]></lines>
+	<lines name="wellcomeTitle" descr=""><![CDATA[INFORMATIONS PHOTO CONTEST GPDC 2014.]]></lines>
+	<lines name="wellcomeAbout" descr=""><![CDATA[</br>
+Gia Dinh Photo Contest - The exhibition is open to all amateur and professional photographer.
+- The exhibition has received the Patronage of FIAP (International Federation of Photographic Art), PSA (the
+Photographic Society of America), ISF (Image Sans Frontière). </br><br>
+
+PATRONAGE No:  FIAP 2014/284    -    PSA 2014-237  -   ISF 55/2014]]></lines>
+	<lines name="btnuploadreg" descr=""><![CDATA[Register & Upload Image]]></lines>
+</data>

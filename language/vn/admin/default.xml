@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<data>
+  <lines name="adminPanel" descr=""><![CDATA[Admin Panel]]></lines>
+	<lines name="dateFormatTime" descr=""><![CDATA[H:i, M d Y]]></lines>
+	<lines name="dateFormatTimeSmarty" descr=""><![CDATA[%H:%M, ngày %d/%m/%Y]]></lines>
+	<lines name="dateFormatSmarty" descr=""><![CDATA[%d/%m/%Y]]></lines>
+	
+	<lines name="formDeleteLabel" descr=""><![CDATA[Xóa]]></lines>     
+	<lines name="formEditLabel" descr=""><![CDATA[Thay đổi]]></lines>     
+	<lines name="formDetailLabel" descr=""><![CDATA[Chi tiết]]></lines>     
+	<lines name="formHaveImageLabel" descr=""><![CDATA[Có hình đại diện]]></lines>     
+	<lines name="formActionEditTooltip" descr=""><![CDATA[Thay đổi thông tin dòng này]]></lines>     
+	<lines name="formActionDeleteTooltip" descr=""><![CDATA[Xóa dòng này]]></lines> 
+	<lines name="formActionDetailTooltip" descr=""><![CDATA[Xem chi tiết của dữ liệu này]]></lines> 
+	<lines name="formRequiredLabel" descr=""><![CDATA[Bắt buộc]]></lines>   
+	<lines name="formViewAll" descr=""><![CDATA[Xem tất cả]]></lines>   
+	<lines name="formBackLabel" descr=""><![CDATA[&laquo; Quay về trang trước]]></lines>   
+	<lines name="formAddSubmit" descr=""><![CDATA[ THÊM ]]></lines>  
+	<lines name="formAddExitSubmit" descr=""><![CDATA[ THÊM & QUAY LẠI ]]></lines>  
+	<lines name="formSaveSubmit" descr=""><![CDATA[ LƯU ]]></lines>  
+	<lines name="formSaveExitSubmit" descr=""><![CDATA[ LƯU & QUAY LẠI ]]></lines>  
+	<lines name="formUpdateSubmit" descr=""><![CDATA[ CẬP NHẬT ]]></lines>  
+	<lines name="formUpdateExitSubmit" descr=""><![CDATA[ CẬP NHẬT & QUAY LẠI]]></lines>  
+	<lines name="formSelectSubmit" descr=""><![CDATA[ Chọn... ]]></lines>  
+	<lines name="formCloseSubmit" descr=""><![CDATA[ ĐÓNG ]]></lines>  
+	<lines name="formChangeOrderSubmit" descr=""><![CDATA[ Cập nhật THỨ TỰ ]]></lines>  
+	<lines name="formGeneralSubmit" descr=""><![CDATA[ GỞI ]]></lines>  
+	<lines name="formUploadSubmit" descr=""><![CDATA[ Upload File của bạn ]]></lines>  
+	
+  <lines name="hi" descr=""><![CDATA[Hi,]]></lines>
+  <lines name="editProfileTooltip" descr=""><![CDATA[Cập nhật tài khoản]]></lines>
+  <lines name="gotoHomepage" descr=""><![CDATA[Xem Website]]></lines>
+  <lines name="gotoHomepageTooltip" descr=""><![CDATA[Ra trang web chính]]></lines>
+  <lines name="logout" descr=""><![CDATA[Thoát]]></lines>
+  <lines name="logoutTooltip" descr=""><![CDATA[Thoát khỏi hệ thống.]]></lines>
+  <lines name="noItemSelected" descr=""><![CDATA[Chưa có item nào được chọn.]]></lines>
+  <lines name="succDelete" descr=""><![CDATA[Xóa thành công.]]></lines>
+  <lines name="errUpdateDb" descr=""><![CDATA[Có lỗi khi cập nhật dữ liệu.]]></lines>
+  <lines name="errUploadFile" descr=""><![CDATA[Có lỗi khi cập nhật dữ liệu.]]></lines>
+  <lines name="tableTabLabel" descr=""><![CDATA[Danh sách]]></lines>
+  <lines name="filterLabel" descr=""><![CDATA[Tìm kiếm]]></lines>
+  <lines name="filterSubmit" descr=""><![CDATA[Tìm]]></lines>
+  <lines name="notfound" descr=""><![CDATA[Không tìm thấy dữ liệu]]></lines>
+  <lines name="formFormLabel" descr=""><![CDATA[Thông tin chính]]></lines>
+  <lines name="formMoreInfoLabel" descr=""><![CDATA[Thông tin khác]]></lines>
+  <lines name="formIdLabel" descr=""><![CDATA[ID]]></lines>
+  <lines name="formImageLabel" descr=""><![CDATA[Image]]></lines>
+  <lines name="formOrderLabel" descr=""><![CDATA[Thứ tự]]></lines>
+  <lines name="formYesLabel" descr=""><![CDATA[YES]]></lines>
+  <lines name="formNoLabel" descr=""><![CDATA[NO]]></lines>
+  <lines name="formSeoLabel" descr=""><![CDATA[Thông tin SEO]]></lines>
+  <lines name="formSeoUrlLabel" descr=""><![CDATA[SEO Url]]></lines>
+  <lines name="formSeoTitleLabel" descr=""><![CDATA[SEO Title]]></lines>
+  <lines name="formSeoKeywordLabel" descr=""><![CDATA[SEO Keyword]]></lines>
+  <lines name="formSeoDescriptionLabel" descr=""><![CDATA[SEO Description]]></lines>
+ <lines name="entryModeratedLabel" descr=""><![CDATA[Hiển thị]]></lines>
+  <lines name="entryModeratedTooltip" descr=""><![CDATA[Nếu bạn chọn thì bài viết này sẽ được hiển thị ra bên ngoài cho tất cả người sử dụng đọc.]]></lines>
+  <lines name="entryModeratedNotCleanTextLabel" descr=""><![CDATA[Bỏ qua thay thế từ xấu]]></lines>
+  <lines name="entryModeratedNotCleanTextTooltip" descr=""><![CDATA[Nếu bạn chọn thì khi hiển thị bài viết này ra, các từ xấu sẽ không bị thay thế mà vẫn giữ nguyên bản gốc]]></lines>
+   
+  <lines name="menuDashboard" descr=""><![CDATA[Trang chủ]]></lines>
+  <lines name="menuUser" descr=""><![CDATA[User]]></lines>
+  <lines name="menuUserList" descr=""><![CDATA[Danh sách User]]></lines>
+  <lines name="menuUserAdd" descr=""><![CDATA[Tạo User mới]]></lines>
+  <lines name="menuPhoto" descr=""><![CDATA[Contest Photo]]></lines>
+  <lines name="menuPhotoList" descr=""><![CDATA[Danh sách Photo]]></lines>
+  <lines name="menuUserAdd" descr=""><![CDATA[Tạo User mới]]></lines>
+  <lines name="menuAdminLog" descr=""><![CDATA[Activity Log]]></lines>
+  <lines name="menuSiteContact" descr=""><![CDATA[Site Contact]]></lines>
+  <lines name="menuContact" descr=""><![CDATA[Contact Form]]></lines>
+  <lines name="menuPage" descr=""><![CDATA[Page]]></lines>
+  <lines name="menuPageList" descr=""><![CDATA[Page Listing]]></lines>
+  <lines name="menuPageAdd" descr=""><![CDATA[Add New Page]]></lines>
+  <lines name="menuNews" descr=""><![CDATA[Tin tức]]></lines>
+  <lines name="menuNewsList" descr=""><![CDATA[Quản lý tin]]></lines>
+  <lines name="menuNewsAdd" descr=""><![CDATA[Thêm Tin mới]]></lines>
+  <lines name="menuNewsCategoryList" descr=""><![CDATA[Quản lý danh mục tin]]></lines>
+  <lines name="menuNewsCategoryAdd" descr=""><![CDATA[Thêm danh mục tin]]></lines>
+  
+  <lines name="menuProduct" descr=""><![CDATA[Gói thanh toán]]></lines>       
+  <lines name="menuProductList" descr=""><![CDATA[Quản lý Gói thanh toán]]></lines>
+  <lines name="menuProductAdd" descr=""><![CDATA[Thêm Gói mới]]></lines>
+  <lines name="menuOrder" descr=""><![CDATA[Quản lý Đơn hàng]]></lines>
+  
+  <lines name="menuRound" descr=""><![CDATA[Contest Round]]></lines>
+  <lines name="menuRoundList" descr=""><![CDATA[Danh sách Round]]></lines>
+  <lines name="menuRoundAdd" descr=""><![CDATA[Thêm Round mới]]></lines>
+  
+  <lines name="menuAward" descr=""><![CDATA[Contest Award]]></lines>
+  <lines name="menuAwardList" descr=""><![CDATA[Danh sách Award]]></lines>
+  <lines name="menuAwardAdd" descr=""><![CDATA[Thêm Award mới]]></lines>
+  
+  <lines name="menuJudger" descr=""><![CDATA[Ban Giám Khảo]]></lines>
+  <lines name="menuJudgerList" descr=""><![CDATA[Danh sách BGK]]></lines>
+  <lines name="menuJudgerAdd" descr=""><![CDATA[Thêm BGK mới]]></lines>
+  <lines name="menuPhotoContestReadyList" descr=""><![CDATA[Danh sách Photo được chấm]]></lines>
+  
+  
+  <lines name="bulkActionSelectLabel" descr=""><![CDATA[Chọn thao tác...]]></lines>
+	<lines name="bulkActionDeletetLabel" descr=""><![CDATA[Xóa]]></lines>
+	<lines name="bulkActionSubmit" descr=""><![CDATA[Tiến hành xử lý]]></lines>
+	<lines name="bulkActionInvalidWarn" descr=""><![CDATA[Bạn chưa chọn thao tác cần thực hiện]]></lines>
+	<lines name="bulkItemNoSelected" descr=""><![CDATA[Bạn chưa chọn dòng dữ liệu nào cả]]></lines>
+	
+	<lines name="errFormTokenInvalid" descr=""><![CDATA[Có lỗi khi gởi dữ liệu. Hãy thử lại.]]></lines>
+	
+	
+</data>

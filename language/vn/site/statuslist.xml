@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[TH. TIN LỆ PHÍ DỰ THI]]></lines>
+	<lines name="notFound" descr=""><![CDATA[Không tìm thấy user.]]></lines>
+	<lines name="userLabel" descr=""><![CDATA[tác giả dự thi]]></lines>
+	<lines name="username" descr=""><![CDATA[Username]]></lines>
+	<lines name="datecreated" descr=""><![CDATA[Ngày tạo]]></lines>
+	<lines name="fullname" descr=""><![CDATA[Họ & Tên]]></lines>
+	<lines name="region" descr=""><![CDATA[Tỉnh / Thành phố]]></lines>
+	<lines name="country" descr=""><![CDATA[Quốc gia]]></lines>
+	<lines name="paidColor" descr=""><![CDATA[Màu]]></lines>
+	<lines name="paidMono" descr=""><![CDATA[Trắng Đen]]></lines>
+	<lines name="paidNature" descr=""><![CDATA[Thiên Nhiên]]></lines>
+	<lines name="paidTravel" descr=""><![CDATA[Du Lịch]]></lines>
+	<lines name="isPaid" descr=""><![CDATA[ Đã thanh toán]]></lines>
+	<lines name="isNotPaid" descr=""><![CDATA[Chưa]]></lines>
+	<lines name="pageTitle" descr=""><![CDATA[Thông tin thanh toán lệ phí Cuộc thi ảnh Quốc Tế CLB Nhiếp Ảnh Gia Định lần 4 - GPDC 2014]]></lines>
+	<lines name="pageKeyword" descr=""><![CDATA[thong tin thanh toan, le phi thanh toan, cuoc thi anh, gdpc]]></lines>
+	<lines name="pageDescription" descr=""><![CDATA[Trang thông tin về tình trạng thanh toán của các tác giả dự thi Cuộc thi ảnh Quốc Tế CLB Nhiếp Ảnh Gia Định lần 4 - 2014.]]></lines>
+</data>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Forgot Password]]></lines>
+	<lines name="email" descr=""><![CDATA[Email]]></lines>
+	<lines name="password" descr=""><![CDATA[Enter a new password for your account]]></lines>
+	<lines name="password2" descr=""><![CDATA[Retype Password]]></lines>
+	<lines name="submitLabel" descr=""><![CDATA[Submit]]></lines>
+	<lines name="succSubmitEmail" descr=""><![CDATA[Password reset information sent to your email address.]]></lines>
+	<lines name="errAccountInvalid" descr=""><![CDATA[Email address not found.]]></lines>
+	<lines name="errPassNotMatch" descr=""><![CDATA[Password entered does not match]]></lines>
+	<lines name="errInvalidCode" descr=""><![CDATA[Confirmation code is incorrect. Check your email]]></lines>
+	<lines name="errReset" descr=""><![CDATA[There was an error reset password.]]></lines>
+	<lines name="succReset" descr=""><![CDATA[Your password has been updated.]]></lines>
+	<lines name="mailSubject" descr=""><![CDATA[Reset Password Information from]]></lines>
+	<lines name="pageTitle" descr=""><![CDATA[Forgot Password | The Third Gia Dinh Photo Club International Photo Contest 2012]]></lines>
+	<lines name="pageKeyword" descr=""><![CDATA[forgot password, forgot password gia dinh photo]]></lines>
+	<lines name="pageDescription" descr=""><![CDATA[Forgot Password member for The Third Gia Dinh Photo Club International Photo Contest 2012]]></lines>
+</data>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Payment]]></lines>
+	<lines name="paymentReview" descr=""><![CDATA[The information you have chosen]]></lines>
+	<lines name="paymentYourSelect" descr=""><![CDATA[Bạn đã chọn thanh toán các Section sau: ]]></lines>
+    <lines name="paymentTotal" descr=""><![CDATA[The total amount fee]]></lines>      
+    <lines name="succPaymentOnline" descr=""><![CDATA[Successful payment. You can join the contest in the Section that he had paid. Thank you.]]></lines>      
+    <lines name="succPaymentOffline" descr=""><![CDATA[Your order has been saved. We will activate your account after receiving the money is transferred from your.]]></lines>      
+</data>

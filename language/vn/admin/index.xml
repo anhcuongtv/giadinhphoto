@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<data>
+  <lines name="head" descr=""><![CDATA[Dashboard]]></lines>
+  <lines name="intro" descr=""><![CDATA[Các thông tin tóm tắt trên website. Nếu muốn thực hiện chức năng nào, hãy sử dụng menu bên trái.]]></lines>
+  <lines name="pageTitle_dashboard" descr=""><![CDATA[Dashboard]]></lines>
+  <lines name="title_system" descr=""><![CDATA[Thông tin hệ thống]]></lines>
+  <lines name="title_website" descr=""><![CDATA[Thống kê website]]></lines>
+  <lines name="statUser" descr=""><![CDATA[User]]></lines>
+  <lines name="statContact" descr=""><![CDATA[Contact]]></lines>
+  <lines name="statPluralSuffix" descr=""><![CDATA[]]></lines>
+  <lines name="viewAllTooltip" descr=""><![CDATA[Xem tất cả]]></lines>
+</data>

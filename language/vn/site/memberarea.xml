@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Sometext]]></lines>
+	<lines name="tabInfo" descr=""><![CDATA[Thông tin - Hình ảnh]]></lines>
+	<lines name="tabWork" descr=""><![CDATA[Photo Upload]]></lines>
+	<lines name="tabPayment" descr=""><![CDATA[Trạng thái thanh toán]]></lines>
+	<lines name="tabLogout" descr=""><![CDATA[Đăng Xuất]]></lines>
+	<lines name="personalDetail" descr=""><![CDATA[Thông tin cá nhân]]></lines>
+	<lines name="updateBtn" descr=""><![CDATA[Cập nhật]]></lines>
+	<lines name="honor" descr=""><![CDATA[Tước hiệu]]></lines>
+	<lines name="address" descr=""><![CDATA[Địa chỉ]]></lines>
+	<lines name="address2" descr=""><![CDATA[Địa chỉ 2]]></lines>
+	<lines name="zipcode" descr=""><![CDATA[Mã vùng]]></lines>
+	<lines name="city" descr=""><![CDATA[Thành phố]]></lines>
+	<lines name="region" descr=""><![CDATA[Tiểu bang/Tỉnh]]></lines>
+	<lines name="country" descr=""><![CDATA[Quốc gia]]></lines>
+	<lines name="phone1" descr=""><![CDATA[Điện thoại]]></lines>
+	<lines name="phone2" descr=""><![CDATA[Điện thoại di động]]></lines>
+	<lines name="email" descr=""><![CDATA[Email]]></lines>
+	<lines name="psamembership" descr=""><![CDATA[PSA membership number]]></lines>
+	<lines name="photoclub" descr=""><![CDATA[CLB nhiếp ảnh]]></lines>
+	<lines name="photoSubmit" descr=""><![CDATA[Tải ảnh dự thi]]></lines>
+	<lines name="photoSubmitHelp" descr=""><![CDATA[Hình ảnh phải có định dạng JPEG và có dung lượng dưới 5MB.]]></lines>
+	<lines name="photoSubmitHelp2" descr=""><![CDATA[Chọn tập tin ảnh trên máy để tải lên trang web.]]></lines>
+	<lines name="section" descr=""><![CDATA[Thể loại]]></lines>
+	<lines name="photoname" descr=""><![CDATA[Tên tác phẩm]]></lines>
+	<lines name="photodescription" descr=""><![CDATA[Từ khóa]]></lines>
+	<lines name="photoupload" descr=""><![CDATA[Chọn File]]></lines>
+	<lines name="photoSubmitBtn" descr=""><![CDATA[Bấm tải lên]]></lines>
+	<lines name="datecreated" descr=""><![CDATA[Ngày]]></lines>
+	<lines name="deleteLabel" descr="Bấm vào đây để xóa ảnh"><![CDATA[Xóa]]></lines>
+	<lines name="editLabel" descr="Bấm vào đây để sửa thông tin ảnh"><![CDATA[Sửa]]></lines>
+	<lines name="comment" descr=""></lines>
+	<lines name="myphoto" descr=""><![CDATA[Ảnh của tôi]]></lines>
+	<lines name="allphoto" descr=""><![CDATA[Tất cả ảnh]]></lines>
+	<lines name="paymentEmpty" descr=""><![CDATA[Bạn chưa thanh toán để dự thi.]]></lines>
+	<lines name="yourPaidSectionTitle" descr=""><![CDATA[Các phần dự thi bạn đã thanh toán:]]></lines>
+	<lines name="paymentSelect" descr=""><![CDATA[Chọn các thể loại (section) bạn muốn thanh toán để dự thi (tối thiểu là 1 và tối đa là tất cả) :]]></lines>
+	<lines name="paymentTotal" descr=""><![CDATA[Tổng số tiền]]></lines>
+	<lines name="paymentSectionCart" descr=""><![CDATA[Tiếp tục]]></lines>
+	<lines name="errPaymentSectionEmpty" descr=""><![CDATA[Bạn cần chọn ít nhất 1 thể loại (section) trước khi tiếp tục.]]></lines>
+	<lines name="succPaymentStart" descr=""><![CDATA[Đang chuyển đến trang thanh toán.]]></lines>
+	<lines name="paymentFullAlready" descr=""><![CDATA[Bạn đã thanh toán dự thi cho cả 4 thể loại(section). Bạn có thể tới trang <a href="memberarea.html?tab=upload">Upload Photo</a> để upload hình.]]></lines>
+	<lines name="errNameRequire" descr=""><![CDATA[Vui lòng nhập tên tác phẩm]]></lines>
+	<lines name="errNameExisted" descr=""><![CDATA[Tên tác phẩm đã tồn tại. Vui lòng chọn tên khác.]]></lines>
+	<lines name="errFileRequire" descr=""><![CDATA[Vui lòng chọn file ảnh]]></lines>
+	<lines name="errSectionInvalid" descr=""><![CDATA[Bạn chưa chọn thể loại ảnh (section)]]></lines>
+	<lines name="errSectionPhotoExceed" descr=""><![CDATA[Thể loại (section) hien tai da duoc upload toi da hinh. (MAX : ###MAX###)]]></lines>
+	<lines name="succUploadPhoto" descr=""><![CDATA[Hình của bạn đã được gởi.]]></lines>
+	<lines name="infoAfterUploadPhoto" descr=""><![CDATA[Nếu bạn đã upload đủ số hình dự thi. <a href="###rooturl###memberarea.html?tab=payment">Nhấn vào đây</a> để thanh toán.]]></lines>
+	<lines name="errUploadPhoto" descr=""><![CDATA[Có lỗi khi gởi hình của bạn. Hãy thử lại.]]></lines>
+	<lines name="errPhotoNotFound" descr=""><![CDATA[Không tìm thấy ảnh]]></lines>
+	<lines name="errPhotoDeletePermission" descr=""><![CDATA[Bạn không có đủ quyền]]></lines>
+	<lines name="errPhotoDelete" descr=""><![CDATA[Có lỗi khi xóa hình. Hãy thử lại]]></lines>
+	<lines name="succPhotoDelete" descr=""><![CDATA[Hình được xóa thành công.]]></lines>
+</data>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="securityTokenInvalid" descr=""><![CDATA[An error occurred while transferring data. Try again.]]></lines>
+	<lines name="editLabel" descr=""><![CDATA[Edit]]></lines>
+	<lines name="deleteLabel" descr=""><![CDATA[Delete]]></lines>
+	<lines name="jsDelConfirm" descr=""><![CDATA[Yes are sure Delete?]]></lines>
+	<lines name="sidebarMoreNews" descr=""><![CDATA[more]]></lines>
+	<lines name="hi" descr=""><![CDATA[Hi]]></lines>
+	<lines name="guest" descr=""><![CDATA[Guest]]></lines>
+	<lines name="secureByPaypal" descr=""><![CDATA[Secure Payments by Paypal]]></lines>
+	<lines name="aboutThisContest" descr=""><![CDATA[ABOUT THIS CONTEST]]></lines>
+	<lines name="sidebarPhotographer" descr=""><![CDATA[Photographer]]></lines>
+	<lines name="rightboxHeadingYear" descr=""><![CDATA[ESTIMATED TIME REMAINING]]></lines>
+	<lines name="rightboxEvent" descr=""><![CDATA[Events]]></lines>
+	<lines name="rightboxDate" descr=""><![CDATA[Date]]></lines>
+		<lines name="mPhotos" descr=""><![CDATA[Photos]]></lines>
+
+	<lines name="rightboxClosingDate" descr=""><![CDATA[Closing Date]]></lines>
+	<lines name="rightboxClosingDateValue" descr=""><![CDATA[Oct 25, 2014]]></lines>
+	<lines name="rightboxJudging" descr=""><![CDATA[Judging Date]]></lines>
+	<lines name="rightboxJudgingValue" descr=""><![CDATA[Nov 02-06, 2014]]></lines>
+	<lines name="rightboxNotification" descr=""><![CDATA[Notification]]></lines>
+	<lines name="rightboxNotificationValue" descr=""><![CDATA[Nov 7, 2014]]></lines>
+	<lines name="rightboxExhibitionDate" descr=""><![CDATA[Exhibition]]></lines>
+	<lines name="rightboxExhibitionDateValue" descr=""><![CDATA[Dec 20, 2014]]></lines>
+	<lines name="rightboxCatalogue" descr=""><![CDATA[Mailing catalog]]></lines>
+	<lines name="rightboxCatalogueValue" descr=""><![CDATA[Jan 10, 2015]]></lines>
+	<lines name="rightboxStatistic" descr=""><![CDATA[GDPC-2014 Statistics]]></lines>
+	<lines name="rightboxStatisticText" descr=""><![CDATA[viewers online]]></lines>
+	<lines name="rightboxRegisteredUser" descr=""><![CDATA[Registered users]]></lines>
+	<lines name="rightboxOfPhotoOnline" descr=""><![CDATA[Photos online]]></lines>
+	<lines name="rightboxOfPhotoView" descr=""><![CDATA[Total photo views]]></lines>
+	<lines name="rightboxOfCountry" descr=""><![CDATA[Country]]></lines>
+	<lines name="siteToptext" descr=""><![CDATA[Results of The Fourth Gia Dinh Photo Club International Photo Contest 2014]]></lines>
+	<lines name="memberlogin" descr=""><![CDATA[MEMBER'S LOGIN]]></lines>
+	<lines name="mHome" descr=""><![CDATA[Home]]></lines>
+	<lines name="mPhoto" descr=""><![CDATA[Photo]]></lines>
+	<lines name="mRule" descr=""><![CDATA[Rules]]></lines>
+	<lines name="mAward" descr=""><![CDATA[Awards]]></lines>
+	<lines name="mJudge" descr=""><![CDATA[Judge]]></lines>
+	<lines name="mStatuslist" descr=""><![CDATA[Status List]]></lines>
+	<lines name="mInstruction" descr=""><![CDATA[Instruction]]></lines>
+	<lines name="mMemberarea" descr=""><![CDATA[Member Area]]></lines>
+	<lines name="mCalendar" descr=""><![CDATA[Calendar]]></lines>
+	<lines name="mContact" descr=""><![CDATA[Contact]]></lines>
+	<lines name="searchValue" descr=""><![CDATA[Please typing search...]]></lines>
+	<lines name="searchSubmit" descr=""><![CDATA[Find]]></lines>
+	<lines name="copyrightText" descr=""><![CDATA[Copyright © 2014 Gia Dinh Photo Club (GDPC). All rights reserved. Read our Terms of Use and our]]></lines>
+	<lines name="copyrightTextLinkPolicy" descr=""><![CDATA[Privacy Policy]]></lines>
+	<lines name="copyrightTextSub" descr=""><![CDATA[The Fourth Gia Dinh Photo Club International Photo Contest - GDPC 2014]]></lines>
+	<lines name="copyrightDevText" descr=""><![CDATA[Developed by ]]></lines>
+	<lines name="copyrightDevLink" descr=""><![CDATA[Developed by <a href="http://imsvietnam.com" title="iMS Vietnam">iMSVietNam</a>]]></lines>
+</data>

@@ -1,0 +1,5 @@
+ID, Photo Name, Section, Resolution, File Path, User ID, Username, Full Name, Email, Phone, Address, City, Zipcode, Country, Photo Club, Color, Monochrome, Nature, Date Register
+{foreach item=photo from=$photos}
+{assign var=countrycode value=$photo->poster->country}
+{$photo->id}, {$photo->name|codau2khongdau}, {$photo->section}, {$photo->resolution}, {$photo->filepath}, {$photo->poster->id}, {$photo->poster->username}, {$photo->poster->fullname|codau2khongdau}, {$photo->poster->email}, {$photo->poster->phone1}, {$photo->poster->address|codau2khongdau}, {$photo->poster->city|codau2khongdau},{$photo->poster->zipcode},{$setting.country.$countrycode}, {$photo->poster->photoclub|codau2khongdau}, {if $photo->poster->paidColor == 1}YES{else}NO{/if}, {if $photo->poster->paidMono == 1}YES{else}NO{/if}, {if $photo->poster->paidNature == 1}YES{else}NO{/if}, {$photo->poster->datecreated|date_format:"%m/%d/%Y"}
+{/foreach}

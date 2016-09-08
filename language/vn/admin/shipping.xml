@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<lines name="head_list" descr=""><![CDATA[Quản lý Shipping &amp; Location]]></lines>
+	<lines name="title_list" descr=""><![CDATA[Quản lý Shipping &amp; Location]]></lines>
+	<lines name="pageTitle_list" descr=""><![CDATA[Quản lý Shipping &amp; Location]]></lines>
+	
+	<lines name="head_add" descr=""><![CDATA[Thêm Location]]></lines>
+	<lines name="title_add" descr=""><![CDATA[Thông tin Location]]></lines>
+	<lines name="pageTitle_add" descr=""><![CDATA[Location &raquo; Thêm]]></lines>
+	
+	<lines name="head_edit" descr=""><![CDATA[Cập nhật thông tin]]></lines>
+	<lines name="title_edit" descr=""><![CDATA[Thông tin Location]]></lines>
+	<lines name="pageTitle_edit" descr=""><![CDATA[Location &raquo; Cập nhật]]></lines>
+	
+	<lines name="formCountryLabel" descr=""><![CDATA[Country]]></lines>
+	<lines name="formCountryCodeLabel" descr=""><![CDATA[Country Code]]></lines>
+	<lines name="formCountryCodeNote" descr=""><![CDATA[(2 letters)]]></lines>
+	<lines name="formCountryNameLabel" descr=""><![CDATA[Country Name]]></lines>
+	<lines name="formRegionLabel" descr=""><![CDATA[Region]]></lines>
+	<lines name="formRegionNameLabel" descr=""><![CDATA[Region Name]]></lines>
+	<lines name="formCityLabel" descr=""><![CDATA[City]]></lines>
+	<lines name="formCityNameLabel" descr=""><![CDATA[City Name]]></lines>
+	<lines name="priceChangeTooltip" descr=""><![CDATA[Change Price]]></lines>
+	<lines name="priceRemoveTooltip" descr=""><![CDATA[Remove Price]]></lines>
+	<lines name="priceSetTooltip" descr=""><![CDATA[Set Price]]></lines>
+	<lines name="jsFormPleaseFillMoney" descr=""><![CDATA[How much does shipping cost ?]]></lines>
+	<lines name="jsErrMoneyFormat" descr=""><![CDATA[Money Format not correct (Number only and dot(.) only)]]></lines>
+	<lines name="orderTooltip" descr=""><![CDATA[Display order]]></lines>
+	<lines name="regionSelect" descr=""><![CDATA[- - Select a region - -]]></lines>
+	<lines name="formSaveOrderLabel" descr=""><![CDATA[SAVE ORDER CHANGES]]></lines>
+	<lines name="addCountry" descr=""><![CDATA[ADD COUNTRY]]></lines>
+	<lines name="addRegion" descr=""><![CDATA[ADD REGION]]></lines>
+	<lines name="addCity" descr=""><![CDATA[ADD CITY]]></lines>
+	<lines name="editCountry" descr=""><![CDATA[EDIT COUNTRY]]></lines>
+	<lines name="editRegion" descr=""><![CDATA[EDIT REGION]]></lines>
+	
+	<lines name="succChangeOrder" descr=""><![CDATA[Cập nhật thứ tự thành công]]></lines>
+	<lines name="succInsert" descr=""><![CDATA[Add successfully]]></lines>
+	<lines name="errInsert" descr=""><![CDATA[Error while insert]]></lines>
+	<lines name="succUpdate" descr=""><![CDATA[Update successfully]]></lines>
+	<lines name="errUpdate" descr=""><![CDATA[Error while Update]]></lines>
+	<lines name="succDelete" descr=""><![CDATA[Delete successfully]]></lines>
+	<lines name="errDelete" descr=""><![CDATA[Error while Delete]]></lines>
+	
+	<lines name="errNotFound" descr=""><![CDATA[Item not found.]]></lines>
+	
+	
+	<lines name="errLocAddCountryFieldRequired" descr=""><![CDATA[Country Code and Country Name are required.]]></lines>
+	<lines name="errLocAddCountryDuplicated" descr=""><![CDATA[Country Code or Country Name is existed, please check again.]]></lines>
+	<lines name="errLocAddRegionFieldRequired" descr=""><![CDATA[Region Name is required.]]></lines>
+	<lines name="errLocAddRegionCountryValid" descr=""><![CDATA[Country is not valid.]]></lines>
+	<lines name="errLocAddRegionDuplicated" descr=""><![CDATA[Region Name is existed.]]></lines>
+	<lines name="errLocAddCityFieldRequired" descr=""><![CDATA[City name is required.]]></lines>
+	<lines name="errLocAddCityRegionValid" descr=""><![CDATA[Region is not valid.]]></lines>
+	<lines name="errLocAddCityDuplicated" descr=""><![CDATA[City name is existed.]]></lines>
+</data>

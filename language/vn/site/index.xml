@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="countdownHeadLabel" descr=""><![CDATA[Hạn chót gởi ảnh]]></lines>
+	<lines name="headingNewPhoto" descr=""><![CDATA[HÌNH ẢNH MỚI]]></lines>
+	<lines name="newPhoto24h" descr=""><![CDATA[24h]]></lines>
+	<lines name="newPhoto3day" descr=""><![CDATA[3 ngày]]></lines>
+	<lines name="newPhoto1week" descr=""><![CDATA[1 tuần]]></lines>
+	<lines name="newPhoto1month" descr=""><![CDATA[1 tháng]]></lines>
+	<lines name="newPhotoAll" descr=""><![CDATA[Tất cả]]></lines>
+	<lines name="colorHead" descr=""><![CDATA[ẢNH MÀU]]></lines>
+	<lines name="monoHead" descr=""><![CDATA[ẢNH TRẮNG ĐEN]]></lines>
+	<lines name="natureHead" descr=""><![CDATA[ẢNH THIÊN NHIÊN]]></lines>
+	<lines name="travelHead" descr=""><![CDATA[ẢNH DU LỊCH]]></lines>
+	<lines name="view" descr=""><![CDATA[view]]></lines>
+	<lines name="views" descr=""><![CDATA[views]]></lines>
+	<lines name="headingRandom" descr=""><![CDATA[RANDOM PHOTOS]]></lines>
+	<lines name="countDay" descr=""><![CDATA[ngày]]></lines>
+	<lines name="countHour" descr=""><![CDATA[giờ]]></lines>
+	<lines name="countMinute" descr=""><![CDATA[phút]]></lines>
+	<lines name="countSecond" descr=""><![CDATA[giây]]></lines>
+	<lines name="wellcomeTitle" descr=""><![CDATA[CUỘC THI ẢNH QUỐC TẾ GDPC 2014.]]></lines>
+	<lines name="wellcomeAbout" descr=""><![CDATA[<br>Cuộc thi ảnh quốc tế dành cho tất cả các nhà nhiếp ảnh chuyên và không chuyên trên toàn thế giới. Cuộc thi được bảo trợ của Liên đoàn Nghệ thuật Nhiếp ảnh quốc tế - FIAP, Hội nhiếp ảnh Hoa Kỳ – PSA, Hội hình ảnh không biên giới ISF của Pháp. GDPC 2014 với sự đổi mới của bộ huy chương GDPC rất đặc biệt.<br></br>
+
+Bảo trợ: FIAP 2014/284    -    PSA 2014-237  -   ISF 55/2014
+
+
+]]></lines>
+	<lines name="btnuploadreg" descr=""><![CDATA[Đăng ký & Upload ảnh]]></lines>
+</data>

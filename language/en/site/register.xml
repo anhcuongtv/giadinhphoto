@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Register members]]></lines>
+	<lines name="heading" descr=""><![CDATA[PERSONAL DETAILS (* Required field cannot be left blank)]]></lines>
+	<lines name="help" descr=""><![CDATA[Please fill out the information form below to Sign In! If you already have an account, <a href="login.html">Sign Up</a> ]]></lines>
+	<lines name="required" descr=""><![CDATA[Required]]></lines>
+	<lines name="username" descr=""><![CDATA[Username]]></lines>
+	<lines name="usernameTip" descr=""><![CDATA[User name minimum 6 characters and a maximum of 30 characters.]]></lines>
+	<lines name="firstname" descr=""><![CDATA[FIRST NAME]]></lines>
+	<lines name="lastname" descr=""><![CDATA[FAMILY NAME]]></lines>
+	<lines name="honor" descr=""><![CDATA[HONORS (MAX 2) ]]></lines>
+	<lines name="address" descr=""><![CDATA[ADDRESS]]></lines>
+	<lines name="address2" descr=""><![CDATA[ADDRESS 2]]></lines>
+	<lines name="zipcode" descr=""><![CDATA[ZIP CODE]]></lines>
+	<lines name="city" descr=""><![CDATA[CITY]]></lines>
+	<lines name="region" descr=""><![CDATA[STATE/PROVINCE]]></lines>
+	<lines name="country" descr=""><![CDATA[COUNTRY]]></lines>
+	<lines name="phone1" descr=""><![CDATA[PHONE NUMBER]]></lines>
+	<lines name="phone1help" descr=""><![CDATA[(INCLUDING COUNTRY CODE AND AREA CODE)]]></lines>
+	<lines name="phone2" descr=""><![CDATA[HANDPHONE/MOBILE PHONE]]></lines>
+	<lines name="email" descr=""><![CDATA[EMAIL]]></lines>
+	<lines name="email2" descr=""><![CDATA[RETYPE EMAIL]]></lines>
+	<lines name="psamembership" descr=""><![CDATA[PSA MEMBERSHIP NUMBER]]></lines>
+	<lines name="photoclub" descr=""><![CDATA[PHOTO CLUB]]></lines>
+	<lines name="securityCode" descr=""><![CDATA[Word Verification (lowercase)]]></lines>
+	<lines name="securityCodeTip" descr=""><![CDATA[Type the characters you see in the picture below. . The characters are lowercase. Click 'Refesh' images.]]></lines>
+	<lines name="refreshImage" descr=""><![CDATA[Click 'Refesh' images]]></lines>
+	<lines name="submitLabel" descr=""><![CDATA[Register]]></lines>
+	<lines name="foottext1" descr=""><![CDATA[<p class="agree">[.] I agree to all terms and conditions of this exhibition and permit my information to be used for the purpose thereof. Submission of entries implies the acceptance of all conditions.</p><p class="agree">If you do not receive any email confirmation after submitting your photos and information, please check your spam folder first. If you still have problems, please contact us by email at the following address: <a href="mailto:support@giadinhphoto.com">support@giadinhphoto.com</a></p>]]></lines>
+	<lines name="foottext2" descr=""><![CDATA[<p class="thanks">Closed for Submission.<br>  Deadline Oct 25, 2014.<br>Thank you for your participation</p>]]></lines>
+	<lines name="succRegister" descr=""><![CDATA[Sign up for success. Youve become a member and can use the functionality on the website.]]></lines>
+	<lines name="succText" descr=""><![CDATA[<br /><br />Direct page <a href="./login.html" title="Login">Login</a><br /><br />]]></lines>
+	<lines name="errRegister" descr=""><![CDATA[There are errors in the process of creating your account. Try again.]]></lines>
+	<lines name="errSpam" descr=""><![CDATA[Spam detection. Try again.]]></lines>
+	<lines name="errUsernameNotValid" descr=""><![CDATA[Invalid Username (6 - 30 characters, and characters are allowed a.. z (lower case), 0 .. 9 and underscore character `_`).]]></lines>
+	<lines name="errUsernameExisted" descr=""><![CDATA[User is not available.]]></lines>
+	<lines name="errUsernameBadName" descr=""><![CDATA[Username coincides with a keyword of the website. Please choose another username.]]></lines>
+	<lines name="errEmailNotValid" descr=""><![CDATA[Your email address contains the invalid]]></lines>
+	<lines name="errEmailExisted" descr=""><![CDATA[Your email address already in use.]]></lines>
+	<lines name="errEmailNotMatch" descr=""><![CDATA[Email not match.]]></lines>
+	<lines name="errFirstnameRequire" descr=""><![CDATA[First Name is required.]]></lines>
+	<lines name="errLastnameRequire" descr=""><![CDATA[Family Name is required.]]></lines>
+	<lines name="errAddressRequire" descr=""><![CDATA[Address is required.]]></lines>
+	<lines name="errZipcodeRequire" descr=""><![CDATA[Zip Code is required.]]></lines>
+	<lines name="errCityRequire" descr=""><![CDATA[City is required.]]></lines>
+	<lines name="errRegionRequire" descr=""><![CDATA[State/Province is required.]]></lines>
+	<lines name="errCountryRequire" descr=""><![CDATA[Country is required.]]></lines>
+	<lines name="errCountryInvalid" descr=""><![CDATA[Country is not valid.]]></lines>
+	<lines name="errPhoneRequire" descr=""><![CDATA[Phone is required.]]></lines>
+	<lines name="errSecurityCode" descr=""><![CDATA[The characters that you entered didn t match the word verification. Please try again..]]></lines>
+	<lines name="pageTitle" descr=""><![CDATA[Register The Fourth Gia Dinh Photo Club International Photo Contest 2014]]></lines>
+	<lines name="pageKeyword" descr=""><![CDATA[gdpc 2014, gia dinh photo contest, vietnam photo contest, register, registration, signup, sign up, members, regitrar]]></lines>
+	<lines name="pageDescription" descr=""><![CDATA[Register at The Fourth Gia Dinh Photo Club International Photo Contest 2014 users to can post website photo contest.]]></lines>
+	<lines name="password" descr=""><![CDATA[PASSWORD]]></lines>
+	<lines name="passwordconfirm" descr=""><![CDATA[RETYPE PASSWORD]]></lines>
+	<lines name="errPasswordLength" descr=""><![CDATA[PasswordLength (minimum 6 characters).]]></lines>
+	<lines name="errPasswordMatch" descr=""><![CDATA[Password not Match. Try again]]></lines>
+</data>

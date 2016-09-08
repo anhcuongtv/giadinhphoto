@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Sign in]]></lines>
+	<lines name="help" descr=""><![CDATA[Please enter Username and Password to Sign in.]]></lines>
+	<lines name="username" descr=""><![CDATA[Username]]></lines>
+	<lines name="password" descr=""><![CDATA[Password]]></lines>
+	<lines name="forgotpass" descr=""><![CDATA[Forget Your Password?]]></lines>
+	<lines name="rememberme" descr=""><![CDATA[Remember]]></lines>
+	<lines name="remembermeTip" descr=""><![CDATA[Keep me signed in. (Uncheck if on a shared computer) .]]></lines>
+	<lines name="submitLabel" descr=""><![CDATA[Sign in]]></lines>
+	<lines name="succLogin" descr=""><![CDATA[Login Successful.]]></lines>
+	<lines name="errAccountInvalid" descr=""><![CDATA[The username or password you entered is incorrect..]]></lines>
+	<lines name="warnRefer" descr=""><![CDATA[Please sign in.]]></lines>
+	<lines name="pageTitle" descr=""><![CDATA[Sign in with your - Gia Dinh Photo Contest 2014]]></lines>
+	<lines name="pageKeyword" descr=""><![CDATA[Sign in gia dinh photo contest, login gia dinh photo, log in, sign in, sign up, dang nhap, dangnhap, dang ky thanh vien, dang ky]]></lines>
+	<lines name="pageDescription" descr=""><![CDATA[Sign in to the site to use fully functional website]]></lines>
+</data>

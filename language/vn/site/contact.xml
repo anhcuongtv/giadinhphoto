@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Góp ý & Liên hệ]]></lines>
+	<lines name="titleInformation" descr=""><![CDATA[Contact Information]]></lines>
+	<lines name="required" descr=""><![CDATA[Ô bắt buộc nhập]]></lines>
+	<lines name="fullname" descr=""><![CDATA[Tên của bạn]]></lines>
+	<lines name="phone" descr=""><![CDATA[Điện thoại]]></lines>
+	<lines name="email" descr=""><![CDATA[Email]]></lines>
+	<lines name="reason" descr=""><![CDATA[Lý do liên hệ]]></lines>
+	<lines name="reasonGeneral" descr=""><![CDATA[Thông tin chung]]></lines>
+	<lines name="reasonSupport" descr=""><![CDATA[Hỗ trợ tác giả]]></lines>
+	<lines name="message" descr=""><![CDATA[Nội dung]]></lines>
+	<lines name="securityCode" descr=""><![CDATA[Mã an toàn]]></lines>
+	<lines name="securityCodeTip" descr=""><![CDATA[Nhập các ký tự bạn thấy bên trái. (tất cả ký tự đều là chữ thường)]]></lines>
+	<lines name="refreshImage" descr=""><![CDATA[Đổi mã an toàn]]></lines>
+	<lines name="submitLabel" descr=""><![CDATA[Gởi]]></lines>
+	<lines name="succContact" descr=""><![CDATA[Thông tin liên hệ của bạn đã được gởi. Chúng tôi sẽ liên hệ với bạn sớm nếu cần thiết. Cảm ơn bạn nhiều.]]></lines>
+	<lines name="errContact" descr=""><![CDATA[Có lỗi khi gởi thông tin của bạn. Hãy thử lại.]]></lines>
+	<lines name="errSpam" descr=""><![CDATA[Spam detection. Hãy chờ trong giây lát và thử lại.]]></lines>
+	<lines name="errEmailNotValid" descr=""><![CDATA[Địa chỉ email không hợp lệ.]]></lines>
+	<lines name="errFullnameNotValid" descr=""><![CDATA[Bạn cần nhập tên của mình.]]></lines>
+	<lines name="errSecurityCode" descr=""><![CDATA[Mã an toàn nhập không đúng.]]></lines>
+	<lines name="pageTitle" descr=""><![CDATA[Góp ý - Liên hệ ban tổ chức Cuộc thi ảnh Quốc Tế CLB Nhiếp Ảnh Gia Định lần 3 - GDPC 2012]]></lines>
+	<lines name="pageKeyword" descr=""><![CDATA[Gop y, lien he, gia định photo club]]></lines>
+	<lines name="pageDescription" descr=""><![CDATA[Gởi thông tin góp ý, liên hệ đến ban quản trị tổ chức Cuộc thi ảnh Quốc Tế CLB Nhiếp Ảnh Gia Định lần 3 - GDPC 2012]]></lines>
+</data>

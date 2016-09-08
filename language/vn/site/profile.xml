@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Sửa thông tin cá nhân]]></lines>
+	<lines name="titleProfile" descr=""><![CDATA[thông tin cá nhân]]></lines>
+	<lines name="titleUpdate" descr=""><![CDATA[Chỉnh sửa]]></lines>
+	<lines name="required" descr=""><![CDATA[Ô bắt buộc nhập thông tin]]></lines>  
+	<lines name="username" descr=""><![CDATA[Username]]></lines>
+	<lines name="email" descr=""><![CDATA[Email]]></lines>
+	<lines name="datecreated" descr=""><![CDATA[Ngày tạo]]></lines>
+	<lines name="datemodified" descr=""><![CDATA[Lần cập nhật mới đây]]></lines>
+	<lines name="datelastlogin" descr=""><![CDATA[Lần đăng nhập gần đây]]></lines>
+	<lines name="firstname" descr=""><![CDATA[FIRST NAME]]></lines>
+	<lines name="lastname" descr=""><![CDATA[FAMILY NAME]]></lines>
+	<lines name="honor" descr=""><![CDATA[HONORS (MAX 2) ]]></lines>
+	<lines name="address" descr=""><![CDATA[ADDRESS]]></lines>
+	<lines name="address2" descr=""><![CDATA[ADDRESS 2]]></lines>
+	<lines name="zipcode" descr=""><![CDATA[ZIP CODE]]></lines>
+	<lines name="city" descr=""><![CDATA[CITY]]></lines>
+	<lines name="region" descr=""><![CDATA[STATE/PROVINCE]]></lines>
+	<lines name="country" descr=""><![CDATA[COUNTRY]]></lines>
+	<lines name="phone1" descr=""><![CDATA[PHONE NUMBER]]></lines>
+	<lines name="phone1help" descr=""><![CDATA[(INCLUDING COUNTRY CODE AND AREA CODE)]]></lines>
+	<lines name="phone2" descr=""><![CDATA[HANDPHONE/MOBILE PHONE]]></lines>
+	<lines name="email" descr=""><![CDATA[EMAIL]]></lines>
+	<lines name="email2" descr=""><![CDATA[RETYPE EMAIL]]></lines>
+	<lines name="psamembership" descr=""><![CDATA[PSA MEMBERSHIP NUMBER]]></lines>
+	<lines name="photoclub" descr=""><![CDATA[PHOTO CLUB]]></lines>
+	<lines name="avatar" descr=""><![CDATA[Avatar]]></lines>
+	<lines name="oldpass" descr=""><![CDATA[Mật khẩu cũ]]></lines>
+	<lines name="newpass1" descr=""><![CDATA[Mật khẩu mới]]></lines>
+	<lines name="newpass2" descr=""><![CDATA[Nhập lại mật khẩu mới]]></lines>
+	<lines name="changepassNote" descr=""><![CDATA[Bắt buộc nhập ô này nếu đổi mật khẩu]]></lines>
+	<lines name="titleUpdate" descr=""><![CDATA[Thay đổi thông tin cá nhân]]></lines>
+	<lines name="errOldpassNotvalid" descr=""><![CDATA[Mật khẩu cũ không đúng]]></lines>
+	<lines name="errNewpassnotvalid" descr=""><![CDATA[Mật khẩu mới phải có tối thiểu 6 ký tự]]></lines>
+	<lines name="errNewpassnotmatch" descr=""><![CDATA[Mật khẩu xác nhận không đúng. Hãy kiểm tra lại.]]></lines>
+	<lines name="errImageUpload" descr=""><![CDATA[Có lỗi khi upload hình đại diện. (ERROR CODE: ###errorcode###)]]></lines>
+	<lines name="succUpdate" descr=""><![CDATA[Cập nhật thành công.]]></lines>
+	<lines name="errUpdate" descr=""><![CDATA[Có lỗi khi cập nhật thông tin.]]></lines>
+	<lines name="submitLabel" descr=""><![CDATA[Cập nhật]]></lines>
+	<lines name="formImageDeleteLabel" descr=""><![CDATA[Xóa Avatar hiện tại]]></lines>
+	<lines name="errFirstnameRequire" descr=""><![CDATA[First Name is required.]]></lines>
+	<lines name="errLastnameRequire" descr=""><![CDATA[Family Name is required.]]></lines>
+	<lines name="errAddressRequire" descr=""><![CDATA[Address is required.]]></lines>
+	<lines name="errZipcodeRequire" descr=""><![CDATA[Zip Code is required.]]></lines>
+	<lines name="errCityRequire" descr=""><![CDATA[City is required.]]></lines>
+	<lines name="errRegionRequire" descr=""><![CDATA[State/Province is required.]]></lines>
+	<lines name="errCountryRequire" descr=""><![CDATA[Country is required.]]></lines>
+	<lines name="errCountryInvalid" descr=""><![CDATA[Country is not valid.]]></lines>
+	<lines name="errPhoneRequire" descr=""><![CDATA[Phone is required.]]></lines>
+	
+	<lines name="pageTitle" descr=""><![CDATA[Thông tin cá nhân - Profile]]></lines>
+	<lines name="pageKeyword" descr=""><![CDATA[username, Thông tin cá nhân, profile, user profile, username, email, gender, phone, address, region]]></lines>
+	<lines name="pageDescription" descr=""><![CDATA[Trang quản lý thông tin cá nhân của tài khoản. Cập nhật profile, username, mật khẩu.]]></lines>
+
+ 
+</data>

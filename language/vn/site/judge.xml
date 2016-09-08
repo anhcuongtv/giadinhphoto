@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Photo Rating - Judge]]></lines>
+	<lines name="logout" descr=""><![CDATA[Logout]]></lines>
+	<lines name="currentsection" descr=""><![CDATA[Current Section]]></lines>
+	<lines name="changesection" descr=""><![CDATA[Change]]></lines>
+	<lines name="photomarked" descr=""><![CDATA[Scored photo it]]></lines>
+	<lines name="photoremain" descr=""><![CDATA[remain]]></lines>
+	<lines name="judgerLabel" descr=""><![CDATA[Judger]]></lines>
+	<lines name="you" descr=""><![CDATA[YOU]]></lines>
+	<lines name="yourscore" descr=""><![CDATA[Your score]]></lines>
+	<lines name="oksubmit" descr=""><![CDATA[OK]]></lines>
+	<lines name="photosetting" descr=""><![CDATA[Photo Path Setting]]></lines>
+	
+	<lines name="errNotJudger" descr=""><![CDATA[Invalid account.]]></lines>
+	
+	<lines name="errSectionEmpty" descr=""><![CDATA[Not permission]]></lines>
+	<lines name="errCurrentPhotoNotFound" descr=""><![CDATA[Photo not found]]></lines>
+	<lines name="errInvalidPoint" descr=""><![CDATA[Select your score]]></lines>
+	<lines name="succSave" descr=""><![CDATA[Your score had been saved]]></lines>
+	<lines name="errSave" descr=""><![CDATA[Error while saving. Please try again]]></lines>
+	<lines name="succUpdate" descr=""><![CDATA[Your score had been updated.]]></lines>
+	<lines name="errUpdate" descr=""><![CDATA[Error while updating your score. please try again.]]></lines>
+	
+	<lines name="selectaward" descr=""><![CDATA[Select Your Award]]></lines>
+	<lines name="saveawardbtn" descr=""><![CDATA[Ranking]]></lines>
+	<lines name="myawardlist" descr=""><![CDATA[Your Awards for this Photo]]></lines>
+	<lines name="deleteaward" descr=""><![CDATA[Delete this record]]></lines>
+	<lines name="errInvalidAward" descr=""><![CDATA[Invalid Award.]]></lines>
+	<lines name="errExistedAward" descr=""><![CDATA[This award for this photo had already been added.]]></lines>
+	<lines name="succSaveAward" descr=""><![CDATA[Save your award successfully.]]></lines>
+	<lines name="errSaveAward" descr=""><![CDATA[Error while saving your award.]]></lines>
+	<lines name="succDeleteAward" descr=""><![CDATA[Delete your award successfully.]]></lines>
+	<lines name="errDeleteAward" descr=""><![CDATA[Error while deleting your award. Try again.]]></lines>
+	<lines name="errInvalidAward" descr=""><![CDATA[Invalid Award.]]></lines>
+	
+
+</data>

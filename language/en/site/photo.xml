@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Photo Listing]]></lines>
+		<lines name="allimage" descr=""><![CDATA[The contest received  ]]></lines>
+	<lines name="allimageafter" descr=""><![CDATA[image and ]]></lines>
+	<lines name="allimageauthor" descr=""><![CDATA[author attended from 54 countries and territories]]></lines>
+	<lines name="subtitle1" descr=""><![CDATA[Result Round 1: The Fourth Gia Dinh Photo Club International Photo Contest 2014]]></lines>
+	<lines name="subtitle2" descr=""><![CDATA[The result image to Round 2: The Fourth Gia Dinh Photo Club International Photo Contest 2014]]></lines>
+	<lines name="subtitle3" descr=""><![CDATA[The result image to Round 3: The Fourth Gia Dinh Photo Club International Photo Contest 2014]]></lines>
+	<lines name="subtitle4" descr=""><![CDATA[The result image to Round 4: The Fourth Gia Dinh Photo Club International Photo Contest 2014]]></lines>
+	<lines name="section" descr=""><![CDATA[Section]]></lines>
+	<lines name="photoname" descr=""><![CDATA[Photo Name]]></lines>
+	<lines name="filterSubmit" descr=""><![CDATA[Search]]></lines>
+	<lines name="tag" descr=""><![CDATA[Tag]]></lines>
+	<lines name="view" descr=""><![CDATA[View]]></lines>
+	<lines name="author" descr=""><![CDATA[Author]]></lines>
+	<lines name="posted" descr=""><![CDATA[Posted]]></lines>
+	<lines name="size" descr=""><![CDATA[Size]]></lines>
+	<lines name="viewInBlankWindow" descr=""><![CDATA[Open photo]]></lines>
+	<lines name="detailOpenNewWindow" descr=""><![CDATA[OPEN IN NEW WINDOW]]></lines>
+	<lines name="detailPrev" descr=""><![CDATA[PREV]]></lines>
+	<lines name="detailPrevTitle" descr=""><![CDATA[View Previous Photo]]></lines>
+	<lines name="detailNext" descr=""><![CDATA[NEXT]]></lines>
+	<lines name="detailNextTitle" descr=""><![CDATA[View Next Photo]]></lines>
+	<lines name="detailSlideshow" descr=""><![CDATA[SLIDESHOW]]></lines>
+	<lines name="viewAll" descr=""><![CDATA[ALL]]></lines>
+	<lines name="viewAllTitle" descr=""><![CDATA[Show all photos]]></lines>
+</data>

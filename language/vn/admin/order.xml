@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<lines name="head_list" descr=""><![CDATA[Quản lý Order]]></lines>
+	<lines name="title_list" descr=""><![CDATA[Danh sách Order]]></lines>
+	<lines name="pageTitle_list" descr=""><![CDATA[Order &raquo; Danh sách]]></lines>
+	
+	<lines name="head_add" descr=""><![CDATA[Thêm Order]]></lines>
+	<lines name="title_add" descr=""><![CDATA[Thông tin Order]]></lines>
+	<lines name="pageTitle_add" descr=""><![CDATA[Order &raquo; Thêm]]></lines>
+	
+	<lines name="head_edit" descr=""><![CDATA[Cập nhật thông tin]]></lines>
+	<lines name="title_edit" descr=""><![CDATA[Thông tin Order]]></lines>
+	<lines name="pageTitle_edit" descr=""><![CDATA[Order &raquo; Cập nhật]]></lines>
+	
+	<lines name="errStatusNotValid" descr=""><![CDATA[Order status is not valid.]]></lines>
+	<lines name="jsUpdateShipPrompt" descr=""><![CDATA[Fill with the shipping price for this order cost?]]></lines>
+	<lines name="formInvoiceIdLabel" descr=""><![CDATA[Invoice ID]]></lines>
+	<lines name="formShipServiceLabel" descr=""><![CDATA[Ship Service]]></lines>
+	<lines name="formServiceLabel" descr=""><![CDATA[Service Name]]></lines>
+	<lines name="formServiceNotSetYet" descr=""><![CDATA[Shipping Information for this order is not set. Use following form to update shipping price and service]]></lines>
+	<lines name="textClickhere" descr=""><![CDATA[Click here]]></lines>
+	<lines name="textToSetShip" descr=""><![CDATA[to set shipping price for this order.]]></lines>
+	<lines name="textCurrentShipPrice" descr=""><![CDATA[Current Shipping Price]]></lines>
+	<lines name="textShipPriceAdminNotSet" descr=""><![CDATA[Admin not set]]></lines>
+	<lines name="textShipPriceSetByAdmin" descr=""><![CDATA[Ship Price (Set by Admin)]]></lines>
+	<lines name="statuspending" descr=""><![CDATA[Pending]]></lines>             
+  	<lines name="statuscompleted" descr=""><![CDATA[Completed]]></lines>             
+  	<lines name="statuscancel" descr=""><![CDATA[Cancel]]></lines>             
+  	<lines name="statuserror" descr=""><![CDATA[Error]]></lines>           
+	<lines name="formUpdateShipLabel" descr=""><![CDATA[Update Shipping Service]]></lines>
+	<lines name="formSendNotifyLabel" descr=""><![CDATA[SEND NOTIFY EMAIL TO THIS CLIENT]]></lines>
+	<lines name="formRemoveShipServiceLabel" descr=""><![CDATA[Remove Ship service information]]></lines>
+	<lines name="formCostLabel" descr=""><![CDATA[Cost]]></lines>
+	<lines name="formEachAdditionalLabel" descr=""><![CDATA[Each Additional]]></lines>
+	<lines name="formSurchargeLabel" descr=""><![CDATA[Surcharge for HI, AK, PR]]></lines>
+	<lines name="formShipToLabel" descr=""><![CDATA[Ship To]]></lines>
+	<lines name="formFirstnameLabel" descr=""><![CDATA[First Name]]></lines>
+	<lines name="formLastnameLabel" descr=""><![CDATA[Last Name]]></lines>
+	<lines name="formMidLabel" descr=""><![CDATA[Mid]]></lines>
+	<lines name="formContactEmailLabel" descr=""><![CDATA[Contact Email]]></lines>
+	<lines name="formAddressLabel" descr=""><![CDATA[Address]]></lines>
+	<lines name="formAddress2Label" descr=""><![CDATA[Address 2]]></lines>
+	<lines name="formCityLabel" descr=""><![CDATA[City]]></lines>
+	<lines name="formRegionLabel" descr=""><![CDATA[Region]]></lines>
+	<lines name="formZipcodeLabel" descr=""><![CDATA[Zipcode]]></lines>
+	<lines name="formCountryLabel" descr=""><![CDATA[Country]]></lines>
+	<lines name="formPhoneLabel" descr=""><![CDATA[Phone]]></lines>
+	<lines name="formPhone2Label" descr=""><![CDATA[Phone 2]]></lines>
+	<lines name="formOrderOnLabel" descr=""><![CDATA[Order On]]></lines>
+	<lines name="formOrderCommentLabel" descr=""><![CDATA[Order Note:]]></lines>
+	<lines name="formOrderStatusLabel" descr=""><![CDATA[Status]]></lines>
+	<lines name="formClientOrderLabel" descr=""><![CDATA[Client Order]]></lines>
+	<lines name="formClientOrderTooltip" descr=""><![CDATA[View information of this client]]></lines>
+	<lines name="formOrderDetailLabel" descr=""><![CDATA[Order Detail]]></lines>
+	<lines name="formOrderItemLabel" descr=""><![CDATA[Item Name]]></lines>
+	<lines name="formOrderProductLabel" descr=""><![CDATA[Product]]></lines>
+	<lines name="formOrderOptionsLabel" descr=""><![CDATA[Options]]></lines>
+	<lines name="formOrderPriceLabel" descr=""><![CDATA[Price]]></lines>
+	<lines name="formOrderQuantityLabel" descr=""><![CDATA[Quantity]]></lines>
+	<lines name="formOrderQuantity2Label" descr=""><![CDATA[Qty]]></lines>
+	<lines name="formOrderSubtotalLabel" descr=""><![CDATA[Subtotal]]></lines>
+	<lines name="formOrderTaxLabel" descr=""><![CDATA[Tax]]></lines>
+	<lines name="formOrderShippingHandlingLabel" descr=""><![CDATA[Shipping &amp; Handling]]></lines>
+	<lines name="formOrderAdminCheckNotShiptousa" descr=""><![CDATA[Admin check<br>]]></lines>
+	<lines name="formOrderShipPriceSetByAdmin" descr=""><![CDATA[(need manual set)]]></lines>
+	<lines name="formOrderFreeshipLabel" descr=""><![CDATA[Free Ship]]></lines>
+	<lines name="formOrderTotalLabel" descr=""><![CDATA[Total]]></lines>
+	<lines name="formPaymentSummaryLabel" descr=""><![CDATA[Payment Summary]]></lines>
+	<lines name="formDayPrintedLabel" descr=""><![CDATA[Date printed]]></lines>
+	<lines name="formSellerLabel" descr=""><![CDATA[Seller]]></lines>
+	<lines name="formBuyerLabel" descr=""><![CDATA[Buyer]]></lines>
+	<lines name="formShippingLabel" descr=""><![CDATA[Shipping]]></lines>
+	<lines name="formPaymentLabel" descr=""><![CDATA[Payment]]></lines>
+	<lines name="formNameLabel" descr=""><![CDATA[Name]]></lines>
+	<lines name="formPaidLabel" descr=""><![CDATA[Paid]]></lines>
+	<lines name="formDetailTooltip" descr=""><![CDATA[Click here to view order detail]]></lines>
+	<lines name="formHadUpdatedShipPriceTooltip" descr=""><![CDATA[This order had been updated shipping price]]></lines>
+	<lines name="formOrderPaidAtTooltip" descr=""><![CDATA[Paid at]]></lines>
+	<lines name="formOrderPaidMethod" descr=""><![CDATA[Payment Method]]></lines>
+	<lines name="formCompletedItemSubmit" descr=""><![CDATA[Completed selected item(s)]]></lines>
+	<lines name="formTotalLabel" descr=""><![CDATA[Total Orders]]></lines>
+	<lines name="formSortInvoideIdTooltip" descr=""><![CDATA[Sort Invoice ID]]></lines>
+	<lines name="formSortShipToCountryTooltip" descr=""><![CDATA[Sort Shipping Country]]></lines>
+	<lines name="formSortOrderTotalPriceTooltip" descr=""><![CDATA[Sort Order Total Price]]></lines>
+	<lines name="formSortPaidStatusTooltip" descr=""><![CDATA[Sort Paid Status]]></lines>
+	<lines name="formSortOrderStatusTooltip" descr=""><![CDATA[Sort Status]]></lines>
+	<lines name="formSortDateCreatedTooltip" descr=""><![CDATA[Sort Created Date]]></lines>
+	<lines name="formSortDescTooltip" descr=""><![CDATA[by descending]]></lines>
+	<lines name="formSortAscTooltip" descr=""><![CDATA[by ascending]]></lines>
+	
+	<lines name="formKeywordLabel" descr=""><![CDATA[Keyword]]></lines>
+	<lines name="formKeywordInEmailLabel" descr=""><![CDATA[Tìm trong Contact Email]]></lines>
+	<lines name="formKeywordInStatusLabel" descr=""><![CDATA[Tìm trong Status]]></lines>
+	<lines name="formKeywordInPaymentmethodLabel" descr=""><![CDATA[Tìm trong Payment method]]></lines>
+	<lines name="formKeywordInFirstNameLabel" descr=""><![CDATA[Tìm trong First Name]]></lines>
+	<lines name="formKeywordInLastNameLabel" descr=""><![CDATA[Tìm trong Last Name]]></lines>
+	<lines name="formKeywordInPhoneLabel" descr=""><![CDATA[Tìm trong Phone]]></lines>
+	<lines name="formKeywordInCommentLabel" descr=""><![CDATA[Tìm trong Comment]]></lines>
+	<lines name="formKeywordInAddressLabel" descr=""><![CDATA[Tìm trong Address]]></lines>
+	<lines name="formKeywordInCityLabel" descr=""><![CDATA[Tìm trong City]]></lines>
+	<lines name="formKeywordInRegionLabel" descr=""><![CDATA[Tìm trong Region]]></lines>
+	<lines name="formKeywordInCountryLabel" descr=""><![CDATA[Tìm trong Country]]></lines>
+	<lines name="formKeywordInZipcodeLabel" descr=""><![CDATA[Tìm trong Zipcode]]></lines>
+	
+	<lines name="cartSubTotal" descr=""><![CDATA[Tổng thành tiền]]></lines>        
+	
+	<lines name="printHeading" descr=""><![CDATA[Payment Summary]]></lines>            
+  	<lines name="printInvoiceLabel" descr=""><![CDATA[Invoice ID]]></lines>            
+  	<lines name="printDateLabel" descr=""><![CDATA[Date printed]]></lines>            
+  	<lines name="printOrderOnLabel" descr=""><![CDATA[Order on]]></lines>            
+  	<lines name="printSeller" descr=""><![CDATA[Seller]]></lines>            
+  	<lines name="printBuyer" descr=""><![CDATA[Buyer]]></lines>            
+  	<lines name="printOtherAddress" descr=""><![CDATA[Other Address]]></lines>            
+  	<lines name="printPaymentDetail" descr=""><![CDATA[Payment]]></lines>            
+  	<lines name="printShipNA" descr=""><![CDATA[N/A]]></lines>            
+  	<lines name="printShipInfo" descr=""><![CDATA[Shipping Information]]></lines>            
+  	<lines name="printCustomerInfo" descr=""><![CDATA[Customer Information]]></lines>            
+	
+	<lines name="errAdd" descr=""><![CDATA[Có lỗi khi tạo Order mới]]></lines>
+	<lines name="succAdd" descr=""><![CDATA[Tạo Order có ID <strong>###id###</strong> thành công.]]></lines>
+	<lines name="errUpdate" descr=""><![CDATA[Có lỗi khi cập nhật]]></lines>
+	<lines name="succUpdate" descr=""><![CDATA[Cập nhật Order có ID <strong>###id###</strong> thành công.]]></lines>
+
+	<lines name="errNotFound" descr=""><![CDATA[Không tìm thấy thông tin đã chọn.]]></lines>
+	<lines name="errDelete" descr=""><![CDATA[Có lỗi khi xóa Order có ID <strong>###id###</strong>.]]></lines>
+	<lines name="succDelete" descr=""><![CDATA[Xóa thành công Order có ID <strong>###id###</strong>.]]></lines>
+	<lines name="errSendMail" descr=""><![CDATA[Có lỗi khi Goi mail notify cho Order có ID <strong>###id###</strong>.]]></lines>
+	<lines name="succSendMail" descr=""><![CDATA[Goi mail notify thành công cho Order có ID <strong>###id###</strong>.]]></lines>
+</data>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<lines name="head_list" descr=""><![CDATA[Quản lý Giải thưởng]]></lines>
+	<lines name="intro_list" descr=""><![CDATA[Chức năng quản lý các Giải thưởng.]]></lines>
+	<lines name="title_list" descr=""><![CDATA[Danh sách Giải thưởng]]></lines>
+	<lines name="pageTitle_list" descr=""><![CDATA[Giải thưởng &raquo; Danh sách Giải thưởng]]></lines>
+	
+	<lines name="head_add" descr=""><![CDATA[Thêm Giải thưởng]]></lines>
+	<lines name="title_add" descr=""><![CDATA[Thông tin Giải thưởng]]></lines>
+	<lines name="pageTitle_add" descr=""><![CDATA[Giải thưởng &raquo; Thêm Giải thưởng]]></lines>
+	
+	<lines name="head_edit" descr=""><![CDATA[Cập nhật thông tin Giải thưởng]]></lines>
+	<lines name="title_edit" descr=""><![CDATA[Thông tin Giải thưởng]]></lines>
+	<lines name="pageTitle_edit" descr=""><![CDATA[Giải thưởng &raquo; Cập nhật Giải thưởng]]></lines>
+
+
+	<lines name="name" descr=""><![CDATA[Tên Giải thưởng]]></lines>
+	<lines name="isactive" descr=""><![CDATA[Kích hoạt]]></lines>
+	<lines name="section" descr=""><![CDATA[Section]]></lines>
+	<lines name="applytoallsection" descr=""><![CDATA[Apply to all sections]]></lines>
+
+
+	<lines name="errNamRequired" descr=""><![CDATA[Bạn chưa nhập Tên cho Giải thưởng]]></lines>
+	<lines name="errIsactiveInvalid" descr=""><![CDATA[is active value invalid.]]></lines>
+	<lines name="errInvalidSection" descr=""><![CDATA[Section không hợp lệ.]]></lines>
+	<lines name="errAdd" descr=""><![CDATA[Có lỗi khi tạo Giải thưởng mới]]></lines>
+	<lines name="succAdd" descr=""><![CDATA[Tạo Giải thưởng thành công.]]></lines>
+	<lines name="errUpdate" descr=""><![CDATA[Có lỗi khi cập nhật Giải thưởng]]></lines>
+	<lines name="succUpdate" descr=""><![CDATA[Cập nhật Giải thưởng thành công.]]></lines>
+
+	<lines name="errNotFound" descr=""><![CDATA[Không tìm thấy thông tin Giải thưởng đã chọn.]]></lines>
+	<lines name="errDelete" descr=""><![CDATA[Có lỗi khi xóa Giải thưởng.]]></lines>
+	<lines name="succDelete" descr=""><![CDATA[Xóa thành công Giải thưởng .]]></lines>
+	
+</data>

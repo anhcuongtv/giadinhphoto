@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<lines name="head_list" descr=""><![CDATA[Quản lý Ban Giám Khảo]]></lines>
+	<lines name="intro_list" descr=""><![CDATA[Chức năng quản lý các Ban Giám Khảo.]]></lines>
+	<lines name="title_list" descr=""><![CDATA[Danh sách Ban Giám Khảo]]></lines>
+	<lines name="pageTitle_list" descr=""><![CDATA[Ban Giám Khảo &raquo; Danh sách Ban Giám Khảo]]></lines>
+	
+	<lines name="head_add" descr=""><![CDATA[Thêm Ban Giám Khảo]]></lines>
+	<lines name="title_add" descr=""><![CDATA[Thông tin Ban Giám Khảo]]></lines>
+	<lines name="pageTitle_add" descr=""><![CDATA[Ban Giám Khảo &raquo; Thêm Ban Giám Khảo]]></lines>
+	
+	<lines name="head_edit" descr=""><![CDATA[Cập nhật thông tin Ban Giám Khảo]]></lines>
+	<lines name="title_edit" descr=""><![CDATA[Thông tin Ban Giám Khảo]]></lines>
+	<lines name="pageTitle_edit" descr=""><![CDATA[Ban Giám Khảo &raquo; Cập nhật Ban Giám Khảo]]></lines>
+
+
+	<lines name="judger" descr=""><![CDATA[User]]></lines>
+	<lines name="iscolor" descr=""><![CDATA[Color]]></lines>
+	<lines name="ismono" descr=""><![CDATA[Mono]]></lines>
+	<lines name="isnature" descr=""><![CDATA[Nature]]></lines>
+	<lines name="istravel" descr=""><![CDATA[Travel]]></lines>
+
+
+	<lines name="isColorBestPortrait" descr=""><![CDATA[Color Portrait]]></lines>
+	<lines name="isColorBestIdea" descr=""><![CDATA[Color Idea]]></lines>
+	<lines name="isColorBestAction" descr=""><![CDATA[Color Action]]></lines>
+	<lines name="isMonoBestPortrait" descr=""><![CDATA[Mono Portrait]]></lines>
+	<lines name="isMonoBestAction" descr=""><![CDATA[Mono Action]]></lines>
+
+	<lines name="isMonoCreative" descr=""><![CDATA[Mono Creative]]></lines>
+	<lines name="isNatureBestBird" descr=""><![CDATA[Nature Bird]]></lines>
+	<lines name="isNatureBestSnow" descr=""><![CDATA[Nature Snow]]></lines>
+	<lines name="isNatureBestFlower" descr=""><![CDATA[Nature Flower]]></lines>
+	<lines name="isTravelTransportation" descr=""><![CDATA[Travel Transportation]]></lines>
+
+	<lines name="isTravelTraditional" descr=""><![CDATA[Travel Traditional]]></lines>
+	<lines name="isTravelCountry" descr=""><![CDATA[Travel Country]]></lines>
+
+
+	<lines name="errIscolorInvalid" descr=""><![CDATA[Is color value invalid]]></lines>
+	<lines name="errIsmonoInvalid" descr=""><![CDATA[Is mono value invalid]]></lines>
+	<lines name="errIsnatureInvalid" descr=""><![CDATA[Is nature value invalid]]></lines>
+	<lines name="errUserInvalid" descr=""><![CDATA[User is invalid]]></lines>
+	<lines name="errUserExisted" descr=""><![CDATA[Judger is Existed. Check again!]]></lines>
+	<lines name="errAdd" descr=""><![CDATA[Có lỗi khi tạo Ban Giám Khảo mới]]></lines>
+	<lines name="succAdd" descr=""><![CDATA[Tạo Ban Giám Khảo thành công.]]></lines>
+	<lines name="errUpdate" descr=""><![CDATA[Có lỗi khi cập nhật Ban Giám Khảo]]></lines>
+	<lines name="succUpdate" descr=""><![CDATA[Cập nhật Ban Giám Khảo thành công.]]></lines>
+
+	<lines name="errNotFound" descr=""><![CDATA[Không tìm thấy thông tin Ban Giám Khảo đã chọn.]]></lines>
+	<lines name="errDelete" descr=""><![CDATA[Có lỗi khi xóa Ban Giám Khảo.]]></lines>
+	<lines name="succDelete" descr=""><![CDATA[Xóa thành công Ban Giám Khảo .]]></lines>
+	
+	
+	
+	
+</data>

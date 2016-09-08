@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Thanh toán]]></lines>
+	<lines name="paymentReview" descr=""><![CDATA[Thông tin bạn đã chọn]]></lines>
+	<lines name="paymentYourSelect" descr=""><![CDATA[Bạn đã chọn thanh toán các Section sau: ]]></lines>
+    <lines name="paymentTotal" descr=""><![CDATA[Tổng số tiền]]></lines>      
+    <lines name="succPaymentOnline" descr=""><![CDATA[Thanh toán thành công. Bạn có thể tham gia dự thi vào các Section mà mình đã thanh toán. Cảm ơn bạn.]]></lines>      
+    <lines name="succPaymentOffline" descr=""><![CDATA[Đơn hàng của bạn đã được lưu. Chúng tôi sẽ kích hoạt tài khoản của bạn sau khi nhận được tiền được chuyển từ bạn.]]></lines>      
+</data>

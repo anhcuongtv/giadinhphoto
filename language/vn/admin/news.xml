@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <lines name="head_list" descr=""><![CDATA[Quản lý tin tức]]></lines>
+    <lines name="intro_list" descr=""><![CDATA[Chức năng quản lý các Tin tức.]]></lines>
+    <lines name="title_list" descr=""><![CDATA[Tin ]]></lines>
+    <lines name="pageTitle_list" descr=""><![CDATA[Danh sách tin tức]]></lines>
+    <lines name="title_subcat" descr=""><![CDATA[Danh mục con]]></lines>
+    
+
+    <lines name="head_add" descr=""><![CDATA[Thêm tin tức mới]]></lines>
+    <lines name="head_addsub" descr=""><![CDATA[Thêm Danh mục con]]></lines>
+    <lines name="title_add" descr=""><![CDATA[Thông tin tin tức]]></lines>
+    <lines name="pageTitle_add" descr=""><![CDATA[Tin tức &raquo; Thêm tin tức mới]]></lines>
+
+    <lines name="head_edit" descr=""><![CDATA[Cập nhật tin tức]]></lines>
+    <lines name="title_edit" descr=""><![CDATA[Thông tin tin tức]]></lines>
+    <lines name="pageTitle_edit" descr=""><![CDATA[Danh mục tin &raquo; Cập nhật]]></lines>
+
+
+    <lines name="formIdtextLabel" descr=""><![CDATA[Identify String]]></lines>
+    <lines name="formNameLabel" descr=""><![CDATA[Tiêu đề]]></lines>
+    <lines name="formCategoryLabel" descr=""><![CDATA[Danh mục]]></lines>
+	<lines name="formKeywordLabel" descr=""><![CDATA[Từ khoá]]></lines>
+    <lines name="formShowLabel" descr=""><![CDATA[Trạng thái hiển thị]]></lines>
+	<lines name="formKeywordInIdtextLabel" descr=""><![CDATA[Tên tin tức]]></lines>
+	<lines name="formKeywordInContentLabel" descr=""><![CDATA[Nội dung]]></lines>
+    <lines name="formDateModifiedLabel" descr=""><![CDATA[Ngày cập nhật]]></lines>
+	<lines name="formContentLabel" descr=""><![CDATA[Nội dung]]></lines>
+	<lines name="formSummaryLabel" descr=""><![CDATA[Giới thiệu]]></lines>
+	<lines name="formTagLabel" descr=""><![CDATA[Tag]]></lines>
+    <lines name="formImageLabel" descr=""><![CDATA[Ảnh]]></lines>
+    <lines name="formViewLabel" descr=""><![CDATA[Xem]]></lines>
+	<lines name="formImageDeleteLabel" descr=""><![CDATA[Xoa hinh nay]]></lines>
+
+    <lines name="errNameRequired" descr=""><![CDATA[Bạn chưa nhập tên cho Danh mục]]></lines>
+    <lines name="errIdtextRequired" descr=""><![CDATA[Bạn chưa nhập Identify string cho Danh mục]]></lines>
+    <lines name="errParentidRequired" descr=""><![CDATA[Bạn chưa chọn mục tin cho tin tức mới]]></lines>
+    
+    <lines name="errAdd" descr=""><![CDATA[Có lỗi khi tạo Danh mục tin]]></lines>
+    <lines name="succAdd" descr=""><![CDATA[Tạo Danh mục tin với tên <strong>###name###</strong> thành công.]]></lines>
+    <lines name="errUpdate" descr=""><![CDATA[Có lỗi khi cập nhật Danh mục tin]]></lines>
+    <lines name="succUpdate" descr=""><![CDATA[Cập nhật tin tức có tiêu đề <strong>###name###</strong> thành công.]]></lines>
+
+    <lines name="errNotFound" descr=""><![CDATA[Không tìm thấy thông tin Danh mục tin đã chọn.]]></lines>
+    <lines name="errDelete" descr=""><![CDATA[Có lỗi khi xóa Danh mục tin tức với tên <strong>###name###</strong>.]]></lines>
+    <lines name="succDelete" descr=""><![CDATA[Xóa thành công Tin tức có tiêu đề là <strong>###name###</strong>.]]></lines>
+	<lines name="errDeleteImage" descr=""><![CDATA[Có lỗi khi xóa ảnh của tin tức có tiêu đề là <strong>###name###</strong>.]]></lines>
+    <lines name="succDeleteImage" descr=""><![CDATA[Xóa thành công ảnh của tin tức có tiêu đề là <strong>###name###</strong>.]]></lines>
+	
+	<lines name="formSourceLabel" descr=""><![CDATA[File Upload]]></lines>
+	<lines name="formSourceHelp" descr=""><![CDATA[Format: JPG, PNG, GIF]]></lines>
+	<lines name="formWidthLabel" descr=""><![CDATA[Width (px)]]></lines>
+	<lines name="formHeightLabel" descr=""><![CDATA[Height (px)]]></lines>
+	<lines name="formHeightHelp" descr=""><![CDATA[Nếu bỏ trống hoặc bằng 0 thì sẽ thay đổi theo tỷ lệ với chiều rộng]]></lines>
+    
+</data>

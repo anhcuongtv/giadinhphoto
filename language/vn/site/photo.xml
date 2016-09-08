@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Photo Listing]]></lines>
+	<lines name="allimage" descr=""><![CDATA[Cuộc thi nhận được ]]></lines>
+	<lines name="allimageafter" descr=""><![CDATA[hình ảnh của ]]></lines>
+	<lines name="allimageauthor" descr=""><![CDATA[tác giả tham dự đến từ 54 quốc gia và vùng lãnh thổ]]></lines>
+	<lines name="subtitle1" descr=""><![CDATA[Kết quả ảnh vào Vòng 1 Cuộc thi ảnh quốc tế CLB nhiếp ảnh Gia Định lần IV - 2014]]></lines>
+	<lines name="subtitle2" descr=""><![CDATA[Kết quả ảnh vào Vòng 2 Cuộc thi ảnh quốc tế CLB nhiếp ảnh Gia Định lần IV - 2014]]></lines>
+	<lines name="subtitle3" descr=""><![CDATA[Kết quả ảnh vào Vòng 3 Cuộc thi ảnh quốc tế CLB nhiếp ảnh Gia Định lần IV - 2014]]></lines>
+	<lines name="subtitle4" descr=""><![CDATA[Kết quả ảnh vào Vòng 4 Cuộc thi ảnh quốc tế CLB nhiếp ảnh Gia Định lần IV - 2014]]></lines>
+	<lines name="section" descr=""><![CDATA[Section]]></lines>
+	<lines name="photoname" descr=""><![CDATA[Photo Name]]></lines>
+	<lines name="filterSubmit" descr=""><![CDATA[Search]]></lines>
+	<lines name="tag" descr=""><![CDATA[Tag]]></lines>
+	<lines name="view" descr=""><![CDATA[View]]></lines>
+	<lines name="author" descr=""><![CDATA[Author]]></lines>
+	<lines name="posted" descr=""><![CDATA[Posted]]></lines>
+	<lines name="size" descr=""><![CDATA[Size]]></lines>
+	<lines name="viewInBlankWindow" descr=""><![CDATA[Mở hình này]]></lines>
+	<lines name="detailOpenNewWindow" descr=""><![CDATA[OPEN IN NEW WINDOW]]></lines>
+	<lines name="detailPrev" descr=""><![CDATA[PREV]]></lines>
+	<lines name="detailPrevTitle" descr=""><![CDATA[View Previous Photo]]></lines>
+	<lines name="detailNext" descr=""><![CDATA[NEXT]]></lines>
+	<lines name="detailNextTitle" descr=""><![CDATA[View Next Photo]]></lines>
+	<lines name="detailSlideshow" descr=""><![CDATA[SLIDESHOW]]></lines>
+	<lines name="viewAll" descr=""><![CDATA[ALL]]></lines>
+	<lines name="viewAllTitle" descr=""><![CDATA[Show all photos]]></lines>
+</data>

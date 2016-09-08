@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <lines name="head_list" descr=""><![CDATA[Quản lý các gói thanh toán]]></lines>
+    <lines name="intro_list" descr=""><![CDATA[Chức năng quản lý gói thanh toán cho hệ thống thanh toán.]]></lines>
+    <lines name="title_list" descr=""><![CDATA[Gói thanh toán]]></lines>
+    <lines name="pageTitle_list" descr=""><![CDATA[Danh sách]]></lines>
+    
+
+    <lines name="head_add" descr=""><![CDATA[Thêm]]></lines>
+    <lines name="title_add" descr=""><![CDATA[Thông tin]]></lines>
+    <lines name="pageTitle_add" descr=""><![CDATA[Gói thanh toán &raquo; Thêm]]></lines>
+
+    <lines name="head_edit" descr=""><![CDATA[Cập nhật thông tin]]></lines>
+    <lines name="title_edit" descr=""><![CDATA[Thông tin]]></lines>
+    <lines name="pageTitle_edit" descr=""><![CDATA[Gói thanh toán &raquo; Cập nhật]]></lines>
+
+
+    <lines name="formNameLabel" descr=""><![CDATA[Tên]]></lines>
+	<lines name="formPriceLabel" descr=""><![CDATA[Giá]]></lines>
+	
+	
+    <lines name="errAdd" descr=""><![CDATA[Có lỗi khi thêm sản phẩm]]></lines>
+    <lines name="succAdd" descr=""><![CDATA[Thêm sản phẩm với tên <strong>###name###</strong> thành công.]]></lines>
+    <lines name="errUpdate" descr=""><![CDATA[Có lỗi khi cập nhật sản phẩm]]></lines>
+    <lines name="succUpdate" descr=""><![CDATA[Cập nhật sản phẩm có tên <strong>###name###</strong> thành công.]]></lines>
+
+    <lines name="errNotFound" descr=""><![CDATA[Không tìm thấy thông tin sản phẩm đã chọn.]]></lines>
+    <lines name="errDelete" descr=""><![CDATA[Có lỗi khi xóa sản phẩm với tên <strong>###name###</strong>.]]></lines>
+	<lines name="succDelete" descr=""><![CDATA[Xóa thành công sản phẩm có tên là <strong>###name###</strong>.]]></lines>
+	
+    
+</data>

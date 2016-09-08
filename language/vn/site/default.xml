@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="securityTokenInvalid" descr=""><![CDATA[Có lỗi khi truyền dữ liệu. Hãy thử lại.]]></lines>
+	<lines name="editLabel" descr=""><![CDATA[Thay đổi]]></lines>
+	<lines name="deleteLabel" descr=""><![CDATA[Xóa]]></lines>
+	<lines name="jsDelConfirm" descr=""><![CDATA[Bạn có đồng ý xóa?]]></lines>
+	<lines name="sidebarMoreNews" descr=""><![CDATA[chi tiết]]></lines>
+	<lines name="hi" descr=""><![CDATA[Chào]]></lines>
+	<lines name="guest" descr=""><![CDATA[Bạn]]></lines>
+	<lines name="secureByPaypal" descr=""><![CDATA[Secure Payments by Paypal]]></lines>
+	<lines name="aboutThisContest" descr=""><![CDATA[THÔNG TIN VỀ CUỘC THI]]></lines>
+	<lines name="sidebarPhotographer" descr=""><![CDATA[Photographer]]></lines>
+	<lines name="rightboxHeadingYear" descr=""><![CDATA[ESTIMATED TIME REMAINING]]></lines>
+	<lines name="rightboxEvent" descr=""><![CDATA[Events]]></lines>
+	<lines name="rightboxDate" descr=""><![CDATA[Date]]></lines>
+	<lines name="rightboxClosingDate" descr=""><![CDATA[Hạn chót gởi ảnh]]></lines>
+	<lines name="rightboxClosingDateValue" descr=""><![CDATA[25/10/2014]]></lines>
+	<lines name="rightboxJudging" descr=""><![CDATA[Chấm ảnh ngày]]></lines>
+	<lines name="rightboxJudgingValue" descr=""><![CDATA[02 - 06/11/2014]]></lines>
+	<lines name="rightboxNotification" descr=""><![CDATA[Công bố kết quả]]></lines>
+	<lines name="rightboxNotificationValue" descr=""><![CDATA[08/11/2014]]></lines>
+	<lines name="rightboxExhibitionDate" descr=""><![CDATA[Triển lãm]]></lines>
+	<lines name="rightboxExhibitionDateValue" descr=""><![CDATA[20/12/2014]]></lines>
+	<lines name="rightboxCatalogue" descr=""><![CDATA[Gởi Catalogue]]></lines>
+	<lines name="rightboxCatalogueValue" descr=""><![CDATA[10/01/2015]]></lines>
+	<lines name="rightboxStatistic" descr=""><![CDATA[Thống kê cuộc thi ảnh GDPC 2014]]></lines>
+	<lines name="rightboxStatisticText" descr=""><![CDATA[người trực tuyến]]></lines>
+	<lines name="rightboxRegisteredUser" descr=""><![CDATA[Tác giả dự thi]]></lines>
+	<lines name="rightboxOfPhotoOnline" descr=""><![CDATA[Hình ảnh dự thi]]></lines>
+	<lines name="rightboxOfPhotoView" descr=""><![CDATA[Lượt xem ảnh]]></lines>
+	<lines name="rightboxOfCountry" descr=""><![CDATA[Quốc Gia]]></lines>
+	<lines name="siteToptext" descr=""><![CDATA[Thống kê Cuộc thi ảnh Quốc Tế CLB Nhiếp Ảnh Gia Định lần 4 - GPDC 2014]]></lines>
+	<lines name="memberlogin" descr=""><![CDATA[MEMBER'S LOGIN]]></lines>
+	<lines name="mHome" descr=""><![CDATA[Home]]></lines>
+	<lines name="mPhoto" descr=""><![CDATA[Photo]]></lines>
+	<lines name="mRule" descr=""><![CDATA[Thể lệ ]]></lines>
+	<lines name="mAward" descr=""><![CDATA[Giải thưởng]]></lines>
+	<lines name="mJudge" descr=""><![CDATA[Giám khảo]]></lines>
+	<lines name="mPhotos" descr=""><![CDATA[Photos]]></lines>
+	<lines name="mStatuslist" descr=""><![CDATA[Tác giả]]></lines>
+	<lines name="mInstruction" descr=""><![CDATA[Thông Tin]]></lines>
+	<lines name="mMemberarea" descr=""><![CDATA[Member Area]]></lines>
+	<lines name="mCalendar" descr=""><![CDATA[Lịch biểu]]></lines>
+	<lines name="mContact" descr=""><![CDATA[Liên hệ]]></lines>
+	<lines name="searchValue" descr=""><![CDATA[Nhập từ vào...]]></lines>
+	<lines name="searchSubmit" descr=""><![CDATA[Tìm]]></lines>
+	<lines name="copyrightText" descr=""><![CDATA[Copyright © 2014 CLB Nhiếp Ảnh Gia Định (GDPC). All rights reserved. Read our Terms of Use and our]]></lines>
+	<lines name="copyrightTextLinkPolicy" descr=""><![CDATA[Privacy Policy]]></lines>
+	<lines name="copyrightTextSub" descr=""><![CDATA[Cuộc thi ảnh Quốc Tế CLB Nhiếp Ảnh Gia Định lần 4 - 2014]]></lines>
+	<lines name="copyrightDevText" descr=""><![CDATA[Developed by ]]></lines>
+	<lines name="copyrightDevLink" descr=""><![CDATA[Phát triển <a href="http://imsvietnam.com" title="iMS Vietnam">iMSVietNam</a>]]></lines>
+</data>

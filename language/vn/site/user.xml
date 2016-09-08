@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<data>
+	<lines name="errNotFound" descr=""><![CDATA[Không tìm thấy Thành viên này]]></lines>
+	<lines name="errUserPhotoNotFound" descr=""><![CDATA[Thành viên này chưa Upload hình nào cả]]></lines>
+	<lines name="errMyPhotoNotFound" descr=""><![CDATA[Bạn chưa Upload hình nào cả. Đang chuyển tới trang Upload.]]></lines>
+	<lines name="redirectToPhoto" descr=""><![CDATA[Đang chuyển tới trang photo của thành viên này.]]></lines>
+	
+
+</data>

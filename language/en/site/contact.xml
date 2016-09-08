@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Contact]]></lines>
+	<lines name="titleInformation" descr=""><![CDATA[Contact Information]]></lines>
+	<lines name="required" descr=""><![CDATA[Required]]></lines>
+	<lines name="fullname" descr=""><![CDATA[Name]]></lines>
+	<lines name="phone" descr=""><![CDATA[Phone]]></lines>
+	<lines name="email" descr=""><![CDATA[Email]]></lines>
+	<lines name="reason" descr=""><![CDATA[Reason]]></lines>
+	<lines name="reasonGeneral" descr=""><![CDATA[General]]></lines>
+	<lines name="reasonSupport" descr=""><![CDATA[Support]]></lines>
+	<lines name="message" descr=""><![CDATA[Content]]></lines>
+	<lines name="securityCode" descr=""><![CDATA[Security code]]></lines>
+	<lines name="securityCodeTip" descr=""><![CDATA[Type the characters you see to the left. (all letters are lowercase)]]></lines>
+	<lines name="refreshImage" descr=""><![CDATA[Refresh Image]]></lines>
+	<lines name="submitLabel" descr=""><![CDATA[Submit]]></lines>
+	<lines name="succContact" descr=""><![CDATA[Your contact information has been sent. We will contact you soon if necessary.Thank you much.]]></lines>
+	<lines name="errContact" descr=""><![CDATA[Error contact. Please try again]]></lines>
+	<lines name="errSpam" descr=""><![CDATA[Spam detection. Please wait a moment and try again.]]></lines>
+	<lines name="errEmailNotValid" descr=""><![CDATA[Email invalid]]></lines>
+	<lines name="errFullnameNotValid" descr=""><![CDATA[Full name]]></lines>
+	<lines name="errSecurityCode" descr=""><![CDATA[Error Security Code]]></lines>
+	<lines name="pageTitle" descr=""><![CDATA[Contact GDPC - 2012]]></lines>
+	<lines name="pageKeyword" descr=""><![CDATA[Gop y, lien he]]></lines>
+	<lines name="pageDescription" descr=""><![CDATA[Gởi thông tin góp ý, liên hệ đến ban quản trị website.]]></lines>
+</data>

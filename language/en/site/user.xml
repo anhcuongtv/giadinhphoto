@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="errNotFound" descr=""><![CDATA[User not found]]></lines>
+	<lines name="errUserPhotoNotFound" descr=""><![CDATA[This user has not upload any pictures]]></lines>
+	<lines name="errMyPhotoNotFound" descr=""><![CDATA[Upload your picture is not at all. Direct to the Upload page.]]></lines>
+	<lines name="redirectToPhoto" descr=""><![CDATA[Direct to Photo page]]></lines>
+</data>

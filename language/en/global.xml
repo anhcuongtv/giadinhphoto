@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="submit" descr=""><![CDATA[Send]]></lines>
+	<lines name="dateFormat" descr=""><![CDATA[d/m/Y]]></lines>
+	<lines name="dateFormatSmarty" descr=""><![CDATA[%H:%M, %d/%m/%Y]]></lines>
+	<lines name="copyrightString" descr=""><![CDATA[© 2014 <a href="http://giadinhphotocontest.com" title="Gia Dinh Photo Contest 2014" >GiaDinhPhotoContest.com</a>. <span style="color:#999;">Gia Dinh Photo Club.</span>]]></lines>
+	<lines name="hi" descr=""><![CDATA[Hi]]></lines>
+	<lines name="username" descr=""><![CDATA[Username]]></lines>
+	<lines name="password" descr=""><![CDATA[Password]]></lines>
+	<lines name="yes" descr=""><![CDATA[Yes]]></lines>
+	<lines name="no" descr=""><![CDATA[No]]></lines>
+	<lines name="pagenotfound" descr=""><![CDATA[Page not found]]></lines>
+	<lines name="notpermissiontitle" descr=""><![CDATA[You can not access this address.]]></lines>
+	<lines name="groupNameAdmin" descr=""><![CDATA[Administrator]]></lines>
+	<lines name="groupNameModerator" descr=""><![CDATA[Moderator]]></lines>
+	<lines name="groupNameJudge" descr=""><![CDATA[Judge]]></lines>
+	<lines name="groupNameMember" descr=""><![CDATA[Registered User]]></lines>
+	<lines name="mHomepage" descr=""><![CDATA[Home]]></lines>
+	<lines name="mRegister" descr=""><![CDATA[Register]]></lines>
+	<lines name="mContact" descr=""><![CDATA[Contact]]></lines>
+	<lines name="mLogin" descr=""><![CDATA[Sign in]]></lines>
+	<lines name="mLogout" descr=""><![CDATA[Sign out]]></lines>
+	<lines name="mProductColor" descr=""><![CDATA[Color]]></lines>
+	<lines name="mProductMono" descr=""><![CDATA[Mono]]></lines>
+	<lines name="mProductNature" descr=""><![CDATA[Nature]]></lines>
+	<lines name="mProductTravel" descr=""><![CDATA[Travel]]></lines>
+	<lines name="redirectClickHere" descr=""><![CDATA[Click here]]></lines>
+	<lines name="redirectDontWantWait" descr=""><![CDATA[If you do not want to wait.]]></lines>
+	<lines name="redirectDefaultMsg" descr=""><![CDATA[Direct page...]]></lines>
+	<lines name="navpageFirst" descr=""><![CDATA[First page]]></lines>
+	<lines name="navpageFirstTooltip" descr=""><![CDATA[Go to First page]]></lines>
+	<lines name="navpageLast" descr=""><![CDATA[Last page]]></lines>
+	<lines name="navpageLastTooltip" descr=""><![CDATA[Go to Last page]]></lines>
+	<lines name="navpagePrevious" descr=""><![CDATA[Previous]]></lines>
+	<lines name="navpagePreviousTooltip" descr=""><![CDATA[Go to Previous]]></lines>
+	<lines name="navpageNext" descr=""><![CDATA[Next]]></lines>
+	<lines name="navpageNextTooltip" descr=""><![CDATA[Go to Next]]></lines>
+	<lines name="navpagePageTooltip" descr=""><![CDATA[Go to page ]]></lines>
+	<lines name="photoSectionSelectOne" descr=""><![CDATA[- - Choose one - -]]></lines>
+	<lines name="photoSectionColor" descr=""><![CDATA[Color]]></lines>
+	<lines name="photoSectionColorBest" descr=""><![CDATA[Best Color]]></lines>
+	<lines name="subphotoSectionColor" descr=""><![CDATA[Color » Open Color]]></lines>
+	<lines name="subphotoSectionColorLandscape" descr=""><![CDATA[Color »Best Portrait free]]></lines>
+	<lines name="subphotoSectionColorSport" descr=""><![CDATA[Color »Best Action free]]></lines>
+	<lines name="subphotoSectionColorIdea" descr=""><![CDATA[Color »Best Idea free]]></lines>
+	<lines name="photoSectionMono" descr=""><![CDATA[Mono]]></lines>
+	<lines name="photoSectionMonoBest" descr=""><![CDATA[Best Mono]]></lines>
+	<lines name="subphotoSectionMono" descr=""><![CDATA[Mono » Open Mono]]></lines>
+	<lines name="subphotoSectionMonoLandscape" descr=""><![CDATA[Mono »Best Portrait free]]></lines>
+	<lines name="subphotoSectionMonoSport" descr=""><![CDATA[Mono » Best Action free]]></lines>
+	<lines name="subphotoSectionMonoIdea" descr=""><![CDATA[Mono » Best Creative free]]></lines>
+	<lines name="photoSectionNature" descr=""><![CDATA[Nature]]></lines>
+	<lines name="photoSectionNatureBest" descr=""><![CDATA[Best Nature]]></lines>
+	<lines name="subphotoSectionNature" descr=""><![CDATA[Nature  » Open Nature]]></lines>
+	<lines name="subphotoSectionNatureBird" descr=""><![CDATA[Nature » Best Bird free]]></lines>
+	<lines name="subphotoSectionNatureSnow" descr=""><![CDATA[Nature » Best Snow free]]></lines>
+	<lines name="subphotoSectionNatureFlower" descr=""><![CDATA[Nature » Best Flower free]]></lines>
+	<lines name="photoSectionTravel" descr=""><![CDATA[Travel]]></lines>
+	<lines name="photoSectionTravelBest" descr=""><![CDATA[Best Travel]]></lines>
+	<lines name="subphotoSectionTravel" descr=""><![CDATA[Travel  » Open Travel]]></lines>
+	<lines name="subphotoSectionTravelTransportation" descr=""><![CDATA[Travel » Best Transportation free]]></lines>
+	<lines name="subphotoSectionTravelDress" descr=""><![CDATA[Travel » Best Traditional Dress free]]></lines>
+	<lines name="subphotoSectionTravelCountry" descr=""><![CDATA[Travel » Best Country free]]></lines>
+	<lines name="labelSection" descr=""><![CDATA[Section: ]]></lines>
+</data>

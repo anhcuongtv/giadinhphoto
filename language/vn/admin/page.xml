@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<lines name="head_list" descr=""><![CDATA[Quản lý Page]]></lines>
+	<lines name="intro_list" descr=""><![CDATA[Chức năng quản lý các Page trong website.]]></lines>
+	<lines name="title_list" descr=""><![CDATA[Danh sách Page]]></lines>
+	<lines name="pageTitle_list" descr=""><![CDATA[Page &raquo; Danh sách Page]]></lines>
+	
+	<lines name="head_add" descr=""><![CDATA[Thêm Page]]></lines>
+	<lines name="title_add" descr=""><![CDATA[Thông tin Page]]></lines>
+	<lines name="pageTitle_add" descr=""><![CDATA[Page &raquo; Thêm Page]]></lines>
+	
+	<lines name="head_eedit" descr=""><![CDATA[Cập nhật thông tin Page]]></lines>
+	<lines name="title_edit" descr=""><![CDATA[Thông tin Page]]></lines>
+	<lines name="pageTitle_edit" descr=""><![CDATA[Page &raquo; Cập nhật Page]]></lines>
+
+
+	<lines name="formIdtextLabel" descr=""><![CDATA[Identifier String]]></lines>
+	<lines name="formTitleLabel" descr=""><![CDATA[Tên Page]]></lines>
+	<lines name="formContentLabel" descr=""><![CDATA[Nội dung]]></lines>
+	<lines name="formShowLabel" descr=""><![CDATA[Hiển thị]]></lines>
+
+
+	<lines name="errIdtextRequired" descr=""><![CDATA[Bạn chưa nhập Identifier String]]></lines>
+	<lines name="errAdd" descr=""><![CDATA[Có lỗi khi tạo trang mới]]></lines>
+	<lines name="succAdd" descr=""><![CDATA[Tạo trang với tên <strong>###pagename###</strong> thành công.]]></lines>
+	<lines name="errUpdate" descr=""><![CDATA[Có lỗi khi cập nhật Page]]></lines>
+	<lines name="succUpdate" descr=""><![CDATA[Cập nhật Page với tên <strong>###pagename###</strong> thành công.]]></lines>
+
+	<lines name="errNotFound" descr=""><![CDATA[Không tìm thấy thông tin Page đã chọn.]]></lines>
+	<lines name="errDelete" descr=""><![CDATA[Có lỗi khi xóa Page với tên <strong>###pagename###</strong>.]]></lines>
+	<lines name="succDelete" descr=""><![CDATA[Xóa thành công Page tên là <strong>###pagename###</strong>.]]></lines>
+	
+	
+	
+	
+</data>

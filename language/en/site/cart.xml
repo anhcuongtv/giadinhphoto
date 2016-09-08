@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Giỏ hàng của bạn]]></lines>
+	<lines name="paymentTitle" descr=""><![CDATA[Payment Entry]]></lines>
+	<lines name="reviewTitle" descr=""><![CDATA[Xem lại và hoàn tất đơn hàng]]></lines>
+	<lines name="historyTitle" descr=""><![CDATA[Các đơn hàng đã tạo]]></lines>
+	<lines name="errEmpty" descr=""><![CDATA[Giỏ hàng của bạn còn trống.]]></lines>
+	<lines name="errInvoiceIdNotValid" descr=""><![CDATA[Đơn hàng cần xử lý không hợp lệ. Có thể đơn hàng không tồn tại hoặc đơn hàng đã được thanh toán.]]></lines>
+	<lines name="cartAddError" descr=""><![CDATA[Không thể Thêm sản phẩm này vào giỏ hàng.]]></lines>
+	<lines name="continueShoppingTooltip" descr=""><![CDATA[Tiếp tục mua hàng.]]></lines>
+	<lines name="itemimage" descr=""><![CDATA[Photos]]></lines>
+	<lines name="itemproduct" descr=""><![CDATA[Sản phẩm]]></lines>
+	<lines name="itemoption" descr=""><![CDATA[Tùy chọn]]></lines>
+	<lines name="itemprice" descr=""><![CDATA[Giá]]></lines>
+	<lines name="itemquantity" descr=""><![CDATA[Số lượng]]></lines>
+	<lines name="itemsubtotal" descr=""><![CDATA[Thành tiền]]></lines>
+	<lines name="itemdelete" descr=""><![CDATA[Delete]]></lines>
+	<lines name="cartSubTotal" descr=""><![CDATA[Tổng thành tiền]]></lines>
+	<lines name="cartTax" descr=""><![CDATA[TAX]]></lines>
+	<lines name="cartShipHandling" descr=""><![CDATA[Giao hàng]]></lines>
+	<lines name="cartTotal" descr=""><![CDATA[Tổng tiền]]></lines>
+	<lines name="cartEmpty" descr=""><![CDATA[Xóa tất cả sản phẩm khỏi giỏ hàng]]></lines>
+	<lines name="needUpdateShipPrice" descr=""><![CDATA[Cần cập nhật phí vận chuyển]]></lines>
+	<lines name="shipPriceUpdated" descr=""><![CDATA[Đã cập nhật]]></lines>
+	<lines name="shipPriceNotUpdated" descr=""><![CDATA[Chưa được cập nhật]]></lines>
+	<lines name="statuspending" descr=""><![CDATA[chờ xử lý]]></lines>
+	<lines name="statuscompleted" descr=""><![CDATA[hoàn tất]]></lines>
+	<lines name="statuscancel" descr=""><![CDATA[cancel]]></lines>
+	<lines name="statuserror" descr=""><![CDATA[error]]></lines>
+	<lines name="quantityUpdateSucc" descr=""><![CDATA[Cập nhật giỏ hàng thành công]]></lines>
+	<lines name="quantityUpdateErrDataInvalid" descr=""><![CDATA[Dữ liệu không hợp lệ.]]></lines>
+	<lines name="printHeading" descr=""><![CDATA[Payment Summary]]></lines>
+	<lines name="printInvoiceLabel" descr=""><![CDATA[Invoice ID]]></lines>
+	<lines name="printDateLabel" descr=""><![CDATA[Date printed]]></lines>
+	<lines name="printOrderOnLabel" descr=""><![CDATA[Order on]]></lines>
+	<lines name="printSeller" descr=""><![CDATA[Seller]]></lines>
+	<lines name="printBuyer" descr=""><![CDATA[Buyer]]></lines>
+	<lines name="printPaymentDetail" descr=""><![CDATA[Payment]]></lines>
+	<lines name="printShipNA" descr=""><![CDATA[N/A]]></lines>
+	<lines name="orderHistoryTitle" descr=""><![CDATA[Orders]]></lines>
+	<lines name="orderInvoiceId" descr=""><![CDATA[Invoice]]></lines>
+	<lines name="orderShipto" descr=""><![CDATA[Send to]]></lines>
+	<lines name="orderTotal" descr=""><![CDATA[Total]]></lines>
+	<lines name="orderPaid" descr=""><![CDATA[Payment]]></lines>
+	<lines name="orderStatus" descr=""><![CDATA[Status]]></lines>
+	<lines name="orderOn" descr=""><![CDATA[at]]></lines>
+	<lines name="orderDetail" descr=""><![CDATA[Details]]></lines>
+	<lines name="orderComment" descr=""><![CDATA[Notes]]></lines>
+	<lines name="orderEmpty" descr=""><![CDATA[Chưa có đơn hàng nào được tạo]]></lines>
+	<lines name="errAttributeRequired" descr=""><![CDATA[Attribute is required.]]></lines>
+	<lines name="errNotFound" descr=""><![CDATA[Không tìm thấy thông tin sản phẩm]]></lines>
+	<lines name="pageTitle" descr=""><![CDATA[Payment of fees to participate in an The 6th International Artistic Photo Contest and Exhibition in Vietnam 2011 VN-11
+]]></lines>
+	<lines name="pageKeyword" descr=""><![CDATA[payment, fees photo]]></lines>
+	<lines name="pageDescription" descr=""><![CDATA[Payment entry fee]]></lines>
+</data>

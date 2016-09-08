@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Thanh toán lệ phí thi]]></lines>             
+	<lines name="paymentTitle" descr=""><![CDATA[Thanh toán lệ phí thi]]></lines>             
+	<lines name="reviewTitle" descr=""><![CDATA[Xem lại và hoàn tất lệ phí thi]]></lines>             
+	<lines name="errCartEmpty" descr=""><![CDATA[Giỏ hàng của bạn còn trống.]]></lines>             
+	<lines name="paymentSectionChange" descr=""><![CDATA[Thay đổi]]></lines>             
+	          
+	
+	<lines name="itemimage" descr=""><![CDATA[Hình]]></lines>             
+	<lines name="itemproduct" descr=""><![CDATA[Sản phẩm]]></lines>             
+	<lines name="itemprice" descr=""><![CDATA[Giá]]></lines>             
+	<lines name="itemquantity" descr=""><![CDATA[Số lượng]]></lines>             
+	<lines name="itemsubtotal" descr=""><![CDATA[Thành tiền]]></lines>             
+	<lines name="cartSubTotal" descr=""><![CDATA[Tổng thành tiền]]></lines>             
+	<lines name="cartTotal" descr=""><![CDATA[Tổng tiền]]></lines>             
+	<lines name="statuspending" descr=""><![CDATA[chờ xử lý]]></lines>             
+  	<lines name="statuscompleted" descr=""><![CDATA[hoàn tất]]></lines>             
+  	<lines name="statuscancel" descr=""><![CDATA[hủy]]></lines>             
+  	<lines name="statuserror" descr=""><![CDATA[lỗi]]></lines>             
+	
+  	<lines name="billingBillInfo" descr=""><![CDATA[Thông tin thanh toán]]></lines>            
+  	<lines name="billingShipInfo" descr=""><![CDATA[Thông tin gởi hàng]]></lines>            
+  	<lines name="billingContactInfo" descr=""><![CDATA[Email liên hệ]]></lines>            
+  	<lines name="billingFirstname" descr=""><![CDATA[Họ và chữ lót]]></lines>            
+  	<lines name="billingMidname" descr=""><![CDATA[Mid]]></lines>            
+  	<lines name="billingLastname" descr=""><![CDATA[Tên]]></lines>            
+  	<lines name="billingAddress" descr=""><![CDATA[Địa chỉ]]></lines>            
+  	<lines name="billingAddress2" descr=""><![CDATA[Địa chỉ khác]]></lines>            
+  	<lines name="billingOptional" descr=""><![CDATA[không bắt buộc]]></lines>            
+  	<lines name="billingCountry" descr=""><![CDATA[Quốc gia]]></lines>            
+  	<lines name="billingCountrySelect" descr=""><![CDATA[- - - - - - - - - - - - -]]></lines>            
+  	<lines name="billingCountryOther" descr=""><![CDATA[- - Khác - -]]></lines>            
+  	<lines name="billingCountryOtherNote" descr=""><![CDATA[Bạn cần nhập đầy đủ thông tin quốc gia, tỉnh thành vào ô địa chỉ ở trên]]></lines>            
+  	<lines name="billingCity" descr=""><![CDATA[Thành phố]]></lines>           
+  	<lines name="billingCitySelect" descr=""><![CDATA[- - - - - - - - - - - - -]]></lines>            
+  	<lines name="billingCityOther" descr=""><![CDATA[- - Khác - -]]></lines>            
+  	<lines name="billingRegion" descr=""><![CDATA[Khu vực]]></lines>            
+  	<lines name="billingRegionSelect" descr=""><![CDATA[- - - - - - - - - - - - -]]></lines>            
+  	<lines name="billingRegionOther" descr=""><![CDATA[- - Khác - -]]></lines>            
+  	<lines name="billingForUsOnly" descr=""><![CDATA[Dùng cho nước Mỹ]]></lines>            
+  	<lines name="billingZipcode" descr=""><![CDATA[ZIP Code]]></lines>            
+  	<lines name="billingPhone" descr=""><![CDATA[Điện thoại]]></lines>            
+  	<lines name="billingPhone2" descr=""><![CDATA[Điện thoại khác]]></lines>            
+  	<lines name="billingRequired" descr=""><![CDATA[Ô bắt buộc nhập]]></lines>            
+  	<lines name="billingSameBillShip" descr=""><![CDATA[Thông tin thanh toán và gởi hàng giống nhau]]></lines>            
+  	<lines name="billingEmailHelp" descr=""><![CDATA[Bạn bắt buộc nhập địa chỉ Email để chúng tôi gởi các thông tin về đơn hàng đến cho bạn.]]></lines>           
+  	<lines name="billingEmail" descr=""><![CDATA[Địa chỉ Email]]></lines>            
+  	<lines name="billingEmailConfirm" descr=""><![CDATA[Nhập lại Email]]></lines>            
+  	<lines name="billingEmailRegisterOtherEmail" descr=""><![CDATA[Nếu email này khác với email của tôi đã lưu trên Shop thì đăng ký thành viên mới với địa chỉ email này. (Mật khẩu sẽ được tạo và gởi tới địa chỉ email bạn nhập)]]></lines>            
+  	<lines name="billingEmailRegisterThisEmail" descr=""><![CDATA[Đăng ký thành viên với email này sau khi hoàn tất đơn hàng. (Mật khẩu sẽ được tạo và gởi tới địa chỉ email bạn nhập)]]></lines>            
+  	<lines name="billingClearSucc" descr=""><![CDATA[Đã xóa dữ liệu trong các ô.]]></lines>            
+  	<lines name="billingErrBillFirstname" descr=""><![CDATA[Billing Information: First Name is required.]]></lines>            
+  	<lines name="billingErrBillLastname" descr=""><![CDATA[Billing Information: Last Name is required.]]></lines>            
+  	<lines name="billingErrBillAddress" descr=""><![CDATA[Billing Information: Address is required.]]></lines>            
+  	<lines name="billingErrBillPhone" descr=""><![CDATA[Billing Information: Phone number is required.]]></lines>            
+  	<lines name="billingErrShipFirstname" descr=""><![CDATA[Shipping Information: First Name is required.]]></lines>            
+  	<lines name="billingErrShipLastname" descr=""><![CDATA[Shipping Information: Last Name is required.]]></lines>            
+  	<lines name="billingErrShipAddress" descr=""><![CDATA[Shipping Information: Address is required.]]></lines>            
+  	<lines name="billingErrShipPhone" descr=""><![CDATA[Shipping Information: Phone number is required.]]></lines>            
+  	<lines name="billingErrContactValid" descr=""><![CDATA[Contact E-Mail is not valid.]]></lines>            
+  	<lines name="billingErrContactMatch" descr=""><![CDATA[E-Mail Adddress is not match. Please check again.]]></lines>            
+  	<lines name="billingComment" descr=""><![CDATA[Ghi chú cho đơn hàng]]></lines>            
+  	<lines name="billingCommentLabel" descr=""><![CDATA[Nhập các ghi chú cho đơn hàng này:]]></lines>            
+  	
+  	<lines name="shippingHeading" descr=""><![CDATA[Tùy chọn gởi hàng]]></lines>            
+  	<lines name="shippingService" descr=""><![CDATA[Dịch vụ gởi hàng]]></lines>            
+  	<lines name="shippingToInfo" descr=""><![CDATA[Gởi hàng tới]]></lines>            
+  	<lines name="shippingServiceLabel" descr=""><![CDATA[Dịch vụ]]></lines>            
+  	<lines name="shippingServicePlaceOrder" descr=""><![CDATA[N/A]]></lines>            
+  	<lines name="shippingPricePlaceOrder" descr=""><![CDATA[Admin check<br/>(Location Not Available)]]></lines>            
+  	<lines name="shippingCost" descr=""><![CDATA[Chi phí]]></lines>            
+  	<lines name="shippingCostFree" descr=""><![CDATA[Miễn phí]]></lines>            
+  	<lines name="shippingCostAdditional" descr=""><![CDATA[Chi phí thêm mỗi đơn vị]]></lines>            
+  	<lines name="shippingCostSurcharge" descr=""><![CDATA[Phụ phí địa phương]]></lines>            
+  	<lines name="shippingServiceUpdateBtn" descr=""><![CDATA[Cập nhật dịch vụ gởi hàng]]></lines>            
+  	<lines name="shippingChangeInfoBtn" descr=""><![CDATA[Thay đổi]]></lines>            
+  	<lines name="shippingChangeInfoTooltip" descr=""><![CDATA[Nhấn vào đây để thay đổi thông tin gởi hàng]]></lines> 
+  	<lines name="shippingPlaceOrderHelp" descr=""><![CDATA[Vì đơn hàng của bạn chưa được cập nhật giá gởi hàng đi nên đơn hàng của bạn sau khi nhấn nút đặt hàng sẽ được lưu và chúng tôi sẽ cập nhật giá cả. Chúng tôi sẽ liên hệ và gởi liên kết để bạn hoàn tất đơn hàng này trong thời gian sớm nhất.]]></lines> 
+  	           
+  	<lines name="reviewHeading" descr=""><![CDATA[Kiểm tra đơn hàng]]></lines>            
+  	<lines name="paymentSelectHeading" descr=""><![CDATA[Chọn hình thức thanh toán]]></lines>            
+  	<lines name="paymentReturnCancel" descr=""><![CDATA[Bạn đã chọn không thanh toán đơn hàng hiện tại. <br />Cảm ơn bạn đã ghé thăm website.]]></lines>            
+  	<lines name="paymentReturnCancelLink" descr=""><![CDATA[Nhấn vào đây để xem đơn hàng của bạn]]></lines>            
+  	<lines name="finishThankYouLabel" descr=""><![CDATA[Thank you!]]></lines>            
+  	<lines name="finishThankYouReturn" descr=""><![CDATA[We will process your order as soon as possible !]]></lines>            
+  	<lines name="finishOrderCompleted" descr=""><![CDATA[Completed Your Order !]]></lines>            
+  	<lines name="finishPlaceOrderContactText" descr=""><![CDATA[We will contact you (by your contact email) as soon as possible to finish your order.]]></lines>            
+  	
+  	<lines name="printHeading" descr=""><![CDATA[Payment Summary]]></lines>            
+  	<lines name="printInvoiceLabel" descr=""><![CDATA[Invoice ID]]></lines>            
+  	<lines name="printDateLabel" descr=""><![CDATA[Date printed]]></lines>            
+  	<lines name="printOrderOnLabel" descr=""><![CDATA[Order on]]></lines>            
+  	<lines name="printSeller" descr=""><![CDATA[Seller]]></lines>            
+  	<lines name="printBuyer" descr=""><![CDATA[Buyer]]></lines>            
+  	<lines name="printOtherAddress" descr=""><![CDATA[Other Address]]></lines>            
+  	<lines name="printPaymentDetail" descr=""><![CDATA[Payment]]></lines>            
+  	<lines name="printShipNA" descr=""><![CDATA[N/A]]></lines>      
+  	<lines name="printCustomerInfo" descr=""><![CDATA[Customer Information]]></lines>             
+  	
+  	<lines name="formOrderPaidMethod" descr=""><![CDATA[Payment Method]]></lines>      
+  	<lines name="paymentFormHelp" descr=""><![CDATA[Fill information on your credit card]]></lines>      
+  	<lines name="paymentFormCardType" descr=""><![CDATA[Card Type]]></lines>      
+  	<lines name="paymentFormFirstname" descr=""><![CDATA[First Name]]></lines>      
+  	<lines name="paymentFormLastname" descr=""><![CDATA[Last Name]]></lines>      
+  	<lines name="paymentFormZipcode" descr=""><![CDATA[Zip Code]]></lines>      
+  	<lines name="paymentFormCardNumber" descr=""><![CDATA[Card Number]]></lines>      
+  	<lines name="paymentFormCvv" descr=""><![CDATA[CVV2]]></lines>      
+  	<lines name="paymentFormExpiredDate" descr=""><![CDATA[Expiration Date]]></lines>      
+  	<lines name="paymentFormExpiredDateMonth" descr=""><![CDATA[Month]]></lines>      
+  	<lines name="paymentFormExpiredDateYear" descr=""><![CDATA[Year]]></lines>      
+  	<lines name="paymentErrCardType" descr=""><![CDATA[Please select card type]]></lines>            
+  	<lines name="paymentErrCreateOrder" descr=""><![CDATA[Error while create your order. Please try again.]]></lines>            
+  	<lines name="paymentTryAgainLabel" descr=""><![CDATA[Click here to Try Again]]></lines>            
+  	<lines name="paymentOrLabel" descr=""><![CDATA[HOẶC]]></lines>            
+  	<lines name="errInvoiceIdNotValid" descr=""><![CDATA[Đơn hàng cần xử lý không hợp lệ. Có thể đơn hàng không tồn tại hoặc đơn hàng đã được thanh toán.]]></lines>  
+  	<lines name="errInvoiceUserNotValid" descr=""><![CDATA[Đơn hàng này không phải bạn tạo.]]></lines>  
+  	<lines name="errShipNotSet" descr=""><![CDATA[Admin chưa cập nhật giá gởi hàng của Order này.]]></lines>  
+  	<lines name="errOrderAlreadyCompleted" descr=""><![CDATA[Đơn hàng này đã được đánh dấu là hoàn tất.]]></lines>  
+  	<lines name="paymentFormCashTitle" descr=""><![CDATA[Thanh toán bằng tiền mặt]]></lines>  
+  	<lines name="paymentFormCashText" descr=""><![CDATA[Vài dòng giới thiệu thanh toán bằng tiền mặt]]></lines>  
+  	<lines name="paymentFormCashCommentLabel" descr=""><![CDATA[Ghi chú khi gởi tiền]]></lines>  
+  	<lines name="paymentFormBankTitle" descr=""><![CDATA[Chuyển khoản qua ngân hàng]]></lines>  
+  	<lines name="paymentFormBankText" descr=""><![CDATA[Vài dòng giới thiệu thanh toán chuyển khoản ngân hàng]]></lines>  
+  	<lines name="paymentFormBankCommentLabel" descr=""><![CDATA[Ghi chú khi gởi tiền]]></lines>  
+  	<lines name="paymentFormPostofficeTitle" descr=""><![CDATA[Gởi tiền bằng đường bưu điện]]></lines>  
+  	<lines name="paymentFormPostofficeText" descr=""><![CDATA[Vài dòng giới thiệu thanh toán chuyển tiền bằng đường bưu điện]]></lines>  
+  	<lines name="paymentFormPostofficeCommentLabel" descr=""><![CDATA[Ghi chú khi gởi tiền]]></lines>  
+  	
+  	<lines name="reviewHeading" descr=""><![CDATA[Xem lại đơn hàng]]></lines>            
+  	<lines name="reviewCancelText" descr=""><![CDATA[Cảm ơn đã ghé thăm website.]]></lines>            
+  	<lines name="reviewBuySuccessText" descr=""><![CDATA[Cảm ơn đã sử dụng dịch vụ của chúng tôi.]]></lines>            
+  
+    <lines name="orderHistoryTitle" descr=""><![CDATA[Các đơn hàng]]></lines> 
+  	<lines name="orderInvoiceId" descr=""><![CDATA[Mã]]></lines> 
+  	<lines name="orderShipto" descr=""><![CDATA[Gởi tới]]></lines> 
+  	<lines name="orderTotal" descr=""><![CDATA[Tổng tiền]]></lines> 
+  	<lines name="orderPaid" descr=""><![CDATA[Thanh toán]]></lines> 
+  	<lines name="orderStatus" descr=""><![CDATA[Tình trạng]]></lines> 
+  	<lines name="orderOn" descr=""><![CDATA[lúc]]></lines> 
+  	<lines name="orderDetail" descr=""><![CDATA[Chi tiết]]></lines> 
+  	<lines name="orderComment" descr=""><![CDATA[Ghi chú]]></lines> 
+  	<lines name="orderEmpty" descr=""><![CDATA[Chưa có đơn hàng nào được tạo]]></lines> 
+
+  	<lines name="errAttributeRequired" descr=""><![CDATA[Attribute is required.]]></lines>
+	<lines name="errNotFound" descr=""><![CDATA[Không tìm thấy thông tin sản phẩm]]></lines>
+	
+	<lines name="paymentReview" descr=""><![CDATA[Thông tin bạn đã chọn]]></lines>
+	<lines name="paymentYourSelect" descr=""><![CDATA[Bạn đã chọn thanh toán các Section sau: ]]></lines>
+    <lines name="paymentTotal" descr=""><![CDATA[Tổng số tiền]]></lines>      
+    <lines name="paymentPackIdNotFound" descr=""><![CDATA[Your select payment is not valid. Try again]]></lines>      
+    <lines name="succPaymentOnline" descr=""><![CDATA[Thanh toán thành công. Bạn có thể tham gia dự thi vào các Section mà mình đã thanh toán. Cảm ơn bạn.]]></lines>      
+    <lines name="succPaymentOffline" descr=""><![CDATA[Đơn hàng của bạn đã được lưu. Chúng tôi sẽ kích hoạt tài khoản của bạn sau khi nhận được tiền được chuyển từ bạn.]]></lines>      
+    <lines name="paymentTypeIsNotValid" descr=""><![CDATA[Payment Type is not valid.]]></lines>      
+	
+	
+	<lines name="pageTitle" descr=""><![CDATA[Thanh toán đơn hàng]]></lines>
+	<lines name="pageKeyword" descr=""><![CDATA[order, checkout, payment]]></lines>
+	<lines name="pageDescription" descr=""><![CDATA[Thanh toan don hang]]></lines>
+</data>

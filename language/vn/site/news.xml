@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<data>
+  <lines name="detail" descr=""><![CDATA[Chi tiết]]></lines>
+  <lines name="moreLabel" descr=""><![CDATA[Các tin tức khác:]]></lines>
+  <lines name="moreCategory" descr=""><![CDATA[Các tin cùng danh mục:]]></lines>
+  <lines name="moreOlderLabel" descr=""><![CDATA[Các tin cũ hơn :]]></lines>
+  <lines name="moreNewerLabel" descr=""><![CDATA[Các tin mới hơn :]]></lines>
+  <lines name="title" descr=""><![CDATA[Tin tức]]></lines>
+  <lines name="notFound" descr=""><![CDATA[Không tìm thấy tin.]]></lines>
+  <lines name="view" descr=""><![CDATA[Lần xem :]]></lines>
+  <lines name="attachment" descr=""><![CDATA[Tập tin gởi kèm :]]></lines>
+  <lines name="tags" descr=""><![CDATA[Tags :]]></lines>
+  <lines name="related" descr=""><![CDATA[Các tin liên quan :]]></lines>
+  <lines name="datecreated" descr=""><![CDATA[Ngày đăng]]></lines>
+  
+  <lines name="search" descr=""><![CDATA[&raquo; Tìm kiếm tin]]></lines>
+  <lines name="result" descr=""><![CDATA[Kết quả tìm kiếm]]></lines>
+  <lines name="resultUnitPlural" descr=""><![CDATA[tin.]]></lines>
+  <lines name="resultUnitSingular" descr=""><![CDATA[tin.]]></lines>
+  <lines name="byKeyword" descr=""><![CDATA[Tìm theo từ khóa: ]]></lines>
+  <lines name="byKeywordInTitle" descr=""><![CDATA[trong tiêu đề]]></lines>
+  <lines name="byKeywordInContents" descr=""><![CDATA[trong nội dung tin]]></lines>
+  <lines name="byKeywordInTags" descr=""><![CDATA[trong Tags]]></lines>
+  <lines name="byKeywordInAll" descr=""><![CDATA[trong tất cả]]></lines>
+  <lines name="byTags" descr=""><![CDATA[Tìm theo Tag: ]]></lines>
+  <lines name="byCategory" descr=""><![CDATA[Tìm theo danh mục: ]]></lines>
+  <lines name="byDate" descr=""><![CDATA[Tìm theo ngày đăng: ]]></lines>
+  <lines name="filterDay" descr=""><![CDATA[Ngày]]></lines>
+  <lines name="filterMonth" descr=""><![CDATA[Tháng]]></lines>
+  <lines name="filterYear" descr=""><![CDATA[Năm]]></lines>
+  <lines name="goBtn" descr=""><![CDATA[ Tìm ]]></lines>
+</data>

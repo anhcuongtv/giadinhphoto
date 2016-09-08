@@ -1,0 +1,65 @@
+body{margin:0; padding:0; background:#aaa; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+p{margin:0;padding:0}
+/*	NOTIFY BAR	*/
+.notify-bar{padding:10px;}
+.notify-bar-success{background:#eaffa5;color:#6c8c00;}
+.notify-bar-error{background:#ffcfce;color:#9e3737;}
+.notify-bar-warning{background:#ffeeb1;color:#e37b00;}
+.notify-bar-info{background:#d6e2ff;color:#577bd1;}
+.notify-bar-icon{float:left;width:45px;}
+.notify-bar-text{padding:0 20px 0 45px; font-size:18px;line-height:1.5;}
+.notify-bar-text-sep{border-top:1px solid #eee;margin:10px 0;}
+.notify-bar-button{float:right;width:15px;text-align:right;}
+
+#header{background:#054e82; height:30px;}
+#headerleft{float:left; color:#fff; padding-left:10px; padding-top:5px;}
+#headerleft img{height:50px;}
+#headercenter{float:left; color:#fff; padding-left:20px;}
+#headercenter h2{padding:0; margin:0; padding-top: 0px;}
+#headerright{float:right; color:#fff; padding:5px 10px 0 0;}
+#headerright a{color: #fff;
+font-weight: bold;
+text-decoration: none;
+font-size: 14px;}
+
+#photo #bigphoto{}
+
+#sectionlist{background:#2582A0; font-size:12px; padding:10px;  text-align:right; color:#fff;}
+#sectionlist *{font-size:12px;}
+#photonav{ text-align:center;}
+#photonav img{width:50px; height:50px; border:2px solid #fff;filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity: 0.3;opacity: 0.3;}
+#photonav img:hover{filter:alpha(opacity=100);-moz-opacity:1;-khtml-opacity: 1;opacity: 1;}
+#photonav .current img{border-color:#F60}
+#photonav .current img, #photonav .button img{filter:alpha(opacity=100);-moz-opacity:1;-khtml-opacity: 1;opacity: 1;}
+
+#photostat{background:#2582A0; font-size:12px; padding:10px; color:#fff; text-align:right;}
+#photostat a{color:#fff;}
+.photomarked{font-size:20px; color:#FC0}
+.photototal{font-size:18px;}
+.photoremain{font-size:16px;}
+
+#judgestat{background:#fff; padding:10px;}
+.judgeitem{float:left; padding:5px; background:#ddd; margin:5px;}
+.judgecurrent{font-weight:bold; color:#F00}
+
+#pointform{padding:10px; background:#fff;}
+#pointform h2{}
+#pointform label{font-size:18px; background:#eee; padding:5px; margin:5px; -moz-border-radius: 8px; border-radius: 8px; cursor:pointer; font-weight:bold;}
+#pointform label.selected{border:1px solid #F90;}
+#pointform .submit{-moz-border-radius: 12px; border-radius: 12px;  color:#F10; font-size:20px; border:2px solid #F60; padding:5px 15px; background:#FDE2AA; cursor:pointer;}
+#pointform .submit:hover{background-color:#fff;}
+
+#setting{padding:10px;}
+#setting .path{font-size:10px; width:250px;}
+
+#awardbox{background:#F3F594; padding:10px;}
+#awardbox ul{margin:0; padding:0; padding-top:5px;}
+#awardbox ul li{list-style-position:inside; font-size:12px; list-style-type:none; padding:5px 0; clear:both;}
+#awardbox ul li a{float:left; padding-right:5px;}
+a.link-footer{
+	color: #666;
+	text-decoration: none;
+}
+a.link-footer:hover{
+	color: #054e82;
+}

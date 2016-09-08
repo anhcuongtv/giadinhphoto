@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<lines name="head_list" descr=""><![CDATA[Quản lý Round]]></lines>
+	<lines name="intro_list" descr=""><![CDATA[Chức năng quản lý các Round.]]></lines>
+	<lines name="title_list" descr=""><![CDATA[Danh sách Round]]></lines>
+	<lines name="pageTitle_list" descr=""><![CDATA[Round &raquo; Danh sách Round]]></lines>
+	
+	<lines name="head_add" descr=""><![CDATA[Thêm Round]]></lines>
+	<lines name="title_add" descr=""><![CDATA[Thông tin Round]]></lines>
+	<lines name="pageTitle_add" descr=""><![CDATA[Round &raquo; Thêm Round]]></lines>
+	
+	<lines name="head_edit" descr=""><![CDATA[Cập nhật thông tin Round]]></lines>
+	<lines name="title_edit" descr=""><![CDATA[Thông tin Round]]></lines>
+	<lines name="pageTitle_edit" descr=""><![CDATA[Round &raquo; Cập nhật Round]]></lines>
+
+	<lines name="head_exportcsv" descr=""><![CDATA[Export (file CSV)]]></lines>
+	<lines name="title_exportcsv" descr=""><![CDATA[Export (file CSV) danh sách hình trong Round]]></lines>
+	<lines name="pageTitle_exportcsv" descr=""><![CDATA[Hình chấm điểm &raquo; Export danh sách (file CSV)]]></lines>
+
+	<lines name="name" descr=""><![CDATA[Tên Round]]></lines>
+	<lines name="photo" descr=""><![CDATA[Photo]]></lines>
+	<lines name="isactive" descr=""><![CDATA[Kích hoạt]]></lines>
+	<lines name="isgiveaward" descr=""><![CDATA[Có thể gán giải thưởng]]></lines>
+	<lines name="isEnableView" descr=""><![CDATA[Cho phép xem ảnh]]></lines>
+	<lines name="passpoint" descr=""><![CDATA[Điểm sàng]]></lines>
+	<lines name="insertFromReadyList" descr=""><![CDATA[Insert Hình từ danh sách hình cần chấm]]></lines>
+	<lines name="insertFromPrevRound" descr=""><![CDATA[Insert từ hình đủ tiêu chuẩn của Round trước]]></lines>
+
+
+	<lines name="errNamRequired" descr=""><![CDATA[Bạn chưa nhập Tên cho Round]]></lines>
+	<lines name="errIsactiveInvalid" descr=""><![CDATA[is active value invalid.]]></lines>
+	<lines name="errPasspointInvalid" descr=""><![CDATA[Điểm sàng không hợp lệ]]></lines>
+	<lines name="errAdd" descr=""><![CDATA[Có lỗi khi tạo Round mới]]></lines>
+	<lines name="succAdd" descr=""><![CDATA[Tạo Round thành công.]]></lines>
+	<lines name="errUpdate" descr=""><![CDATA[Có lỗi khi cập nhật Round]]></lines>
+	<lines name="succUpdate" descr=""><![CDATA[Cập nhật Round thành công.]]></lines>
+
+	<lines name="errSectionInvalid" descr=""><![CDATA[Section bạn chọn không hợp lệ]]></lines>
+    <lines name="errExportEmpty" descr=""><![CDATA[Không có hình nào được export]]></lines>
+	<lines name="errNotFound" descr=""><![CDATA[Không tìm thấy thông tin Round đã chọn.]]></lines>
+	<lines name="errDelete" descr=""><![CDATA[Có lỗi khi xóa Round.]]></lines>
+	<lines name="succDelete" descr=""><![CDATA[Xóa thành công Round .]]></lines>
+	<lines name="succInsertFromReadyList" descr=""><![CDATA[Thêm danh sách hình cần chấm điểm vào Round thành công .]]></lines>
+	<lines name="succInsertFromPreviousList" descr=""><![CDATA[Thêm hình từ Round trước thành công .]]></lines>
+	<lines name="errPrevRoundIsNotFinished" descr=""><![CDATA[Round trước chưa chấm hoàn tất(còn ###number### Photo chưa chấm) .]]></lines>
+	<lines name="succUpdateStats" descr=""><![CDATA[Cập nhật trạng thái cho các Photo thành công .]]></lines>
+	
+	
+	
+	
+</data>

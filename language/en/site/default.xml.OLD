@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<data>
+  <lines name="securityTokenInvalid" descr=""><![CDATA[Có lỗi khi truyền dữ liệu. Hãy thử lại.]]></lines>
+  <lines name="editLabel" descr=""><![CDATA[Thay đổi]]></lines>
+  <lines name="deleteLabel" descr=""><![CDATA[Xóa]]></lines>
+  <lines name="jsDelConfirm" descr=""><![CDATA[Bạn có đồng ý xóa?]]></lines>
+  <lines name="sidebarMoreNews" descr=""><![CDATA[more]]></lines>
+  <lines name="hi" descr=""><![CDATA[Hi]]></lines>
+  <lines name="guest" descr=""><![CDATA[Guest]]></lines>
+  <lines name="secureByPaypal" descr=""><![CDATA[Secure Payments by Paypal]]></lines>
+  <lines name="aboutThisContest" descr=""><![CDATA[ABOUT THIS CONTEST]]></lines>
+  <lines name="sidebarPhotographer" descr=""><![CDATA[Photographer]]></lines>
+  <lines name="rightboxHeadingYear" descr=""><![CDATA[YEAR 2010]]></lines>
+  <lines name="rightboxEvent" descr=""><![CDATA[Events]]></lines>
+  <lines name="rightboxDate" descr=""><![CDATA[Date]]></lines>
+  <lines name="rightboxClosingDate" descr=""><![CDATA[CLosing Date]]></lines>
+  <lines name="rightboxClosingDateValue" descr=""><![CDATA[07/12/2010]]></lines>
+  <lines name="rightboxJudging" descr=""><![CDATA[Judging]]></lines>
+  <lines name="rightboxJudgingValue" descr=""><![CDATA[14/12/2010]]></lines>
+  <lines name="rightboxNotification" descr=""><![CDATA[Notification]]></lines>
+  <lines name="rightboxNotificationValue" descr=""><![CDATA[28/12/2010]]></lines>
+  <lines name="rightboxExhibitionDate" descr=""><![CDATA[Exhibition Date]]></lines>
+  <lines name="rightboxExhibitionDateValue" descr=""><![CDATA[31/01/2011]]></lines>
+  <lines name="rightboxCatalogue" descr=""><![CDATA[Catalogue]]></lines>
+  <lines name="rightboxCatalogueValue" descr=""><![CDATA[10/02/2011]]></lines>
+  <lines name="rightboxStatistic" descr=""><![CDATA[GDPC Statistics]]></lines>
+  <lines name="rightboxStatisticText" descr=""><![CDATA[viewers online]]></lines>
+  <lines name="rightboxRegisteredUser" descr=""><![CDATA[* Registered users]]></lines>
+  <lines name="rightboxOfPhotoOnline" descr=""><![CDATA[* # Of photos online]]></lines>
+  <lines name="rightboxOfPhotoView" descr=""><![CDATA[* # Of total photo views]]></lines>
+  
+  
+</data>

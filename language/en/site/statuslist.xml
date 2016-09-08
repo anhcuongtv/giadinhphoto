@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Status List]]></lines>
+	<lines name="notFound" descr=""><![CDATA[Không tìm thấy user.]]></lines>
+	<lines name="userLabel" descr=""><![CDATA[entrants]]></lines>
+	<lines name="username" descr=""><![CDATA[USERNAME]]></lines>
+	<lines name="datecreated" descr=""><![CDATA[Date]]></lines>
+	<lines name="fullname" descr=""><![CDATA[FULL NAME]]></lines>
+	<lines name="region" descr=""><![CDATA[STATE/PROVINCE]]></lines>
+	<lines name="country" descr=""><![CDATA[COUNTRY]]></lines>
+	<lines name="paidColor" descr=""><![CDATA[Color]]></lines>
+	<lines name="paidMono" descr=""><![CDATA[Mono]]></lines>
+	<lines name="paidNature" descr=""><![CDATA[Nature]]></lines>
+	<lines name="paidTravel" descr=""><![CDATA[Travel]]></lines>
+	<lines name="isPaid" descr=""><![CDATA[Paid]]></lines>
+	<lines name="isNotPaid" descr=""><![CDATA[not Paid]]></lines>
+	<lines name="pageTitle" descr=""><![CDATA[Status List]]></lines>
+	<lines name="pageKeyword" descr=""><![CDATA[status list keyword]]></lines>
+	<lines name="pageDescription" descr=""><![CDATA[statuslist description.]]></lines>
+</data>

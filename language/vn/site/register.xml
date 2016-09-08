@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<lines name="title" descr=""><![CDATA[Đăng ký thành viên]]></lines>
+	<lines name="heading" descr=""><![CDATA[ĐĂNG KÝ THÔNG TIN CÁ NHÂN (* yêu cầu phải có)]]></lines>
+	<lines name="help" descr=""><![CDATA[Vui lòng điền vào form thông tin dưới để Đăng Ký tài khoản. Nếu đã có tài khoản thì <a href="login.html">Đăng Nhập</a> tại đây]]></lines>
+	<lines name="required" descr=""><![CDATA[Ô bắt buộc nhập thông tin]]></lines>
+	<lines name="username" descr=""><![CDATA[Username]]></lines>
+	<lines name="usernameTip" descr=""><![CDATA[Tên đăng nhập của bạn. Tối thiểu 6 ký tự và tối đa là 30 ký tự.]]></lines>
+	<lines name="firstname" descr=""><![CDATA[Họ & chữ lót ]]></lines>
+	<lines name="lastname" descr=""><![CDATA[Tên ]]></lines>
+	<lines name="honor" descr=""><![CDATA[Tước hiệu (MAX 2) ]]></lines>
+	<lines name="address" descr=""><![CDATA[Địa chỉ ]]></lines>
+	<lines name="address2" descr=""><![CDATA[Địa chỉ khác ]]></lines>
+	<lines name="zipcode" descr=""><![CDATA[Mã vùng (7000)]]></lines>
+	<lines name="city" descr=""><![CDATA[Thành phố ]]></lines>
+	<lines name="region" descr=""><![CDATA[Tỉnh]]></lines>
+	<lines name="country" descr=""><![CDATA[Quốc gia ]]></lines>
+	<lines name="phone1" descr=""><![CDATA[Điện thoại ]]></lines>
+	<lines name="phone1help" descr=""><![CDATA[(Bao gồm mã quốc gia và mã tỉnh)]]></lines>
+	<lines name="phone2" descr=""><![CDATA[Điện thoại di động]]></lines>
+	<lines name="email" descr=""><![CDATA[Email ]]></lines>
+	<lines name="email2" descr=""><![CDATA[Nhập lại Email ]]></lines>
+	<lines name="psamembership" descr=""><![CDATA[PSA MEMBERSHIP NUMBER ]]></lines>
+	<lines name="photoclub" descr=""><![CDATA[Thành viên CLB nhiếp ảnh ]]></lines>
+	<lines name="securityCode" descr=""><![CDATA[Mã an toàn (nhập chữ thường) ]]></lines>
+	<lines name="securityCodeTip" descr=""><![CDATA[Nhập các ký tự xuất hiện trong hình bên trái. Các ký tự đều là chữ thường. Nhấn 'Hiện mã khác' để đổi hình.]]></lines>
+	<lines name="refreshImage" descr=""><![CDATA[Nhấp vào đây hiện mã khác]]></lines>
+	<lines name="submitLabel" descr=""><![CDATA[Đăng ký]]></lines>
+	<lines name="foottext1" descr=""><![CDATA[<p class="agree">[.] Tôi đồng ý với tất cả các điều khoản và điều kiện sử dụng thông tin cá nhân và hình ảnh của tôi do BTC cuộc thi ảnh Quốc Tế CLB Nhiếp Ảnh Gia Định lần 4 - 2014. Khi bấm vào nút [Submit] đây là bạn đã đồng ý các điều khoản của cuộc thi. </p><p class="agree">. Nếu bạn không nhận được bất kỳ email xác nhận sau khi gửi thông tin và hình ảnh của bạn, hãy kiểm tra thư mục thư rác (Bulk, Spam) email của bạn nếu dùng Gmail, Yaoo mail ... Nếu bạn vẫn còn có vấn đề, xin vui lòng liên hệ với chúng tôi qua email theo địa chỉ sau: <a href="mailto:support@giadinhphoto.com">support@giadinhphoto.com</a></p>]]></lines>
+	<lines name="foottext2" descr=""><![CDATA[<p class="thanks">Hạn chót nhận ảnh dự thi.<br>  Đến hết ngày 25/10/2014.<br>Cám ơn bạn đã tham gia Cuộc thi ảnh Quốc Tế CLB Nhiếp Ảnh Gia Định lần 4 - 2014</p>]]></lines>
+	<lines name="succRegister" descr=""><![CDATA[Đăng ký tài khoản thành công. Bạn đã trở thành thành viên và có thể UPLOAD ảnh.]]></lines>
+	<lines name="succText" descr=""><![CDATA[<br /><br />Tới trang <a href="./login.html" title="Đăng nhập">Đăng nhập</a><br /><br />]]></lines>
+	<lines name="errRegister" descr=""><![CDATA[Có lỗi trong quá trình tạo tài khoản. Hãy thử lại sau.]]></lines>
+	<lines name="errSpam" descr=""><![CDATA[Spam detection. Hãy chờ trong giây lát và thử lại.]]></lines>
+	<lines name="errUsernameNotValid" descr=""><![CDATA[Username không hợp lệ (Từ 6 - 30 ký tự , và các ký tự cho phép là a..z(chữ thường), 0..9 và ký tự gạch dưới `_`).]]></lines>
+	<lines name="errUsernameExisted" descr=""><![CDATA[Username này đã có người sử dụng.]]></lines>
+	<lines name="errUsernameBadName" descr=""><![CDATA[Username này trùng với một số từ khóa của website. Bạn hãy chọn username khác.]]></lines>
+	<lines name="errEmailNotValid" descr=""><![CDATA[Địa chỉ email không hợp lệ.]]></lines>
+	<lines name="errEmailExisted" descr=""><![CDATA[Địa chỉ email này đã có người sử dụng.]]></lines>
+	<lines name="errEmailNotMatch" descr=""><![CDATA[Email chưa đúng.]]></lines>
+	<lines name="errFirstnameRequire" descr=""><![CDATA[Vui lòng nhập Tên.]]></lines>
+	<lines name="errLastnameRequire" descr=""><![CDATA[Vui lòng nhập Họ và chữ lót.]]></lines>
+	<lines name="errAddressRequire" descr=""><![CDATA[Vui lòng nhập địa chỉ.]]></lines>
+	<lines name="errZipcodeRequire" descr=""><![CDATA[Mã vùng (Việt Nam có thể nhập 70000).]]></lines>
+	<lines name="errCityRequire" descr=""><![CDATA[Nhập tên Thành Phố.]]></lines>
+	<lines name="errRegionRequire" descr=""><![CDATA[Nhập Tỉnh / Thành Phố.]]></lines>
+	<lines name="errCountryRequire" descr=""><![CDATA[Vui lòng chọn quốc gia.]]></lines>
+	<lines name="errCountryInvalid" descr=""><![CDATA[Quốc gia chưa đúng.]]></lines>
+	<lines name="errPhoneRequire" descr=""><![CDATA[Vui lòng nhập điện thoại.]]></lines>
+	<lines name="errSecurityCode" descr=""><![CDATA[Mã an toàn nhập không đúng. Hãy chú ý nhập các ký tự là chữ thường]]></lines>
+	<lines name="pageTitle" descr=""><![CDATA[Đăng ký thành viên để upload ảnh dự thi CLB nhiếp ảnh Gia Định lần IV - GPDC 2014]]></lines>
+	<lines name="pageKeyword" descr=""><![CDATA[dang ky, đăng ký, dangky, đăngký, tài khoản, đăng ký tài khoản, tạo tài khoản, tạo, signup, sign up, thành viên, đăng ký thành viên, tạo thành viên, ghi danh]]></lines>
+	<lines name="pageDescription" descr=""><![CDATA[Trang đăng ký thông tin cá nhân để tham dự Cuộc thi ảnh Quốc Tế CLB Nhiếp Ảnh Gia Định lần 4 - 2014]]></lines>
+	<lines name="password" descr=""><![CDATA[PASSWORD]]></lines>
+	<lines name="passwordconfirm" descr=""><![CDATA[RETYPE PASSWORD]]></lines>
+	<lines name="errPasswordLength" descr=""><![CDATA[Chiều dài mật khẩu không hợp lệ (tối thiểu 6 ký tự).]]></lines>
+	<lines name="errPasswordMatch" descr=""><![CDATA[Hai ô mật khẩu nhập không trùng nhau. Hãy kiểm tra lại.]]></lines>
+</data>

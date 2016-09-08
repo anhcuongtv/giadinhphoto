@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+		<lines name="head_list" descr=""><![CDATA[Quản lý Hình cần chấm điểm]]></lines>
+		<lines name="intro_list" descr=""><![CDATA[Chức năng quản lý Hình cần chấm điểm trong website.]]></lines>
+		<lines name="title_list" descr=""><![CDATA[Danh sách Hình cần chấm điểm]]></lines>
+		<lines name="title_listSearch" descr=""><![CDATA[Kết quả tìm kiếm]]></lines>
+		<lines name="pageTitle_list" descr=""><![CDATA[Hình cần chấm điểm &raquo; Danh sách Hình cần chấm điểm]]></lines>
+	
+		<lines name="head_exportcsv" descr=""><![CDATA[Export (file CSV)]]></lines>
+		<lines name="title_exportcsv" descr=""><![CDATA[Export (file CSV) danh sách hình cần chấm điểm]]></lines>
+		<lines name="pageTitle_exportcsv" descr=""><![CDATA[Hình cần chấm điểm &raquo; Export danh sách (file CSV)]]></lines>
+
+		<lines name="head_generate" descr=""><![CDATA[Khởi tạo danh sách Hình cần chấm điểm]]></lines>
+		<lines name="title_generate" descr=""><![CDATA[Khởi tạo danh sách hình cần chấm điểm]]></lines>
+		<lines name="pageTitle_generate" descr=""><![CDATA[Hình cần chấm điểm &raquo; Khởi tạo danh sách]]></lines>
+
+		<lines name="warning" descr=""><![CDATA[Sau khi nhấn nút Generate thì các hình ảnh trong phần hình ảnh cần chấm điểm sẽ được xóa và cập nhật với danh sách mới hơn từ dữ liệu hình hiện tại]]></lines>
+		<lines name="formKeywordLabel" descr=""><![CDATA[Keyword]]></lines>
+		
+		
+        <lines name="errSectionInvalid" descr=""><![CDATA[Section bạn chọn không hợp lệ]]></lines>
+        <lines name="errExportEmpty" descr=""><![CDATA[Không có hình nào được export]]></lines>
+        <lines name="errGenerate" descr=""><![CDATA[Có lỗi khi generate hình cần chấm điểm]]></lines>
+	
+		<lines name="errNotFound" descr=""><![CDATA[Không tìm thấy Hình cần chấm điểm đã chọn.]]></lines>
+		<lines name="errDelete" descr=""><![CDATA[Có lỗi khi xóa Hình cần chấm điểm với tên <strong>###name###</strong>.]]></lines>
+		<lines name="succDelete" descr=""><![CDATA[Xóa thành công Hình cần chấm điểm có tên <strong>###name###</strong>.]]></lines>
+		
+	
+	
+	
+</data>
