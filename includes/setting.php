@@ -331,10 +331,10 @@ $setting['extra']['enableNews'] = TRUE;
 	$setting['extra']['countdownTime'] = '24:00';
 	$setting['extra']['disablePhotogalleryRedirect'] = 'http://giadinhphotocontest.com/';
     //su dung co giao dien css
-	$setting['extra']['staticserver']['vn'] = 'http://static.giadinhphoto.com/templates/';
-	$setting['extra']['staticserver']['en'] = 'http://giadinhphotocontest.com/templates/';
+	$setting['extra']['staticserver']['vn'] = 'http://local.test/giadinhphoto/templates/';
+	$setting['extra']['staticserver']['en'] = 'http://local.test/giadinhphoto/templates/';
     //end
-	$setting['extra']['uploadimageserver']['vn'] = 'http://static.giadinhphoto.com/upload.php';
+	$setting['extra']['uploadimageserver']['vn'] = 'http://local.test/giadinhphoto/upload.php';
 	$setting['extra']['imageDirectoryRemoteServer']['vn'] = 'http://static.giadinhphoto.com/uploads/contestphoto/vn/'; //full URL to remote server store vn image
     $setting['extra']['imagedata'] = 'uploads/imagedata/';
 ?>

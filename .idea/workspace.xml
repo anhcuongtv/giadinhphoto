@@ -2,1302 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2217b4-5875-4190-ace4-ad0c4ac6d730" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/antiqua.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/baskerville.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/batang.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/bookman.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/calisto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/cambria.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/centaur.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/century.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/chaparral.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/constantia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/footlight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/garamond.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/georgia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/goudy_old.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/kozuka.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/lucida.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/minion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/palatino.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/perpetua.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/rockwell.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/times.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/warnock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/media/logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/media/logo_over.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/media/sample.avi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/media/sample.dcr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/media/sample.mov" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/media/sample.rm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/media/sample.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advimage/img/sample.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-cool.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-cry.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-embarassed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-foot-in-mouth.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-frown.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-innocent.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-kiss.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-laughing.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-money-mouth.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-sealed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-surprised.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-tongue-out.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-undecided.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-wink.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/img/smiley-yell.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/example/img/example.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/css/_cache/im_core_css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/css/_cache/im_edit_css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/files/moreimages/dogleft.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/files/moreimages/mcith/mcith_dogleft.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/files/teddybear.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/files/templates/directory/images/gotmoxie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/js/_cache/im_core.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/js/_cache/im_createdir.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/js/_cache/im_edit.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/js/_cache/im_imagemanager.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/js/_cache/im_upload.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/flvplayer/flvPlayer.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/act.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/alert-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/alert.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/avi.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/check_arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/alert_error.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/alert_info.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/alert_warn.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/bottom_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/bottom_middle.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/bottom_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/button.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/buttons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/middle_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/middle_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/statusbar_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/statusbar_middle.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/statusbar_resize.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/statusbar_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/top_chromeless_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/top_chromeless_middle.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/top_chromeless_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/top_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/top_middle.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/top_middle_fg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/top_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/clearlooks2/transparent.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/dcr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/dialog-icon-edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/dialog-icon-newfolder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/dialog-icon-upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/dialog-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/editimage.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/filelist-border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/filelist-headbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/filelist-headbg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/first.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/flash.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/folder-bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/folder-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/folder-bottom-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/folder-middle-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/folder-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/folder-top-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/folder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/folder_big.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/gallery.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/google_gears_logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/accept.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/category-closed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/category-open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/crop.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/filemanager.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/flip_h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/flip_v.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/help.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/newdoc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/newfolder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/picture_save.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/reload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/resize.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/revert.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/rotate_ac.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/rotate_c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/save.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/settings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/toggle_selection.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/icons/up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/im-botleft.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/im-delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/im-edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/im-info.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/im-topleft.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/im-topright.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/im.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/imageeditor/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/imageeditor/editarea.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/img_generic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/insertimage.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/last.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/left_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/loading_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/navdesc_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/parent_big.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/progress.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/qt.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/right_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/rm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/selection_corner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/separator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/submit-cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/submit-default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/submit-delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/submit-grey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/submit-greyWide.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/submit-wide.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/textlist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/toolbar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/img/transparent.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.multiupload.flash.expressinstall.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.multiupload.flash.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.multiupload.silverlight.xap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/Favorites/img/favorites.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/History/img/clock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/Trash/img/trash.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/Trash/img/trash_empty.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/button.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/buttons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/confirm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/corners.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/horizontal.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/vertical.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/img/flash.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/img/flv_player.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/img/quicktime.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/img/realmedia.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/img/shockwave.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/img/trans.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/img/windowsmedia.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/pagebreak/img/pagebreak.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/pagebreak/img/trans.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/spellchecker/img/wline.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/img/colorpicker.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/img/icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/default/img/buttons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/default/img/items.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/default/img/menu_arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/default/img/menu_check.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/default/img/progress.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/default/img/tabs.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/o2k7/img/button_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_silver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/simple/img/icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/simple/skins/o2k7/img/button_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logo1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notice-2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notice-3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notice.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site.tar.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/bannerimage1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/bannerimage2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/footer-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/graybox-headbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/greybox-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/headbullet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/header-activemenubg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/headtimebg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-banner1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-leftbg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-leftmenuactive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-searchbutton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-searchinput.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-sectionbox-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-sectioncolor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-sectioncolorphoto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-sectioncolorpic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-sectionmono.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-sectionmonophoto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-sectionmonopic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-sectionnature.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-sectionnaturephoto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-sectionnaturepic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/home-topbar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/img_english.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/img_vietnam.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/logofiap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/pagebg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/paypallogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/slideshow-thumblistbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/slideshow-thumbshadow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/timebox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/images/wrapperbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-body.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-button-blue.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-button-green.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-button-red.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-content-box.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-form-field.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-login-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-login.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-menu-item-blue.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-menu-item-current.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-menu-item-green.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-menu-item-red.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-radial-gradient.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bg-sidebar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/bl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/br.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/cancelbutton.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/flag_en.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/flag_vn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/bullet_black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/completed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/cross_circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/cross_grey_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/detail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/exclamation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/folder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/hammer_screwdriver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/information.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/page.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/pencil.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/pending.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/tick_circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/icons/uploadimage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/menu-current-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/print.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/shortcut-button-bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/swfupload-button-61x22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/tl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/admin/tr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bannerimage1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bannerimage2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bg-footer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bg-top.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bg_color.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bg_computer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bg_list.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bg_mono.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bg_nature.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bg_newphoto.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bg_slideshow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bg_submit.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/bg_travel.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/button_next.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/button_prev.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/cross_circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/fiapbanner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/footer-bg - Copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/footer-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/gdpc-contest-2012.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/gdpc-contest-2012.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/graybox-headbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/greybox-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/headbullet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/header-activemenubg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/headtimebg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-banner-halongbay.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-banner1-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-banner1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-banner11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-leftbg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-leftmenuactive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-searchbutton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-searchinput.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-sectionbox-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-sectioncolor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-sectioncolorphoto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-sectioncolorpic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-sectionmono.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-sectionmonophoto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-sectionmonopic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-sectionnature.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-sectionnaturephoto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-sectionnaturepic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/home-topbar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/ico_next02.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/ico_prev02.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/ico_slide.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/img_color.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/img_contest.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/img_english.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/img_monochrome.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/img_nature.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/img_paypal.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/img_travel.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/img_vietnam.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/lightbox/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/lightbox/bullet.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/lightbox/close.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/lightbox/closelabel.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/lightbox/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/lightbox/nextlabel.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/lightbox/prevlabel.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/logo.AAAA-Xoa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/logofiap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/menutop.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/noimage.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/notify/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/notify/close-btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/notify/error.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/notify/info.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/notify/success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/notify/warning.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/pagebg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/paypallogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/photoinfo-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/redirect/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/redirect/redirect_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/shadowbox/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/shadowbox/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/shadowbox/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/shadowbox/pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/shadowbox/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/shadowbox/previous.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/sidebarnews-headbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/Copy of paypal_verified.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/cardtype_amex.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/cardtype_discover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/cardtype_mastercard.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/cardtype_paypal.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/cardtype_visa.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/cart_delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/de.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/en/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/en/continue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/en/paynow_btn.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/error.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/fr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/gb.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/new_prod_box.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/news_bullet.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/paypal_header.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/paypal_header22.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/paypal_verified.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/tick.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/vn/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/vn/continue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/site/vn/paynow_btn.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/slideshow-thumblistbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/slideshow-thumbshadow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/sponsor/KKV-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/sponsor/adong-photor-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/sponsor/dknec-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/sponsor/le-media-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/sponsor/minhquang-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/sponsor/ngoclong-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/sponsor/nikon-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/sponsor/thanhthanh-photo-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/sponsor/thienlong-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/sponsor/vietbook-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/tick_circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/timebox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/upbutton.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/images/wrapperbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/400.shtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/401.shtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/403.shtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404.shtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/500.shtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.cache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.currency.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.dbsession.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.helper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.httpdownload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.imageresizer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.kcaptcha.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.lang.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.mypdo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.object2xml.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.phpmailer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.phpmailer.php.NHan" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.registry.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.router.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.sendmail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.sendmail.php.NO RANDOM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.simplexmlparser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.smtp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.timer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.uploader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class.viephphashing.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.banner.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.bannerposition.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.cart.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.cartproduct.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.contact.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.contestaward.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.contestphoto.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.contestphotoaward.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.contestphotopoint.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.contestphotoready.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.contestphotoready.php.old" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.contestphotoreadyround.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.contestround.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.helloworld.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.language.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.locationcity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.locationcountry.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.locationregion.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.locationship.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.locationshipgroup.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.log.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.newscategory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.object.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.order.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.orderproduct.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.page.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.paypaldirectpaymentresponse.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.product.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.relnewscategory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.user.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.user.php.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/core/class.userjudge.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/kcaptcha_fonts/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.banner.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.bannerposition.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.base.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.contact.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.contestaward.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.contestphoto.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.contestphotoready.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.judger.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.language.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.log.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.newscategory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.null.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.order.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.page.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.product.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.productattribute.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.productcategory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.productfield.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.productmanufacturer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.productsupplier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.round.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/admin/class.user.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/core/class.base.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.base.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.captcha.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.cart.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.checkout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.contact.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.forgotpass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.helloworld.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.judge.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.logout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.memberarea.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.notfound.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.notpermission.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.page.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.payment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.photo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.profile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.statuslist.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.testmail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/site/class.user.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google4b4c4d6fc97c2301.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google6c73677785250681.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/permission.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/setting.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/setting.php.ZIn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/startup.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html.OLD2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php.maintenance" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/global.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/cart.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/checkout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/contact.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/default.xml.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/forgotpass.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/helloworld.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/index.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/judge.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/login.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/login.xml.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/logout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/memberarea.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/news.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/page.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/payment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/photo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/profile.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/register.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/register.xml.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/statuslist.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/en/site/user.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/contact.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/contestaward.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/contestphoto.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/contestphotoready.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/index.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/judger.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/language.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/log.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/news.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/newscategory.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/order.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/page.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/product.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/round.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/shipping.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/admin/user.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/global.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/cart.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/checkout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/contact.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/forgotpass.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/helloworld.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/index.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/judge.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/login.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/logout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/memberarea.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/news.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/page.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/payment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/photo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/profile.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/register.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/statuslist.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/vn/site/user.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/Config_File.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/Smarty.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/Smarty_Compiler.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/debug.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.assemble_plugin_filepath.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.assign_smarty_interface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.create_dir_structure.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.display_debug_console.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.get_include_path.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.get_microtime.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.get_php_resource.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.is_secure.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.is_trusted.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.load_plugins.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.load_resource_plugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.process_cached_inserts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.process_compiled_include.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.read_cache_file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.rm_auto.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.rmdir.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.run_insert_handler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.smarty_include_php.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.write_cache_file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.write_compiled_include.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.write_compiled_resource.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/internals/core.write_file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/block.case.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/block.switch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/block.textformat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/compiler.assign.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.assign_debug_info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.config_load.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.counter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.cycle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.debug.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.eval.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.fetch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.gettopquiz.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.html_checkboxes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.html_image.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.html_options.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.html_radios.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.html_select_date.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.html_select_time.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.html_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.mailto.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.math.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.number_range.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.paginate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.popup.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.popup_init.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/function.sidebar_news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.alphabetonly.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.capitalize.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.cat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.codau2khongdau.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.count_characters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.count_paragraphs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.count_sentences.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.count_words.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.date_format.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.debug_print_var.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.default.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.escape.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.format_smiley.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.formatprice.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.indent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.lower.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.mediabox.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.money_format.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.nl2br.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.ormoutput.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.percent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.regex_replace.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.relative_datetime.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.replace.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.spacify.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.sslashes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.string_format.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.strip.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.strip_tags.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.strremove.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.translate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.truncate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.truncate_ascii.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.upper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.urlrefine.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/modifier.wordwrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/outputfilter.trimwhitespace.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/shared.escape_special_chars.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/smarty/plugins/shared.make_timestamp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/css/content.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/css/word.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/lists/image_list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/lists/link_list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/lists/media_list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/lists/template_list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/media/sample.ram" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/templates/layout1.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/external/templates/snippet1.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/langs/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advhr/css/advhr.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advhr/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advhr/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advhr/js/rule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advhr/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advhr/rule.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advimage/css/advimage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advimage/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advimage/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advimage/image.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advimage/js/image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advimage/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advlink/css/advlink.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advlink/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advlink/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advlink/js/advlink.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advlink/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/advlink/link.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/autosave/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/autosave/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/bbcode/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/bbcode/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/compat2x/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/compat2x/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/contextmenu/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/contextmenu/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/directionality/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/directionality/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/emotions.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/js/emotions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/emotions/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/example/dialog.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/example/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/example/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/example/js/dialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/example/langs/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/example/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/fullpage/css/fullpage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/fullpage/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/fullpage/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/fullpage/fullpage.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/fullpage/js/fullpage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/fullpage/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/fullscreen/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/fullscreen/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/fullscreen/fullscreen.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/iespell/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/iespell/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/changelog.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/Authenticators/BaseAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/Authenticators/IPAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/Authenticators/SessionAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/CorePlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/FileSystems/BaseFile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/FileSystems/BaseFileImpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/FileSystems/FileFilter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/FileSystems/FileStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/FileSystems/FileTreeHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/FileSystems/LocalFileImpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/FileSystems/RootFileImpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/ImageManager/ImageManagerPlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/ImageManager/Utils/MCImageToolsGD.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/ManagerEngine.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/ManagerPlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/Utils/CSSCompressor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/Utils/ClientResources.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/Utils/Error.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/Utils/JSCompressor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/Utils/JSON.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/Utils/LanguagePack.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/Utils/Logger.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/classes/Utils/ResultSet.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/css/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/default.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/docs/license.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/examples.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/files/templates/another_directory/index.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/files/templates/another_document.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/files/templates/directory/index.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/files/templates/document.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/files/templates/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/includes/general.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/js/default.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/js/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/js/mcfilemanager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/js/mcimagemanager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/default.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/im/ca.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/im/de.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/im/en.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/im/fr.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/im/ja_utf-8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/im/nb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/im/nl.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/im/nn.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/im/sv.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/language/language.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/login_session_auth.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/logs/debug.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/mime.types" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/createdir.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/css/core.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/css/dialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/css/dropmenu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/css/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/css/imageeditor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/css/imagemanager.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/css/toolbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/css/view.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/css/viewmodes.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/css/window_clearlooks2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/createdir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/edit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/imagemanager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.cleanname.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.dialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.dialog.status.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.domutils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.dropmenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.i18n.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.imageselection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.imageutils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.multiupload.flash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.multiupload.gears.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.multiupload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.multiupload.silverlight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.scrollto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.template.ext.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.template.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/jquery/jquery.uri.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/upload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/utils/basemanager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/utils/domain.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/utils/fixpng.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/utils/gears_init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/utils/rpc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/utils/swfobject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/utils/tinymce.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/js/view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/resources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/upload.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/pages/im/view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/CustomInfoExample/CustomInfoExample.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/DrupalAuthenticator/DrupalAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/ExternalAuthenticator/ExternalAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/ExternalAuthenticator/auth_drupal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/ExternalAuthenticator/auth_example.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/ExternalAuthenticator/auth_example.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/ExternalAuthenticator/auth_example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/ExternalAuthenticator/md5.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/Favorites/Favorites.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/Favorites/css/favorites.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/Favorites/js/favorites.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/Favorites/resources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/History/History.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/History/css/history.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/History/js/history.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/History/resources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/JoomlaAuthenticator/JoomlaAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/MamboAuthenticator/MamboAuthenticatorImpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/PHPNukeAuthenticator/PHPNukeAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/Trash/css/trash.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/WordpressAuthenticator/WordpressAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/plugins/_Template/Template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/rpc/default.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/rpc/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/rpc/rpc.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/stream/default.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/stream/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/stream/stream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/imagemanager/viephp_adapter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/inlinepopups/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/inlinepopups/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/inlinepopups/skins/clearlooks2/window.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/inlinepopups/template.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/insertdatetime/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/insertdatetime/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/layer/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/layer/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/css/content.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/css/media.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/js/embed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/js/media.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/media/media.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/nonbreaking/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/nonbreaking/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/noneditable/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/noneditable/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/pagebreak/css/content.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/pagebreak/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/pagebreak/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/paste/blank.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/paste/css/blank.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/paste/css/pasteword.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/paste/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/paste/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/paste/js/pastetext.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/paste/js/pasteword.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/paste/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/paste/pastetext.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/paste/pasteword.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/preview/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/preview/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/preview/example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/preview/jscripts/embed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/preview/preview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/print/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/print/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/safari/blank.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/safari/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/safari/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/save/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/save/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/searchreplace/css/searchreplace.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/searchreplace/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/searchreplace/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/searchreplace/js/searchreplace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/searchreplace/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/searchreplace/searchreplace.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/spellchecker/css/content.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/spellchecker/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/spellchecker/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/style/css/props.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/style/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/style/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/style/js/props.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/style/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/style/props.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/cell.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/css/cell.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/css/row.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/css/table.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/js/cell.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/js/merge_cells.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/js/row.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/js/table.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/merge_cells.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/row.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/table/table.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/template/blank.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/template/css/template.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/template/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/template/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/template/js/template.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/template/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/template/template.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/visualchars/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/visualchars/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/abbr.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/acronym.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/attributes.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/cite.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/css/attributes.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/css/popup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/del.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/editor_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/editor_plugin_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/ins.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/js/abbr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/js/acronym.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/js/attributes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/js/cite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/js/del.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/js/element_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/js/ins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/plugins/xhtmlxtras/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/about.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/anchor.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/charmap.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/color_picker.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/editor_template.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/editor_template_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/image.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/js/about.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/js/anchor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/js/charmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/js/color_picker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/js/image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/js/link.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/js/source_editor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/langs/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/langs/en_dlg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/link.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/default/content.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/default/dialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/default/ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/o2k7/content.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/o2k7/dialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/o2k7/ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/o2k7/ui_black.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/skins/o2k7/ui_silver.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/advanced/source_editor.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/simple/editor_template.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/simple/editor_template_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/simple/langs/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/simple/skins/default/content.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/simple/skins/default/ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/simple/skins/o2k7/content.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/themes/simple/skins/o2k7/ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/tiny_mce.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/tiny_mce_popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/tiny_mce_src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/utils/editable_selects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/utils/form_utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/utils/mctabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/tiny_mce/utils/validate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phperror.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/popup-click.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/popup-ip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/a/class.a-testmail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/checkout/history.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/checkout/paymentform.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/checkout/placeorder.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/checkout/review.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/contact/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/footer.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/footer_banner.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/forgotpass/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/forgotpass/reset.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/header.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/index/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/index_checkout.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/index_print.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/judge/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/login/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/maincontent.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/memberarea/editphoto.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/memberarea/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/news/detail.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/news/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/news/print.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/notfound/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/notpermission/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/order_print.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/page/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/photo/detail.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/photo/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/profile/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/register/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/sidebar.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/statuslist/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%00^004^00499C11%%edit.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%00^00C^00C4071D%%add.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%02^021^02149D59%%admin.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%03^033^033F7E0F%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%04^042^04232467%%resetpass.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%04^04A^04ADFCF4%%maincontent.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%05^052^0521934C%%sidebar.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%09^09C^09C49590%%header.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%0A^0A5^0A59B00A%%add.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%0C^0C2^0C241E67%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%13^13E^13ECA70A%%review.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%15^15F^15F4D21E%%detail.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%16^168^16812AD3%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%18^18A^18A15F80%%googleanalytic.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%19^192^19241224%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%19^197^19724179%%edit.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%1B^1B6^1B60B17E%%editphoto.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%1B^1BD^1BDAA5EB%%exportcsv_output.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%20^201^20196052%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%21^21A^21AB8EC6%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%26^267^2677315F%%notification.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%27^279^2799E13B%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%2B^2BE^2BEFFE69%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%2D^2D5^2D569247%%order_admin.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%38^38E^38E3589B%%order_print.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%39^397^397B7ABF%%add.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%41^419^419F6C0A%%add.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%48^488^48882486%%edit.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%4A^4AF^4AFF7673%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%51^51D^51DC6A11%%edit.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%52^529^5298F6E6%%admin.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%53^539^539BFC8B%%header.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%54^54F^54FCBFCE%%edit.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%57^573^573F493C%%exportcsv_output.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%5D^5DD^5DDDF0F6%%user.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%62^62C^62CD8B42%%tinymce.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%6B^6B1^6B17F676%%edit.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%6E^6E9^6E95066C%%footer.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%6E^6EA^6EA7040F%%listphoto.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%75^75A^75A4B2AE%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%77^770^770CF2DB%%redirect.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%79^796^7960A259%%edit.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%7D^7DC^7DCCFB62%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%88^886^88616891%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%8A^8A9^8A9410B7%%exportcsv.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%8F^8F3^8F37D40C%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%93^93F^93F20629%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%94^94A^94ABAAF5%%add.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%95^957^95728D00%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%97^972^972632BD%%header.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%9A^9A4^9A445C96%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%9E^9E0^9E0FC83F%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%9E^9EC^9EC577F0%%placeorder.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%A7^A72^A72F5078%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%A7^A7D^A7DD4779%%add.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%A8^A83^A8344595%%add.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%A8^A8F^A8FC3402%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%AA^AA2^AA28C85A%%footer.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%B0^B0C^B0C10628%%edit.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%B5^B53^B5399BD9%%order_client.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%B6^B6C^B6CC1D52%%history.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%B7^B72^B72DF59D%%index_checkout.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%BB^BBF^BBFA513E%%paymentform.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%BF^BF2^BF238E2C%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%C2^C25^C258C790%%edit.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%C6^C6B^C6BAAEF8%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%CB^CB0^CB0BA661%%notify.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%CE^CE8^CE843F1C%%reset.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%CF^CF7^CF7AF1DC%%user.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%D0^D08^D082D49E%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%D0^D0D^D0D34168%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%D3^D3F^D3FC7933%%exportcsv.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%DA^DAF^DAF2B0A7%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%DB^DB9^DB9D62B3%%generate.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%DB^DBB^DBB6FD35%%export.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%DE^DE4^DE4E57EE%%maincontent.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%DF^DFD^DFD870D6%%detail.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%E8^E8B^E8B3E225%%edit.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%EB^EB0^EB09C925%%view.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%F0^F07^F077A141%%footer.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%F1^F1D^F1DEDA55%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%F3^F3C^F3C544C6%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%F7^F72^F7242042%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%F8^F87^F87A9C26%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%FA^FAB^FAB9BA29%%edit.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_core/templates_c/default^%%FC^FC9^FC9DEEAB%%index.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/banner/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/banner/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/banner/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/bannerposition/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/bannerposition/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/bannerposition/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contact/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contact/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contestaward/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contestaward/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contestaward/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contestphoto/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contestphoto/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contestphoto/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contestphotoready/exportcsv.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contestphotoready/exportcsv_output.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contestphotoready/generate.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/contestphotoready/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/faq/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/faq/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/faq/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/footer.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/header.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/index/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/index_print.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/index_tiny.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/judger/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/judger/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/judger/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/language/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/language/view.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/log/detail.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/log/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/maincontent.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/news/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/news/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/news/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/newscategory/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/newscategory/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/newscategory/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/notfound/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/notification.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/notpermission/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/order/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/order/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/order_print.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/page/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/page/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/page/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/poll/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/poll/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/poll/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/product/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/product/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/product/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/round/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/round/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/round/exportcsv.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/round/exportcsv_output.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/round/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/round/listphoto.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/shipping/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/shipping/assign.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/shipping/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/shipping/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/shipping/locadd.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/shipping/locedit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/shipping/submenu.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/user/add.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/user/edit.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/user/export.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/admin/user/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/a/class.a-testmail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/checkout/history.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/checkout/paymentform.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/checkout/placeorder.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/checkout/review.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/contact/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/footer.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/footer_banner.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/forgotpass/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/forgotpass/reset.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/header.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/index/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/index_checkout.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/index_print.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/judge/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/login/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/maincontent.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/memberarea/editphoto.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/memberarea/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/news/detail.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/news/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/news/print.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/notfound/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/notpermission/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/order_print.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/page/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/photo/detail.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/photo/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/profile/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/register/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/sidebar.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_controller/site/statuslist/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/admin/footer.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/admin/header.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/admin/order/ordershippingnotify_client.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/admin/order/updatestatus_client.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/admin/user/resetpass.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/site/checkout/order_admin.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/site/checkout/order_client.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/site/contact/admin.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/site/footer.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/site/forgotpass/user.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/site/header.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/site/register/admin.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/_mail/site/register/user.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/admin/blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/admin/ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/admin/invalid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/admin/mystyle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/admin/red.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/admin/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/admin/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/admin/style_tiny.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/admin/swfupload.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/judge.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/shadowbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/googleanalytic.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/2col.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/js/admin/admin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/js/admin/simpla.jquery.configuration.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/js/jquery.countdown.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/js/jquery.idTabs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/js/shadowbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/js/site/cart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/notify.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/redirect.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/default/tinymce.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/giadinhphoto.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/a/class.a-testmail.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/checkout/history.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/checkout/paymentform.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/checkout/placeorder.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/checkout/review.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/contact/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/footer.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/footer_banner.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/forgotpass/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/forgotpass/reset.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/header.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/index/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/index_checkout.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/index_print.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/judge/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/login/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/maincontent.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/memberarea/editphoto.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/memberarea/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/news/detail.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/news/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/news/print.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/notfound/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/notpermission/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/order_print.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/page/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/photo/detail.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/photo/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/profile/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/register/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/sidebar.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/statuslist/index.tpl" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/config.php" afterPath="$PROJECT_DIR$/includes/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/setting.php" afterPath="$PROJECT_DIR$/includes/setting.php" />
     </list>
     <ignored path="giadinhphoto.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1317,22 +61,22 @@
     <favorites_list name="giadinhphoto" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="25" column="47" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setting.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="setting.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/setting.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="331" column="87" selection-start-line="331" selection-start-column="56" selection-end-line="331" selection-end-column="87" />
+            <state relative-caret-position="459">
+              <caret line="338" column="55" selection-start-line="338" selection-start-column="46" selection-end-line="338" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -1341,14 +85,14 @@
       <file leaf-file-name="permission.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/permission.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1956">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="435">
+              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -1366,8 +110,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/includes/config.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/includes/config.php" />
+        <option value="$PROJECT_DIR$/includes/.gitignore" />
+        <option value="$PROJECT_DIR$/includes/setting.php" />
       </list>
     </option>
   </component>
@@ -1391,7 +137,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -1409,6 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1443,7 +190,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1452,6 +198,55 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="prop_add_unversioned_files" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1463,32 +258,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1473327114005</updated>
-      <workItem from="1473327115407" duration="677000" />
+      <workItem from="1473327115407" duration="1763000" />
+      <workItem from="1473330742303" duration="226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="677000" />
+    <option name="totallyTimeSpent" value="1989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25338647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1511,23 +307,31 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/includes/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/setting.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="4965">
           <caret line="331" column="87" selection-start-line="331" selection-start-column="56" selection-end-line="331" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/permission.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1956">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1537,6 +341,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/class.mypdo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="22" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/permission.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/setting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="338" column="55" selection-start-line="338" selection-start-column="46" selection-end-line="338" selection-end-column="55" />
           <folding />
         </state>
       </provider>

@@ -1,6 +1,0 @@
-
-	{$contents|sslashes|default:""}
-
-
-	
-	

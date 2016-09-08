@@ -20,8 +20,8 @@ set_time_limit(180);
 $conf = array();
 $conf['db']['host'] = 'localhost';
 $conf['db']['name'] = 'gdcontest_swin';
-$conf['db']['user'] = 'gdcontest_2014';
-$conf['db']['pass'] = 'XzP597LF';
+$conf['db']['user'] = 'root';
+$conf['db']['pass'] = 'root';
 
 $conf['rootdomain'] = 'local.test/giadinhphoto/';
 $conf['rooturl'] = 'http://' . $conf['rootdomain'];
