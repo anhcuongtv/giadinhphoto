@@ -692,3 +692,22 @@ body#login {
 table.mceToolbar{width:500px !important;}
 .mceIframeContainer, .mceStatusbar{padding:0 !important;}
 
+.groupP > .groupP {
+    padding-left: 50px;
+    position: relative;
+}
+
+.groupP > .groupP:before {
+    content:"";
+    width: 46px;
+    position: absolute;
+    left:0;
+    top: 16px;
+    z-index:1;
+    height:1px;
+    background: black;
+}
+
+p.inactive {
+    text-decoration: line-through;
+}

@@ -107,6 +107,7 @@
                 <li>
                 	<a href="#" class="nav-top-item" id="menu_contestphoto">{$lang.controllergroup.menuPhoto}</a>
                     <ul>
+						<li><a href="{$conf.rooturl_admin}contestphotogroup" id="menu_contestphotogroup">{$lang.controllergroup.menuPhotoGroup}</a></li>
                     	<li><a href="{$conf.rooturl_admin}contestphoto" id="menu_contestphotolist">{$lang.controllergroup.menuPhotoList}</a></li>
 						<li><a href="{$conf.rooturl_admin}contestphotoready" id="menu_contestphotoreadylist">{$lang.controllergroup.menuPhotoContestReadyList}</a></li>
                     </ul>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2012-11-15 13:05:30
+<?php /* Smarty version 2.6.26, created on 2016-09-09 13:27:15
          compiled from _controller/site/notpermission/index.tpl */ ?>
 <div id="panelright" style="width:1000px">
 	<div id="page">

@@ -103,6 +103,7 @@
 	<lines name="bulkItemNoSelected" descr=""><![CDATA[Bạn chưa chọn dòng dữ liệu nào cả]]></lines>
 	
 	<lines name="errFormTokenInvalid" descr=""><![CDATA[Có lỗi khi gởi dữ liệu. Hãy thử lại.]]></lines>
-	
-	
+
+    <lines name="menuPhotoGroup" descr=""><![CDATA[Danh sách Thể Loại]]></lines>
+
 </data>

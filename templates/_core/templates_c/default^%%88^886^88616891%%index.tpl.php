@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-08-28 17:58:19
+<?php /* Smarty version 2.6.26, created on 2016-09-09 13:25:19
          compiled from _controller/site/memberarea/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', '_controller/site/memberarea/index.tpl', 200, false),array('modifier', 'truncate', '_controller/site/memberarea/index.tpl', 207, false),array('modifier', 'date_format', '_controller/site/memberarea/index.tpl', 208, false),)), $this); ?>

@@ -882,10 +882,42 @@ class Helper
 			unset($myCache);
 		}
 	}
+
+	public static function displayPhotoGroup($data)
+    {
+        $str = '';
+        $activeClass = '';
+        foreach($data as $detail) {
+            if ($detail->status) {
+                $activeClass = 'class="active"';
+            } else {
+                $activeClass = 'class="inactive"';
+            }
+            if (!$detail->child) {
+                $str.='<div class="groupP"><p '.$activeClass.'><a href="/admin/contestphotogroup/add/id/'.$detail->id.'">'.$detail->name.' ('.$detail->limit.')</a></p></div>';
+            } else {
+                $str.='<div class="groupP"><p '.$activeClass.'><a href="/admin/contestphotogroup/add/id/'.$detail->id.'">'.$detail->name.' ('.$detail->limit.')</a></p>'.self::displayPhotoGroup($detail->child).'</div>';
+            }
+        }
+        return $str;
+    }
+
+    public static function displaySelectionPhotoGroup($data, &$space = '', $start = true)
+    {
+        $str = '';
+        foreach($data as $detail) {
+            if (!$start) {
+                $space.= '--------------';
+            } else {
+                $space = '';
+            }
+            if (!$detail->child) {
+                $str.='<option value="'.$detail->id.'">'.$space.$detail->name.'</option>';
+                $space = '';
+            } else {
+                $str.='<option value="'.$detail->id.'">'.$space.$detail->name.'</option>'.self::displaySelectionPhotoGroup($detail->child, $space, false);
+            }
+        }
+        return $str;
+    }
 }  
-
-
-
-	
-
-?>

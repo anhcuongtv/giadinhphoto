@@ -183,7 +183,7 @@ $smarty->compile_dir = 'templates/_core/templates_c/';
 $smarty->config_dir = 'templates/_core/configs/';
 $smarty->cache_dir = 'templates/_core/cache/';
 $smarty->compile_id = $currentTemplate;	//seperate compiled template file 
-$smarty->error_reporting = E_ALL ^ E_NOTICE;
+$smarty->error_reporting = E_ALL ^ E_NOTICE ^ E_DEPRECATED;
 
 $smarty->assign(array('base_dir' => Registry::$base_dir,
 					  'langCode' => $langCode,

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<lines name="head_list" descr=""><![CDATA[Quản lý Thể Loại]]></lines>
+	<lines name="head_add" descr=""><![CDATA[Thêm Thể Loại]]></lines>
+    <lines name="group_name" descr=""><![CDATA[Tên Thể Loại]]></lines>
+    <lines name="group_parent" descr=""><![CDATA[Thể Loại Cha?]]></lines>
+    <lines name="group_order" descr=""><![CDATA[Thứ Tự]]></lines>
+    <lines name="group_limit" descr=""><![CDATA[Số hình ảnh]]></lines>
+    <lines name="group_status" descr=""><![CDATA[Kích Hoạt]]></lines>
+    <lines name="group_add" descr=""><![CDATA[Thêm Thể Loại]]></lines>
+    <lines name="yes" descr=""><![CDATA[Có]]></lines>
+    <lines name="no" descr=""><![CDATA[Không]]></lines>
+</data>

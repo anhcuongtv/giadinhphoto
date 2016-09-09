@@ -1,0 +1,10 @@
+CREATE TABLE `gdcontest_swin`.`pex_photogroup` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `parent` INT NULL,
+  `name` VARCHAR(200) NOT NULL,
+  `order` TINYINT NOT NULL DEFAULT 1,
+  `limit` TINYINT NOT NULL,
+  `status` BIT NOT NULL DEFAULT 1,
+  `createdDate` TIMESTAMP NOT NULL,
+  PRIMARY KEY (`id`));
+

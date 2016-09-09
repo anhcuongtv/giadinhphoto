@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2012-11-15 13:07:21
+<?php /* Smarty version 2.6.26, created on 2016-09-09 13:25:20
          compiled from _controller/admin/footer.tpl */ ?>
 			<div id="footer">
 				<small> <!-- Remove this notice or replace it with whatever you want -->

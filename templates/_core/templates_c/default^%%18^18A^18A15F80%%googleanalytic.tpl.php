@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-11-06 12:19:02
+<?php /* Smarty version 2.6.26, created on 2016-09-09 13:25:19
          compiled from googleanalytic.tpl */ ?>
 <?php echo '
 <script>

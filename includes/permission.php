@@ -155,6 +155,7 @@
 			'contestphotoready_*',
 			'contestaward_*',
 			'language_*',
+            'contestphotogroup_*',
 		),
 		
 		

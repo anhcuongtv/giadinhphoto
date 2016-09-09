@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-10-16 15:10:18
+<?php /* Smarty version 2.6.26, created on 2016-09-09 15:44:20
          compiled from _controller/admin/user/add.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'htmlspecialchars', '_controller/admin/user/add.tpl', 35, false),)), $this); ?>
