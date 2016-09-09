@@ -23,7 +23,7 @@ $conf['db']['name'] = 'gdcontest_swin';
 $conf['db']['user'] = 'root';
 $conf['db']['pass'] = 'root';
 
-$conf['rootdomain'] = 'local.test/giadinhphoto/';
+$conf['rootdomain'] = 'photo.local/';
 $conf['rooturl'] = 'http://' . $conf['rootdomain'];
 $conf['rooturl_admin'] = 'http://' . $conf['rootdomain'] . 'admin/';
 

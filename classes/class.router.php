@@ -102,7 +102,7 @@ Class Router
 		$parts = explode('/', $route);
 		
 		array_walk($parts, array('Router', 'filterRouterInput'));
-		
+
 		$controllerGroup = array_shift($parts);
 		$controller = array_shift($parts);
 		$action = array_shift($parts);

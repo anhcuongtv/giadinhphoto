@@ -324,17 +324,17 @@
 		);
 	
 	
-	$setting['extra']['enableRegister'] = FALSE;
+	$setting['extra']['enableRegister'] = TRUE;
 	$setting['extra']['enablePhotogallery'] = TRUE;
-$setting['extra']['enableNews'] = TRUE;
+    $setting['extra']['enableNews'] = TRUE;
 	$setting['extra']['countdownDate'] = '25/10/2014';
 	$setting['extra']['countdownTime'] = '24:00';
-	$setting['extra']['disablePhotogalleryRedirect'] = 'http://giadinhphotocontest.com/';
+	$setting['extra']['disablePhotogalleryRedirect'] = 'http://photo.local/';
     //su dung co giao dien css
-	$setting['extra']['staticserver']['vn'] = 'http://local.test/giadinhphoto/templates/';
-	$setting['extra']['staticserver']['en'] = 'http://local.test/giadinhphoto/templates/';
+	$setting['extra']['staticserver']['vn'] = 'http://photo.local/templates/';
+	$setting['extra']['staticserver']['en'] = 'http://photo.local/templates/';
     //end
-	$setting['extra']['uploadimageserver']['vn'] = 'http://local.test/giadinhphoto/upload.php';
-	$setting['extra']['imageDirectoryRemoteServer']['vn'] = 'http://static.giadinhphoto.com/uploads/contestphoto/vn/'; //full URL to remote server store vn image
+	$setting['extra']['uploadimageserver']['vn'] = 'http://photo.local/upload.php';
+	$setting['extra']['imageDirectoryRemoteServer']['vn'] = 'http://photo.local/uploads/contestphoto/vn/'; //full URL to remote server store vn image
     $setting['extra']['imagedata'] = 'uploads/imagedata/';
 ?>

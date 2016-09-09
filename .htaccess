@@ -1,6 +1,6 @@
 Options +FollowSymLinks
 RewriteEngine on
-RewriteBase /giadinhphoto
+#RewriteBase /giadinhphoto
 
 #ErrorDocument 404 / http://giadinhphotocontest.com/
 
@@ -21,7 +21,7 @@ RewriteRule ^(.*/)*(.*?)/css/(.*)$ templates/$2/css/$3  [L]
 RewriteRule ^(.*/)*(.*?)/js/(.*)$ templates/$2/js/$3  [L]
 
 #note: not under any Rewrite_Cond
-#RewriteRule ^index\.(html)$ / [R=301,NC]   
+#RewriteRule ^index\.(html)$ / [R=301,NC]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

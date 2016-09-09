@@ -7,7 +7,7 @@ Class Controller_Site_User Extends Controller_Site_Base
 	{
 		$username = $this->registry->router->getArg('username');
 		$myUser = Core_User::getByUsername($username);
-		
+
 		if($myUser->id == 0)
 		{
 			$redirectMsg = $this->registry->lang['controller']['errNotFound'];

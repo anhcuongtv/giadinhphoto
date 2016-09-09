@@ -13,7 +13,7 @@
 		'site'		=>	array(
 			'index_index',
 			'login_index',
-			#'register_index',
+			'register_index',
 			'contact_index',
 			'captcha_index',
 			'notfound_index',

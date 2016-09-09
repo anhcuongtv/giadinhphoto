@@ -15,8 +15,8 @@ if($conf['usingGZIP'])
 {
 	ob_start();
 	ob_implicit_flush(false);
-} 
-   
+}
+
 # Load router
 $router = new Router($registry);
 $registry->router = $router;

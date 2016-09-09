@@ -327,9 +327,9 @@ function myGlobalException($exception)
 function parseRouterFromHtaccess($route)
 {
 	global $conf,$catMap;
-	
+
 	$parts = explode('/', $route);
-	
+
 	//not check URL Rewrite if admin controller group
 	if($parts[0] == 'admin' || $parts[0] == 'site')
 		return $route;

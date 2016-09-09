@@ -119,6 +119,9 @@ class dbSession
 		
 		// update the existing session's data
 		// and set new expiry time
+
+		$this->db->query('SET SESSION sql_mode=\'\'');
+
 		$sql = 'UPDATE ' . TABLE_PREFIX . 'sessions
 				SET s_controller = "'.$GLOBALS['controller_group'] . '_' . $GLOBALS['controller'].'",
 					s_action = "'.$GLOBALS['action'].'",
