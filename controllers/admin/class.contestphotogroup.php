@@ -44,17 +44,23 @@ Class Controller_Admin_ContestPhotoGroup Extends Controller_Admin_Base
             $group->order = $formData['groupOrder'];
             $group->limit = $formData['groupLimit'];
             $group->status = (int)$formData['groupStatus'];
+            $group->isGroup = ($formData['isGroup']==='on') ? 1 : 0;
+            $id = $formData['id'];
+            if(!$id) {
+                $result = $group->addData();
+            } else {
+                $group->id = $id;
+                $result= $group->updateData();
+            }
 
-            $addResult = $group->addData();
 
-            if ($addResult) {
+            if ($result) {
                 header('location: '.$this->registry->conf['rooturl'].'admin/contestphotogroup');
             }
         }
 
-
         $group = Core_ContestPhotoGroup::getList();
-        $data = Helper::displaySelectionPhotoGroup($group);
+        $data = Helper::displaySelectionPhotoGroup($group, $space='', true, $info->parent);
         $this->registry->smarty->assign(
             array(
                 'data'	 	=> $data,

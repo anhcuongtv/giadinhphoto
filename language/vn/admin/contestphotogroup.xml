@@ -6,6 +6,7 @@
     <lines name="group_parent" descr=""><![CDATA[Thể Loại Cha?]]></lines>
     <lines name="group_order" descr=""><![CDATA[Thứ Tự]]></lines>
     <lines name="group_limit" descr=""><![CDATA[Số hình ảnh]]></lines>
+    <lines name="group_isGroup" descr=""><![CDATA[Ảnh Bộ?]]></lines>
     <lines name="group_status" descr=""><![CDATA[Kích Hoạt]]></lines>
     <lines name="group_add" descr=""><![CDATA[Thêm Thể Loại]]></lines>
     <lines name="yes" descr=""><![CDATA[Có]]></lines>

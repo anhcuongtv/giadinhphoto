@@ -20,21 +20,22 @@
                         <label>{$lang.controller.group_limit} <span class="star_require">*</span> : </label>
                         <input type="text" name="groupLimit" id="groupLimit" size="40" value="{$info->limit}" class="text-input">
                     </p>
-
-
                     <p>
                         <label>{$lang.controller.group_order} <span class="star_require">*</span> : </label>
                         <input type="text" name="groupOrder" id="groupOrder" value="{$info->order}" size="40" class="text-input">
                     </p>
-
+	                <p>
+		                <label>{$lang.controller.group_isGroup} <span class="star_require">*</span> : </label>
+		                <input type="checkbox" name="isGroup" id="isGroup" {if ($info->isGroup === 1)}checked="checked"{/if} class="text-input">
+	                </p>
                     <p>
                         <label>{$lang.controller.group_status} <span class="star_require">*</span>  : </label>
-                        <select id="groupStatus">
-                            <option value="1">{$lang.controller.yes}</option>
-                            <option value="0">{$lang.controller.no}</option>
+                        <select id="groupStatus" name="groupStatus">
+                            <option value="1" {if ($info->status === 1)}selected="selected"{/if}>{$lang.controller.yes}</option>
+                            <option value="0" {if ($info->status === 0)}selected="selected"{/if}>{$lang.controller.no}</option>
                         </select>
                     </p>
-
+					<input type="hidden" name="id" value="{$info->id}"/>
                 </fieldset>
 		</div>
 	</div>

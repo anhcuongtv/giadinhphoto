@@ -9,6 +9,7 @@ Class Core_ContestPhotoGroup extends Core_Object
 	public $parent = '';
 	public $status = '';
 	public $limit = '';
+    public $isGroup = '';
     public $child = '';
 	
 	public function __construct($id = 0)
@@ -26,15 +27,16 @@ Class Core_ContestPhotoGroup extends Core_Object
 	
 	public function addData()
 	{
-		$sql = 'INSERT INTO ' . TABLE_PREFIX . 'photogroup(`name`, parent, `order`, `limit`, `status`)
-				VALUES(?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO ' . TABLE_PREFIX . 'photogroup(`name`, parent, `order`, `limit`, `status`, isGroup)
+				VALUES(?, ?, ?, ?, ?, ?)';
 				
 		$rowCount = $this->db->query($sql, array(
 				(string)$this->name,
 				(int)$this->parent,
 				(int)$this->order,
 				(int)$this->limit,
-				(int)$this->status
+				(int)$this->status,
+                (int)$this->isGroup,
 			))->rowCount();
 
         $this->id = $this->db->lastInsertId();
@@ -46,7 +48,36 @@ Class Core_ContestPhotoGroup extends Core_Object
 		else
 			return false;
 	}
-	
+
+    public function updateData()
+    {
+        global $registry;
+
+        $sql = 'UPDATE ' . TABLE_PREFIX . 'photogroup
+        		SET name = ?,
+        			`parent` = ?,
+        			`limit` = ?,
+        			`order` = ?,
+        			`status` = ?,
+        			isGroup = ?
+        		WHERE id = ?';
+
+        $stmt = $this->db->query($sql, array(
+            $this->name,
+            $this->parent,
+            $this->limit,
+            $this->order,
+            $this->status,
+            $this->isGroup,
+            $this->id
+        ));
+
+        if($stmt) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 	
 	
 	/**
@@ -62,9 +93,7 @@ Class Core_ContestPhotoGroup extends Core_Object
 		return $rowCount;
        
 	}
-	
-	
-	
+
 	public function getData($id)
 	{
 		$sql = 'SELECT * FROM ' . TABLE_PREFIX . 'photogroup
@@ -78,7 +107,8 @@ Class Core_ContestPhotoGroup extends Core_Object
             $this->name = $row['name'];
             $this->order = $row['order'];
             $this->limit = $row['limit'];
-            $this->status = $row['status'];
+            $this->status = (int)$row['status'];
+            $this->isGroup = (int)$row['isGroup'];
 		}
 	}
 	
@@ -110,13 +140,17 @@ Class Core_ContestPhotoGroup extends Core_Object
 		return $db->query($sql)->fetchSingle();
 	}
 	
-	public static function getList($parent = 0)
+	public static function getList($parent = 0, $onlyActive = false)
 	{
 		global $db;
 		
 		$outputList = array();
+        $sqlMore = '';
+        if ($onlyActive) {
+            $sqlMore = ' and status = 1 ';
+        }
 		$sql = 'SELECT * FROM ' . TABLE_PREFIX . 'photogroup
-		        WHERE parent = '.$parent.' order by `order` asc';
+		        WHERE parent = '.$parent.$sqlMore.' order by `order` asc';
 		$stmt = $db->query($sql);
         $group = array();
         $i = 0;
@@ -126,13 +160,14 @@ Class Core_ContestPhotoGroup extends Core_Object
             $groupDetail->id = $row['id'];
             $groupDetail->name = $row['name'];
             $groupDetail->parent = $row['parent'];
-            $groupDetail->status = $row['status'];
-            $groupDetail->limit = $row['limit'];
-            $groupDetail->order = $row['order'];
+            $groupDetail->status = (int)$row['status'];
+            $groupDetail->limit = (int)$row['limit'];
+            $groupDetail->order = (int)$row['order'];
+            $groupDetail->isGroup = (int)$row['isGroup'];
 
 			$group[$i] = $groupDetail;
             //check child
-            $childs = self::getList($row['id']);
+            $childs = self::getList($row['id'], $onlyActive);
             if (count($childs) > 0) {
                 $group[$i]->child = $childs;
             }

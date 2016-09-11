@@ -8,3 +8,6 @@ CREATE TABLE `gdcontest_swin`.`pex_photogroup` (
   `createdDate` TIMESTAMP NOT NULL,
   PRIMARY KEY (`id`));
 
+  ALTER TABLE `gdcontest_swin`.`pex_photogroup` CHANGE COLUMN `status` `status` TINYINT(1) NOT NULL DEFAULT 1  ;
+  ALTER TABLE `gdcontest_swin`.`pex_photogroup` ADD COLUMN `isGroup` TINYINT(1) NOT NULL DEFAULT 0  AFTER `createdDate` ;
+

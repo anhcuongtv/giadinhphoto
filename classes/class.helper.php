@@ -902,20 +902,50 @@ class Helper
         return $str;
     }
 
-    public static function displaySelectionPhotoGroup($data, &$space = '', $start = true)
+    public static function displaySelectionPhotoGroup($data, &$space = '', $start = true, $currentID = '')
     {
         $str = '';
+        $selected = '';
         foreach($data as $detail) {
             if (!$start) {
                 $space.= '--------------';
             } else {
                 $space = '';
             }
+            if ($currentID == $detail->id) {
+                $selected = 'selected';
+            } else {
+                $selected = '';
+            }
             if (!$detail->child) {
-                $str.='<option value="'.$detail->id.'">'.$space.$detail->name.'</option>';
+                $str.='<option value="'.$detail->id.'" '.$selected.'>'.$space.$detail->name.'</option>';
                 $space = '';
             } else {
-                $str.='<option value="'.$detail->id.'">'.$space.$detail->name.'</option>'.self::displaySelectionPhotoGroup($detail->child, $space, false);
+                $str.='<option value="'.$detail->id.'" '.$selected.'>'.$space.$detail->name.'</option>'.self::displaySelectionPhotoGroup($detail->child, $space, false, $currentID);
+            }
+        }
+        return $str;
+    }
+
+    public static function displaySelectionPhotoGroupForUser($data, $start = true, $currentID = '')
+    {
+        $str = '';
+        $selected = '';
+        foreach($data as $detail) {
+            $space = '';
+            if ($currentID == $detail->id) {
+                $selected = 'selected';
+            } else {
+                $selected = '';
+            }
+            if (!$detail->child) {
+                $str.='<option value="'.$detail->id.'" '.$selected.'>'.$detail->name.' ('.$detail->limit.')</option>';
+            } else {
+                if ($detail->limit === 0) {
+                    $str.='<optgroup label="'.$detail->name.'">'.self::displaySelectionPhotoGroupForUser($detail->child, false, $currentID).'</optgroup>';
+                } else {
+                    $str.='<option value="'.$detail->id.'" '.$selected.'>'.$detail->name.' ('.$detail->limit.')</option>'.self::displaySelectionPhotoGroupForUser($detail->child, false, $currentID);
+                }
             }
         }
         return $str;

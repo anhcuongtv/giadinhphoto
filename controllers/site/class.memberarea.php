@@ -172,6 +172,9 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 			$formData['fremotesessionid'] = Helper::getSessionId();
 			$formData['fremotetoken'] = $this->calculateSecurityToken($this->registry->me->id, Helper::getSessionId());
 		}
+
+        $group = Core_ContestPhotoGroup::getList(0, true);
+        $data = Helper::displaySelectionPhotoGroupForUser($group);
 		
 		$this->registry->smarty->assign(
 											array('error' => $error,
@@ -183,7 +186,8 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 												//'newPhotoList'	=> $newPhotoList,
 												'myPaymentPage'	=> $myPaymentPage,
 												'formData'	=> $formData,
-												'tab'	=> $tab
+												'tab'	=> $tab,
+                                                'data'  => $data
 										)
 		);
 		

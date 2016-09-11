@@ -1,0 +1,19 @@
+[10-Sep-2016 15:43:19] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gdcontest_swin.pex_photogroup' doesn't exist' in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php:77
+Stack trace:
+#0 D:\AppServ\www\giadinhphoto\classes\class.mypdo.php(77): PDOStatement->execute(Array)
+#1 D:\AppServ\www\giadinhphoto\classes\core\class.contestphotogroup.php(120): MyPDO->query('SELECT * FROM p...')
+#2 D:\AppServ\www\giadinhphoto\controllers\admin\class.contestphotogroup.php(13): Core_ContestPhotoGroup::getList()
+#3 D:\AppServ\www\giadinhphoto\classes\class.router.php(84): Controller_Admin_ContestPhotoGroup->indexAction()
+#4 D:\AppServ\www\giadinhphoto\index.php(24): Router->delegate()
+#5 {main}
+  thrown in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php on line 77
+[10-Sep-2016 16:21:44] PHP Fatal error:  Smarty error: [in _controller/admin/contestphotogroup/add.tpl line 29]: syntax error: unrecognized tag: (int)$info->status (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[11-Sep-2016 14:49:09] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php:77
+Stack trace:
+#0 D:\AppServ\www\giadinhphoto\classes\class.mypdo.php(77): PDOStatement->execute(Array)
+#1 D:\AppServ\www\giadinhphoto\classes\core\class.contestphotogroup.php(40): MyPDO->query('INSERT INTO pex...', Array)
+#2 D:\AppServ\www\giadinhphoto\controllers\admin\class.contestphotogroup.php(49): Core_ContestPhotoGroup->addData()
+#3 D:\AppServ\www\giadinhphoto\classes\class.router.php(84): Controller_Admin_ContestPhotoGroup->addAction()
+#4 D:\AppServ\www\giadinhphoto\index.php(24): Router->delegate()
+#5 {main}
+  thrown in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php on line 77
