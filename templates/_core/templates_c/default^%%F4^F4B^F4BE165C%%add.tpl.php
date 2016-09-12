@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2016-09-11 14:58:17
+<?php /* Smarty version 2.6.26, created on 2016-09-12 14:33:10
          compiled from _controller/admin/contestphotogroup/add.tpl */ ?>
 <h2><?php echo $this->_tpl_vars['lang']['controller']['head_add']; ?>
 </h2>
@@ -52,6 +52,16 @@ unset($_smarty_tpl_vars);
                             <option value="1" <?php if (( $this->_tpl_vars['info']->status === 1 )): ?>selected="selected"<?php endif; ?>><?php echo $this->_tpl_vars['lang']['controller']['yes']; ?>
 </option>
                             <option value="0" <?php if (( $this->_tpl_vars['info']->status === 0 )): ?>selected="selected"<?php endif; ?>><?php echo $this->_tpl_vars['lang']['controller']['no']; ?>
+</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label><?php echo $this->_tpl_vars['lang']['controller']['group_section']; ?>
+ <span class="star_require">*</span>  : </label>
+                        <select id="groupSection" name="groupSection">
+                            <option value="0" <?php if (( $this->_tpl_vars['info']->isSection === 0 )): ?>selected="selected"<?php endif; ?>><?php echo $this->_tpl_vars['lang']['controller']['no']; ?>
+</option>
+                            <option value="1" <?php if (( $this->_tpl_vars['info']->isSection === 1 )): ?>selected="selected"<?php endif; ?>><?php echo $this->_tpl_vars['lang']['controller']['yes']; ?>
 </option>
                         </select>
                     </p>

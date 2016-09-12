@@ -8,6 +8,7 @@
     <lines name="group_limit" descr=""><![CDATA[Số hình ảnh]]></lines>
     <lines name="group_isGroup" descr=""><![CDATA[Ảnh Bộ?]]></lines>
     <lines name="group_status" descr=""><![CDATA[Kích Hoạt]]></lines>
+    <lines name="group_section" descr=""><![CDATA[Thể Loại Chính?]]></lines>
     <lines name="group_add" descr=""><![CDATA[Thêm Thể Loại]]></lines>
     <lines name="yes" descr=""><![CDATA[Có]]></lines>
     <lines name="no" descr=""><![CDATA[Không]]></lines>

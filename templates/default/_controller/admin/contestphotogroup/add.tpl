@@ -35,6 +35,13 @@
                             <option value="0" {if ($info->status === 0)}selected="selected"{/if}>{$lang.controller.no}</option>
                         </select>
                     </p>
+                    <p>
+                        <label>{$lang.controller.group_section} <span class="star_require">*</span>  : </label>
+                        <select id="groupSection" name="groupSection">
+                            <option value="0" {if ($info->isSection === 0)}selected="selected"{/if}>{$lang.controller.no}</option>
+                            <option value="1" {if ($info->isSection === 1)}selected="selected"{/if}>{$lang.controller.yes}</option>
+                        </select>
+                    </p>
 					<input type="hidden" name="id" value="{$info->id}"/>
                 </fieldset>
 		</div>

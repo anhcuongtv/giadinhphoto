@@ -45,6 +45,7 @@ Class Controller_Admin_ContestPhotoGroup Extends Controller_Admin_Base
             $group->limit = $formData['groupLimit'];
             $group->status = (int)$formData['groupStatus'];
             $group->isGroup = ($formData['isGroup']==='on') ? 1 : 0;
+            $group->isSection = (int)$formData['groupSection'];
             $id = $formData['id'];
             if(!$id) {
                 $result = $group->addData();
@@ -60,7 +61,7 @@ Class Controller_Admin_ContestPhotoGroup Extends Controller_Admin_Base
         }
 
         $group = Core_ContestPhotoGroup::getList();
-        $data = Helper::displaySelectionPhotoGroup($group, $space='', true, $info->parent);
+        $data = Helper::displaySelectionPhotoGroup($group, $space, true, $info->parent);
         $this->registry->smarty->assign(
             array(
                 'data'	 	=> $data,

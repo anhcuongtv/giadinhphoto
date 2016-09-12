@@ -8,6 +8,14 @@ CREATE TABLE `gdcontest_swin`.`pex_photogroup` (
   `createdDate` TIMESTAMP NOT NULL,
   PRIMARY KEY (`id`));
 
-  ALTER TABLE `gdcontest_swin`.`pex_photogroup` CHANGE COLUMN `status` `status` TINYINT(1) NOT NULL DEFAULT 1  ;
-  ALTER TABLE `gdcontest_swin`.`pex_photogroup` ADD COLUMN `isGroup` TINYINT(1) NOT NULL DEFAULT 0  AFTER `createdDate` ;
+ALTER TABLE `gdcontest_swin`.`pex_photogroup` CHANGE COLUMN `status` `status` TINYINT(1) NOT NULL DEFAULT 1  ;
+ALTER TABLE `gdcontest_swin`.`pex_photogroup` ADD COLUMN `isGroup` TINYINT(1) NOT NULL DEFAULT 0  AFTER `createdDate` ;
 
+ALTER TABLE `gdcontest_swin`.`pex_photogroup`
+ADD COLUMN `isSection` TINYINT(1) NOT NULL DEFAULT 0 AFTER `isGroup`;
+
+CREATE TABLE `gdcontest_swin`.`pex_ac_user_paid` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `section_id` INT NOT NULL,
+  `createdDate` TIMESTAMP NOT NULL,
+  PRIMARY KEY (`id`));
