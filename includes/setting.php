@@ -331,10 +331,10 @@
 	$setting['extra']['countdownTime'] = '24:00';
 	$setting['extra']['disablePhotogalleryRedirect'] = 'http://photo.local/';
     //su dung co giao dien css
-	$setting['extra']['staticserver']['vn'] = 'http://photo.local/templates/';
-	$setting['extra']['staticserver']['en'] = 'http://photo.local/templates/';
-    /*$setting['extra']['staticserver']['vn'] = 'http://localhost/giadinhphoto/templates/';
-	$setting['extra']['staticserver']['en'] = 'http://localhost/giadinhphoto/templates/';*/
+/*	$setting['extra']['staticserver']['vn'] = 'http://photo.local/templates/';
+	$setting['extra']['staticserver']['en'] = 'http://photo.local/templates/';*/
+    $setting['extra']['staticserver']['vn'] = 'http://localhost/giadinhphoto/templates/';
+	$setting['extra']['staticserver']['en'] = 'http://localhost/giadinhphoto/templates/';
     //end
 	$setting['extra']['uploadimageserver']['vn'] = 'http://photo.local/upload.php';
 	$setting['extra']['imageDirectoryRemoteServer']['vn'] = 'http://photo.local/uploads/contestphoto/vn/'; //full URL to remote server store vn image

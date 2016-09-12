@@ -21,11 +21,11 @@ $conf = array();
 $conf['db']['host'] = 'localhost';
 $conf['db']['name'] = 'gdcontest_swin';
 $conf['db']['user'] = 'root';
-$conf['db']['pass'] = 'root';
-//$conf['db']['pass'] = '123456';
+//$conf['db']['pass'] = 'root';
+$conf['db']['pass'] = '123456';
 
-$conf['rootdomain'] = 'photo.local/';
-//$conf['rootdomain'] = 'localhost/giadinhphoto/';
+//$conf['rootdomain'] = 'photo.local/';
+$conf['rootdomain'] = 'localhost/giadinhphoto/';
 $conf['rooturl'] = 'http://' . $conf['rootdomain'];
 $conf['rooturl_admin'] = 'http://' . $conf['rootdomain'] . 'admin/';
 

@@ -17,3 +17,14 @@ Stack trace:
 #4 D:\AppServ\www\giadinhphoto\index.php(24): Router->delegate()
 #5 {main}
   thrown in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php on line 77
+[12-Sep-2016 21:00:30] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gdcontest_swin.pex_ac_user_paid' doesn't exist' in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php:77
+Stack trace:
+#0 D:\AppServ\www\giadinhphoto\classes\class.mypdo.php(77): PDOStatement->execute(Array)
+#1 D:\AppServ\www\giadinhphoto\classes\core\class.user.php(531): MyPDO->query('SELECT p.sectio...', Array)
+#2 D:\AppServ\www\giadinhphoto\classes\core\class.user.php(408): Core_User::getPaidSection(Object(Core_User))
+#3 D:\AppServ\www\giadinhphoto\classes\core\class.user.php(93): Core_User->getData('1')
+#4 D:\AppServ\www\giadinhphoto\includes\startup.php(163): Core_User->updateFromSession()
+#5 D:\AppServ\www\giadinhphoto\index.php(5): require('D:\AppServ\www\...')
+#6 {main}
+  thrown in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php on line 77
+[12-Sep-2016 21:10:10] PHP Parse error:  syntax error, unexpected T_IF in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 27
