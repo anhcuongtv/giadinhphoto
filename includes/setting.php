@@ -336,7 +336,7 @@
     $setting['extra']['staticserver']['vn'] = 'http://localhost/giadinhphoto/templates/';
 	$setting['extra']['staticserver']['en'] = 'http://localhost/giadinhphoto/templates/';
     //end
-	$setting['extra']['uploadimageserver']['vn'] = 'http://photo.local/upload.php';
-	$setting['extra']['imageDirectoryRemoteServer']['vn'] = 'http://photo.local/uploads/contestphoto/vn/'; //full URL to remote server store vn image
+	$setting['extra']['uploadimageserver']['vn'] = 'http://localhost/upload/upload.php';
+	$setting['extra']['imageDirectoryRemoteServer']['vn'] = 'http://localhost/upload/uploads/contestphoto/vn/'; //full URL to remote server store vn image
     $setting['extra']['imagedata'] = 'uploads/imagedata/';
 ?>

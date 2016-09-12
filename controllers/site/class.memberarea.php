@@ -53,10 +53,12 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		//load paymentmethod
 		$myPaymentPage = new Core_Page(0, $this->registry->langCode);
 		$myPaymentPage->getDataByText('paymentmethod');
+        $groups = Core_ContestPhotoGroup::getAllPhotoGroup();
 		if(!empty($_POST['fsubmitphoto']))
 		{
+            $groups = Core_ContestPhotoGroup::getAllPhotoGroup();
 			$formData = array_merge($formData, $_POST);
-			if($this->addPhotoValidator($formData, $error, $sections))
+			if($this->addPhotoValidator($formData, $error, $groups))
 			{
 				$formData['ffilesizeinbyte'] = $_FILES['fimage']['size'];
 				$imageInfo = getimagesize($_FILES['fimage']['tmp_name']);
@@ -113,7 +115,8 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 				if(!empty($_POST['fsubmitphotoremote']))
 				{
 					$formData = array_merge($formData, $_POST);
-					if($this->addPhotoReturnValidator($formData, $error)==true)
+                    $groups = Core_ContestPhotoGroup::getAllPhotoGroup();
+					if($this->addPhotoReturnValidator($formData, $error, $groups)==true)
 					{
 						$myPhoto = new Core_ContestPhoto();
 						$myPhoto->uid = (int)$this->registry->me->id;
@@ -249,6 +252,9 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		$error = $success = $formData = array();
 		if($myPhoto->id > 0)
 		{
+            $group = Core_ContestPhotoGroup::getList(0, true);
+            //$sections = Core_ContestPhotoGroup::getAllSection();
+            $data = Helper::displaySelectionPhotoGroupForUser($group);
 			if($myPhoto->uid == $this->registry->me->id)
 			{
 				$isRedirect = false;
@@ -284,6 +290,7 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 					$this->registry->smarty->assign(array('error' => $error,
 													'formData' => $formData,
 													'myPhoto' => $myPhoto,
+                                                    'data' => $data
 													));
 					$contents = $this->registry->smarty->fetch($this->registry->smartyControllerContainer.'editphoto.tpl');
 					$this->registry->smarty->assign(
@@ -320,21 +327,22 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 	private function addPhotoValidator($formData, &$error, $section = '')
 	{
 		$pass = true;
-		$section = $this->sectionValue();
+		//$section = $this->sectionValue();
 		//check form token
-		if($formData['ftoken'] != $_SESSION['addPhotoToken'])
+
+        if($formData['ftoken'] != $_SESSION['addPhotoToken'])
 		{
 			$pass = false;
 			$error[] = $this->registry->lang['controllergroup']['securityTokenInvalid'];	
 		}
-
-		if(!in_array($formData['fsection'], $section['all']))
+		if(!in_array($formData['fsection'], $section))
 		{
 			$error[] = $this->registry->lang['controller']['errSectionInvalid'];
 			$pass = false;	
 		}
 		else
 		{
+            echo '111'; exit;
 			//truy van de kiem tra user nay da upload bao nhieu photo vao section dang chon
 			$myPhotoSectionCount = Core_ContestPhoto::getPhotos(array('fsection' => $formData['fsection'], 'fuserid' => $this->registry->me->id), '', '', '', true);
 			/* Vo Duy Tuan
@@ -416,11 +424,9 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 	
 	
 	
-	private function addPhotoReturnValidator($formData, &$error)
+	private function addPhotoReturnValidator($formData, &$error, $section)
 	{   
 		$pass = true;
-        $section = $this->sectionValue();
-		
 		//check form token
 		if($formData['ftoken'] != $this->calculateSecurityToken($this->registry->me->id, Helper::getSessionId(), $formData['ffileserver'] . $formData['ffilepath'] . $formData['ffilethumb1'] . $formData['ffilethumb2'] . $formData['ffilesizeinbyte'] . $formData['fwidth'] . $formData['fheight']))
 		{
@@ -429,10 +435,7 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		}
 		
 		if(
-			!in_array($formData['fsection'], $section['color']) &&
-			!in_array($formData['fsection'], $section['mono']) &&
-			!in_array($formData['fsection'], $section['nature']) &&
-			!in_array($formData['fsection'], $section['travel'])
+			!in_array($formData['fsection'], $section)
 		)
 		{
 			$error[] = $this->registry->lang['controller']['errSectionInvalid'];

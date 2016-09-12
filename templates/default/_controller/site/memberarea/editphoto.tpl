@@ -16,31 +16,7 @@
 				<tr>
 					<td align="right" width="150" style="padding:5px;">{$lang.controller.section}:</td>
 					<td style="padding:5px;"><select name="fsection">
-							<option value="">{$lang.global.photoSectionSelectOne}</option>
-                                <optgroup label="{$lang.global.photoSectionColor}">
-                                <option value="color-c" {if $formData.fsection == 'color-c'}selected="selected"{/if}>{$lang.global.subphotoSectionColor}</option>
-                                <option value="landscape-c" {if $formData.fsection == 'landscape-c'}selected="selected"{/if}>{$lang.global.subphotoSectionColorLandscape}</option>
-                                <option value="sport-c" {if $formData.fsection == 'sport-c'}selected="selected"{/if}>{$lang.global.subphotoSectionColorSport}</option>
-                                <option value="idea-c" {if $formData.fsection == 'idea-c'}selected="selected"{/if}>{$lang.global.subphotoSectionColorIdea}</option>
-                                </optgroup>
-                                <optgroup label="{$lang.global.photoSectionMono}">
-                                <option value="mono-m" {if $formData.fsection == 'mono-m'}selected="selected"{/if}>{$lang.global.subphotoSectionMono}</option>
-                                <option value="landscape-m" {if $formData.fsection == 'landscape-m'}selected="selected"{/if}>{$lang.global.subphotoSectionMonoLandscape}</option>
-                                <option value="sport-m" {if $formData.fsection == 'sport-m'}selected="selected"{/if}>{$lang.global.subphotoSectionMonoSport}</option>
-                                <option value="idea-m" {if $formData.fsection == 'idea-m'}selected="selected"{/if}>{$lang.global.subphotoSectionMonoIdea}</option>
-                                </optgroup>
-                                <optgroup label="{$lang.global.photoSectionNature}">
-                                <option value="nature-n" {if $formData.fsection == 'nature-n'}selected="selected"{/if}>{$lang.global.photoSectionNature}</option>
-                                <option value="bird-n" {if $formData.fsection == 'bird-n'}selected="selected"{/if}>{$lang.global.subphotoSectionNatureBird} (01)</option>
-                                <option value="snow-n" {if $formData.fsection == 'snow-n'}selected="selected"{/if}>{$lang.global.subphotoSectionNatureSnow} (01)</option>
-                                <option value="flower-n" {if $formData.fsection == 'flower-n'}selected="selected"{/if}>{$lang.global.subphotoSectionNatureFlower} (01)</option>
-                                </optgroup>
-                                <optgroup label="{$lang.global.photoSectionTravel}">
-                                <option value="travel-t" {if $formData.fsection == 'travel-t'}selected="selected"{/if}>{$lang.global.subphotoSectionTravel}</option>
-                                <option value="transportation-t" {if $formData.fsection == 'transportation-t'}selected="selected"{/if}>{$lang.global.subphotoSectionTravelTransportation} (01)</option>
-                                <option value="dress-t" {if $formData.fsection == 'dress-t'}selected="selected"{/if}>{$lang.global.subphotoSectionTravelDress} (01)</option>
-                                <option value="country-t" {if $formData.fsection == 'country-t'}selected="selected"{/if}>{$lang.global.subphotoSectionTravelCountry} (01)</option>
-                                </optgroup>
+							{$data}
 						</select>
 					</td>
 				</tr>

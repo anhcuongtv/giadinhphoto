@@ -115,6 +115,20 @@ Class Core_ContestPhotoGroup extends Core_Object
             $this->isSection = (int)$row['isSection'];
 		}
 	}
+
+    public static function getDataSectionName($id)
+    {
+        global $db;
+        $sql = 'SELECT * FROM ' . TABLE_PREFIX . 'photogroup
+				WHERE id = ?';
+        $stmt = $db->query($sql, array($id));
+
+        while($row = $stmt->fetch())
+        {
+            return $row['name'];
+        }
+        return '';
+    }
 	
 	public function getDataByArray($row)
 	{
@@ -137,6 +151,21 @@ Class Core_ContestPhotoGroup extends Core_Object
             $i++;
         }
         return $section;
+    }
+
+    public static function getAllPhotoGroup()
+    {
+        global $db;
+
+        $sql = 'SELECT id FROM ' . TABLE_PREFIX . 'photogroup
+		        WHERE isSection = 0 and `limit` !=0 and `status` = 1 order by `order` asc';
+        $stmt = $db->query($sql);
+        $group = array();
+        while($row = $stmt->fetch())
+        {
+            $group[] = $row['id'];
+        }
+        return $group;
     }
 	
 	public static function getList($parent = 0, $onlyActive = false)

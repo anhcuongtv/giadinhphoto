@@ -321,15 +321,7 @@ Class Core_ContestPhoto extends Core_Object
         /*Le Ngoc Trung*/
         if(!empty($formData['fsection']))
 			$whereString .= ' AND p.p_section = "'.$formData['fsection'].'" ';
-    
-        if($formData['fsection'] == 'color-c' || $formData['fsection'] == 'color')
-            $whereString .= ' AND p.p_section LIKE "%-c" ';
-        if($formData['fsection'] == 'mono-m' || $formData['fsection'] == 'mono')
-            $whereString .= ' AND p.p_section LIKE "%-m" ';
-           if($formData['fsection'] == 'travel-t' || $formData['fsection'] == 'travel')
-            $whereString .= ' AND p.p_section LIKE "%-t" ';
-              if($formData['fsection'] == 'nature-n' || $formData['fsection'] == 'nature')
-            $whereString .= ' AND p.p_section LIKE "%-n" ';       
+
         //filter by time
         if($formData['ftime'] == '24hours')
             $whereString .= ' AND p.p_datecreated > ' . (time() - 24*60*60);
@@ -359,7 +351,6 @@ Class Core_ContestPhoto extends Core_Object
         
         if(strlen($formData['fkeyword']) > 0)
         {
-            
             if($formData['fsearchin'] == 'name')
             {
                 $whereString .= ' AND p.p_name LIKE \'%'.$formData['fkeyword'].'%\'';
@@ -369,8 +360,7 @@ Class Core_ContestPhoto extends Core_Object
                 $whereString .= ' AND p.p_name LIKE \'%'.$formData['fkeyword'].'%\'';
             }
         }
-        
-        
+
         //checking sort by & sort type
         if($sorttype != 'DESC' && $sorttype != 'ASC')
             $sorttype = 'DESC';
@@ -740,7 +730,7 @@ Class Core_ContestPhoto extends Core_Object
         */
         /* Le Ngoc Trung */
         $out = '';
-        $parsesection = explode('-',$this->section);
+        /*$parsesection = explode('-',$this->section);
         
 		if($parsesection[1] == 'c')
 		{
@@ -791,7 +781,8 @@ Class Core_ContestPhoto extends Core_Object
 			{
 				$out = $registry->lang['global']['subphotoSectionTravel'];
 			}
-		}
+		}*/
+        $out = Core_ContestPhotoGroup::getDataSectionName($this->section);
         return $out;
 	}
 	

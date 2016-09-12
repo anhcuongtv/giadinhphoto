@@ -28,3 +28,22 @@ Stack trace:
 #6 {main}
   thrown in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php on line 77
 [12-Sep-2016 21:10:10] PHP Parse error:  syntax error, unexpected T_IF in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 27
+[12-Sep-2016 22:19:28] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit !=0 and status = 1 order by `order` asc' at line 2' in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php:77
+Stack trace:
+#0 D:\AppServ\www\giadinhphoto\classes\class.mypdo.php(77): PDOStatement->execute(Array)
+#1 D:\AppServ\www\giadinhphoto\classes\core\class.contestphotogroup.php(148): MyPDO->query('SELECT id FROM ...')
+#2 D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php(56): Core_ContestPhotoGroup::getAllPhotoGroup()
+#3 D:\AppServ\www\giadinhphoto\classes\class.router.php(84): Controller_Site_MemberArea->indexAction()
+#4 D:\AppServ\www\giadinhphoto\index.php(24): Router->delegate()
+#5 {main}
+  thrown in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php on line 77
+[12-Sep-2016 22:24:10] PHP Warning:  array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 457
+[12-Sep-2016 22:24:10] PHP Warning:  array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 457
+[12-Sep-2016 22:24:10] PHP Warning:  array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 457
+[12-Sep-2016 22:24:10] PHP Warning:  array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 457
+[12-Sep-2016 22:24:10] PHP Warning:  array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 457
+[12-Sep-2016 22:24:10] PHP Warning:  array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 457
+[12-Sep-2016 22:24:10] PHP Warning:  array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 457
+[12-Sep-2016 22:24:10] PHP Warning:  array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 457
+[12-Sep-2016 22:24:10] PHP Warning:  array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 457
+[13-Sep-2016 21:43:57] PHP Parse error:  syntax error, unexpected T_RETURN in D:\AppServ\www\giadinhphoto\classes\core\class.contestphoto.php on line 786
