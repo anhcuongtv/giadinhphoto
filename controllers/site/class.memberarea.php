@@ -174,8 +174,11 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		}
 
         $group = Core_ContestPhotoGroup::getList(0, true);
+        $sections = Core_ContestPhotoGroup::getAllSection();
         $data = Helper::displaySelectionPhotoGroupForUser($group);
-		
+        $paymentOptionList = Helper::displayPaymentOptionList($sections['detail']);
+        $paymentPaidList = Helper::displayPaidPaymentList($sections['detail'], $this->registry->me->paidSection);
+
 		$this->registry->smarty->assign(
 											array('error' => $error,
 												'errorPayment'	=> $errorPayment,
@@ -187,6 +190,8 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 												'myPaymentPage'	=> $myPaymentPage,
 												'formData'	=> $formData,
 												'tab'	=> $tab,
+                                                'paymentOptionList' => $paymentOptionList,
+                                                'paymentPaidList' => $paymentPaidList,
                                                 'data'  => $data
 										)
 		);

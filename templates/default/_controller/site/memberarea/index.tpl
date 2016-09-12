@@ -103,40 +103,26 @@
 				
 				
 		<form action="{$conf.rooturl}memberarea.html?tab=payment" method="post">
-			{if $me->paidColor == 0 && $me->paidMono == 0 && $me->paidNature == 0 && $me->paidTravel == 0}
+			{if empty($me->paidSection)}
 				<div class="infoEmpty">{$lang.controller.paymentEmpty}</div>
 			{else}
 				<div style="background:#E2F7FE; border:1px solid #09F; padding:10px;">
 					<div class="infoEmpty"><strong>{$lang.controller.yourPaidSectionTitle}</strong></div>
 					<div class="paymentOptionList">
-						{if $me->paidColor == 1}<img src="{$conf.rooturl}{$currentTemplate}/images/tick_circle.png" alt="YES" />{$lang.global.photoSectionColor} <br />{/if}
-						
-						{if $me->paidMono == 1}<img src="{$conf.rooturl}{$currentTemplate}/images/tick_circle.png" alt="YES" />{$lang.global.photoSectionMono} <br />{/if}
-						
-						{if $me->paidNature == 1}<img src="{$conf.rooturl}{$currentTemplate}/images/tick_circle.png" alt="YES" />{$lang.global.photoSectionNature} <br />{/if}
-                        
-                        {if $me->paidTravel == 1}<img src="{$conf.rooturl}{$currentTemplate}/images/tick_circle.png" alt="YES" />{$lang.global.photoSectionTravel} <br />{/if}
+						{$paymentPaidList}
 					</div>
 				</div>
 			{/if}
 			
-			{if $me->paidColor == 1 && $me->paidMono == 1 && $me->paidNature == 1 && $me->paidTravel == 1}
+			{if count($paymentOptionList) == count($me->paidSection)}
 				<br />
 				{include file="notify.tpl" notifyInformation=$lang.controller.paymentFullAlready}
 			{else}
 				<div class="infoSelectPayment">{$lang.controller.paymentSelect}</div>
 				<div class="paymentOptionList">
-					{if $me->paidColor == 0}
-					<label><input type="checkbox" name="fpaymentsection[]" value="color" id="fpaymentsection_color" onchange="calculateOptionTotal()" /> {$lang.global.photoSectionColor}</label> <br />{/if}
-					{if $me->paidMono == 0}
-					<label><input type="checkbox" name="fpaymentsection[]" value="mono" id="fpaymentsection_mono" onchange="calculateOptionTotal()" /> {$lang.global.photoSectionMono}</label> <br />{/if}
-					{if $me->paidNature == 0}
-					<label><input type="checkbox" name="fpaymentsection[]" value="nature" id="fpaymentsection_nature" onchange="calculateOptionTotal()" /> {$lang.global.photoSectionNature}</label> <br />{/if}
-                    {if $me->paidTravel == 0}
-                    <label><input type="checkbox" name="fpaymentsection[]" value="travel" id="fpaymentsection_travel" onchange="calculateOptionTotal()" /> {$lang.global.photoSectionTravel}</label> <br />{/if}
+					{$paymentOptionList}
 				</div>
 				{include file="notify.tpl" notifyError=$errorPayment}
-			   
 			  
 				<div class="paymentOptionCart">
 					<input type="submit" name="fsubmitsection" value="{$lang.controller.paymentSectionCart}" />

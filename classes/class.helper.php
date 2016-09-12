@@ -950,4 +950,24 @@ class Helper
         }
         return $str;
     }
+
+    public static function displayPaymentOptionList($list)
+    {
+        $str = '';
+        foreach ($list as $id => $name) {
+            $str.='<label><input type="checkbox" name="fpaymentsection[]" value="'.$id.'" id="fpaymentsection_color" onchange="calculateOptionTotal()" />'.$name.'</label> <br />';
+        }
+        return $str;
+    }
+
+    public static function displayPaidPaymentList($list, $paidList)
+    {
+        global $lang, $currentTemplate, $conf;
+        $str = '';
+        foreach ($paidList as $detail) {
+            if (array_key_exists($detail['section'], $list))
+            $str.='<img src="'.$conf['rooturl'].$currentTemplate.'/images/tick_circle.png" alt="YES" />'.$list[$detail['section']].' <br />';
+        }
+        return $str;
+    }
 }  

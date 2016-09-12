@@ -19,3 +19,7 @@ CREATE TABLE `gdcontest_swin`.`pex_ac_user_paid` (
   `section_id` INT NOT NULL,
   `createdDate` TIMESTAMP NOT NULL,
   PRIMARY KEY (`id`));
+
+ALTER TABLE `gdcontest_swin`.`pex_ac_user_paid`
+ADD COLUMN `user_id` INT NOT NULL AFTER `id`;
+

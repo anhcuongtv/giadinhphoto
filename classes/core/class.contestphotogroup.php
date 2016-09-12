@@ -120,6 +120,24 @@ Class Core_ContestPhotoGroup extends Core_Object
 	{
 		$this->id = $row['pid'];
 	}
+
+	public static function getAllSection()
+    {
+        global $db;
+
+        $sql = 'SELECT * FROM ' . TABLE_PREFIX . 'photogroup
+		        WHERE isSection = 1 and status = 1 order by `order` asc';
+        $stmt = $db->query($sql);
+        $section = array();
+        $i = 0;
+        while($row = $stmt->fetch())
+        {
+            $section['detail'][$row['id']] = $row['name'];
+            $section['all'][] = $row['id'];
+            $i++;
+        }
+        return $section;
+    }
 	
 	public static function getList($parent = 0, $onlyActive = false)
 	{

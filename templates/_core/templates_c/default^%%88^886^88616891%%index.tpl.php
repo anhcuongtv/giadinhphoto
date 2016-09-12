@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2016-09-11 15:28:25
+<?php /* Smarty version 2.6.26, created on 2016-09-12 16:18:08
          compiled from _controller/site/memberarea/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', '_controller/site/memberarea/index.tpl', 176, false),array('modifier', 'truncate', '_controller/site/memberarea/index.tpl', 183, false),array('modifier', 'date_format', '_controller/site/memberarea/index.tpl', 184, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', '_controller/site/memberarea/index.tpl', 162, false),array('modifier', 'truncate', '_controller/site/memberarea/index.tpl', 169, false),array('modifier', 'date_format', '_controller/site/memberarea/index.tpl', 170, false),)), $this); ?>
 
 <div id="page">
 	
@@ -165,7 +165,7 @@ memberarea.html?tab=payment">
 				
 		<form action="<?php echo $this->_tpl_vars['conf']['rooturl']; ?>
 memberarea.html?tab=payment" method="post">
-			<?php if ($this->_tpl_vars['me']->paidColor == 0 && $this->_tpl_vars['me']->paidMono == 0 && $this->_tpl_vars['me']->paidNature == 0 && $this->_tpl_vars['me']->paidTravel == 0): ?>
+			<?php if (empty ( $this->_tpl_vars['me']->paidSection )): ?>
 				<div class="infoEmpty"><?php echo $this->_tpl_vars['lang']['controller']['paymentEmpty']; ?>
 </div>
 			<?php else: ?>
@@ -173,30 +173,13 @@ memberarea.html?tab=payment" method="post">
 					<div class="infoEmpty"><strong><?php echo $this->_tpl_vars['lang']['controller']['yourPaidSectionTitle']; ?>
 </strong></div>
 					<div class="paymentOptionList">
-						<?php if ($this->_tpl_vars['me']->paidColor == 1): ?><img src="<?php echo $this->_tpl_vars['conf']['rooturl']; ?>
-<?php echo $this->_tpl_vars['currentTemplate']; ?>
-/images/tick_circle.png" alt="YES" /><?php echo $this->_tpl_vars['lang']['global']['photoSectionColor']; ?>
- <br /><?php endif; ?>
-						
-						<?php if ($this->_tpl_vars['me']->paidMono == 1): ?><img src="<?php echo $this->_tpl_vars['conf']['rooturl']; ?>
-<?php echo $this->_tpl_vars['currentTemplate']; ?>
-/images/tick_circle.png" alt="YES" /><?php echo $this->_tpl_vars['lang']['global']['photoSectionMono']; ?>
- <br /><?php endif; ?>
-						
-						<?php if ($this->_tpl_vars['me']->paidNature == 1): ?><img src="<?php echo $this->_tpl_vars['conf']['rooturl']; ?>
-<?php echo $this->_tpl_vars['currentTemplate']; ?>
-/images/tick_circle.png" alt="YES" /><?php echo $this->_tpl_vars['lang']['global']['photoSectionNature']; ?>
- <br /><?php endif; ?>
-                        
-                        <?php if ($this->_tpl_vars['me']->paidTravel == 1): ?><img src="<?php echo $this->_tpl_vars['conf']['rooturl']; ?>
-<?php echo $this->_tpl_vars['currentTemplate']; ?>
-/images/tick_circle.png" alt="YES" /><?php echo $this->_tpl_vars['lang']['global']['photoSectionTravel']; ?>
- <br /><?php endif; ?>
+						<?php echo $this->_tpl_vars['paymentPaidList']; ?>
+
 					</div>
 				</div>
 			<?php endif; ?>
 			
-			<?php if ($this->_tpl_vars['me']->paidColor == 1 && $this->_tpl_vars['me']->paidMono == 1 && $this->_tpl_vars['me']->paidNature == 1 && $this->_tpl_vars['me']->paidTravel == 1): ?>
+			<?php if (count ( $this->_tpl_vars['paymentOptionList'] ) == count ( $this->_tpl_vars['me']->paidSection )): ?>
 				<br />
 				<?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "notify.tpl", 'smarty_include_vars' => array('notifyInformation' => $this->_tpl_vars['lang']['controller']['paymentFullAlready'])));
@@ -207,25 +190,14 @@ unset($_smarty_tpl_vars);
 				<div class="infoSelectPayment"><?php echo $this->_tpl_vars['lang']['controller']['paymentSelect']; ?>
 </div>
 				<div class="paymentOptionList">
-					<?php if ($this->_tpl_vars['me']->paidColor == 0): ?>
-					<label><input type="checkbox" name="fpaymentsection[]" value="color" id="fpaymentsection_color" onchange="calculateOptionTotal()" /> <?php echo $this->_tpl_vars['lang']['global']['photoSectionColor']; ?>
-</label> <br /><?php endif; ?>
-					<?php if ($this->_tpl_vars['me']->paidMono == 0): ?>
-					<label><input type="checkbox" name="fpaymentsection[]" value="mono" id="fpaymentsection_mono" onchange="calculateOptionTotal()" /> <?php echo $this->_tpl_vars['lang']['global']['photoSectionMono']; ?>
-</label> <br /><?php endif; ?>
-					<?php if ($this->_tpl_vars['me']->paidNature == 0): ?>
-					<label><input type="checkbox" name="fpaymentsection[]" value="nature" id="fpaymentsection_nature" onchange="calculateOptionTotal()" /> <?php echo $this->_tpl_vars['lang']['global']['photoSectionNature']; ?>
-</label> <br /><?php endif; ?>
-                    <?php if ($this->_tpl_vars['me']->paidTravel == 0): ?>
-                    <label><input type="checkbox" name="fpaymentsection[]" value="travel" id="fpaymentsection_travel" onchange="calculateOptionTotal()" /> <?php echo $this->_tpl_vars['lang']['global']['photoSectionTravel']; ?>
-</label> <br /><?php endif; ?>
+					<?php echo $this->_tpl_vars['paymentOptionList']; ?>
+
 				</div>
 				<?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "notify.tpl", 'smarty_include_vars' => array('notifyError' => $this->_tpl_vars['errorPayment'])));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-			   
 			  
 				<div class="paymentOptionCart">
 					<input type="submit" name="fsubmitsection" value="<?php echo $this->_tpl_vars['lang']['controller']['paymentSectionCart']; ?>

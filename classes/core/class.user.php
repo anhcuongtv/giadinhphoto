@@ -37,6 +37,8 @@ Class Core_User extends Core_Object
 	public $paidMono = 0;
 	public $paidNature = 0;
     public $paidTravel = 0;
+
+    public $paidSection = array();
 	
 	
 	public function __construct($id = 0)
@@ -402,10 +404,16 @@ Class Core_User extends Core_Object
 		$this->datecreated = $row['up_datecreated'];
 		$this->datemodified = $row['up_datemodified'];
 		$this->datelastlogin = $row['up_datelastlogin'];
+
+        self::getPaidSection($this);
 		
 	}
-	
-	public static function getByUsername($username)
+
+    /**
+     * @param $username
+     * @return Core_User
+     */
+    public static function getByUsername($username)
 	{
 		global $db;
 		$username = preg_replace('/[^a-z0-9_]/', '', $username);
@@ -453,6 +461,8 @@ Class Core_User extends Core_Object
 			}
 			
 		}
+
+		self::getPaidSection($myUser);
 		
 		return $myUser;
 	}
@@ -507,7 +517,27 @@ Class Core_User extends Core_Object
 		
 		return $myUser;
 	}
-	
+
+
+	private static function getPaidSection(&$myUser)
+    {
+        global $db;
+
+
+        $sql = 'SELECT p.section_id, p.createdDate FROM ' . TABLE_PREFIX . 'ac_user u
+                INNER JOIN ' . TABLE_PREFIX . 'ac_user_paid p ON u.u_id = p.user_id
+                WHERE u.u_id = ?
+                ';
+        $stmt = $db->query($sql, array($myUser->id));
+        while($row = $stmt->fetch())
+        {
+            $myUser->paidSection[] = array(
+                'section' => $row['section_id'],
+                'createdDate' => $row['createdDate'],
+            );
+        }
+        return $myUser;
+    }
 	
 	public function delete()
 	{
