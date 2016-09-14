@@ -7,14 +7,16 @@ Class Controller_Site_Photo Extends Controller_Site_Base
 	function indexAction() 
 	{
 		$this->checkEnablePhotogallery();
-		
 		$page 			= (int)($this->registry->router->getArg('page'))>0?(int)($this->registry->router->getArg('page')):1;
 		$flag = 1;
 		$sectionFilter 	= $this->registry->router->getArg('section');
 		$timeFilter 	= $this->registry->router->getArg('time');
         $keywordFilter     = $this->registry->router->getArg('keyword');
 		$roundFilter 	= $this->registry->router->getArg('round');
-        
+
+        $group = Core_ContestPhotoGroup::getList(0, true);
+        //$sections = Core_ContestPhotoGroup::getAllSection();
+        $data = Helper::displaySelectionPhotoGroupForUser($group, true, $sectionFilter);
 		
 		$paginateUrl = $this->registry->conf['rooturl'].'site/photo/index/';      
 		
@@ -78,11 +80,9 @@ Class Controller_Site_Photo Extends Controller_Site_Base
 					$totalPage = ceil($total/$this->recordPerPage);
 					$curPage = $page;
 					$newPhotoList = Core_ContestPhoto::getPhotos($formData, '', '', (($page - 1)*$this->recordPerPage).','.$this->recordPerPage, false);
-		
-					
 		}
-				$formData1 = array('fgroupid' => GROUPID_MEMBER);
-				$totalUser = Core_User::getUsers($formData1, '', '', '', true);    
+        $formData1 = array('fgroupid' => GROUPID_MEMBER);
+        $totalUser = Core_User::getUsers($formData1, '', '', '', true);
 
 		$this->registry->smarty->assign(
 			array('newPhotoList' => $newPhotoList,
@@ -92,6 +92,7 @@ Class Controller_Site_Photo Extends Controller_Site_Base
 				'totalPage' 	=> $totalPage,
 				'curPage'		=> $curPage,
 				'totalUser'		=> $totalUser,
+                'data' => $data
 			)
 		);
 		

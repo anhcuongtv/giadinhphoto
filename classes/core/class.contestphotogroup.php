@@ -129,6 +129,20 @@ Class Core_ContestPhotoGroup extends Core_Object
         }
         return '';
     }
+
+    public static function getLimitForSection($id)
+    {
+        global $db;
+        $sql = 'SELECT `limit` FROM ' . TABLE_PREFIX . 'photogroup
+				WHERE id = ?';
+        $stmt = $db->query($sql, array($id));
+
+        while($row = $stmt->fetch())
+        {
+            return $row['limit'];
+        }
+        return 0;
+    }
 	
 	public function getDataByArray($row)
 	{

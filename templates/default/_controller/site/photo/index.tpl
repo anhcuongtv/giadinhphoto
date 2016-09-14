@@ -6,32 +6,8 @@
 				<input type="text" name="fkeywordfilter" id="fkeywordfilter" size="32" value="{$formData.fkeyword}" class="textbox" /> -
 			{$lang.controller.section} :
 			<select name="fsectionfilter" id="fsectionfilter" class="selectbox">
-							<option value="">{$lang.global.photoSectionSelectOne}</option>
-                                <optgroup label="{$lang.global.photoSectionColor}">
-                                <option value="color-c" {if $formData.fsection == 'color-c'}selected="selected"{/if}>{$lang.global.subphotoSectionColor}</option>
-                                <option value="landscape-c" {if $formData.fsection == 'landscape-c'}selected="selected"{/if}>{$lang.global.subphotoSectionColorLandscape}</option>
-                                <option value="sport-c" {if $formData.fsection == 'sport-c'}selected="selected"{/if}>{$lang.global.subphotoSectionColorSport}</option>
-                                <option value="idea-c" {if $formData.fsection == 'idea-c'}selected="selected"{/if}>{$lang.global.subphotoSectionColorIdea}</option>
-                                </optgroup>
-                                <optgroup label="{$lang.global.photoSectionMono}">
-                                <option value="mono-m" {if $formData.fsection == 'mono-m'}selected="selected"{/if}>{$lang.global.subphotoSectionMono}</option>
-                                <option value="landscape-m" {if $formData.fsection == 'landscape-m'}selected="selected"{/if}>{$lang.global.subphotoSectionMonoLandscape}</option>
-                                <option value="sport-m" {if $formData.fsection == 'sport-m'}selected="selected"{/if}>{$lang.global.subphotoSectionMonoSport}</option>
-                                <option value="idea-m" {if $formData.fsection == 'idea-m'}selected="selected"{/if}>{$lang.global.subphotoSectionMonoIdea}</option>
-                                </optgroup>
-                                <optgroup label="{$lang.global.photoSectionNature}">
-                                <option value="nature-n" {if $formData.fsection == 'nature-n'}selected="selected"{/if}>{$lang.global.photoSectionNature}</option>
-                                <option value="bird-n" {if $formData.fsection == 'bird-n'}selected="selected"{/if}>{$lang.global.subphotoSectionNatureBird}</option>
-                                <option value="snow-n" {if $formData.fsection == 'snow-n'}selected="selected"{/if}>{$lang.global.subphotoSectionNatureSnow} </option>
-                                <option value="flower-n" {if $formData.fsection == 'flower-n'}selected="selected"{/if}>{$lang.global.subphotoSectionNatureFlower} </option>
-                                </optgroup>
-                                <optgroup label="{$lang.global.photoSectionTravel}">
-                                <option value="travel-t" {if $formData.fsection == 'travel-t'}selected="selected"{/if}>{$lang.global.subphotoSectionTravel}</option>
-                                <option value="transportation-t" {if $formData.fsection == 'transportation-t'}selected="selected"{/if}>{$lang.global.subphotoSectionTravelTransportation}</option>
-                                <option value="dress-t" {if $formData.fsection == 'dress-t'}selected="selected"{/if}>{$lang.global.subphotoSectionTravelDress}</option>
-                                <option value="country-t" {if $formData.fsection == 'country-t'}selected="selected"{/if}>{$lang.global.subphotoSectionTravelCountry}</option>
-                                </optgroup>
-						</select>
+				{$data}
+			</select>
 					
 			<input type="submit" value="{$lang.controller.filterSubmit}" class="button" />
 		</form>

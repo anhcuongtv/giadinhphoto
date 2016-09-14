@@ -15,7 +15,6 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		//Calculate the current pack location (VN & others)
 		$formData['fpaylocation'] = Core_Product::getPayLocation();
 		$productPackList = Core_Product::getProducts($formData, '', '','');
-		
 		//submit section
 		if(isset($_POST['fsubmitsection']))
 		{
@@ -46,7 +45,7 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 
         $group = Core_ContestPhotoGroup::getList(0, true);
         $sections = Core_ContestPhotoGroup::getAllSection();
-        $data = Helper::displaySelectionPhotoGroupForUser($group);
+        $data = Helper::displaySelectionPhotoGroupForUser($group, true, $_POST['fsection']);
         $paymentOptionList = Helper::displayPaymentOptionList($sections['detail']);
         $paymentPaidList = Helper::displayPaidPaymentList($sections['detail'], $this->registry->me->paidSection);
 
@@ -254,7 +253,7 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		{
             $group = Core_ContestPhotoGroup::getList(0, true);
             //$sections = Core_ContestPhotoGroup::getAllSection();
-            $data = Helper::displaySelectionPhotoGroupForUser($group);
+            $data = Helper::displaySelectionPhotoGroupForUser($group, true, $myPhoto->section);
 			if($myPhoto->uid == $this->registry->me->id)
 			{
 				$isRedirect = false;
@@ -342,55 +341,19 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		}
 		else
 		{
-            echo '111'; exit;
 			//truy van de kiem tra user nay da upload bao nhieu photo vao section dang chon
 			$myPhotoSectionCount = Core_ContestPhoto::getPhotos(array('fsection' => $formData['fsection'], 'fuserid' => $this->registry->me->id), '', '', '', true);
-			/* Vo Duy Tuan
-            if($myPhotoSectionCount >= $this->registry->setting['contestphoto']['maxPhotoPerSection'])
-			{
-				//exceed limit
-				$error[] = str_replace('###MAX###', $this->registry->setting['contestphoto']['maxPhotoPerSection'], $this->registry->lang['controller']['errSectionPhotoExceed']);
-				$pass = false;
-			}
-            */
-            /* Le Ngoc Trung */
-             #######################
-			
+
 			// lấy giá trị đầu tiên, và cho phép được 4 hình
-			foreach($section as $v)
-			{
-				$n = array_search($formData['fsection'], $v);
-				if($n === false) continue;
-				break;
-			}
-			if($formData['fsection'] != 'color-c' && $formData['fsection'] != 'mono-m')
+            $limit = Core_ContestPhotoGroup::getLimitForSection($formData['fsection']);
+
+            if($myPhotoSectionCount >= $limit)
             {
-                $parseSection = explode('-',$formData['fsection']);        
+                //exceed limit
+                $error[] = str_replace('###MAX###', $limit, $this->registry->lang['controller']['errSectionPhotoExceed']);
+                $pass = false;
             }
-            else
-            {
-                $parseSection = $formData['fsection'];
-            }
-            #######################
-            if($n != 0)
-            {
-                //CondiTion For Image In One SubSection
-                if($myPhotoSectionCount >= $this->registry->setting['contestphoto']['maxPhotoPerSubSection'])
-                {
-                    //exceed limit
-                    $error[] = str_replace('###MAX###', $this->registry->setting['contestphoto']['maxPhotoPerSubSection'], $this->registry->lang['controller']['errSectionPhotoExceed']);
-                    $pass = false;
-                }
-            }
-            else
-            {   //Condition For Image In One Section
-                if($myPhotoSectionCount >= $this->registry->setting['contestphoto']['maxPhotoPerSection'])
-                {
-                    //exceed limit
-                    $error[] = str_replace('###MAX###', $this->registry->setting['contestphoto']['maxPhotoPerSection'], $this->registry->lang['controller']['errSectionPhotoExceed']);
-                    $pass = false;
-                }
-            }
+
 		}
 		
 		if(strlen($formData['fname']) == 0)
@@ -445,52 +408,16 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		{
 			//truy van de kiem tra user nay da upload bao nhieu photo vao section dang chon
 			$myPhotoSectionCount = Core_ContestPhoto::getPhotos(array('fsection' => $formData['fsection'], 'fuserid' => $this->registry->me->id), '', '', '', true);
-            /*Vo Duy Tuan
-            if($myPhotoSectionCount >= $this->registry->setting['contestphoto']['maxPhotoPerSection'])
-			{
-				//exceed limit
-				$error[] = str_replace('###MAX###', $this->registry->setting['contestphoto']['maxPhotoPerSection'], $this->registry->lang['controller']['errSectionPhotoExceed']);
-				$pass = false;
-			}
-            */
-            /* Le Ngoc Trung */
-             #######################
-			 // lấy giá trị đầu tiên, và cho phép được 4 hình 
-			foreach($section as $v)
-			{
-				$n = array_search($formData['fsection'], $v);
-				if($n === false) continue;
-				break;
-			}
-            if($formData['fsection'] != 'color-c' && $formData['fsection'] != 'mono-m')
+            $limit = Core_ContestPhotoGroup::getLimitForSection($formData['fsection']);
+
+            //CondiTion For Image In One SubSection
+            if($myPhotoSectionCount >= $limit)
             {
-                $parseSection = explode('-',$formData['fsection']);        
+                //exceed limit
+                $error[] = str_replace('###MAX###', $limit, $this->registry->lang['controller']['errSectionPhotoExceed']);
+                $pass = false;
             }
-            else
-            {
-                $parseSection = $formData['fsection'];
-            }
-			
-            #######################
-            if($n != 0)
-            {
-                //CondiTion For Image In One SubSection
-                if($myPhotoSectionCount >= $this->registry->setting['contestphoto']['maxPhotoPerSubSection'])
-                {
-                    //exceed limit
-                    $error[] = str_replace('###MAX###', $this->registry->setting['contestphoto']['maxPhotoPerSubSection'], $this->registry->lang['controller']['errSectionPhotoExceed']);
-                    $pass = false;
-                }
-            }
-            else
-            {   //Condition For Image In One Section
-                if($myPhotoSectionCount >= $this->registry->setting['contestphoto']['maxPhotoPerSection'])
-                {
-                    //exceed limit
-                    $error[] = str_replace('###MAX###', $this->registry->setting['contestphoto']['maxPhotoPerSection'], $this->registry->lang['controller']['errSectionPhotoExceed']);
-                    $pass = false;
-                }
-            }
+
 		}
 		if(strlen($formData['fname']) == 0)
 		{
@@ -511,6 +438,7 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 				}
 			}
 		}
+        return false;
 		return $pass;
 	}
 	
@@ -518,7 +446,7 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 	private function editPhotoValidator($formData, &$error, $editPhoto)
 	{
 		$pass = true;
-		$section = $this->sectionValue();
+        $groups = Core_ContestPhotoGroup::getAllPhotoGroup();
 		//check form token
 		if($formData['ftoken'] != $_SESSION['editPhotoToken'])
 		{
@@ -527,10 +455,7 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		}
 		
 		if(
-			!in_array($formData['fsection'], $section['color']) &&
-			!in_array($formData['fsection'], $section['mono']) &&
-			!in_array($formData['fsection'], $section['nature']) &&
-			!in_array($formData['fsection'], $section['travel'])
+			!in_array($formData['fsection'], $groups)
 		)
 		{
 			$error[] = $this->registry->lang['controller']['errSectionInvalid'];
@@ -540,56 +465,16 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		{
 			//truy van de kiem tra user nay da upload bao nhieu photo vao section dang chon
 			$myPhotoSectionCount = Core_ContestPhoto::getPhotos(array('fsection' => $formData['fsection'], 'fuserid' => $this->registry->me->id), '', '', '', true);
-			/* Vo Duy Tuan 
-            if($myPhotoSectionCount >= $this->registry->setting['contestphoto']['maxPhotoPerSection'])
-			{
-				//exceed limit
-				$error[] = str_replace('###MAX###', $this->registry->setting['contestphoto']['maxPhotoPerSection'], $this->registry->lang['controller']['errSectionPhotoExceed']);
-				$pass = false;
-			}
-            */
-            /* Le Ngoc Trung */
-             #######################
-			 // lấy giá trị đầu tiên, và cho phép được 4 hình 
-			foreach($section as $v)
-			{
-				$n = array_search($formData['fsection'], $v);
-				if($n === false) continue;
-				break;
-			}
-            if($formData['fsection'] != 'color-c' && $formData['fsection'] != 'mono-m')
+            $limit = Core_ContestPhotoGroup::getLimitForSection($formData['fsection']);
+
+            if($myPhotoSectionCount >= $limit)
             {
-                $parseSection = explode('-',$formData['fsection']);        
-            }
-            else
-            {
-                $parseSection = $formData['fsection'];
-            }
-            #######################
-            
-            if($n != 0)
-            {
-                //CondiTion For Image In One SubSection
-                if($myPhotoSectionCount >= $this->registry->setting['contestphoto']['maxPhotoPerSubSection'])
-                {
-                    //exceed limit
-                    $error[] = str_replace('###MAX###', $this->registry->setting['contestphoto']['maxPhotoPerSubSection'], $this->registry->lang['controller']['errSectionPhotoExceed']);
-                    $pass = false;
-                }
-            }
-            else
-            {   //Condition For Image In One Section
-                if($myPhotoSectionCount >= $this->registry->setting['contestphoto']['maxPhotoPerSection'])
-                {
-                    //exceed limit
-                    $error[] = str_replace('###MAX###', $this->registry->setting['contestphoto']['maxPhotoPerSection'], $this->registry->lang['controller']['errSectionPhotoExceed']);
-                    $pass = false;
-                }
+                //exceed limit
+                $error[] = str_replace('###MAX###', $limit, $this->registry->lang['controller']['errSectionPhotoExceed']);
+                $pass = false;
             }
 		}
-		
-		
-		
+
 		if(strlen($formData['fname']) == 0)
 		{
 			$error[] = $this->registry->lang['controller']['errNameRequire'];
