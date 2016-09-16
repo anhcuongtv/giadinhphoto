@@ -21,17 +21,11 @@
 			{include file="notify.tpl" notifyError=$error notifySuccess=$success notifyWarning=$warning}
 			
 			<fieldset>
-			
-			
-			
 			<p>
 				<label>Section  : </label>
 				<select name="fsection">
-						<option value="">{$lang.global.photoSectionSelectOne}</option>
-						<option value="color" {if $formData.fsection == 'color'}selected="selected"{/if}>{$lang.global.photoSectionColor}</option>
-						<option value="mono" {if $formData.fsection == 'mono'}selected="selected"{/if}>{$lang.global.photoSectionMono}</option>
-						<option value="nature" {if $formData.fsection == 'nature'}selected="selected"{/if}>{$lang.global.photoSectionNature}</option>
-					</select>
+					{$data}
+				</select>
 			</p>
 			<p>
 				<label>Photo Name  : </label>

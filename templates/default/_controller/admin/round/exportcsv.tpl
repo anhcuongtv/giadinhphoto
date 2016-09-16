@@ -22,22 +22,7 @@
 					<label>Section <span class="star_require">*</span> : </label>
 					<select id="fsection" name="fsection[]" multiple="multiple" size="4">
 						<option value="">- - - -</option>
-                        <option value="color-c">Color</option>
-						<option value="landscape-c">Color Best Portrait</option>
-                        <option value="idea-c">Color Best Idead</option>
-                        <option value="sport-c">Color Best Action </option>
-                        <option value="mono-m">Mono</option>
-                        <option value="idea-m">Mono Best Creative</option>
-                        <option value="landscape-m">Mono Best Portrait</option>
-						<option value="sport-m">Mono Best Action </option>
-                        <option value="nature-n">Nature</option>
-                        <option value="flower-n">Nature Best Flower</option>
-                        <option value="bird-n">Nature Best Bird</option>
-                        <option value="snow-n">Nature Best Snow</option>
-                        <option value="travel-t">Travel</option>
-						<option value="transportation-t">Travel Best Transportation </option>
-                        <option value="dress-t">Travel Best Traditional</option>
-                        <option value="country-t">Travel Best Country</option>
+                        {$data}
 
 				  </select>
 				</p>

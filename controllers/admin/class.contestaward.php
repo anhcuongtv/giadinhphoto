@@ -228,17 +228,20 @@ Class Controller_Admin_ContestAward Extends Controller_Admin_Base
 			$error[] = $this->registry->lang['controller']['errIsactiveInvalid'];
 			$pass = false;
 		}
-		
-		if($formData['fsection'] != '')
-		{
-			if(!in_array($formData['fsection'], array('color', 'mono', 'nature','travel')))
-			{
-				$error[] = $this->registry->lang['controller']['errInvalidSection'];
-				$pass = false;	
-			}
-		}		
-						
-		return $pass;
+
+        $groups = Core_ContestPhotoGroup::getAllPhotoGroup();
+        if($formData['fsection'] != '')
+        {
+            if(
+            !in_array($formData['fsection'], $groups)
+            )
+            {
+                $error[] = $this->registry->lang['controller']['errSectionInvalid'];
+                $pass = false;
+            }
+        }
+
+        return $pass;
 	}
 	
 	private function editActionValidator($formData, &$error)
@@ -262,14 +265,16 @@ Class Controller_Admin_ContestAward Extends Controller_Admin_Base
 			$error[] = $this->registry->lang['controller']['errIsactiveInvalid'];
 			$pass = false;
 		}
-		
+        $groups = Core_ContestPhotoGroup::getAllPhotoGroup();
 		if($formData['fsection'] != '')
 		{
-			if(!in_array($formData['fsection'], array('color', 'mono', 'nature','travel')))
-			{
-				$error[] = $this->registry->lang['controller']['errInvalidSection'];
-				$pass = false;	
-			}
+            if(
+            !in_array($formData['fsection'], $groups)
+            )
+            {
+                $error[] = $this->registry->lang['controller']['errSectionInvalid'];
+                $pass = false;
+            }
 		}		
 		
 		return $pass;

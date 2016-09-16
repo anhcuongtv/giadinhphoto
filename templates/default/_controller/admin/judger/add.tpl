@@ -1,6 +1,6 @@
 <h2>{$lang.controller.head_add}</h2>
 
-<form action="" method="post" name="myform">
+<form action="" method="post" name="myform" enctype="multipart/form-data">
 <input type="hidden" name="ftoken" value="{$smarty.session.judgerAddToken}" />
 <div class="content-box"><!-- Start Content Box -->
 	<div class="content-box-header">		
@@ -20,6 +20,7 @@
 			{include file="notify.tpl" notifyError=$error notifySuccess=$success notifyWarning=$warning}
 			
 				<fieldset>
+
 				<p>
 					<label>{$lang.controller.judger} <span class="star_require">*</span> : </label>
 					User ID: <input type="text" name="fuserid" id="fuserid" size="5" value="{$formData.fuserid|@htmlspecialchars}" class="text-input">
@@ -28,54 +29,27 @@
 					<em>- OR -</em>
 					Email<input type="text" name="femail" id="femail" size="30" value="{$formData.femail|@htmlspecialchars}" class="text-input">
 				</p>
-				
-				<p>
-					<label>{$lang.controller.iscolor}: </label>
-					<select name="fiscolor" id="fiscolor">						
-						<option value="0" {if $formData.fiscolor == '0'}selected="selected"{/if}>{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1">{$lang.controllergroup.formYesLabel}</option>
-					</select>
-				</p>
-                
-                <p>
-                    <label>{$lang.controller.iscolor} Best: </label>
-                    <select name="fiscolorbest" id="fiscolorbest">
-                        <option value="0" {if $formData.fiscolor == '0'}selected="selected"{/if}>{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1">{$lang.controllergroup.formYesLabel}</option>
-                    </select>
-                </p>
-				
-				<p>
-					<label>{$lang.controller.ismono}: </label>
-					<select name="fismono" id="fismono">
-						<option value="0" {if $formData.fismono == '0'}selected="selected"{/if}>{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1">{$lang.controllergroup.formYesLabel}</option>
-					</select>
-				</p>
-                
-                <p>
-                    <label>{$lang.controller.ismono} Best: </label>
-                    <select name="fismonobest" id="fismonobest">                        
-                        <option value="0" {if $formData.fismono == '0'}selected="selected"{/if}>{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1">{$lang.controllergroup.formYesLabel}</option>
-                    </select>
-                </p>
-				
-				<p>
-					<label>{$lang.controller.isnature}: </label>
-					<select name="fisnature" id="fisnatre">
-					    <option value="0" {if $formData.fisnature == '0'}selected="selected"{/if}>{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1">{$lang.controllergroup.formYesLabel}</option>
-					</select>
-				</p>
-                
-                <p>
-                    <label>{$lang.controller.istravel}: </label>
-                    <select name="fistravel" id="fistravel">                        
-                        <option value="0" {if $formData.fistravel == '0'}selected="selected"{/if}>{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1">{$lang.controllergroup.formYesLabel}</option>
-                    </select>
-                </p>
+
+				{foreach item=sectionItem from=$group}
+					{if $sectionItem->isSection}
+						<div class="sectionGroup">
+							<span>{$sectionItem->name}</span>
+
+					{if $sectionItem->child}
+						{foreach item=sectionItemDetail from=$sectionItem->child}
+						<p>
+							<label>{$sectionItemDetail->name}: </label>
+							<select name="group[]" id="group">
+								<option value="0">{$lang.controllergroup.formNoLabel}</option>
+								<option value="{$sectionItemDetail->id}">{$lang.controllergroup.formYesLabel}</option>
+							</select>
+						</p>
+						{/foreach}
+					{/if}
+							</div>
+					{/if}
+				{/foreach}
+
 				
 				
 				</fieldset>

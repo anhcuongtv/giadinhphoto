@@ -24,7 +24,8 @@ Class Core_ContestPhoto extends Core_Object
 	public $cancomment = 0;
 	public $datecreated = 0;
 	public $poster;
-	
+    public $parentSection = '';
+
 	
 	public function __construct($id = 0)
 	{
@@ -44,8 +45,8 @@ Class Core_ContestPhoto extends Core_Object
 		$this->datecreated = time();
 	
 		//them thong tin chung cua cac page
-		$sql = 'INSERT INTO ' . TABLE_PREFIX . 'contest_photo(u_id, p_section, p_name, p_description, p_filesizeinbyte, p_resolution, p_fileserver, p_filepath, p_filethumb1, p_filethumb2, p_view, p_enable, p_displaymode, p_cancomment, p_datecreated)
-				VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';  
+		$sql = 'INSERT INTO ' . TABLE_PREFIX . 'contest_photo(u_id, p_section, p_name, p_description, p_filesizeinbyte, p_resolution, p_fileserver, p_filepath, p_filethumb1, p_filethumb2, p_view, p_enable, p_displaymode, p_cancomment, p_datecreated,p_parentSection)
+				VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
 		
 		$rowCount = $this->db->query($sql, array(
 				$this->uid,
@@ -62,7 +63,8 @@ Class Core_ContestPhoto extends Core_Object
 				$this->enable,
 				$this->displaymode,
 				$this->cancomment,
-		    	$this->datecreated
+		    	$this->datecreated,
+                $this->parentSection
 			))->rowCount();
 			
 		$this->id = $this->db->lastInsertId();
@@ -164,6 +166,7 @@ Class Core_ContestPhoto extends Core_Object
 			$this->datecreated = $row['p_datecreated'];
 			$this->poster = new Core_User();
 			$this->poster->getByArray($row);
+            $this->parentSection = $row['p_parentSection'];
 		}
 	}
 		
@@ -186,7 +189,8 @@ Class Core_ContestPhoto extends Core_Object
         			p_view = ?,
         			p_enable = ?,
         			p_displaymode = ?,
-        			p_cancomment = ?
+        			p_cancomment = ?,
+        			p_parentSection = ?
         		WHERE p_id = ?';
         		
 		$stmt = $this->db->query($sql, array(
@@ -205,6 +209,7 @@ Class Core_ContestPhoto extends Core_Object
 				$this->enable,
 				$this->displaymode,
 				$this->cancomment,
+                $this->parentSection,
 		    	$this->id
 			));
 			
@@ -291,7 +296,7 @@ Class Core_ContestPhoto extends Core_Object
 			$myPhoto->datecreated = $row['p_datecreated'];
 			$myPhoto->poster = new Core_User();
 			$myPhoto->poster->getByArray($row);
-			
+            $myPhoto->parentSection = $row['p_parentSection'];
 			$outputList[] = $myPhoto;
 		}
 		return $outputList;
@@ -437,7 +442,7 @@ Class Core_ContestPhoto extends Core_Object
             $myPhoto->datecreated = $row['p_datecreated'];
             $myPhoto->poster = new Core_User();
             $myPhoto->poster->getByArray($row);
-            
+            $myPhoto->parentSection = $row['p_parentSection'];
             $outputList[] = $myPhoto;
         }
         return $outputList;

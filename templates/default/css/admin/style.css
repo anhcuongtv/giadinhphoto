@@ -711,3 +711,15 @@ table.mceToolbar{width:500px !important;}
 p.inactive {
     text-decoration: line-through;
 }
+
+.sectionGroup {
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.sectionGroup > span {
+    font-size: 18px;
+    color: #0000FF;
+    text-align: center;
+}

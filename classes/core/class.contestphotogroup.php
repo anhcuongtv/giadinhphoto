@@ -167,6 +167,22 @@ Class Core_ContestPhotoGroup extends Core_Object
         return $section;
     }
 
+    public static function getAllGroupName()
+    {
+        global $db;
+
+        $sql = 'SELECT * FROM ' . TABLE_PREFIX . 'photogroup
+		        order by `order` asc';
+        $stmt = $db->query($sql);
+        $section = array();
+        $i = 0;
+        while($row = $stmt->fetch())
+        {
+            $section[$row['id']] = $row['name'];
+        }
+        return $section;
+    }
+
     public static function getAllPhotoGroup()
     {
         global $db;
@@ -206,6 +222,7 @@ Class Core_ContestPhotoGroup extends Core_Object
             $groupDetail->limit = (int)$row['limit'];
             $groupDetail->order = (int)$row['order'];
             $groupDetail->isGroup = (int)$row['isGroup'];
+            $groupDetail->isSection = (int)$row['isSection'];
 
 			$group[$i] = $groupDetail;
             //check child
@@ -217,5 +234,42 @@ Class Core_ContestPhotoGroup extends Core_Object
 		}
 		return $group;
 	}
+
+    public static function getListNotSection($parent = 0, $onlyActive = false)
+    {
+        global $db;
+
+        $outputList = array();
+        $sqlMore = ' ';
+        if ($onlyActive) {
+            $sqlMore .= ' and status = 1 ';
+        }
+        $sql = 'SELECT * FROM ' . TABLE_PREFIX . 'photogroup
+		        WHERE parent = '.$parent.$sqlMore.' order by `order` asc';
+        $stmt = $db->query($sql);
+        $group = array();
+        $all = array();
+        $i = 0;
+        while($row = $stmt->fetch())
+        {
+            $groupDetail = new Core_ContestPhotoGroup();
+            $groupDetail->id = $row['id'];
+            $groupDetail->name = $row['name'];
+            $groupDetail->parent = $row['parent'];
+            $groupDetail->status = (int)$row['status'];
+            $groupDetail->limit = (int)$row['limit'];
+            $groupDetail->order = (int)$row['order'];
+            $groupDetail->isGroup = (int)$row['isGroup'];
+            $groupDetail->isSection = (int)$row['isSection'];
+            $group[$i] = $groupDetail;
+            //check child
+            $childs = self::getListNotSection($row['id'], $onlyActive);
+            if (count($childs) > 0) {
+                $group[$i]->child = $childs;
+            }
+            $i++;
+        }
+        return $group;
+    }
 }
 ?>

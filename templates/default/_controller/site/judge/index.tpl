@@ -103,12 +103,13 @@
                 {foreach item=judger from=$judgerList}
 					<div class="judgeitem{if $judger->uid == $me->id} judgecurrent{/if}">{$lang.controller.judgerLabel} {counter} 
                 	{if $judger->uid == $me->id}({$lang.controller.you}){/if}
+					{if $markJudgerList|is_array}
                     {if in_array($judger->uid, $markJudgerList)}
                     	<img src="{$currentTemplate}/images/tick_circle.png" alt="OK" />
                     {else}
                     	<img src="{$currentTemplate}/images/cross_circle.png" alt="NO" />
                     {/if}
-                    
+					{/if}
                     </div>
                 {/foreach}
 				

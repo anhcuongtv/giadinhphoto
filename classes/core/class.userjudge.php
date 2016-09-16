@@ -22,6 +22,7 @@ Class Core_UserJudge extends Core_Object
     public $isTravelCountry = 0;
 	public $isViewOnly = 0;
 	public $datecreated = '';
+    public $group = '';
 	public $user;
 	
 	
@@ -42,29 +43,13 @@ Class Core_UserJudge extends Core_Object
 		$this->datecreated = time();
 	
 		//them thong tin chung cua cac page
-		$sql = 'INSERT INTO ' . TABLE_PREFIX . 'ac_user_judge(u_id, uj_iscolor, uj_iscolorbestportrait,uj_iscolorbestidea, uj_iscolorbestaction, uj_ismono, uj_ismonobestportrait,uj_ismonobestaction,uj_ismonobestcreative,uj_isnature,uj_isnaturebestbird,uj_isnaturebestsnow,uj_isnaturebestflower,uj_istravel,uj_istraveltransportation,uj_istraveltraditional,uj_istravelcountry, uj_isviewonly, uj_datecreated)
-				VALUES(?, ?, ? ,? ,? , ?, ?, ?, ?)';  
+		$sql = 'INSERT INTO ' . TABLE_PREFIX . 'ac_user_judge(u_id, uj_datecreated, uj_photogroup)
+				VALUES(?, ?, ?)';
 				
 		$rowCount = $this->db->query($sql, array(
 				(int)$this->uid,
-				(int)$this->isColor,
-				(int)$this->isColorBestPortrait,
-				(int)$this->isColorBestIdea,
-				(int)$this->isColorBestAction,
-				(int)$this->isMono,
-				(int)$this->isMonoBestPortrait,
-				(int)$this->isMonoBestAction,
-				(int)$this->isMonoCreative,
-				(int)$this->isNature,
-				(int)$this->isNatureBestBird,
-                (int)$this->isNatureBestSnow,
-				(int)$this->isNatureBestFlower,
-				(int)$this->isTravel,
-				(int)$this->isTravelTransportation,
-				(int)$this->isTravelTraditional,
-				(int)$this->isTravelCountry,
-				(int)$this->isViewOnly,
 				(int)$this->datecreated,
+                $this->group,
 			))->rowCount();
 			
 		
@@ -114,6 +99,7 @@ Class Core_UserJudge extends Core_Object
             $this->isTravelTransportation = $row['uj_istraveltransportation'];
             $this->isTravelCountry = $row['uj_istravelcountry'];
             $this->isTravelTraditional = $row['uj_istraveltraditional'];
+            $this->group = $row['uj_photogroup'];
             
 			$this->isViewOnly = $row['uj_isviewonly'];
 			$this->datecreated = $row['uj_datecreated'];
@@ -197,23 +183,7 @@ Class Core_UserJudge extends Core_Object
 			$myJudge = new Core_UserJudge();
 						$myJudge->uid = $row['u_id'];
 
-			$myJudge->isColor = $row['uj_iscolor'];
-            $myJudge->isColorBestPortrait = $row['uj_iscolorbestportrait'];
-            $myJudge->isColorBestAction = $row['uj_iscolorbestaction'];
-            $myJudge->isColorBestIdea = $row['uj_iscolorbestidea'];
-            $myJudge->isMono = $row['uj_ismono'];
-            $myJudge->isMonoBestAction = $row['uj_ismonobestaction'];
-            $myJudge->isMonoBestPortrait = $row['uj_ismonobestportrait'];
-            $myJudge->isMonoCreative = $row['uj_ismonobestcreative'];
-            $myJudge->isNature = $row['uj_isnature'];
-            $myJudge->isNatureBestBird = $row['uj_isnaturebestbird'];
-            $myJudge->isNatureBestSnow = $row['uj_isnaturebestsnow'];
-            $myJudge->isNatureBestFlower = $row['uj_isnaturebestflower'];
-            $myJudge->isTravel = $row['uj_istravel'];
-            $myJudge->isTravelTransportation = $row['uj_istraveltransportation'];
-            $myJudge->isTravelCountry = $row['uj_istravelcountry'];
-            $myJudge->isTravelTraditional = $row['uj_istraveltraditional'];
-            
+            $myJudge->group = $row['uj_photogroup'];
 			$myJudge->isViewOnly = $row['uj_isviewonly'];
 			$myJudge->datecreated = $row['uj_datecreated'];
 			$myJudge->user = new Core_User();
@@ -227,41 +197,6 @@ Class Core_UserJudge extends Core_Object
 	public static function getJudges($formData, $sortby, $sorttype, $limit = '', $countOnly = false)
 	{
 		$whereString = 'uj.u_id > 0 ';
-		
-		//Filter by section
-		if($formData['fsection'] == 'color-c')
-			$whereString .= ' AND uj.uj_iscolor = 1';
-        if($formData['fsection'] == 'landscape-c')
-            $whereString .= ' AND uj.uj_iscolorbestportrait = 1';
-		if($formData['fsection'] == 'idea-c')
-			$whereString .= ' AND uj.uj_iscolorbestidea = 1';
-		if($formData['fsection'] == 'sport-c')
-			$whereString .= ' AND uj.uj_iscolorbestaction = 1';
-		if($formData['fsection'] == 'mono-m')
-			$whereString .= ' AND uj.uj_ismono = 1';
-		if($formData['fsection'] == 'landscape-m')
-			$whereString .= ' AND uj.uj_ismonobestportrait = 1';
-		if($formData['fsection'] == 'sport-m')
-			$whereString .= ' AND uj.uj_ismonobestaction = 1';
-		if($formData['fsection'] == 'idea-m')
-			$whereString .= ' AND uj.uj_ismonobestcreative = 1';
-		if($formData['fsection'] == 'nature-n')
-			$whereString .= ' AND uj.uj_isnature = 1';
-		if($formData['fsection'] == 'bird-n')
-			$whereString .= ' AND uj.uj_isnaturebestbird = 1';	
-		if($formData['fsection'] == 'flower-n')
-			$whereString .= ' AND uj.uj_isnaturebestflower = 1';
-		if($formData['fsection'] == 'snow-n')
-			$whereString .= ' AND uj.uj_isnaturebestsnow = 1';
-		if($formData['fsection'] == 'travel-t')
-			$whereString .= ' AND uj.uj_istravel = 1';
-		if($formData['fsection'] == 'transportation-t')
-			$whereString .= ' AND uj.uj_istraveltransportation = 1';
-		if($formData['fsection'] == 'dress-t')
-			$whereString .= ' AND uj.uj_istraveltraditional = 1';        
-        if($formData['fsection'] == 'country-t')
-            $whereString .= ' AND uj.uj_istravelcountry = 1';			
-
 		
 		if($formData['fuserid'] > 0)
 			$whereString .= ' AND uj.u_id = '.(int)$formData['fuserid'].' ';

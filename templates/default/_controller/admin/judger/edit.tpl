@@ -28,122 +28,25 @@
 					<em>- OR -</em>
 					Email<input type="text" disabled="disabled" size="30" value="{$myJudger->user->email}" class="text-input">
 				</p>
-				
-				<p>
-					<label>{$lang.controller.iscolor}: </label>
-					<select name="fiscolor" id="fiscolor">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-						<option value="1" {if $formData.fiscolor == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>						
-					</select>
-				</p>
-                
-                <p>
-                    <label>{$lang.controller.isColorBestPortrait} Best: </label>
-                    <select name="isColorBestPortrait" id="fiscolorbest">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.isColorBestPortrait == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.isColorBestIdea} Best: </label>
-                    <select name="isColorBestIdea" id="fiscolorbest">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.isColorBestIdea == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.isColorBestAction} Best: </label>
-                    <select name="isColorBestAction" id="fiscolorbest">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.isColorBestAction == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.ismono} </label>
-                    <select name="fismono" id="fiscolorbest">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.fismono == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.isMonoBestPortrait} Best: </label>
-                    <select name="isMonoBestPortrait" id="fiscolorbest">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.isMonoBestPortrait == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.isMonoBestAction} Best: </label>
-                    <select name="isMonoBestAction" id="isMonoBestAction">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.isMonoBestAction == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.isMonoCreative} Best: </label>
-                    <select name="isMonoCreative" id="fiscolorbest">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.isMonoCreative == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.isnature}  </label>
-                    <select name="fisnature" id="fisnature">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.fisnature == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.isNatureBestBird} Best: </label>
-                    <select name="isNatureBestBird" id="isNatureBestBird">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.isNatureBestBird == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.isNatureBestSnow} Best: </label>
-                    <select name="isNatureBestSnow" id="isNatureBestSnow">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.isNatureBestSnow == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.isNatureBestFlower} Best: </label>
-                    <select name="isNatureBestFlower" id="isNatureBestFlower">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.isNatureBestFlower == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.istravel} </label>
-                    <select name="fistravel" id="fistravel">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.fistravel == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-                <p>
-                    <label>{$lang.controller.isTravelTransportation} Best: </label>
-                    <select name="isTravelTransportation" id="isTravelTransportation">
-                        <option value="0">{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.isTravelTransportation == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>                        
-                    </select>
-                </p>
-				
-				<p>
-					<label>{$lang.controller.isTravelTraditional} Best :</label>
-					<select name="isTravelTraditional" id="isTravelTraditional">
-                        <option value="0" >{$lang.controllergroup.formNoLabel}</option>
-						<option value="1" {if $formData.isTravelTraditional == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>
-					</select>
-				</p>
-                
-                <p>
-                    <label>{$lang.controller.isTravelCountry} Best </label>
-                    <select name="isTravelCountry" id="isTravelCountry">
-                        <option value="0" >{$lang.controllergroup.formNoLabel}</option>
-                        <option value="1" {if $formData.isTravelCountry == '1'}selected="selected"{/if}>{$lang.controllergroup.formYesLabel}</option>
-                    </select>
-                </p>
+
+					{foreach item=sectionItem from=$group}
+						{if $sectionItem->isSection}
+							<div class="sectionGroup">
+								<span>{$sectionItem->name}</span>
+								{if $sectionItem->child}
+									{foreach item=sectionItemDetail from=$sectionItem->child}
+										<p>
+											<label>{$sectionItemDetail->name}: </label>
+											<select name="group[]" id="group">
+												<option value="0">{$lang.controllergroup.formNoLabel}</option>
+												<option value="{$sectionItemDetail->id}" {if $sectionItemDetail->id|in_array:$formData.group}selected{/if}>{$lang.controllergroup.formYesLabel}</option>
+											</select>
+										</p>
+									{/foreach}
+								{/if}
+							</div>
+						{/if}
+					{/foreach}
 				
 				
 				

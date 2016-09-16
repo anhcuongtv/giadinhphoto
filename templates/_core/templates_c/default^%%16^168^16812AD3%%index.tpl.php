@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2016-09-10 15:43:06
+<?php /* Smarty version 2.6.26, created on 2016-09-16 13:37:43
          compiled from _controller/site/judge/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '_controller/site/judge/index.tpl', 7, false),array('modifier', 'count', '_controller/site/judge/index.tpl', 140, false),array('function', 'counter', '_controller/site/judge/index.tpl', 104, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '_controller/site/judge/index.tpl', 7, false),array('modifier', 'is_array', '_controller/site/judge/index.tpl', 106, false),array('modifier', 'count', '_controller/site/judge/index.tpl', 141, false),array('function', 'counter', '_controller/site/judge/index.tpl', 104, false),)), $this); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -199,6 +199,7 @@ unset($_smarty_tpl_vars);
  
                 	<?php if ($this->_tpl_vars['judger']->uid == $this->_tpl_vars['me']->id): ?>(<?php echo $this->_tpl_vars['lang']['controller']['you']; ?>
 )<?php endif; ?>
+					<?php if (((is_array($_tmp=$this->_tpl_vars['markJudgerList'])) ? $this->_run_mod_handler('is_array', true, $_tmp) : is_array($_tmp))): ?>
                     <?php if (in_array ( $this->_tpl_vars['judger']->uid , $this->_tpl_vars['markJudgerList'] )): ?>
                     	<img src="<?php echo $this->_tpl_vars['currentTemplate']; ?>
 /images/tick_circle.png" alt="OK" />
@@ -206,7 +207,7 @@ unset($_smarty_tpl_vars);
                     	<img src="<?php echo $this->_tpl_vars['currentTemplate']; ?>
 /images/cross_circle.png" alt="NO" />
                     <?php endif; ?>
-                    
+					<?php endif; ?>
                     </div>
                 <?php endforeach; endif; unset($_from); ?>
 				

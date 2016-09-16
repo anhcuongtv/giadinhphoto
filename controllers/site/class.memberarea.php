@@ -131,6 +131,8 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 						$myPhoto->filepath = $formData['ffilepath'];
 						$myPhoto->filethumb1 = $formData['ffilethumb1'];
 						$myPhoto->filethumb2 = $formData['ffilethumb2'];
+                        $detailGroup = new Core_ContestPhotoGroup($formData['fsection']);
+                        $myPhoto->parentSection = $detailGroup->parent;
 						
 						$addResult = $myPhoto->addData();
                         
@@ -180,6 +182,7 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 												'tab'	=> $tab,
                                                 'paymentOptionList' => $paymentOptionList,
                                                 'paymentPaidList' => $paymentPaidList,
+                                                'totalOptionList' => count($sections['detail']),
                                                 'data'  => $data
 										)
 		);
@@ -438,7 +441,6 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 				}
 			}
 		}
-        return false;
 		return $pass;
 	}
 	

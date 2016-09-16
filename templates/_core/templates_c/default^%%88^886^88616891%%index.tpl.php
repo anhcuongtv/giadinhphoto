@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2016-09-12 16:18:08
+<?php /* Smarty version 2.6.26, created on 2016-09-16 16:38:35
          compiled from _controller/site/memberarea/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', '_controller/site/memberarea/index.tpl', 162, false),array('modifier', 'truncate', '_controller/site/memberarea/index.tpl', 169, false),array('modifier', 'date_format', '_controller/site/memberarea/index.tpl', 170, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', '_controller/site/memberarea/index.tpl', 116, false),array('modifier', 'truncate', '_controller/site/memberarea/index.tpl', 168, false),array('modifier', 'date_format', '_controller/site/memberarea/index.tpl', 169, false),)), $this); ?>
 
 <div id="page">
 	
@@ -178,8 +178,7 @@ memberarea.html?tab=payment" method="post">
 					</div>
 				</div>
 			<?php endif; ?>
-			
-			<?php if (count ( $this->_tpl_vars['paymentOptionList'] ) == count ( $this->_tpl_vars['me']->paidSection )): ?>
+			<?php if ($this->_tpl_vars['totalOptionList'] == ((is_array($_tmp=$this->_tpl_vars['me']->paidSection)) ? $this->_run_mod_handler('count', true, $_tmp) : count($_tmp))): ?>
 				<br />
 				<?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "notify.tpl", 'smarty_include_vars' => array('notifyInformation' => $this->_tpl_vars['lang']['controller']['paymentFullAlready'])));

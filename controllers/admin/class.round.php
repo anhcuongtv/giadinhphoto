@@ -68,23 +68,11 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 				$myRound->name = $formData['fname'];
 				$myRound->isactive = $formData['fisactive'];
 				$myRound->isgiveaward = $formData['fisgiveaward'];
-				$myRound->passPoint = serialize(array(
-											'sectionColor' => $formData['fpasspointcolor'],
-											'sectionColorBestPortrait' => $formData['sectionColorBestPortrait'],
-											'sectionColorBestAction' => $formData['sectionColorBestAction'],
-											'sectionColorBestIdea' => $formData['sectionColorBestIdea'],
-											'sectionMono' => $formData['fpasspointmono'],
-											'sectionMonoBestPortrait' => $formData['sectionMonoBestPortrait'],
-											'sectionMonoBestAction' => $formData['sectionMonoBestAction'],
-											'sectionMonoBestCreative' => $formData['sectionMonoBestCreative'],
-											'sectionNature' => $formData['fpasspointnature'],
-											'sectionNatureBestSnow' => $formData['sectionNatureBestSnow'],
-                                            'sectionNatureBestBird' => $formData['sectionNatureBestBird'],
-                                            'sectionNatureBestFlower' => $formData['sectionNatureBestFlower'],
-                                            'sectionTravel' => $formData['fpasspointtravel'],
-                                            'sectionTravelBestTransportation' => $formData['sectionTravelBestTransportation'],
-                                            'sectionTravelBestCountry' => $formData['sectionTravelBestCountry'],
-                                            'sectionTravelBestTraditional' => $formData['sectionTravelBestTraditional']));
+                $serializePoint = array();
+                foreach ($formData['section'] as $key=>$value) {
+                    $serializePoint[$key] = $value;
+                }
+				$myRound->passPoint = serialize($serializePoint);
 				
 				if($myRound->addData())
 				{
@@ -101,12 +89,12 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 		}
 		
 		$_SESSION['roundAddToken'] = Helper::getSecurityToken();
-		
+        $group = Core_ContestPhotoGroup::getList(0, true);
 		$this->registry->smarty->assign(array(	'formData' 		=> $formData,
 												'redirectUrl'	=> $this->getRedirectUrl(),
 												'error'			=> $error,
 												'success'		=> $success,
-												
+                                                'group'         => $group,
 												));
 		$contents = $this->registry->smarty->fetch($this->registry->smartyControllerContainer.'add.tpl');
 		
@@ -136,9 +124,8 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 			$formData['fisactive'] = $myRound->isactive;
 			$formData['fisgiveaward'] = $myRound->isgiveaward;
 			$formData['fdatecreated'] = $myRound->datecreated;
-			$formData['fpasspoint'] = unserialize($myRound->passPoint);            
-			
-            
+			$formData['section'] = unserialize($myRound->passPoint);
+
 			if(!empty($_POST['fsubmit']))
 			{
 				$formData = array_merge($formData, $_POST);
@@ -151,24 +138,11 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 					$myRound->isgiveaward = $formData['fisgiveaward'];
 					$myRound->datecreated = $formData['fdatecreated'];
 					$myRound->isEnableView =$formData['fisEnableView'];
-
-					$myRound->passPoint = serialize(array(
-											'sectionColor' => $formData['fpasspointcolor'],
-											'sectionColorBestPortrait' => $formData['sectionColorBestPortrait'],
-											'sectionColorBestAction' => $formData['sectionColorBestAction'],
-											'sectionColorBestIdea' => $formData['sectionColorBestIdea'],
-											'sectionMono' => $formData['fpasspointmono'],
-											'sectionMonoBestPortrait' => $formData['sectionMonoBestPortrait'],
-											'sectionMonoBestAction' => $formData['sectionMonoBestAction'],
-											'sectionMonoBestCreative' => $formData['sectionMonoBestCreative'],
-											'sectionNature' => $formData['fpasspointnature'],
-											'sectionNatureBestSnow' => $formData['sectionNatureBestSnow'],
-                                            'sectionNatureBestBird' => $formData['sectionNatureBestBird'],
-                                            'sectionNatureBestFlower' => $formData['sectionNatureBestFlower'],
-                                            'sectionTravel' => $formData['fpasspointtravel'],
-                                            'sectionTravelBestTransportation' => $formData['sectionTravelBestTransportation'],
-                                            'sectionTravelBestCountry' => $formData['sectionTravelBestCountry'],
-                                            'sectionTravelBestTraditional' => $formData['sectionTravelBestTraditional']));
+                    $serializePoint = array();
+                    foreach ($formData['section'] as $key=>$value) {
+                        $serializePoint[$key] = $value;
+                    }
+                    $myRound->passPoint = serialize($serializePoint);
                     
 					if($myRound->updateData())
 					{
@@ -179,18 +153,17 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 					{
 						$error[] = $this->registry->lang['controller']['errUpdate'];			
 					}
-                    $formData['fpasspoint'] = unserialize($myRound->passPoint); 
+                    $formData['section'] = unserialize($myRound->passPoint);
 				}
 			}
-			
-			
+
 			$_SESSION['roundEditToken'] = Helper::getSecurityToken();
-			
+            $group = Core_ContestPhotoGroup::getList(0, true);
 			$this->registry->smarty->assign(array(	'formData' 		=> $formData,
 													'redirectUrl'	=> $this->getRedirectUrl(),
 													'error'			=> $error,
 													'success'		=> $success,
-													
+													'group'         => $group
 													));
 			$contents = $this->registry->smarty->fetch($this->registry->smartyControllerContainer.'edit.tpl');
 			
@@ -359,44 +332,17 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 			///////////////////////////////////////////////////////////////////////////
 			//get all judgers, judgers by section
 			$judgers = Core_UserJudge::getJudges(array(), '', '', '');
-            
-			$judgerSection['color-c'] = array();
-			$judgerSection['sport-c'] = array();
-			$judgerSection['idea-c'] = array();
-			$judgerSection['landscape-c'] = array();
-			$judgerSection['mono-m'] = array();
-			$judgerSection['sport-m'] = array();
-			$judgerSection['idea-m'] = array();
-			$judgerSection['landscape-m'] = array();
-			$judgerSection['nature-n'] = array();
-			$judgerSection['snow-n'] = array();
-            $judgerSection['bird-n'] = array();
-            $judgerSection['flower-n'] = array();
-			$judgerSection['travel-t'] = array();
-			$judgerSection['transportation-t'] = array();
-            $judgerSection['country-t'] = array();
-            $judgerSection['traditional-t'] = array();
-			
+            $allGroup = Core_ContestPhotoGroup::getAllGroupName();
+            foreach ($allGroup as $key=>$name) {
+                $judgerSection[$key] = array();
+            }
 			for($i = 0; $i < count($judgers); $i++)
 			{
-                if($judgers[$i]->isColor)    $judgerSection['color-c'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isColorBestPortrait)    $judgerSection['landscape-c'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isColorBestIdea)    $judgerSection['idea-c'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isColorBestAction)    $judgerSection['sport-c'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isMono)    $judgerSection['mono-m'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isMonoBestPortrait)    $judgerSection['landscape-m'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isMonoBestAction)    $judgerSection['sport-m'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isMonoCreative)    $judgerSection['idea-m'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isNature)    $judgerSection['nature-n'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isNatureBestBird)    $judgerSection['bird-n'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isNatureBestSnow)    $judgerSection['snow-n'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isNatureBestFlower)    $judgerSection['flower-n'][] = $judgers[$i]->uid;
-				if($judgers[$i]->isTravel)	$judgerSection['travel-t'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isTravelTransportation)    $judgerSection['transportation-t'][] = $judgers[$i]->uid;
-				if($judgers[$i]->isTravelTraditional)	$judgerSection['traditional-t'][] = $judgers[$i]->uid;
-                if($judgers[$i]->isTravelCountry)    $judgerSection['country-t'][] = $judgers[$i]->uid;
+                $groupJudger = explode(",", $judgers[$i]->group);
+                foreach ($groupJudger as $gID) {
+                    $judgerSection[$gID][] = $judgers[$i]->uid;
+                }
 			}
-            
 			//get all photo from this round
 			$roundPhotos = Core_ContestPhotoReadyRound::getPhotos(array('frid' => $myRound->id), '', '', '');
             
@@ -454,7 +400,6 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
                     // }
 				//danh sach nhung judger chua cham diem cho photo o round nay
 				$judgerUnscored = array_diff($judgerSection[$currentPhoto->section], $markJudgerList);
-
 				$roundPhotos[$i]->totalScore = $totalPoint;
 				if(count($judgerUnscored) == 0)
 				{
@@ -514,6 +459,15 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 					$roundPhotos = Core_ContestPhotoReadyRound::getPhotosFull($formData, '', '', '');
 					if(count($roundPhotos) > 0)
 					{
+                        foreach ($formData['fsection'] as $section) {
+                            $listTmp = Core_UserJudge::getJudges(array('fsection' => $section), 'id', 'ASC', '');
+                            for($i = 0; $i < count($listTmp); $i++)
+                            {
+                                $judgerList[$section][$listTmp[$i]->uid] = $listTmp[$i];
+                            }
+                        }
+
+/*
 						if(in_array('color-c', $formData['fsection']))
                         {
                             $listTmp = Core_UserJudge::getJudges(array('fsection' => 'color-c'), 'id', 'ASC', '');
@@ -650,7 +604,7 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
                             {
                                 $judgerList['snow-n'][$listTmp[$i]->uid] = $listTmp[$i];
                             }
-                        }
+                        }*/
 						
                         //var_dump($judgerList);
                         //die();
@@ -690,13 +644,14 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 					}
 				}
 			}
-			
+            $group = Core_ContestPhotoGroup::getList(0, true);
+            $data = Helper::displaySelectionPhotoGroupForUser($group, true);
 			$this->registry->smarty->assign(array(	'formData' 		=> $formData,
 													'myRound'		=> $myRound,
 													'redirectUrl'	=> $this->getRedirectUrl(),
 													'error'			=> $error,
 													'success'		=> $success,
-													
+													'data'          => $data,
 													));
 			$contents = $this->registry->smarty->fetch($this->registry->smartyControllerContainer.'exportcsv.tpl');
 			
@@ -726,7 +681,6 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 	private function addActionValidator($formData, &$error)
 	{
 		$pass = true;
-		
 		if($_SESSION['roundAddToken'] != $formData['ftoken'])
 		{
 			$error[] = $this->registry->lang['controllergroup']['errFormTokenInvalid'];
@@ -744,31 +698,13 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 			$error[] = $this->registry->lang['controller']['errIsactiveInvalid'];
 			$pass = false;
 		}
-		
-		if($formData['fpasspointcolor'] <= 0)
-		{
-			$error[] = $this->registry->lang['controller']['errPasspointInvalid'].'[Color]';
-			$pass = false;
-		}
-        
-        if($formData['fpasspointmono'] <= 0)
-        {
-            $error[] = $this->registry->lang['controller']['errPasspointInvalid'].'[Mono]';
-            $pass = false;
+
+        foreach ($formData['section'] as $key=>$index) {
+            if ($index <= 0) {
+                $error[] = $this->registry->lang['controller']['errPasspointInvalid'].' '.Core_ContestPhotoGroup::getDataSectionName($key);
+                $pass = false;
+            }
         }
-        
-        if($formData['fpasspointnature'] <= 0)
-        {
-            $error[] = $this->registry->lang['controller']['errPasspointInvalid'].'[Nature]';
-            $pass = false;
-        }
-        
-        if($formData['fpasspointtravel'] <= 0)
-        {
-            $error[] = $this->registry->lang['controller']['errPasspointInvalid'].'[Travel]';
-            $pass = false;
-        }
-		
 				
 		return $pass;
 	}
@@ -794,29 +730,12 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 			$error[] = $this->registry->lang['controller']['errIsactiveInvalid'];
 			$pass = false;
 		}
-		
-		if($formData['fpasspointcolor'] <= 0)
-        {
-            $error[] = $this->registry->lang['controller']['errPasspointInvalid'].'[Color]';
-            $pass = false;
-        }
-        
-        if($formData['fpasspointmono'] <= 0)
-        {
-            $error[] = $this->registry->lang['controller']['errPasspointInvalid'].'[Mono]';
-            $pass = false;
-        }
-        
-        if($formData['fpasspointnature'] <= 0)
-        {
-            $error[] = $this->registry->lang['controller']['errPasspointInvalid'].'[Nature]';
-            $pass = false;
-        }
-        
-        if($formData['fpasspointtravel'] <= 0)
-        {
-            $error[] = $this->registry->lang['controller']['errPasspointInvalid'].'[Travel]';
-            $pass = false;
+
+        foreach ($formData['section'] as $key=>$index) {
+            if ($index <= 0) {
+                $error[] = $this->registry->lang['controller']['errPasspointInvalid'].' '.Core_ContestPhotoGroup::getDataSectionName($key);
+                $pass = false;
+            }
         }
 				
 		return $pass;
@@ -826,7 +745,7 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 	private function exportCsvActionValidator($formData, &$error)
 	{
 		$pass = true;
-		
+        $groups = Core_ContestPhotoGroup::getAllPhotoGroup();
 		if(count($formData['fsection']) == 0)
 		{
 			$error[] = $this->registry->lang['controller']['errSectionInvalid'];
@@ -838,8 +757,7 @@ Class Controller_Admin_Round Extends Controller_Admin_Base
 			for($i = 0; $i < count($formData['fsection']); $i++)
 			{                
 				$sec = $formData['fsection'][$i];
-				if($sec != 'color-c' && $sec != 'mono-m' && $sec != 'nature-n' && $sec != 'travel-t' && $sec != 'landscape-c' && $sec != 'sport-c' && $sec != 'idea-c' && $sec != 'landscape-m' && $sec != 'idea-m' && $sec != 'sport-m' && $sec != 'dress-t' && $sec != 'flower-n' && $sec != 'snow-n' && $sec != 'bird-n' && $sec != 'transportation-t' && $sec != 'country-t')
-				{
+                if(!in_array($sec, $groups)){
 					$error[] = $this->registry->lang['controller']['errSectionInvalid'];
 					$pass = false;	
 					break;	

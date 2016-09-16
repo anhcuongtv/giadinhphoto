@@ -48,74 +48,23 @@
 						<option value="0" {if $formData.fisgiveaward == '0'}selected="selected"{/if}>{$lang.controllergroup.formNoLabel}</option>
 					</select>
 				</p>
-				
-				<p>
-					<label>{$lang.controller.passpoint} Color <span class="star_require">*</span> : </label>
-					<input type="text" name="fpasspointcolor" id="fpasspoint" size="5" value="{$formData.fpasspoint.sectionColor|@htmlspecialchars}" class="text-input">
-				</p>
-                
-                <p>
-                    <label>{$lang.controller.passpoint} Color Best Portrait <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionColorBestPortrait" id="sectionColorBestPortrait" size="5" value="{$formData.fpasspoint.sectionColorBestPortrait|@htmlspecialchars}" class="text-input">
-                </p>
-                <p>
-                    <label>{$lang.controller.passpoint} Color Best Sport <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionColorBestAction" id="sectionColorBestAction" size="5" value="{$formData.fpasspoint.sectionColorBestAction|@htmlspecialchars}" class="text-input">
-                </p>
-                <p>
-                    <label>{$lang.controller.passpoint} Color Best Idea <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionColorBestIdea" id="sectionColorBestIdea" size="5" value="{$formData.fpasspoint.sectionColorBestIdea|@htmlspecialchars}" class="text-input">
-                </p>
-                 <p>
-                    <label>{$lang.controller.passpoint} Mono <span class="star_require">*</span> : </label>
-                    <input type="text" name="fpasspointmono" id="fpasspoint" size="5" value="{$formData.fpasspoint.sectionMono|@htmlspecialchars}" class="text-input">
-                </p>
-                <p>
-                    <label>{$lang.controller.passpoint} Mono Best Portrait <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionMonoBestPortrait" id="sectionMonoBestPortrait" size="5" value="{$formData.fpasspoint.sectionMonoBestPortrait|@htmlspecialchars}" class="text-input">
-                </p>
-                <p>
-                    <label>{$lang.controller.passpoint} Mono Best Action <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionMonoBestAction" id="sectionMonoBestAction" size="5" value="{$formData.fpasspoint.sectionMonoBestAction|@htmlspecialchars}" class="text-input">
-                </p>
-                <p>
-                    <label>{$lang.controller.passpoint} Mono Best Creative <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionMonoBestCreative" id="sectionMonoBestCreative" size="5" value="{$formData.fpasspoint.sectionMonoBestCreative|@htmlspecialchars}" class="text-input">
-                </p>
-                 <p>
-                    <label>{$lang.controller.passpoint} Nature <span class="star_require">*</span> : </label>
-                    <input type="text" name="fpasspointnature" id="fpasspoint" size="5" value="{$formData.fpasspoint.sectionNature|@htmlspecialchars}" class="text-input">
-                </p>
-                <p>
-                    <label>{$lang.controller.passpoint} Nature Best Snow <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionNatureBestSnow" id="sectionNatureBestSnow" size="5" value="{$formData.fpasspoint.sectionNatureBestSnow|@htmlspecialchars}" class="text-input">
-                </p>
-                <p>
-                    <label>{$lang.controller.passpoint} Nature Best Bird <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionNatureBestBird" id="sectionNatureBestBird" size="5" value="{$formData.fpasspoint.sectionNatureBestBird|@htmlspecialchars}" class="text-input">
-                </p>
 
-                <p>
-                    <label>{$lang.controller.passpoint} Nature Best Flower <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionNatureBestFlower" id="sectionNatureBestFlower" size="5" value="{$formData.fpasspoint.sectionNatureBestFlower|@htmlspecialchars}" class="text-input">
-                </p>
-
-                <p>
-                    <label>{$lang.controller.passpoint} Travel <span class="star_require">*</span> : </label>
-                    <input type="text" name="fpasspointtravel" id="fpasspoint" size="5" value="{$formData.fpasspoint.sectionTravel|@htmlspecialchars}" class="text-input">
-                </p>
-                <p>
-                    <label>{$lang.controller.passpoint} Travel Best Transportation <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionTravelBestTransportation" id="sectionTravelBestTransportation" size="5" value="{$formData.fpasspoint.sectionTravelBestTransportation|@htmlspecialchars}" class="text-input">
-                </p>
-                <p>
-                    <label>{$lang.controller.passpoint} Travel Best Country  <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionTravelBestCountry" id="sectionTravelBestCountry" size="5" value="{$formData.fpasspoint.sectionTravelBestCountry|@htmlspecialchars}" class="text-input">
-                </p>
-                <p>
-                    <label>{$lang.controller.passpoint} Travel Best Traditional  <span class="star_require">*</span> : </label>
-                    <input type="text" name="sectionTravelBestTraditional" id="sectionTravelBestTraditional" size="5" value="{$formData.fpasspoint.sectionTravelBestTraditional|@htmlspecialchars}" class="text-input">
-                </p>
+					{foreach item=sectionItem from=$group}
+						{if $sectionItem->isSection}
+							<div class="sectionGroup">
+								<span>{$sectionItem->name}</span>
+								{if $sectionItem->child}
+									{foreach item=sectionItemDetail from=$sectionItem->child}
+										{assign var="id" value=$sectionItemDetail->id}
+										<p>
+											<label>{$sectionItemDetail->name} <span class="star_require">*</span> : </label>
+											<input type="text" name="section[{$sectionItemDetail->id}]" id="section" size="5" value="{$formData.section.$id|@htmlspecialchars}" class="text-input">
+										</p>
+									{/foreach}
+								{/if}
+							</div>
+						{/if}
+					{/foreach}
                 
                
                 

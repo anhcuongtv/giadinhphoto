@@ -17,7 +17,7 @@ Class Controller_Admin_Judger Extends Controller_Admin_Base
 					
 		//get latest records
 		$judgers = Core_UserJudge::getJudges($formData, $sortby, $sorttype, $this->recordPerPage, false);
-        
+        $group = Core_ContestPhotoGroup::getListNotSection(0, true);
 		//build redirect string
 		$paginateUrl = $this->registry->conf['rooturl_admin'].'judger/index/';   
 		$redirectUrl = $paginateUrl;
@@ -55,23 +55,7 @@ Class Controller_Admin_Judger Extends Controller_Admin_Base
 			{
 				$myJudger = new Core_UserJudge();
 				$myJudger->uid = $myUser->id;
-              		$myJudger->isColor = $formData['fiscolor'];
-					$myJudger->isColorBestPortrait = $formData['isColorBestPortrait'];
-					$myJudger->isColorBestIdea = $formData['isColorBestIdea'];
-					$myJudger->isColorBestAction = $formData['isColorBestAction'];
-					$myJudger->isMono = $formData['fismono'];
-					$myJudger->isMonoBestPortrait = $formData['isMonoBestPortrait'];
-					$myJudger->isMonoBestAction = $formData['isMonoBestAction'];
-					$myJudger->isMonoCreative = $formData['isMonoCreative'];
-					$myJudger->isNature = $formData['fisnature'];
-					$myJudger->isNatureBestBird = $formData['isNatureBestBird'];
-					$myJudger->isNatureBestSnow = $formData['isNatureBestSnow'];
-					$myJudger->isNatureBestFlower = $formData['isNatureBestFlower'];
-					$myJudger->isTravel = $formData['fistravel'];
-					$myJudger->isTravelTransportation = $formData['isTravelTransportation'];
-                    $myJudger->isTravelTraditional = $formData['isTravelTraditional'];
-					$myJudger->isTravelCountry = $formData['isTravelCountry'];
-				$myJudger->isViewOnly = $formData['fisviewonly'];
+                $myJudger->group= implode(",",$formData['group']);
 				
 				if($myJudger->addData())
 				{
@@ -87,11 +71,13 @@ Class Controller_Admin_Judger Extends Controller_Admin_Base
 		}
 		
 		$_SESSION['judgerAddToken'] = Helper::getSecurityToken();
-		
+        $group = Core_ContestPhotoGroup::getList(0, true);
+
 		$this->registry->smarty->assign(array(	'formData' 		=> $formData,
 												'redirectUrl'	=> $this->getRedirectUrl(),
 												'error'			=> $error,
 												'success'		=> $success,
+                                                'group'         => $group,
 												
 												));
 		$contents = $this->registry->smarty->fetch($this->registry->smartyControllerContainer.'add.tpl');
@@ -115,47 +101,14 @@ Class Controller_Admin_Judger Extends Controller_Admin_Base
 			$success 	= array();
 			$contents 	= '';
 			$formData 	= array();
-			
-            $formData['fiscolor'] = $myJudger->isColor;
-			$formData['isColorBestPortrait'] = $myJudger->isColorBestPortrait;
-			$formData['isColorBestIdea'] = $myJudger->isColorBestIdea;
-			$formData['isColorBestAction'] = $myJudger->isColorBestAction;
-			$formData['isMonoBestPortrait'] = $myJudger->isMonoBestPortrait;
-			$formData['isMonoBestAction'] = $myJudger->isMonoBestAction;
-			$formData['isMonoCreative'] = $myJudger->isMonoCreative;
-			$formData['isNatureBestBird'] = $myJudger->isNatureBestBird;
-			$formData['isNatureBestSnow'] = $myJudger->isNatureBestSnow;
-			$formData['isNatureBestFlower'] = $myJudger->isNatureBestFlower;
-			$formData['isTravelTransportation'] = $myJudger->isTravelTransportation;
-			$formData['isTravelTraditional'] = $myJudger->isTravelTraditional;
-			$formData['isTravelCountry'] = $myJudger->isTravelCountry;
-            $formData['fismono'] = $myJudger->isMono;
-			$formData['fisnature'] = $myJudger->isNature;
-            $formData['fistravel'] = $myJudger->isTravel;			
+            $formData['group'] = explode(',',$myJudger->group);
 			if(!empty($_POST['fsubmit']))
 			{
 				$formData = array_merge($formData, $_POST);
 				
 				if($this->editActionValidator($formData, $error))
 				{
-                    $myJudger->isColor = $formData['fiscolor'];
-					$myJudger->isColorBestPortrait = $formData['isColorBestPortrait'];
-					$myJudger->isColorBestIdea = $formData['isColorBestIdea'];
-					$myJudger->isColorBestAction = $formData['isColorBestAction'];
-					$myJudger->isMono = $formData['fismono'];
-					$myJudger->isMonoBestPortrait = $formData['isMonoBestPortrait'];
-					$myJudger->isMonoBestAction = $formData['isMonoBestAction'];
-					$myJudger->isMonoCreative = $formData['isMonoCreative'];
-					$myJudger->isNature = $formData['fisnature'];
-					$myJudger->isNatureBestBird = $formData['isNatureBestBird'];
-					$myJudger->isNatureBestSnow = $formData['isNatureBestSnow'];
-					$myJudger->isNatureBestFlower = $formData['isNatureBestFlower'];
-					$myJudger->isTravel = $formData['fistravel'];
-					$myJudger->isTravelTransportation = $formData['isTravelTransportation'];
-                    $myJudger->isTravelTraditional = $formData['isTravelTraditional'];
-					$myJudger->isTravelCountry = $formData['isTravelCountry'];
-
-					
+                    $myJudger->group= implode(",",$formData['group']);
 					if($myJudger->updateData())
 					{
 						$success[] = $this->registry->lang['controller']['succUpdate'];
@@ -167,27 +120,9 @@ Class Controller_Admin_Judger Extends Controller_Admin_Base
 					}
 				}
 			}
-			
-            if($myJudger->isColorBestPortrait)    $formData['fsection'][] = 'landscape-c';
-            if($myJudger->isColorBestIdea)    $formData['fsection'][] = 'idea-c';
-            if($myJudger->isColorBestAction)    $formData['fsection'][] = 'sport-c';
-            if($myJudger->isMonoBestPortrait)    $formData['fsection'][] = 'landscape-m';
-            if($myJudger->isMonoBestAction)    $formData['fsection'][] = 'sport-m';
-            if($myJudger->isMonoCreative)    $formData['fsection'][] = 'idea-m';
-            if($myJudger->isNatureBestBird)    $formData['fsection'][] = 'bird-n';
-            if($myJudger->isNatureBestSnow)    $formData['fsection'][] = 'snow-n';
-			if($myJudger->isNatureBestFlower)	$formData['fsection'][] = 'flower-n';
-			if($myJudger->isTravelTransportation)	$formData['fsection'][] = 'transportation-t';
-			if($myJudger->isTravelTraditional)	$formData['fsection'][] = 'dress-t';
-			if($myJudger->isTravelCountry)	$formData['fsection'][] = 'country-t';
-            if($myJudger->isNature)    $formData['fsection'][] = 'nature-n';
-			if($myJudger->isTravel)	$formData['fsection'][] = 'travel-t';
-            if($myJudger->isMono)    $formData['fsection'][] = 'mono-m';
-            if($myJudger->isColor)    $formData['fsection'][] = 'color-c';
 
-
-			
-			$rounds = Core_ContestRound::getRounds($formData, $sortby, 'ASC', '');
+            $group = Core_ContestPhotoGroup::getList(0, true);
+			$rounds = Core_ContestRound::getRounds($formData, "", 'ASC', '');
 			//count the photo in each round to score
 			for($i = 0; $i < count($rounds); $i++)
 			{
@@ -209,7 +144,7 @@ Class Controller_Admin_Judger Extends Controller_Admin_Base
 													'redirectUrl'	=> $this->getRedirectUrl(),
 													'error'			=> $error,
 													'success'		=> $success,
-													
+													'group'         => $group,
 													));
 			$contents = $this->registry->smarty->fetch($this->registry->smartyControllerContainer.'edit.tpl');
 			
@@ -272,40 +207,27 @@ Class Controller_Admin_Judger Extends Controller_Admin_Base
 	####################################################################################################
 	
 		
-	private function addActionValidator($formData, &$error, Core_User &$myUser)
+	private function addActionValidator(&$formData, &$error, Core_User &$myUser)
 	{
 		$pass = true;
-		
+        $groups = Core_ContestPhotoGroup::getAllPhotoGroup();
 		if($_SESSION['judgerAddToken'] != $formData['ftoken'])
 		{
 			$error[] = $this->registry->lang['controllergroup']['errFormTokenInvalid'];
 			$pass = false;
 		}
-		
-		if($formData['fiscolor'] != '0' && $formData['fiscolor'] != '1')
-		{
-			$error[] = $this->registry->lang['controller']['errIscolorInvalid'];
-			$pass = false;
-		}
-		
-		if($formData['fismono'] != '0' && $formData['fismono'] != '1')
-		{
-			$error[] = $this->registry->lang['controller']['errIsmonoInvalid'];
-			$pass = false;
-		}
-		
-		if($formData['fisnature'] != '0' && $formData['fisnature'] != '1')
-		{
-			$error[] = $this->registry->lang['controller']['errIsnatureInvalid'];
-			$pass = false;
-		}
-        
-        if($formData['fistravel'] != '0' && $formData['fistravel'] != '1')
-        {
-            $error[] = $this->registry->lang['controller']['errIstravelInvalid'];
-            $pass = false;
+
+        foreach($formData['group'] as $index=>$groupID) {
+            if (!in_array($groupID, $groups) && $groupID!=0)
+            {
+                $error[] = $this->registry->lang['controller']['errIscolorInvalid'];
+                $pass = false;
+            }
+            if ($groupID == 0) {
+                unset($formData['group'][$index]);
+            }
         }
-		
+
 		//check valid user
 		if($formData['fuserid'] > 0)
 		{
@@ -343,35 +265,22 @@ Class Controller_Admin_Judger Extends Controller_Admin_Base
 	private function editActionValidator($formData, &$error)
 	{
 		$pass = true;
-		
+        $groups = Core_ContestPhotoGroup::getAllPhotoGroup();
 		if($_SESSION['judgerEditToken'] != $formData['ftoken'])
 		{
 			$error[] = $this->registry->lang['controllergroup']['errFormTokenInvalid'];
 			$pass = false;
 		}
-		
-		if($formData['fiscolor'] != '0' && $formData['fiscolor'] != '1')
-		{
-			$error[] = $this->registry->lang['controller']['errIscolorInvalid'];
-			$pass = false;
-		}
-		
-		if($formData['fismono'] != '0' && $formData['fismono'] != '1')
-		{
-			$error[] = $this->registry->lang['controller']['errIsmonoInvalid'];
-			$pass = false;
-		}
-		
-		if($formData['fisnature'] != '0' && $formData['fisnature'] != '1')
-		{
-			$error[] = $this->registry->lang['controller']['errIsnatureInvalid'];
-			$pass = false;
-		}
-        
-        if($formData['fistravel'] != '0' && $formData['fistravel'] != '1')
-        {
-            $error[] = $this->registry->lang['controller']['errIstravelInvalid'];
-            $pass = false;
+
+        foreach($formData['group'] as $index=>$groupID) {
+            if (!in_array($groupID, $groups) && $groupID!=0)
+            {
+                $error[] = $this->registry->lang['controller']['errIscolorInvalid'];
+                $pass = false;
+            }
+            if ($groupID == 0) {
+                unset($formData['group'][$index]);
+            }
         }
 				
 		return $pass;

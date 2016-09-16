@@ -169,42 +169,23 @@ Class Core_ContestPhotoReadyRound extends Core_Object
 		{
 			$whereString .= ' AND prr.pr_unscoredlist LIKE "%,'.$formData['funscoredid'].',%" ';
 		}
-		
-        
+
 		if(count($formData['fpasspoint']) > 0)
 		{
-			$whereString .= ' AND ((prr.p_section LIKE "color-c" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionColor'].')
-                             OR (prr.p_section LIKE "landscape-c" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionColorBestPortrait'].')
-                             OR (prr.p_section LIKE "sport-c" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionColorBestAction'].')
-                             OR (prr.p_section LIKE "idea-c" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionColorBestIdea'].')
-                             OR (prr.p_section LIKE "mono-m" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionMono'].')
-                             OR (prr.p_section LIKE "landscape-m" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionMonoBestPortrait'].')
-                             OR (prr.p_section LIKE "sport-m" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionMonoBestAction'].')
-                             OR (prr.p_section LIKE "idea-m" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionMonoBestCreative'].')
-                             OR (prr.p_section LIKE "nature-n" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionNature'].')
-                             OR (prr.p_section LIKE "snow-n" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionNatureBestSnow'].')
-                             OR (prr.p_section LIKE "bird-n" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionNatureBestBird'].')
-                             OR (prr.p_section LIKE "flower-n" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionNatureBestFlower'].')
-                             OR (prr.p_section LIKE "travel-t" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionTravel'].')
-                             OR (prr.p_section LIKE "transportation-t" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionTravelBestTransportation'].')
-                             OR (prr.p_section LIKE "dress-t" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionTravelBestTraditional'].')
-                             OR (prr.p_section LIKE "country-t" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionTravelBestCountry'].'))';
+            $i=0;
+			foreach($formData['fpasspoint'] as $key=>$value) {
+                if ($i == 0) {
+                    $whereString .= ' AND (prr.p_section = \''.$key.'\' AND prr.pr_totalscore >= '.(int)$value.')';
+                } else {
+                    $whereString .= ' OR (prr.p_section = \''.$key.'\' AND prr.pr_totalscore >= '.(int)$value.')';
+                }
+                $i++;
+            }
 		}
-        
-		
+
 		if(!empty($formData['fsection']))
 			$whereString .= ' AND prr.p_section = "'.$formData['fsection'].'" ';
-    
-        if($formData['fsection'] == 'color-c' || $formData['fsection'] == 'color')
-            $whereString .= ' AND prr.p_section LIKE "%-c" ';
-        if($formData['fsection'] == 'mono-m' || $formData['fsection'] == 'mono')
-            $whereString .= ' AND prr.p_section LIKE "%-m" ';
-           if($formData['fsection'] == 'travel-t' || $formData['fsection'] == 'travel')
-            $whereString .= ' AND prr.p_section LIKE "%-t" ';
-              if($formData['fsection'] == 'nature-n' || $formData['fsection'] == 'nature')
-            $whereString .= ' AND prr.p_section LIKE "%-n" ';  
-        
-		
+
 		if(is_array($formData['fsection']) && count($formData['fsection']) > 0)
 		{
 			for($i = 0; $i < count($formData['fsection']); $i++)
@@ -229,6 +210,8 @@ Class Core_ContestPhotoReadyRound extends Core_Object
 		else
 			return self::getList($whereString, $orderString, $limit);
 	}
+
+
 	public static function getPhotosBackend($roundId,$limit = '' ,$countOnly = false){
 		global $db;
 		if($countOnly == false){
@@ -332,64 +315,22 @@ Class Core_ContestPhotoReadyRound extends Core_Object
 		
 		if(count($formData['fpasspoint']) > 0)
         {
-            $whereString .= ' AND ((prr.p_section LIKE "color-c" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionColor'].')
-                             OR (prr.p_section IN("landscape-c","sport-c","idea-c") AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionColorBest'].')
-                             OR (prr.p_section LIKE "mono-m" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionMono'].')
-                             OR (prr.p_section IN("landscape-m","sport-m","idea-m") AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionMonoBest'].')
-                             OR (prr.p_section LIKE "nature" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionNature'].')
-                             OR (prr.p_section LIKE "travel" AND prr.pr_totalscore >=  ' . (int)$formData['fpasspoint']['sectionTravel'].'))';
+            $i=0;
+            foreach($formData['fpasspoint'] as $key=>$value) {
+                if ($i == 0) {
+                    $whereString .= ' AND (prr.p_section = \''.$key.'\' AND prr.pr_totalscore >= '.(int)$value.')';
+                } else {
+                    $whereString .= ' OR (prr.p_section = \''.$key.'\' AND prr.pr_totalscore >= '.(int)$value.')';
+                }
+                $i++;
+            }
         }
-		
-		//Filter by section
-		if($formData['fsection'] == 'color' || $formData['fsection'] == 'mono' || $formData['fsection'] == 'nature' )
-		{
-			//$whereString .= ' AND prr.p_section = "'.$formData['fsection'].'" ';
-            if($formData['fsection'] == 'color')
-            {
-                $whereString .= ' AND prr.p_section LIKE "%-c" ';
-            }
-            elseif($formData['fsection'] == 'mono')
-            {
-                $whereString .= ' AND prr.p_section LIKE "%-m" ';
-            }
-            elseif($formData['fsection'] == 'travel' || $formData['fsection'] == 'nature' )
-            {
-                $whereString .= ' AND prr.p_section = "'.$formData['fsection'].'" ';
-            }
-            
-		}
 
 		if(is_array($formData['fsection']) && count($formData['fsection']) > 0)
-		{   
-			for($i = 0; $i < count($formData['fsection']); $i++)
-			{				
-                if($formData['fsection'][$i] != 'colorbest' AND $formData['fsection'][$i] != 'monobest')
-                    if($formData['fsection'][$i] == 'color')
-                        $formData['fsection'][$i] = '"color-c"';
-                    elseif($formData['fsection'][$i] == 'mono')
-                        $formData['fsection'][$i] = '"mono-m"';
-                    else
-                    $formData['fsection'][$i] = '"' . $formData['fsection'][$i] . '"';
-                else
-                {
-                    if($formData['fsection'][$i] == 'colorbest')
-                    {
-                        unset($formData['fsection'][$i]);
-                       $formData['fsection'][$i] = '"landscape-c","sport-c","idea-c"';  
-                    }
-                    
-                    if($formData['fsection'][$i] == 'monobest')
-                    {
-                       unset($formData['fsection'][$i]);
-                       $formData['fsection'][$i] = '"landscape-m","sport-m","idea-m"';   
-                    }                    
-                }                
-			}
-            
+		{
 			$whereString .= ' AND prr.p_section IN ('.implode(',', $formData['fsection']).') ';
 		}
-		
-				
+
 		//checking sort by & sort type
 		if($sorttype != 'DESC' && $sorttype != 'ASC')
 			$sorttype = 'ASC';

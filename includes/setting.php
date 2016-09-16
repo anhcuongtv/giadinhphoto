@@ -35,7 +35,7 @@
 	$setting['banner']['imageDirectory'] = 'uploads/banners/';
 	$setting['banner']['validType'] = array('JPG', 'JPEG', 'GIF', 'PNG', 'SWF');
 	
-	$setting['contestphoto']['imageDirectory'] = 'uploads/contestphoto/en/';
+	$setting['contestphoto']['imageDirectory'] = 'uploads/contestphoto/vn/';
 	$setting['contestphoto']['imageThumb1Width'] = '640';
 	$setting['contestphoto']['imageThumb1Height'] = '480';
 	$setting['contestphoto']['imageThumb2Width'] = '250';

@@ -39,7 +39,6 @@ Class Core_ContestRound extends Core_Object
 		    	(int)$this->isgiveaward, 
 		    	(int)$this->datecreated, 
 		    	(string)$this->passPoint,
-		    	(int)$this->isEnableView,
 			))->rowCount();
 			
 		$this->id = $this->db->lastInsertId();
@@ -142,22 +141,9 @@ Class Core_ContestRound extends Core_Object
 			$myRound->datecreated = $row['r_datecreated'];
             $sectionsPoint = unserialize($row['r_passpoint']);
             $myRound->isEnableView = $row['r_enable_view'];
-            $myRound->passPoint =   'Color:'.$sectionsPoint['sectionColor']
-			                        .'<br/> Color Best Portrait:'.$sectionsPoint['sectionColorBestPortrait']
-                                    .'<br/> Color Best Action:'.$sectionsPoint['sectionColorBestAction']
-                                    .'<br/> Color Best Idea:'.$sectionsPoint['sectionColorBestIdea']
-                                    .'<br/> Mono:'.$sectionsPoint['sectionMono']
-                                    .'<br/> Mono Best Portraint:'.$sectionsPoint['sectionMonoBestPortrait']
-                                    .'<br/> Mono Best Action:'.$sectionsPoint['sectionMonoBestAction']
-                                    .'<br/> Mono Best Idea:'.$sectionsPoint['sectionMonoBestCreative']
-                                    .'<br/> Nature:'.$sectionsPoint['sectionNature']
-                                    .'<br/> Nature Best Snow:'.$sectionsPoint['sectionNatureBestSnow']
-                                    .'<br/> Nature Best Bird:'.$sectionsPoint['sectionNatureBestBird']
-                                    .'<br/> Nature Best Flower:'.$sectionsPoint['sectionNatureBestFlower']
-                                    .'<br/> Travel:'.$sectionsPoint['sectionTravel']
-                                    .'<br/> Travel Transportation:'.$sectionsPoint['sectionTravelBestTransportation']
-                                    .'<br/> Travel Country:'.$sectionsPoint['sectionTravelBestCountry']
-                                    .'<br/> Travel Traditional:'.$sectionsPoint['sectionTravelBestTraditional'];
+            foreach ($sectionsPoint as $key=>$value) {
+                $myRound->passPoint .= Core_ContestPhotoGroup::getDataSectionName($key).' : '.$value.'<br/>';
+            }
 				
 			$outputList[] = $myRound;
 		}

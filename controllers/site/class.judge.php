@@ -9,40 +9,12 @@ Class Controller_Site_Judge Extends Controller_Core_Base
 		$myJudger = new Core_UserJudge($this->registry->me->id);
 		if($myJudger->uid > 0)
 		{
-			//GET AVAILABLE SECTION FOR THIS USER    
+			//GET AVAILABLE SECTION FOR THIS USER
+            $groups = explode(",", $myJudger->group);
 			$sectionList = array();
-			if($myJudger->isColor)
-                $sectionList['color-c'] = 'Color » Open Color';
-            if($myJudger->isColorBestPortrait)
-				$sectionList['landscape-c'] = 'Color » Best Portrait free';
-			if($myJudger->isColorBestIdea)
-				$sectionList['idea-c'] = 'Color »Best idea free';
-           	if($myJudger->isColorBestAction)
-				$sectionList['sport-c'] = 'Color »Best Action free';
-            if($myJudger->isMono)
-                $sectionList['mono-m'] = 'Mono » Open Mono';
-			if($myJudger->isMonoBestPortrait)
-				$sectionList['landscape-m'] = 'Mono »Best Portrait free';
-			if($myJudger->isMonoBestAction)
-				$sectionList['sport-m'] = 'Mono »Best Action free';
-			if($myJudger->isMonoCreative)
-				$sectionList['idea-m'] = 'Mono »Best Creative free';
-            if($myJudger->isNature)
-                $sectionList['nature-n'] = 'Nature » Open Nature';
-            if($myJudger->isNatureBestBird)
-                $sectionList['bird-n'] = 'Nature » Best Bird free'; 
-            if($myJudger->isNatureBestSnow)
-                $sectionList['snow-n'] = 'Nature » Best Snow free';  
-            if($myJudger->isNatureBestFlower)
-                $sectionList['flower-n'] = 'Nature » Best Flower free';  
-            if($myJudger->isTravel)
-                $sectionList['travel-t'] = 'Travel » Open Travel';
-            if($myJudger->isTravelTransportation)
-                $sectionList['transportation-t'] = 'Travel » Best Transportation free';
-            if($myJudger->isTravelTraditional)
-                $sectionList['dress-t'] = 'Travel » Best Traditional Dress free';
-            if($myJudger->isTravelCountry)
-                $sectionList['country-t'] = 'Travel » Best Country free';
+            foreach ($groups as $groupID) {
+                $sectionList[$groupID] = Core_ContestPhotoGroup::getDataSectionName($groupID);
+            }
 
 			if(empty($sectionList))
 			{

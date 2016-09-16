@@ -113,8 +113,7 @@
 					</div>
 				</div>
 			{/if}
-			
-			{if count($paymentOptionList) == count($me->paidSection)}
+			{if $totalOptionList == $me->paidSection|count}
 				<br />
 				{include file="notify.tpl" notifyInformation=$lang.controller.paymentFullAlready}
 			{else}

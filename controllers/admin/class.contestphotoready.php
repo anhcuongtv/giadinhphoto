@@ -121,7 +121,7 @@ Class Controller_Admin_ContestPhotoReady Extends Controller_Admin_Base
 		//get latest account
 		$photos = Core_ContestPhotoReady::getPhotos($formData, $sortby, $sorttype, (($page - 1)*$this->recordPerPage).','.$this->recordPerPage);
 		
-		
+		$groups = Core_ContestPhotoGroup::getAllGroupName();
 		//filter for sortby & sorttype
 		$filterUrl = $paginateUrl;
 		
@@ -135,8 +135,7 @@ Class Controller_Admin_ContestPhotoReady Extends Controller_Admin_Base
 			
 		
 		$redirectUrl = base64_encode($redirectUrl);
-		
-		//print_r($photos);		
+		//print_r($photos);
 		$this->registry->smarty->assign(array(	'photos'	 	=> $photos,
 												'formData'		=> $formData,
 												'success'		=> $success,
@@ -148,6 +147,7 @@ Class Controller_Admin_ContestPhotoReady Extends Controller_Admin_Base
 												'total'			=> $total,
 												'totalPage' 	=> $totalPage,
 												'curPage'		=> $curPage,
+                                                'groups'		=> $groups,
 												));
 		
 		$contents = $this->registry->smarty->fetch($this->registry->smartyControllerContainer.'index.tpl');

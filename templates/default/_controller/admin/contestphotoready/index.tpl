@@ -67,7 +67,7 @@
 					</tfoot>
 					<tbody>
 				{foreach item=photo from=$photos}
-					
+						{assign var=id value=$photo->section}
 						<tr>
 							<td align="center"><input type="checkbox" name="fbulkid[]" value="{$photo->id}" {if in_array($photo->id, $formData.fbulkid)}checked="checked"{/if}/></td>
 							
@@ -76,7 +76,7 @@
                             <td><a href="{$conf.rooturl}{$setting.contestphoto.imageDirectory}{$photo->filethumb1}" title="{$photo->name}"><img src="{$conf.rooturl}{$setting.contestphoto.imageDirectory}{$photo->filethumb2}" width="60" /></a></td>                  {else}
                             <td><a href="{$setting.extra.imageDirectoryRemoteServer.vn}{$photo->filethumb1}" title="{$photo->name}"><img src="{$setting.extra.imageDirectoryRemoteServer.vn}{$photo->filethumb2}" width="60" /></a></td>
                             {/if}
-							<td>{$photo->section}</td>
+							<td>{$groups.$id}</td>
 							<td><a href="{$conf.rooturl_admin}contestphoto/edit/id/{$photo->id}/redirect/{$redirectUrl}"><b>{$photo->name}</b></a></td>
 							
 							<td class="td_center">{$photo->resolution}</td>

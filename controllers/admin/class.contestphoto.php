@@ -164,7 +164,8 @@ Class Controller_Admin_ContestPhoto Extends Controller_Admin_Base
 		$id = $this->registry->router->getArg('id');
 		$myPhoto = new Core_ContestPhoto($id);
 		$redirectUrl = $this->getRedirectUrl();
-		
+        $group = Core_ContestPhotoGroup::getList(0, true);
+        $data = Helper::displaySelectionPhotoGroupForUser($group, true, $myPhoto->section);
 		if($myPhoto->id > 0)
 		{
 			$poster = new Core_User($myPhoto->uid);
@@ -204,7 +205,8 @@ Class Controller_Admin_ContestPhoto Extends Controller_Admin_Base
 					'error'	=> $error,
 					'success'	=> $success,
 					'formData'	=> $formData,
-					'redirectUrl' => $this->getRedirectUrl()
+					'redirectUrl' => $this->getRedirectUrl(),
+                    'data' => $data
 				)
 			);
 			

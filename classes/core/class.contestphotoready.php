@@ -15,6 +15,7 @@ Class Core_ContestPhotoReady extends Core_Object
 	public $userCountry = '';
 	public $poster;
     public $fileserver = '';
+    public $sectionName = '';
 	
 	
 	public function __construct($id = 0)
@@ -91,6 +92,7 @@ Class Core_ContestPhotoReady extends Core_Object
 			$this->id = $row['p_id'];
 			$this->uid = $row['u_id'];
 			$this->section = $row['p_section'];
+            $this->sectionName = Core_ContestPhotoGroup::getDataSectionName($row['p_section']);
 			$this->name = $row['p_name'];
 			$this->resolution = $row['p_resolution'];
 			$this->filepath = $row['p_filepath'];
@@ -116,6 +118,7 @@ Class Core_ContestPhotoReady extends Core_Object
 		$this->filethumb2 = $row['p_filethumb2'];
 		$this->userCountry = $row['p_usercountry'];
 		$this->datecreated = $row['p_datecreated'];
+        $this->sectionName = Core_ContestPhotoGroup::getDataSectionName($row['p_section']);
 	}
 	
 	
@@ -180,22 +183,10 @@ Class Core_ContestPhotoReady extends Core_Object
 		//Filter by section
          if(!empty($formData['fsection']))
 			$whereString .= ' AND p.p_section = "'.$formData['fsection'].'" ';
-    
-        if($formData['fsection'] == 'color-c' || $formData['fsection'] == 'color')
-            $whereString .= ' AND p.p_section LIKE "%-c" ';
-        if($formData['fsection'] == 'mono-m' || $formData['fsection'] == 'mono')
-            $whereString .= ' AND p.p_section LIKE "%-m" ';
-           if($formData['fsection'] == 'travel-t' || $formData['fsection'] == 'travel')
-            $whereString .= ' AND p.p_section LIKE "%-t" ';
-              if($formData['fsection'] == 'nature-n' || $formData['fsection'] == 'nature')
-            $whereString .= ' AND p.p_section LIKE "%-n" ';  
-
-		
         
 		if(is_array($formData['fsection']))
 		{   
             //$secs = array();
-            
 			for($i = 0; $i < count($formData['fsection']); $i++)
 			{
 				$formData['fsection'][$i] = '"' . $formData['fsection'][$i] . '"';
@@ -345,17 +336,6 @@ Class Core_ContestPhotoReady extends Core_Object
        	//Filter by section
          if(!empty($formData['fsection']))
 			$whereString .= ' AND p.p_section = "'.$formData['fsection'].'" ';
-    
-        if($formData['fsection'] == 'color-c' || $formData['fsection'] == 'color')
-            $whereString .= ' AND p.p_section LIKE "%-c" ';
-        if($formData['fsection'] == 'mono-m' || $formData['fsection'] == 'mono')
-            $whereString .= ' AND p.p_section LIKE "%-m" ';
-           if($formData['fsection'] == 'travel-t' || $formData['fsection'] == 'travel')
-            $whereString .= ' AND p.p_section LIKE "%-t" ';
-              if($formData['fsection'] == 'nature-n' || $formData['fsection'] == 'nature')
-            $whereString .= ' AND p.p_section LIKE "%-n" ';  
-
-        
 		
 				
 		if($formData['fuserid'] > 0)
@@ -458,17 +438,6 @@ Class Core_ContestPhotoReady extends Core_Object
        	//Filter by section
          if(!empty($formData['fsection']))
 			$whereString .= ' AND p.p_section = "'.$formData['fsection'].'" ';
-    
-        if($formData['fsection'] == 'color-c' || $formData['fsection'] == 'color')
-            $whereString .= ' AND p.p_section LIKE "%-c" ';
-        if($formData['fsection'] == 'mono-m' || $formData['fsection'] == 'mono')
-            $whereString .= ' AND p.p_section LIKE "%-m" ';
-           if($formData['fsection'] == 'travel-t' || $formData['fsection'] == 'travel')
-            $whereString .= ' AND p.p_section LIKE "%-t" ';
-              if($formData['fsection'] == 'nature-n' || $formData['fsection'] == 'nature')
-            $whereString .= ' AND p.p_section LIKE "%-n" ';  
-
-		
 				
 		if($formData['fjudgerid'] > 0)
 		{
@@ -507,17 +476,7 @@ Class Core_ContestPhotoReady extends Core_Object
        	//Filter by section
          if(!empty($formData['fsection']))
 			$whereString .= ' AND p.p_section = "'.$formData['fsection'].'" ';
-    
-        if($formData['fsection'] == 'color-c' || $formData['fsection'] == 'color')
-            $whereString .= ' AND p.p_section LIKE "%-c" ';
-        if($formData['fsection'] == 'mono-m' || $formData['fsection'] == 'mono')
-            $whereString .= ' AND p.p_section LIKE "%-m" ';
-           if($formData['fsection'] == 'travel-t' || $formData['fsection'] == 'travel')
-            $whereString .= ' AND p.p_section LIKE "%-t" ';
-              if($formData['fsection'] == 'nature-n' || $formData['fsection'] == 'nature')
-            $whereString .= ' AND p.p_section LIKE "%-n" ';  
 
-    
         if($formData['fround'] > 0)
             $round = $formData['fround'];
                
@@ -573,14 +532,8 @@ Class Core_ContestPhotoReady extends Core_Object
 		$sql = 'SELECT p_id, p_section, p_name, p_resolution, p_filepath, p_filethumb1, p_filethumb2, p_datecreated, up.u_id, up_country, up_paid_color, up_paid_mono, up_paid_nature, up_paid_travel
 				FROM pex_contest_photo p
 				INNER JOIN pex_ac_user_profile up ON p.u_id = up.u_id
-				WHERE  (p_section LIKE "%-c" AND up_paid_color = "1")
-					OR (p_section LIKE "%-t" AND up_paid_travel = "1")
-					OR (p_section LIKE "%-m" AND up_paid_mono = "1")
-					OR (p_section LIKE "%-n" AND up_paid_nature = "1")
-					OR (p_section = "nature" AND up_paid_nature = "1")
-					OR (p_section = "color" AND up_paid_color = "1")
-					OR (p_section = "mono" AND up_paid_mono = "1")
-                    OR (p_section = "travel" AND up_paid_travel = "1")
+				INNER JOIN pex_ac_user_paid paid ON p.u_id = paid.user_id
+				WHERE p.p_parentSection = paid.section_id
 				';
 		$stmt = $db->query($sql);
 		echo '<pre>';

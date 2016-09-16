@@ -1,6 +1,6 @@
 <h2>{$lang.controller.head_add}</h2>
 
-<form action="" method="post" name="myform">
+<form action="" method="post" name="myform" enctype="multipart/form-data">
 <input type="hidden" name="ftoken" value="{$smarty.session.roundAddToken}" />
 <div class="content-box"><!-- Start Content Box -->
 	<div class="content-box-header">		
@@ -40,8 +40,25 @@
 						<option value="0" {if $formData.fisgiveaward == '0'}selected="selected"{/if}>{$lang.controllergroup.formNoLabel}</option>
 					</select>
 				</p>
-				
-				<p>
+
+					{foreach item=sectionItem from=$group}
+						{if $sectionItem->isSection}
+							<div class="sectionGroup">
+								<span>{$sectionItem->name}</span>
+								{if $sectionItem->child}
+									{foreach item=sectionItemDetail from=$sectionItem->child}
+										{assign var="id" value=$sectionItemDetail->id}
+										<p>
+											<label>{$sectionItemDetail->name} <span class="star_require">*</span> : </label>
+											<input type="text" name="section[{$sectionItemDetail->id}]" id="section" size="5" value="{$formData.section.$id|@htmlspecialchars}" class="text-input">
+										</p>
+									{/foreach}
+								{/if}
+							</div>
+						{/if}
+					{/foreach}
+
+				{*<p>
 					<label>{$lang.controller.passpoint} Color <span class="star_require">*</span> : </label>
 					<input type="text" name="fpasspointcolor" id="fpasspoint" size="5" value="{$formData.fpasspoint.sectionColor|@htmlspecialchars}" class="text-input">
 				</p>
@@ -69,7 +86,7 @@
                 <p>
                     <label>{$lang.controller.passpoint} Travel<span class="star_require">*</span> : </label>
                     <input type="text" name="fpasspointtravel" id="fpasspoint" size="5" value="{$formData.fpasspoint.sectionTravel|@htmlspecialchars}" class="text-input">
-                </p>
+                </p>*}
 				
 				
 								

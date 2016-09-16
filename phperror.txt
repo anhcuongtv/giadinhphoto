@@ -47,3 +47,132 @@ Stack trace:
 [12-Sep-2016 22:24:10] PHP Warning:  array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 457
 [12-Sep-2016 22:24:10] PHP Warning:  array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php on line 457
 [13-Sep-2016 21:43:57] PHP Parse error:  syntax error, unexpected T_RETURN in D:\AppServ\www\giadinhphoto\classes\core\class.contestphoto.php on line 786
+[16-Sep-2016 10:28:30] PHP Fatal error:  Smarty error: [in _controller/admin/judger/add.tpl line 35]: syntax error: unrecognized tag: $group['detail'][$sectionItem->id] (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 10:28:54] PHP Fatal error:  Smarty error: [in _controller/admin/judger/add.tpl line 35]: syntax error: unrecognized tag: $notifysuccess['detail'][$sectionItem->id] (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 10:34:11] PHP Fatal error:  Smarty error: [in _controller/admin/judger/add.tpl line 34]: syntax error: foreach: missing 'item' attribute (Smarty_Compiler.class.php, line 1170) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 10:36:01] PHP Fatal error:  Smarty error: [in _controller/admin/judger/add.tpl line 34]: syntax error: foreach: missing 'item' attribute (Smarty_Compiler.class.php, line 1170) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 10:37:55] PHP Fatal error:  Smarty error: [in _controller/admin/judger/add.tpl line 34]: syntax error: foreach: missing 'item' attribute (Smarty_Compiler.class.php, line 1170) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 10:41:27] PHP Fatal error:  Cannot use object of type Core_ContestPhotoGroup as array in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 53
+[16-Sep-2016 10:41:55] PHP Fatal error:  Cannot use object of type Core_ContestPhotoGroup as array in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 53
+[16-Sep-2016 10:42:39] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 59
+[16-Sep-2016 10:42:39] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 59
+[16-Sep-2016 10:42:39] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 59
+[16-Sep-2016 10:42:39] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 59
+[16-Sep-2016 10:42:39] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 59
+[16-Sep-2016 10:42:39] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 59
+[16-Sep-2016 10:43:31] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 10:43:31] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 10:43:31] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 10:43:31] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 10:43:31] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 10:43:31] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 10:43:58] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 10:43:58] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 10:43:58] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 10:43:58] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 10:43:58] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 10:43:58] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%39^397^397B7ABF%%add.tpl.php on line 58
+[16-Sep-2016 11:20:36] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and status = 1  order by `order` asc' at line 2' in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php:77
+Stack trace:
+#0 D:\AppServ\www\giadinhphoto\classes\class.mypdo.php(77): PDOStatement->execute(Array)
+#1 D:\AppServ\www\giadinhphoto\classes\core\class.contestphotogroup.php(233): MyPDO->query('SELECT * FROM p...')
+#2 D:\AppServ\www\giadinhphoto\controllers\admin\class.judger.php(20): Core_ContestPhotoGroup::getListNotSection(0, true)
+#3 D:\AppServ\www\giadinhphoto\classes\class.router.php(84): Controller_Admin_Judger->indexAction()
+#4 D:\AppServ\www\giadinhphoto\index.php(24): Router->delegate()
+#5 {main}
+  thrown in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php on line 77
+[16-Sep-2016 11:20:39] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and status = 1  order by `order` asc' at line 2' in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php:77
+Stack trace:
+#0 D:\AppServ\www\giadinhphoto\classes\class.mypdo.php(77): PDOStatement->execute(Array)
+#1 D:\AppServ\www\giadinhphoto\classes\core\class.contestphotogroup.php(233): MyPDO->query('SELECT * FROM p...')
+#2 D:\AppServ\www\giadinhphoto\controllers\admin\class.judger.php(20): Core_ContestPhotoGroup::getListNotSection(0, true)
+#3 D:\AppServ\www\giadinhphoto\classes\class.router.php(84): Controller_Admin_Judger->indexAction()
+#4 D:\AppServ\www\giadinhphoto\index.php(24): Router->delegate()
+#5 {main}
+  thrown in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php on line 77
+[16-Sep-2016 11:53:28] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 11:53:44] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 11:53:46] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 11:53:50] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 11:55:04] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 13:21:46] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 13:22:46] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 13:35:24] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 13:35:36] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 13:35:39] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 13:35:43] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 13:35:55] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 13:37:05] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%16^168^16812AD3%%index.tpl.php on line 202
+[16-Sep-2016 13:40:42] PHP Warning:  Smarty error: unable to read resource: "notfound.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 13:40:42] PHP Warning:  Smarty error: unable to read resource: "index.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 13:40:49] PHP Warning:  Smarty error: unable to read resource: "notfound.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 13:40:49] PHP Warning:  Smarty error: unable to read resource: "index.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 13:41:49] PHP Warning:  array_diff() [<a href='function.array-diff'>function.array-diff</a>]: Argument #1 is not an array in D:\AppServ\www\giadinhphoto\controllers\admin\class.round.php on line 456
+[16-Sep-2016 13:57:27] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php:77
+Stack trace:
+#0 D:\AppServ\www\giadinhphoto\classes\class.mypdo.php(77): PDOStatement->execute(Array)
+#1 D:\AppServ\www\giadinhphoto\classes\core\class.contestround.php(43): MyPDO->query('INSERT INTO pex...', Array)
+#2 D:\AppServ\www\giadinhphoto\controllers\admin\class.round.php(89): Core_ContestRound->addData()
+#3 D:\AppServ\www\giadinhphoto\classes\class.router.php(84): Controller_Admin_Round->addAction()
+#4 D:\AppServ\www\giadinhphoto\index.php(24): Router->delegate()
+#5 {main}
+  thrown in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php on line 77
+[16-Sep-2016 14:24:10] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:10] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:10] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:10] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:10] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:10] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:10] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:10] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:10] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:27] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:27] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:27] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:27] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:27] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:27] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:27] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:27] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:24:27] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:25:39] PHP Fatal error:  Smarty error: [in _controller/admin/round/add.tpl line 52]: syntax error: unrecognized tag: $formData.section.{$sectionItemDetail->id (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 14:25:53] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:25:53] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:25:53] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:25:53] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:25:53] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:25:53] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:25:53] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:25:53] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:25:53] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:26:21] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:26:21] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:26:21] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:26:21] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:26:21] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:26:21] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:26:21] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:26:21] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:26:21] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%94^94A^94ABAAF5%%add.tpl.php on line 81
+[16-Sep-2016 14:34:23] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%54^54F^54FCBFCE%%edit.tpl.php on line 92
+[16-Sep-2016 14:34:23] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%54^54F^54FCBFCE%%edit.tpl.php on line 92
+[16-Sep-2016 14:34:23] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%54^54F^54FCBFCE%%edit.tpl.php on line 92
+[16-Sep-2016 14:34:23] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%54^54F^54FCBFCE%%edit.tpl.php on line 92
+[16-Sep-2016 14:34:23] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%54^54F^54FCBFCE%%edit.tpl.php on line 92
+[16-Sep-2016 14:34:23] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%54^54F^54FCBFCE%%edit.tpl.php on line 92
+[16-Sep-2016 14:34:23] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%54^54F^54FCBFCE%%edit.tpl.php on line 92
+[16-Sep-2016 14:34:23] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%54^54F^54FCBFCE%%edit.tpl.php on line 92
+[16-Sep-2016 14:34:23] PHP Warning:  Illegal offset type in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%54^54F^54FCBFCE%%edit.tpl.php on line 92
+[16-Sep-2016 14:44:41] PHP Warning:  unserialize() expects parameter 1 to be string, array given in D:\AppServ\www\giadinhphoto\controllers\admin\class.round.php on line 156
+[16-Sep-2016 14:49:08] PHP Warning:  Smarty error: unable to read resource: "notfound.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 14:49:08] PHP Warning:  Smarty error: unable to read resource: "index.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 15:01:34] PHP Catchable fatal error:  Object of class Core_ContestPhotoReady could not be converted to string in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%19^192^19241224%%index.tpl.php on line 103
+[16-Sep-2016 15:02:48] PHP Catchable fatal error:  Object of class Core_ContestPhotoReady could not be converted to string in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%19^192^19241224%%index.tpl.php on line 103
+[16-Sep-2016 15:04:41] PHP Fatal error:  Smarty error: [in _controller/admin/contestphotoready/index.tpl line 70]: syntax error: unrecognized tag: Core_ContestPhotoGroup::getDataSectionName(2) (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 15:06:44] PHP Fatal error:  Smarty error: [in _controller/admin/contestphotoready/index.tpl line 71]: syntax error: unrecognized tag: $foo::getDataSectionName(2) (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 15:06:45] PHP Fatal error:  Smarty error: [in _controller/admin/contestphotoready/index.tpl line 71]: syntax error: unrecognized tag: $foo::getDataSectionName(2) (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 15:07:18] PHP Fatal error:  Smarty error: [in _controller/admin/contestphotoready/index.tpl line 71]: syntax error: unrecognized tag: $foo::getDataSectionName() (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 15:10:50] PHP Catchable fatal error:  Object of class Core_ContestPhotoReady could not be converted to string in D:\AppServ\www\giadinhphoto\templates\_core\templates_c\default^%%19^192^19241224%%index.tpl.php on line 103
+[16-Sep-2016 15:37:30] PHP Warning:  array_diff() [<a href='function.array-diff'>function.array-diff</a>]: Argument #1 is not an array in D:\AppServ\www\giadinhphoto\controllers\admin\class.round.php on line 429
+[16-Sep-2016 16:06:52] PHP Fatal error:  Smarty error: [in _controller/admin/round/exportcsv.tpl line 25]: syntax error: unrecognized tag 'data' (Smarty_Compiler.class.php, line 590) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[16-Sep-2016 16:34:30] PHP Fatal error:  Smarty error: [in _controller/site/memberarea/index.tpl line 116]: syntax error: unrecognized tag: count($paymentOptionList) (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093

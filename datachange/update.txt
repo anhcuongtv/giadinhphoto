@@ -23,3 +23,8 @@ CREATE TABLE `gdcontest_swin`.`pex_ac_user_paid` (
 ALTER TABLE `gdcontest_swin`.`pex_ac_user_paid`
 ADD COLUMN `user_id` INT NOT NULL AFTER `id`;
 
+ALTER TABLE `gdcontest_swin`.`pex_ac_user_judge` ADD COLUMN `uj_photogroup` VARCHAR(120) NULL  AFTER `uj_datecreated` ;
+ALTER TABLE `gdcontest_swin`.`pex_contest_photo` ADD COLUMN `p_parentSection` INT NULL  AFTER `p_datecreated` ;
+ALTER TABLE `gdcontest_swin`.`pex_contest_photo_ready` CHANGE COLUMN `p_section` `p_section` INT NOT NULL  ;
+
+
