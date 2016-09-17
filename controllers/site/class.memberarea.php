@@ -117,24 +117,70 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
                     $groups = Core_ContestPhotoGroup::getAllPhotoGroup();
 					if($this->addPhotoReturnValidator($formData, $error, $groups)==true)
 					{
-						$myPhoto = new Core_ContestPhoto();
-						$myPhoto->uid = (int)$this->registry->me->id;
-						$myPhoto->section = (string)$formData['fsection'];
-						$myPhoto->name = strip_tags($formData['fname']);
-						$myPhoto->description = strip_tags($formData['fdescription']);
-						$myPhoto->filesizeinbyte = (int)$formData['ffilesizeinbyte'];
-						$myPhoto->resolution = $formData['fwidth'] . 'x' . $formData['fheight'];
-						$myPhoto->enable = 1;
-						$myPhoto->displaymode = 1;
-						$myPhoto->cancomment = 1; 
-						$myPhoto->fileserver = $formData['ffileserver'];
-						$myPhoto->filepath = $formData['ffilepath'];
-						$myPhoto->filethumb1 = $formData['ffilethumb1'];
-						$myPhoto->filethumb2 = $formData['ffilethumb2'];
-                        $detailGroup = new Core_ContestPhotoGroup($formData['fsection']);
-                        $myPhoto->parentSection = $detailGroup->parent;
-						
-						$addResult = $myPhoto->addData();
+                        //get detail section
+                        $sectionDetail = Core_ContestPhotoGroup::getDataSectionName($formData['fsection'], true);
+                        //check if user already upload for photo group
+                        $dataUpload = false;
+                        if ($sectionDetail['isGroup']) {
+                            $dataUpload = Core_ContestPhotoChild::checkSectionUpload($formData['fsection']);
+                        }
+                        if (!$dataUpload) {
+                            $myPhoto = new Core_ContestPhoto();
+                            $myPhoto->uid = (int)$this->registry->me->id;
+                            $myPhoto->section = (string)$formData['fsection'];
+                            $myPhoto->name = strip_tags($formData['fname']);
+                            $myPhoto->description = strip_tags($formData['fdescription']);
+                            $myPhoto->filesizeinbyte = (int)$formData['ffilesizeinbyte'];
+                            $myPhoto->resolution = $formData['fwidth'] . 'x' . $formData['fheight'];
+                            $myPhoto->enable = 1;
+                            $myPhoto->displaymode = 1;
+                            $myPhoto->cancomment = 1;
+                            $myPhoto->fileserver = $formData['ffileserver'];
+                            $myPhoto->filepath = $formData['ffilepath'];
+                            $myPhoto->filethumb1 = $formData['ffilethumb1'];
+                            $myPhoto->filethumb2 = $formData['ffilethumb2'];
+                            $detailGroup = new Core_ContestPhotoGroup($formData['fsection']);
+                            $myPhoto->parentSection = $detailGroup->parent;
+                            $myPhoto->isGroup = $sectionDetail['isGroup'];
+                            $addResult = $myPhoto->addData();
+
+                            $myPhotoChild = new Core_ContestPhotoChild();
+                            $myPhotoChild->uid = (int)$this->registry->me->id;
+                            $myPhotoChild->section = (string)$formData['fsection'];
+                            $myPhotoChild->name = strip_tags($formData['fname']);
+                            $myPhotoChild->description = strip_tags($formData['fdescription']);
+                            $myPhotoChild->filesizeinbyte = (int)$formData['ffilesizeinbyte'];
+                            $myPhotoChild->resolution = $formData['fwidth'] . 'x' . $formData['fheight'];
+                            $myPhotoChild->enable = 1;
+                            $myPhotoChild->displaymode = 1;
+                            $myPhotoChild->cancomment = 1;
+                            $myPhotoChild->fileserver = $formData['ffileserver'];
+                            $myPhotoChild->filepath = $formData['ffilepath'];
+                            $myPhotoChild->filethumb1 = $formData['ffilethumb1'];
+                            $myPhotoChild->filethumb2 = $formData['ffilethumb2'];
+                            $myPhotoChild->parentSection = $detailGroup->parent;
+                            $myPhotoChild->parentID = $myPhoto->id;
+                            $addResult = $myPhotoChild->addData();
+                        } else {
+                            $myPhotoChild = new Core_ContestPhotoChild();
+                            $myPhotoChild->uid = (int)$this->registry->me->id;
+                            $myPhotoChild->section = (string)$formData['fsection'];
+                            $myPhotoChild->name = strip_tags($formData['fname']);
+                            $myPhotoChild->description = strip_tags($formData['fdescription']);
+                            $myPhotoChild->filesizeinbyte = (int)$formData['ffilesizeinbyte'];
+                            $myPhotoChild->resolution = $formData['fwidth'] . 'x' . $formData['fheight'];
+                            $myPhotoChild->enable = 1;
+                            $myPhotoChild->displaymode = 1;
+                            $myPhotoChild->cancomment = 1;
+                            $myPhotoChild->fileserver = $formData['ffileserver'];
+                            $myPhotoChild->filepath = $formData['ffilepath'];
+                            $myPhotoChild->filethumb1 = $formData['ffilethumb1'];
+                            $myPhotoChild->filethumb2 = $formData['ffilethumb2'];
+                            $detailGroup = new Core_ContestPhotoGroup($formData['fsection']);
+                            $myPhotoChild->parentSection = $detailGroup->parent;
+                            $myPhotoChild->parentID = $dataUpload['p_parentID'];
+                            $addResult = $myPhotoChild->addData();
+                        }
                         
 						if($addResult == Core_ContestPhoto::ERROR_OK)
 						{
@@ -155,6 +201,7 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		}
 		
 		$myPhotoList = Core_ContestPhoto::getPhotos(array('fuserid' => $this->registry->me->id), '', '', '');
+        $myPhotoGroupList = Core_ContestPhoto::getPhotos(array('fuserid' => $this->registry->me->id), '', '', '', false, true);
 		//$newPhotoList = Core_ContestPhoto::getPhotos(array(), '', '', 12);
 		
 		$_SESSION['addPhotoToken'] = Helper::getSecurityToken();
@@ -176,6 +223,7 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 												'information'	=> $information,
 												'productPackList'	=> $productPackList,
 												'myPhotoList'	=> $myPhotoList,
+                                                'myPhotoGroupList'	=> $myPhotoGroupList,
 												//'newPhotoList'	=> $newPhotoList,
 												'myPaymentPage'	=> $myPaymentPage,
 												'formData'	=> $formData,
@@ -207,6 +255,10 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 			if($myPhoto->uid == $this->registry->me->id)
 			{
 				//begin to delete
+                if ($myPhoto->isGroup) {
+
+                }
+
 				if($myPhoto->delete())
 				{
 					$redirectMsg = $this->registry->lang['controller']['succPhotoDelete'];	
@@ -321,6 +373,105 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 			$this->registry->smarty->display('redirect.tpl');
 		}	
 	}
+
+    function photogroupeditAction()
+    {
+        $id = (int)$this->registry->router->getArg('id');
+        $myPhoto = new Core_ContestPhotoChild($id);
+        $isRedirect = true;
+
+        $error = $success = $formData = array();
+        if($myPhoto->id > 0)
+        {
+            $group = Core_ContestPhotoGroup::getList(0, true);
+            //$sections = Core_ContestPhotoGroup::getAllSection();
+            $data = Helper::displaySelectionPhotoGroupForUser($group, true, $myPhoto->section);
+            if($myPhoto->uid == $this->registry->me->id)
+            {
+                $isRedirect = false;
+                $formData['fsection'] = $myPhoto->section;
+                $formData['fname'] = $myPhoto->name;
+                $formData['fdescription'] = $myPhoto->description;
+
+                if(isset($_POST['fsubmit']))
+                {
+                    $formData = array_merge($formData, $_POST);
+                    if($this->editPhotoValidator($formData, $error, $myPhoto))
+                    {
+                        $myPhoto->section = (string)$formData['fsection'];
+                        $myPhoto->name = strip_tags($formData['fname']);
+                        $myPhoto->description = strip_tags($formData['fdescription']);
+                        $editResult = $myPhoto->updateData();
+                        if($editResult == Core_ContestPhoto::ERROR_OK)
+                        {
+                            $redirectMsg = $this->registry->lang['controller']['succPhotoEdit'];
+                            $isRedirect = true;
+                        }
+                        else
+                        {
+                            $error[] =  $this->registry->lang['controller']['errPhotoEdit'];
+                        }
+                    }
+                }
+
+                $_SESSION['editPhotoToken'] = Helper::getSecurityToken();
+                if($isRedirect == false)
+                {
+                    //show edit form
+                    $this->registry->smarty->assign(array('error' => $error,
+                        'formData' => $formData,
+                        'myPhoto' => $myPhoto,
+                        'data' => $data
+                    ));
+                    $contents = $this->registry->smarty->fetch($this->registry->smartyControllerContainer.'editphoto.tpl');
+                    $this->registry->smarty->assign(
+                        array('contents' => $contents,
+                        )
+                    );
+                    $this->registry->smarty->display($this->registry->smartyControllerGroupContainer.'index.tpl');
+                }
+            }
+            else
+            {
+                $redirectMsg = $this->registry->lang['controller']['errPhotoDeletePermission'];
+            }
+        }
+        else
+        {
+            $redirectMsg = $this->registry->lang['controller']['errPhotoNotFound'];
+        }
+
+        if($isRedirect)
+        {
+            $redirectUrl = $this->registry->conf['rooturl'] . 'site/memberarea/photogroup/id/'.$id;
+            $this->registry->smarty->assign(array('redirect' => $redirectUrl,
+                'redirectMsg' => $redirectMsg,
+            ));
+            $this->registry->smarty->display('redirect.tpl');
+        }
+    }
+
+
+    function photogroupAction()
+    {
+        $id = (int)$this->registry->router->getArg('id');
+        $myPhotoList = Core_ContestPhotoChild::getPhotos(array('fuserid' => $this->registry->me->id), '', '', '');
+
+        $this->registry->smarty->assign(
+            array(
+                'myPhotoList'	=> $myPhotoList,
+            )
+        );
+
+        $contents = $this->registry->smarty->fetch($this->registry->smartyControllerContainer.'group.tpl');
+
+        $this->registry->smarty->assign(
+            array('contents' => $contents,
+            )
+        );
+
+        $this->registry->smarty->display($this->registry->smartyControllerGroupContainer.'index.tpl');
+    }
 	
 	#############################################################
 	#############################################################
@@ -399,7 +550,8 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 			$pass = false;
 			$error[] = $this->registry->lang['controllergroup']['securityTokenInvalid'];	
 		}
-		
+        //get detail section
+        $sectionDetail = Core_ContestPhotoGroup::getDataSectionName($formData['fsection'], true);
 		if(
 			!in_array($formData['fsection'], $section)
 		)
@@ -410,8 +562,12 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		else
 		{
 			//truy van de kiem tra user nay da upload bao nhieu photo vao section dang chon
-			$myPhotoSectionCount = Core_ContestPhoto::getPhotos(array('fsection' => $formData['fsection'], 'fuserid' => $this->registry->me->id), '', '', '', true);
             $limit = Core_ContestPhotoGroup::getLimitForSection($formData['fsection']);
+            if ($sectionDetail['isGroup']) {
+                $myPhotoSectionCount = Core_ContestPhotoChild::getPhotos(array('fsection' => $formData['fsection'], 'fuserid' => $this->registry->me->id), '', '', '', true);
+            } else {
+                $myPhotoSectionCount = Core_ContestPhoto::getPhotos(array('fsection' => $formData['fsection'], 'fuserid' => $this->registry->me->id), '', '', '', true);
+            }
 
             //CondiTion For Image In One SubSection
             if($myPhotoSectionCount >= $limit)
@@ -430,7 +586,12 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		else
 		{
 			//check existed name
-			$myPhotoList = Core_ContestPhoto::getPhotos(array('fuserid' => $this->registry->me->id), '', '', '');
+            if ($sectionDetail['isGroup']) {
+                $myPhotoList = Core_ContestPhotoChild::getPhotos(array('fuserid' => $this->registry->me->id), '', '', '');
+            } else {
+                $myPhotoList = Core_ContestPhoto::getPhotos(array('fuserid' => $this->registry->me->id), '', '', '');
+            }
+
 			foreach($myPhotoList as $myPhoto)
 			{
 				if($myPhoto->name == $formData['fname'])

@@ -76,7 +76,7 @@ Class Controller_Site_Photo Extends Controller_Site_Base
 					$newPhotoList = Core_ContestPhoto::getPhotosx($formData, '', '', (($page - 1)*$this->recordPerPage).','.$this->recordPerPage, false);
 
 			}else{
-					$total = Core_ContestPhoto::getPhotos($formData, '', '', '', true);    
+					$total = Core_ContestPhoto::getPhotos($formData, '', '', '', true);
 					$totalPage = ceil($total/$this->recordPerPage);
 					$curPage = $page;
 					$newPhotoList = Core_ContestPhoto::getPhotos($formData, '', '', (($page - 1)*$this->recordPerPage).','.$this->recordPerPage, false);
@@ -112,16 +112,22 @@ Class Controller_Site_Photo Extends Controller_Site_Base
 		
 		
 		$id = $this->registry->router->getArg('id');
-		
+        $group = $this->registry->router->getArg('group');
 		//parsing encodedPhotoid
 		$idpart = explode('-', $id, 2);
 		if($idpart[0] != '')
 		{
 			$id = (int)Core_ContestPhoto::encodePhotoId($idpart[0], 'decode');
+            $group = (int)Core_ContestPhotoChild::encodePhotoId($group, 'decode');
 		}
-		
-		$myPhoto = new Core_ContestPhoto($id);
-		
+		if ($group){
+            $object = "Core_ContestPhotoChild";
+        } else {
+            $object = "Core_ContestPhoto";
+
+        }
+
+        $myPhoto = new $object($id);
 		//gioi han chi owner moi coi
 		//if($myPhoto->id > 0 && ($myPhoto->uid == $this->registry->me->id || $this->registry->me->canViewPhoto()))
 		if($myPhoto->id > 0)
@@ -133,14 +139,19 @@ Class Controller_Site_Photo Extends Controller_Site_Base
 			$myPhoto->increaseView();
 			
 			//get poster image
-			$posterPhotoList = Core_ContestPhoto::getPhotos(array('fuserid' => $poster->id), '', '', '');
-			$newerPhotoList = Core_ContestPhoto::getPhotos(array('fgreaterthan' => $myPhoto->id), '', '', 8);
-			
+            if ($group){
+                $posterPhotoList = Core_ContestPhotoChild::getPhotos(array('fuserid' => $poster->id), '', '', '');
+                $newerPhotoList = Core_ContestPhotoChild::getPhotos(array('fgreaterthan' => $myPhoto->id), '', '', 8);
+            } else {
+                $posterPhotoList = Core_ContestPhoto::getPhotos(array('fuserid' => $poster->id), '', '', '');
+                $newerPhotoList = Core_ContestPhoto::getPhotos(array('fgreaterthan' => $myPhoto->id), '', '', 8);
+            }
+
 			//find prev/next photoid
 			//$prevId = 0;
 			//$nextId = 0;
-			$prevPhoto = new Core_ContestPhoto();
-			$nextPhoto = new Core_ContestPhoto();
+			$prevPhoto = new $object();
+			$nextPhoto = new $object();
 			
 			$curPos = 0;
 			for($i = 0; $i < count($posterPhotoList); $i++)

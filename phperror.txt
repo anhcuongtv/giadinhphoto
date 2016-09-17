@@ -176,3 +176,20 @@ Stack trace:
 [16-Sep-2016 15:37:30] PHP Warning:  array_diff() [<a href='function.array-diff'>function.array-diff</a>]: Argument #1 is not an array in D:\AppServ\www\giadinhphoto\controllers\admin\class.round.php on line 429
 [16-Sep-2016 16:06:52] PHP Fatal error:  Smarty error: [in _controller/admin/round/exportcsv.tpl line 25]: syntax error: unrecognized tag 'data' (Smarty_Compiler.class.php, line 590) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
 [16-Sep-2016 16:34:30] PHP Fatal error:  Smarty error: [in _controller/site/memberarea/index.tpl line 116]: syntax error: unrecognized tag: count($paymentOptionList) (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[17-Sep-2016 15:16:58] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'p_parentID' cannot be null' in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php:77
+Stack trace:
+#0 D:\AppServ\www\giadinhphoto\classes\class.mypdo.php(77): PDOStatement->execute(Array)
+#1 D:\AppServ\www\giadinhphoto\classes\core\class.contestphotochild.php(70): MyPDO->query('INSERT INTO pex...', Array)
+#2 D:\AppServ\www\giadinhphoto\controllers\site\class.memberarea.php(163): Core_ContestPhotoChild->addData()
+#3 D:\AppServ\www\giadinhphoto\classes\class.router.php(84): Controller_Site_MemberArea->indexAction()
+#4 D:\AppServ\www\giadinhphoto\index.php(24): Router->delegate()
+#5 {main}
+  thrown in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php on line 77
+[17-Sep-2016 16:22:10] PHP Warning:  Smarty error: unable to read resource: "notfound.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[17-Sep-2016 16:22:10] PHP Warning:  Smarty error: unable to read resource: "index.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[17-Sep-2016 16:38:27] PHP Parse error:  syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM in D:\AppServ\www\giadinhphoto\controllers\site\class.photo.php on line 142
+[17-Sep-2016 16:40:42] PHP Parse error:  syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM in D:\AppServ\www\giadinhphoto\controllers\site\class.photo.php on line 142
+[17-Sep-2016 16:41:34] PHP Parse error:  syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM in D:\AppServ\www\giadinhphoto\controllers\site\class.photo.php on line 143
+[17-Sep-2016 16:41:40] PHP Parse error:  syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM in D:\AppServ\www\giadinhphoto\controllers\site\class.photo.php on line 143
+[17-Sep-2016 16:41:43] PHP Parse error:  syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM in D:\AppServ\www\giadinhphoto\controllers\site\class.photo.php on line 143
+[17-Sep-2016 16:42:03] PHP Parse error:  syntax error, unexpected '{' in D:\AppServ\www\giadinhphoto\controllers\site\class.photo.php on line 143

@@ -1,6 +1,6 @@
 <?php
 
-Class Core_ContestPhoto extends Core_Object
+Class Core_ContestPhotoChild extends Core_Object
 {
 	const ERROR_OK = 1;
 	const ERROR_UPLOAD_IMAGE = 2;
@@ -25,7 +25,7 @@ Class Core_ContestPhoto extends Core_Object
 	public $datecreated = 0;
 	public $poster;
     public $parentSection = '';
-    public $isGroup = 0;
+    public $parentID = '';
 
 	
 	public function __construct($id = 0)
@@ -46,7 +46,7 @@ Class Core_ContestPhoto extends Core_Object
 		$this->datecreated = time();
 	
 		//them thong tin chung cua cac page
-		$sql = 'INSERT INTO ' . TABLE_PREFIX . 'contest_photo(u_id, p_section, p_name, p_description, p_filesizeinbyte, p_resolution, p_fileserver, p_filepath, p_filethumb1, p_filethumb2, p_view, p_enable, p_displaymode, p_cancomment, p_datecreated,p_parentSection, p_isGroup)
+		$sql = 'INSERT INTO ' . TABLE_PREFIX . 'contest_photo_group(u_id, p_section, p_name, p_description, p_filesizeinbyte, p_resolution, p_fileserver, p_filepath, p_filethumb1, p_filethumb2, p_view, p_enable, p_displaymode, p_cancomment, p_datecreated,p_parentSection, p_parentID)
 				VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
 		
 		$rowCount = $this->db->query($sql, array(
@@ -66,7 +66,7 @@ Class Core_ContestPhoto extends Core_Object
 				$this->cancomment,
 		    	$this->datecreated,
                 $this->parentSection,
-                $this->isGroup,
+                $this->parentID,
 			))->rowCount();
 			
 		$this->id = $this->db->lastInsertId();
@@ -85,7 +85,7 @@ Class Core_ContestPhoto extends Core_Object
 				else if($this->filepath != '')
 				{
 					//update source
-					$sql = 'UPDATE ' . TABLE_PREFIX . 'contest_photo
+					$sql = 'UPDATE ' . TABLE_PREFIX . 'contest_photo_group
 							SET p_fileserver = ?,
 								p_filepath = ?,
 								p_filethumb1 = ?,
@@ -116,7 +116,7 @@ Class Core_ContestPhoto extends Core_Object
 	*/
 	public function delete()
 	{
-		$sql = 'DELETE FROM ' . TABLE_PREFIX . 'contest_photo
+		$sql = 'DELETE FROM ' . TABLE_PREFIX . 'contest_photo_group
         		WHERE p_id =  ?
         			';
 		$rowCount = $this->db->query($sql, array($this->id))->rowCount();
@@ -139,10 +139,23 @@ Class Core_ContestPhoto extends Core_Object
 		return $rowCount;
        
 	}
+
+    public static function checkSectionUpload($sectionID)
+    {
+        global $db;
+        $sql = 'SELECT * FROM ' . TABLE_PREFIX . 'contest_photo_group
+				WHERE p_section = ?';
+        $stmt = $db->query($sql, array($sectionID));
+        while($row = $stmt->fetch())
+        {
+            return $row;
+        }
+        return false;
+    }
 	
 	public function getData($id)
 	{
-		$sql = 'SELECT * FROM ' . TABLE_PREFIX . 'contest_photo p
+		$sql = 'SELECT * FROM ' . TABLE_PREFIX . 'contest_photo_group p
 				INNER JOIN ' . TABLE_PREFIX . 'ac_user u ON p.u_id = u.u_id
 				WHERE p.p_id = ?';
 		$stmt = $this->db->query($sql, array($id));
@@ -169,7 +182,7 @@ Class Core_ContestPhoto extends Core_Object
 			$this->poster = new Core_User();
 			$this->poster->getByArray($row);
             $this->parentSection = $row['p_parentSection'];
-            $this->isGroup = $row['p_isGroup'];
+            $this->parentID = $row['p_parentID'];
 		}
 	}
 		
@@ -177,7 +190,7 @@ Class Core_ContestPhoto extends Core_Object
 	{               
 		global $registry;    
 		                                  
-        $sql = 'UPDATE ' . TABLE_PREFIX . 'contest_photo
+        $sql = 'UPDATE ' . TABLE_PREFIX . 'contest_photo_group
         		SET u_id = ?,
         			p_section = ?,
         			p_name = ?,
@@ -255,11 +268,10 @@ Class Core_ContestPhoto extends Core_Object
 		}
 	}
 	
-	
 	public static function countList($where = 'p.p_id > 0 ')
 	{
 		global $db;
-		$sql = 'SELECT COUNT(*) FROM ' . TABLE_PREFIX . 'contest_photo p
+		$sql = 'SELECT COUNT(*) FROM ' . TABLE_PREFIX . 'contest_photo_group p
 				INNER JOIN ' . TABLE_PREFIX . 'ac_user u ON p.u_id = u.u_id
 				WHERE ' . $where;
 		return $db->query($sql)->fetchSingle();
@@ -270,7 +282,7 @@ Class Core_ContestPhoto extends Core_Object
 		global $db;
 		
 		$outputList = array();
-		$sql = 'SELECT * FROM ' . TABLE_PREFIX . 'contest_photo p
+		$sql = 'SELECT * FROM ' . TABLE_PREFIX . 'contest_photo_group p
 				INNER JOIN ' . TABLE_PREFIX . 'ac_user u ON p.u_id = u.u_id
 				WHERE ' . $where . '
 				ORDER BY ' . $order;
@@ -279,7 +291,7 @@ Class Core_ContestPhoto extends Core_Object
 		$stmt = $db->query($sql);
 		while($row = $stmt->fetch())
 		{
-			$myPhoto = new Core_ContestPhoto();
+			$myPhoto = new Core_ContestPhotoChild();
 			$myPhoto->id = $row['p_id'];
 			$myPhoto->uid = $row['u_id'];
 			$myPhoto->section = $row['p_section'];
@@ -300,21 +312,15 @@ Class Core_ContestPhoto extends Core_Object
 			$myPhoto->poster = new Core_User();
 			$myPhoto->poster->getByArray($row);
             $myPhoto->parentSection = $row['p_parentSection'];
-            $myPhoto->isGroup = $row['p_isGroup'];
+            $myPhoto->parentID = $row['p_parentID'];
 			$outputList[] = $myPhoto;
 		}
 		return $outputList;
 	}
     
-    public static function getPhotos($formData, $sortby, $sorttype, $limit = '', $countOnly = false, $group = false)
+    public static function getPhotos($formData, $sortby, $sorttype, $limit = '', $countOnly = false)
     {
         $whereString = 'p.p_id > 0 ';
-
-        if ($group) {
-            $whereString .= 'and p.p_isGroup = 1 ';
-        } else {
-            $whereString .= 'and p.p_isGroup = 0 ';
-        }
         
         if($formData['fid'] > 0)
         {
@@ -402,7 +408,7 @@ Class Core_ContestPhoto extends Core_Object
     public static function countListx($where = 'p.p_id > 0 ')
     {
         global $db;
-        $sql = 'SELECT COUNT(*) FROM ' . TABLE_PREFIX . 'contest_photo p
+        $sql = 'SELECT COUNT(*) FROM ' . TABLE_PREFIX . 'contest_photo_group p
                 INNER JOIN ' . TABLE_PREFIX . 'ac_user u ON p.u_id = u.u_id
                 INNER JOIN ' . TABLE_PREFIX . 'contest_photo_ready_round prr ON p.p_id = prr.p_id 
                 WHERE ' . $where;
@@ -422,7 +428,7 @@ Class Core_ContestPhoto extends Core_Object
         global $db;
         
         $outputList = array();
-        $sql = 'SELECT * FROM ' . TABLE_PREFIX . 'contest_photo p
+        $sql = 'SELECT * FROM ' . TABLE_PREFIX . 'contest_photo_group p
                 INNER JOIN ' . TABLE_PREFIX . 'ac_user u ON p.u_id = u.u_id
                 INNER JOIN ' . TABLE_PREFIX . 'contest_photo_ready_round prr ON p.p_id = prr.p_id 
                 WHERE ' . $where . '
@@ -837,7 +843,7 @@ Class Core_ContestPhoto extends Core_Object
 	{
 		global $registry;
 		
-		$path = $registry->conf['rooturl'] . 'site/photo/detail/id/' . self::encodePhotoId($this->id) . '-' . Helper::codau2khongdau($this->name, true, true) . '.html';
+		$path = $registry->conf['rooturl'] . 'site/photo/detail/group/'.$this->parentID.'/id/' . self::encodePhotoId($this->id) . '-' . Helper::codau2khongdau($this->name, true, true) . '.html';
 		return $path;
 	}
 	
@@ -880,11 +886,11 @@ Class Core_ContestPhoto extends Core_Object
 		$output = '';
 		if($process == 'encode')
 		{
-			$output = ((($input * 112 ) - 231)*13)+7;
+			$output = ((($input * 232 ) - 231)*13)+7;
 		}
 		else
 		{
-			$output = ((($input - 7)/13)+231)/112;
+			$output = ((($input - 7)/13)+231)/232;
 		}
 		return $output;
 	}

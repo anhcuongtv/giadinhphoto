@@ -116,7 +116,7 @@ Class Core_ContestPhotoGroup extends Core_Object
 		}
 	}
 
-    public static function getDataSectionName($id)
+    public static function getDataSectionName($id, $all = false)
     {
         global $db;
         $sql = 'SELECT * FROM ' . TABLE_PREFIX . 'photogroup
@@ -125,7 +125,11 @@ Class Core_ContestPhotoGroup extends Core_Object
 
         while($row = $stmt->fetch())
         {
-            return $row['name'];
+            if (!$all) {
+                return $row['name'];
+            } else {
+                return $row;
+            }
         }
         return '';
     }

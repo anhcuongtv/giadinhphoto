@@ -53,4 +53,6 @@
 	<lines name="errPhotoDeletePermission" descr=""><![CDATA[Bạn không có đủ quyền]]></lines>
 	<lines name="errPhotoDelete" descr=""><![CDATA[Có lỗi khi xóa hình. Hãy thử lại]]></lines>
 	<lines name="succPhotoDelete" descr=""><![CDATA[Hình được xóa thành công.]]></lines>
+    <lines name="viewDetail" descr=""><![CDATA[Xem Chi Tiết]]></lines>
+    <lines name="mygroupphoto" descr=""><![CDATA[Ảnh Bộ của tôi]]></lines>
 </data>
