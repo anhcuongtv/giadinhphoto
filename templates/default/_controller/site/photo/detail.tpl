@@ -1,5 +1,9 @@
 <div id="photodetail">
-	<h1>{$myPhoto->name} - [<a href="http://giadinhphotocontest.com/site/photo/index/section/{$myPhoto->section}">{$myPhoto->getSection()}</a>]</h1>
+	{if $group}
+		<h1>{$myPhoto->name} - [<a href="{$conf.rooturl}site/photo/index/group/{$group}/section/{$myPhoto->section}">{$myPhoto->getSection()}</a>]</h1>
+	{else}
+		<h1>{$myPhoto->name} - [<a href="{$conf.rooturl}site/photo/index/section/{$myPhoto->section}">{$myPhoto->getSection()}</a>]</h1>
+	{/if}
 	<div class="poster">
 		<div class="avatar"><img alt="{$poster->username}" src="{$staticserver}{$currentTemplate}/images/photoinfo-icon.png"></div>
 		<div class="box1"><strong>{$lang.controller.size}:</strong><br /><strong>{$lang.controller.posted}:</strong></div>

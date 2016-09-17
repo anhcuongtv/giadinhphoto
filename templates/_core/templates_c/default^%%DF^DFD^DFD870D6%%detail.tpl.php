@@ -1,12 +1,22 @@
-<?php /* Smarty version 2.6.26, created on 2016-09-13 21:51:47
+<?php /* Smarty version 2.6.26, created on 2016-09-17 21:36:33
          compiled from _controller/site/photo/detail.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', '_controller/site/photo/detail.tpl', 6, false),array('modifier', 'truncate', '_controller/site/photo/detail.tpl', 36, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', '_controller/site/photo/detail.tpl', 10, false),array('modifier', 'truncate', '_controller/site/photo/detail.tpl', 40, false),)), $this); ?>
 <div id="photodetail">
-	<h1><?php echo $this->_tpl_vars['myPhoto']->name; ?>
- - [<a href="http://giadinhphotocontest.com/site/photo/index/section/<?php echo $this->_tpl_vars['myPhoto']->section; ?>
+	<?php if ($this->_tpl_vars['group']): ?>
+		<h1><?php echo $this->_tpl_vars['myPhoto']->name; ?>
+ - [<a href="<?php echo $this->_tpl_vars['conf']['rooturl']; ?>
+site/photo/index/group/<?php echo $this->_tpl_vars['group']; ?>
+/section/<?php echo $this->_tpl_vars['myPhoto']->section; ?>
 "><?php echo $this->_tpl_vars['myPhoto']->getSection(); ?>
 </a>]</h1>
+	<?php else: ?>
+		<h1><?php echo $this->_tpl_vars['myPhoto']->name; ?>
+ - [<a href="<?php echo $this->_tpl_vars['conf']['rooturl']; ?>
+site/photo/index/section/<?php echo $this->_tpl_vars['myPhoto']->section; ?>
+"><?php echo $this->_tpl_vars['myPhoto']->getSection(); ?>
+</a>]</h1>
+	<?php endif; ?>
 	<div class="poster">
 		<div class="avatar"><img alt="<?php echo $this->_tpl_vars['poster']->username; ?>
 " src="<?php echo $this->_tpl_vars['staticserver']; ?>

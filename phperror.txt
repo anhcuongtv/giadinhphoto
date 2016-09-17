@@ -193,3 +193,4 @@ Stack trace:
 [17-Sep-2016 16:41:40] PHP Parse error:  syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM in D:\AppServ\www\giadinhphoto\controllers\site\class.photo.php on line 143
 [17-Sep-2016 16:41:43] PHP Parse error:  syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM in D:\AppServ\www\giadinhphoto\controllers\site\class.photo.php on line 143
 [17-Sep-2016 16:42:03] PHP Parse error:  syntax error, unexpected '{' in D:\AppServ\www\giadinhphoto\controllers\site\class.photo.php on line 143
+[17-Sep-2016 21:48:49] PHP Warning:  Smarty error: [in _controller/site/photo/index.tpl line 48]: syntax error: assign: missing 'var' parameter in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093

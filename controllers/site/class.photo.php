@@ -10,6 +10,7 @@ Class Controller_Site_Photo Extends Controller_Site_Base
 		$page 			= (int)($this->registry->router->getArg('page'))>0?(int)($this->registry->router->getArg('page')):1;
 		$flag = 1;
 		$sectionFilter 	= $this->registry->router->getArg('section');
+        $groupID 	= $this->registry->router->getArg('group');
 		$timeFilter 	= $this->registry->router->getArg('time');
         $keywordFilter     = $this->registry->router->getArg('keyword');
 		$roundFilter 	= $this->registry->router->getArg('round');
@@ -43,7 +44,12 @@ Class Controller_Site_Photo Extends Controller_Site_Base
         
         if($roundFilter != '')
         {
-        	$currentActive = Core_ContestPhoto::getEnableView($roundFilter);
+            if ($groupID) {
+                $currentActive = Core_ContestPhotoChild::getEnableView($roundFilter);
+            } else {
+                $currentActive = Core_ContestPhoto::getEnableView($roundFilter);
+            }
+
         	if($roundFilter ==  $currentActive){
 	            $paginateUrl .= 'round/'.$roundFilter . '/';
 	            $roundData = new Core_ContestRound($roundFilter);
@@ -70,19 +76,34 @@ Class Controller_Site_Photo Extends Controller_Site_Base
         //get Round
 		//get latest records
 		if($roundFilter != ''){
- 					$total = Core_ContestPhoto::getPhotosx($formData, '', '', '', true);    
-					$totalPage = ceil($total/$this->recordPerPage);
-					$curPage = $page;
-					$newPhotoList = Core_ContestPhoto::getPhotosx($formData, '', '', (($page - 1)*$this->recordPerPage).','.$this->recordPerPage, false);
-
-			}else{
-					$total = Core_ContestPhoto::getPhotos($formData, '', '', '', true);
-					$totalPage = ceil($total/$this->recordPerPage);
-					$curPage = $page;
-					$newPhotoList = Core_ContestPhoto::getPhotos($formData, '', '', (($page - 1)*$this->recordPerPage).','.$this->recordPerPage, false);
+            if ($groupID) {
+                $total = Core_ContestPhotoChild::getPhotosx($formData, '', '', '', true);
+                $totalPage = ceil($total/$this->recordPerPage);
+                $curPage = $page;
+                $newPhotoList = Core_ContestPhotoChild::getPhotosx($formData, '', '', (($page - 1)*$this->recordPerPage).','.$this->recordPerPage, false);
+            } else {
+                $total = Core_ContestPhoto::getPhotosx($formData, '', '', '', true);
+                $totalPage = ceil($total/$this->recordPerPage);
+                $curPage = $page;
+                $newPhotoList = Core_ContestPhoto::getPhotosx($formData, '', '', (($page - 1)*$this->recordPerPage).','.$this->recordPerPage, false);
+            }
+        } else {
+            if ($groupID) {
+                $total = Core_ContestPhotoChild::getPhotos($formData, '', '', '', true);
+                $totalPage = ceil($total/$this->recordPerPage);
+                $curPage = $page;
+                $newPhotoList = Core_ContestPhotoChild::getPhotos($formData, '', '', (($page - 1)*$this->recordPerPage).','.$this->recordPerPage, false);
+            } else {
+                $total = Core_ContestPhoto::getPhotos($formData, '', '', '', true);
+                $totalPage = ceil($total/$this->recordPerPage);
+                $curPage = $page;
+                $newPhotoList = Core_ContestPhoto::getPhotos($formData, '', '', (($page - 1)*$this->recordPerPage).','.$this->recordPerPage, false);
+            }
 		}
         $formData1 = array('fgroupid' => GROUPID_MEMBER);
         $totalUser = Core_User::getUsers($formData1, '', '', '', true);
+
+        $groups = Core_ContestPhotoGroup::getAllGroupName();
 
 		$this->registry->smarty->assign(
 			array('newPhotoList' => $newPhotoList,
@@ -92,6 +113,7 @@ Class Controller_Site_Photo Extends Controller_Site_Base
 				'totalPage' 	=> $totalPage,
 				'curPage'		=> $curPage,
 				'totalUser'		=> $totalUser,
+                'groups'        => $groups,
                 'data' => $data
 			)
 		);
@@ -109,23 +131,24 @@ Class Controller_Site_Photo Extends Controller_Site_Base
 	
 	function detailAction()
 	{
-		
-		
 		$id = $this->registry->router->getArg('id');
         $group = $this->registry->router->getArg('group');
 		//parsing encodedPhotoid
 		$idpart = explode('-', $id, 2);
-		if($idpart[0] != '')
-		{
-			$id = (int)Core_ContestPhoto::encodePhotoId($idpart[0], 'decode');
-            $group = (int)Core_ContestPhotoChild::encodePhotoId($group, 'decode');
-		}
-		if ($group){
+        if ($group){
             $object = "Core_ContestPhotoChild";
         } else {
             $object = "Core_ContestPhoto";
-
         }
+
+		if($idpart[0] != '')
+		{
+            if ($group){
+                $id = (int)Core_ContestPhotoChild::encodePhotoId($idpart[0], 'decode');
+            } else {
+                $id = (int)Core_ContestPhoto::encodePhotoId($idpart[0], 'decode');
+            }
+		}
 
         $myPhoto = new $object($id);
 		//gioi han chi owner moi coi
@@ -189,6 +212,7 @@ Class Controller_Site_Photo Extends Controller_Site_Base
 						'newerPhotoList'	=> $newerPhotoList,
 						'nextPhoto' => $nextPhoto,
 						'prevPhoto' => $prevPhoto,
+                        'group' => $group,
 						'curPos'	=> $curPos
 				)
 			);

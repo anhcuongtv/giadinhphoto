@@ -15,7 +15,7 @@
 		<table>
 				<tr>
 					<td align="right" width="150" style="padding:5px;">{$lang.controller.section}:</td>
-					<td style="padding:5px;"><select name="fsection">
+					<td style="padding:5px;"><select name="fsection" disabled>
 							{$data}
 						</select>
 					</td>

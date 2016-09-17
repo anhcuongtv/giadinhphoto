@@ -45,41 +45,9 @@
 	
 	<h1>
     {if $formData.fsection != ''}
-    	{if $formData.fsection == 'color'}
-            {$lang.global.photoSectionColor}
-        {elseif $formData.fsection == 'mono'}
-            {$lang.global.photoSectionMono}
-        {elseif $formData.fsection == 'color-c'}
-            {$lang.global.photoSectionColorBest}       
-        {elseif $formData.fsection == 'travel-t'}
-            {$lang.global.photoSectionTravelBest}
-        {elseif $formData.fsection == 'transportation-t'}
-            {$lang.global.subphotoSectionTravelTransportation}
-        {elseif $formData.fsection == 'country-t'}
-            {$lang.global.subphotoSectionTravelCountry}
-        {elseif $formData.fsection == 'snow-n'}
-            {$lang.global.subphotoSectionNatureSnow}
-        {elseif $formData.fsection == 'dress-t'}
-            {$lang.global.subphotoSectionTravelDress}
-        {elseif $formData.fsection == 'mono-m'}
-            {$lang.global.photoSectionMonoBest}
-        {elseif $formData.fsection == 'sport-m'}
-            {$lang.global.subphotoSectionMonoSport}
-        {elseif $formData.fsection == 'idea-m'}
-            {$lang.global.subphotoSectionMonoIdea}
-        {elseif $formData.fsection == 'nature-n'}
-            {$lang.global.photoSectionNature}
-        {elseif $formData.fsection == 'landscape-m'}
-            {$lang.global.subphotoSectionMonoLandscape}
-        {elseif $formData.fsection == 'landscape-c'}
-            {$lang.global.subphotoSectionColorLandscape}
-        {elseif $formData.fsection == 'bird-n'}
-            {$lang.global.subphotoSectionNatureBird}
-        {elseif $formData.fsection == 'flower-n'}
-            {$lang.global.subphotoSectionNatureFlower}
-        {else}
-            {$lang.global.photoSectionNature}
-        {/if}	
+		{assign var=section value=$formData.fsection}
+	    {$groups.$section}
+
     {else}
         {$lang.controller.viewAll}
     {/if} ({$total} photos)</h1>

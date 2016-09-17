@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2016-09-13 21:50:22
+<?php /* Smarty version 2.6.26, created on 2016-09-17 21:54:37
          compiled from _controller/site/memberarea/editphoto.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', '_controller/site/memberarea/editphoto.tpl', 5, false),)), $this); ?>
@@ -31,7 +31,7 @@ unset($_smarty_tpl_vars);
 				<tr>
 					<td align="right" width="150" style="padding:5px;"><?php echo $this->_tpl_vars['lang']['controller']['section']; ?>
 :</td>
-					<td style="padding:5px;"><select name="fsection">
+					<td style="padding:5px;"><select name="fsection" disabled>
 							<?php echo $this->_tpl_vars['data']; ?>
 
 						</select>

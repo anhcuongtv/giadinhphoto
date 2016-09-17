@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2016-09-14 05:22:24
+<?php /* Smarty version 2.6.26, created on 2016-09-17 21:49:05
          compiled from _controller/site/photo/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', '_controller/site/photo/index.tpl', 93, false),array('function', 'paginate', '_controller/site/photo/index.tpl', 103, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', '_controller/site/photo/index.tpl', 61, false),array('function', 'paginate', '_controller/site/photo/index.tpl', 71, false),)), $this); ?>
 <div id="page">
 	
 	<div id="photolist_filter">
@@ -60,58 +60,10 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 
 	
 	<h1>
     <?php if ($this->_tpl_vars['formData']['fsection'] != ''): ?>
-    	<?php if ($this->_tpl_vars['formData']['fsection'] == 'color'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['photoSectionColor']; ?>
+		<?php $this->assign('section', $this->_tpl_vars['formData']['fsection']); ?>
+	    <?php echo $this->_tpl_vars['groups'][$this->_tpl_vars['section']]; ?>
 
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'mono'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['photoSectionMono']; ?>
 
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'color-c'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['photoSectionColorBest']; ?>
-       
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'travel-t'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['photoSectionTravelBest']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'transportation-t'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['subphotoSectionTravelTransportation']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'country-t'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['subphotoSectionTravelCountry']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'snow-n'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['subphotoSectionNatureSnow']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'dress-t'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['subphotoSectionTravelDress']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'mono-m'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['photoSectionMonoBest']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'sport-m'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['subphotoSectionMonoSport']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'idea-m'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['subphotoSectionMonoIdea']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'nature-n'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['photoSectionNature']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'landscape-m'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['subphotoSectionMonoLandscape']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'landscape-c'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['subphotoSectionColorLandscape']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'bird-n'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['subphotoSectionNatureBird']; ?>
-
-        <?php elseif ($this->_tpl_vars['formData']['fsection'] == 'flower-n'): ?>
-            <?php echo $this->_tpl_vars['lang']['global']['subphotoSectionNatureFlower']; ?>
-
-        <?php else: ?>
-            <?php echo $this->_tpl_vars['lang']['global']['photoSectionNature']; ?>
-
-        <?php endif; ?>	
     <?php else: ?>
         <?php echo $this->_tpl_vars['lang']['controller']['viewAll']; ?>
 
