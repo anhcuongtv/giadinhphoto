@@ -19,10 +19,10 @@ Class Controller_Site_Checkout Extends Controller_Site_Base
 		//load paymentmethod
 		$myPaymentPage = new Core_Page(0, $this->registry->langCode);
 		$myPaymentPage->getDataByText('paymentmethod');
-		
+        $packDetail = '';
 		//if not have info before payment
 		//redirect to payment to select
-		if(!isset($_SESSION['paymentEnterPack']) || !in_array($_SESSION['paymentEnterPack'], $this->registry->setting['payment']['packBinCode']))
+		if(!isset($_SESSION['paymentEnterPack']))
 		{    
 			header('location: ' . $this->registry->conf['rooturl'] . 'memberarea.html?tab=payment');
             exit();
@@ -30,80 +30,58 @@ Class Controller_Site_Checkout Extends Controller_Site_Base
 		else
 		{
 			$formData['fpaylocation'] = Core_Product::getPayLocation();
-			
 			$packId = $_SESSION['paymentEnterPack'];
-			$myProduct = new Core_Product();
-			$myProduct->getDataByBinCode($packId);
-			
-			//change the productprice base on the current paid section
-			$this->refineProductPrice($myProduct);
-			
-			if($myProduct->id > 0)
-			{
-				
-				$me = new Core_User();
-				
-				$currentOrderInformation['contactemail'] = $this->registry->me->email;
-				$currentOrderInformation['billing_firstname'] = $this->registry->me->firstname;
-				$currentOrderInformation['billing_mid'] = '';
-				$currentOrderInformation['billing_lastname'] = $this->registry->me->lastname;
-				$currentOrderInformation['billing_address'] = $this->registry->me->address;
-				$currentOrderInformation['billing_address2'] = $this->registry->me->address2;
-				$currentOrderInformation['billing_city'] = $this->registry->me->city;
-				$currentOrderInformation['billing_region'] = $this->registry->me->region;
-				$currentOrderInformation['billing_country'] = $this->registry->me->country;
-				$currentOrderInformation['billing_city_text'] = $this->registry->me->city;
-				$currentOrderInformation['billing_region_text'] = $this->registry->me->region;
-				$currentOrderInformation['billing_country_text'] = $this->registry->me->country;
-				$currentOrderInformation['billing_zipcode'] = $this->registry->me->zipcode;
-				$currentOrderInformation['billing_phone'] = $this->registry->me->phone1;
-				$currentOrderInformation['billing_phone2'] = $this->registry->me->phone2;
-				$currentOrderInformation['shipping_firstname'] = $this->registry->me->firstname;
-				$currentOrderInformation['shipping_mid'] = '';
-				$currentOrderInformation['shipping_lastname'] = $this->registry->me->lastname;
-				$currentOrderInformation['shipping_address'] = $this->registry->me->address;
-				$currentOrderInformation['shipping_address2'] = $this->registry->me->address2;
-				$currentOrderInformation['shipping_city'] = $this->registry->me->city;
-				$currentOrderInformation['shipping_region'] = $this->registry->me->region;
-				$currentOrderInformation['shipping_country'] = $this->registry->me->country;
-				$currentOrderInformation['shipping_city_text'] = $this->registry->me->city;
-				$currentOrderInformation['shipping_region_text'] = $this->registry->me->region;
-				$currentOrderInformation['shipping_country_text'] = $this->registry->me->country;
-				$currentOrderInformation['shipping_zipcode'] = $this->registry->me->zipcode;
-				$currentOrderInformation['shipping_phone'] = $this->registry->me->phone1;
-				$currentOrderInformation['shipping_phone2'] = $this->registry->me->phone2;
-				
-				$_SESSION['orderTemp'] = $currentOrderInformation;
-				
-				
-				$this->registry->cart->emptyCart();            
-				$this->registry->cart->addItem($myProduct->id, 1, ''); 
-				$this->registry->cart->saveToSession();     
-				          
-				
-			}
-			else
-			{
-				$redirectUrl = $this->registry->conf['rooturl'] . 'memberarea.html?tab=payment';
-				$this->registry->smarty->assign(array('redirect' => $redirectUrl,
-														'redirectMsg' => $this->registry->lang['controller']['paymentPackIdNotFound'],
-														));
-				$this->registry->smarty->display('redirect.tpl');
-				exit();
-			}
-			
-			
+            $me = new Core_User();
+
+            $currentOrderInformation['contactemail'] = $this->registry->me->email;
+            $currentOrderInformation['billing_firstname'] = $this->registry->me->firstname;
+            $currentOrderInformation['billing_mid'] = '';
+            $currentOrderInformation['billing_lastname'] = $this->registry->me->lastname;
+            $currentOrderInformation['billing_address'] = $this->registry->me->address;
+            $currentOrderInformation['billing_address2'] = $this->registry->me->address2;
+            $currentOrderInformation['billing_city'] = $this->registry->me->city;
+            $currentOrderInformation['billing_region'] = $this->registry->me->region;
+            $currentOrderInformation['billing_country'] = $this->registry->me->country;
+            $currentOrderInformation['billing_city_text'] = $this->registry->me->city;
+            $currentOrderInformation['billing_region_text'] = $this->registry->me->region;
+            $currentOrderInformation['billing_country_text'] = $this->registry->me->country;
+            $currentOrderInformation['billing_zipcode'] = $this->registry->me->zipcode;
+            $currentOrderInformation['billing_phone'] = $this->registry->me->phone1;
+            $currentOrderInformation['billing_phone2'] = $this->registry->me->phone2;
+            $currentOrderInformation['shipping_firstname'] = $this->registry->me->firstname;
+            $currentOrderInformation['shipping_mid'] = '';
+            $currentOrderInformation['shipping_lastname'] = $this->registry->me->lastname;
+            $currentOrderInformation['shipping_address'] = $this->registry->me->address;
+            $currentOrderInformation['shipping_address2'] = $this->registry->me->address2;
+            $currentOrderInformation['shipping_city'] = $this->registry->me->city;
+            $currentOrderInformation['shipping_region'] = $this->registry->me->region;
+            $currentOrderInformation['shipping_country'] = $this->registry->me->country;
+            $currentOrderInformation['shipping_city_text'] = $this->registry->me->city;
+            $currentOrderInformation['shipping_region_text'] = $this->registry->me->region;
+            $currentOrderInformation['shipping_country_text'] = $this->registry->me->country;
+            $currentOrderInformation['shipping_zipcode'] = $this->registry->me->zipcode;
+            $currentOrderInformation['shipping_phone'] = $this->registry->me->phone1;
+            $currentOrderInformation['shipping_phone2'] = $this->registry->me->phone2;
+
+            $_SESSION['orderTemp'] = $currentOrderInformation;
+
+            $this->registry->cart->emptyCart();
+            $this->registry->cart->addItem($packId, 1, '');
+            $this->registry->cart->saveToSession();
+
+            $packDetail = new Core_NewProduct($_SESSION['paymentEnterPack']);
 		}
        
 		$this->registry->smarty->assign(
 											array('error' => $error,
 												'success'	=> $success,
 												'myPaymentPage'	=> $myPaymentPage,
-												'myProduct'	=> $myProduct,
 												'packId'	=> $packId,
 												'formData'	=> $formData,
 												'monthOptions'		=> $this->monthList(),
 												'yearOptions'		=> $this->yearList(),
+                                                'packDetail'    => $packDetail,
+                                                'country' => $this->registry->me->country,
 										)
 		);
 		
@@ -113,17 +91,14 @@ Class Controller_Site_Checkout Extends Controller_Site_Base
 			array('contents' => $contents,
 			)
 		);
-			
-		$this->registry->smarty->display($this->registry->smartyControllerGroupContainer.'index.tpl'); 
-		
-		     
-		
+
+		$this->registry->smarty->display($this->registry->smartyControllerGroupContainer.'index.tpl');
 	} 
 	
 	  
 	/**
 	* User chon nut PLACE ORDER - dat hang
-	* 
+	*
 	* Doi voi chung nang nay thi khong tien hanh thanh toan truc tuyen ma chi luu lai don hang
 	* va cho update thong tin sau
 	* 
@@ -897,12 +872,18 @@ Class Controller_Site_Checkout Extends Controller_Site_Base
 				for($i = 0; $i < count($cartProductList); $i++)
 				{
 					//refine price cho truong hop khach hang cu da tung order section khac
-					$this->refineProductPrice($cartProductList[$i]->product);
-					
-					$totalprice += $cartProductList[$i]->product->price;
+					//$this->refineProductPrice($cartProductList[$i]->product);
+					if (strtolower($this->registry->me->country) === 'vn') {
+                        $price = $cartProductList[$i]->product->price_vn;
+                        $product_name = $cartProductList[$i]->product->name_vn;
+                    } else {
+                        $price = $cartProductList[$i]->product->price_en;
+                        $product_name = $cartProductList[$i]->product->name_en;
+                    }
+                    $totalprice += $price;
 					$cartProductList[$i]->attributeList = explode(';', $cartProductList[$i]->attribute);
 					
-					$myOrderProduct = new Core_OrderProduct($cartProductList[$i]->product->id, $cartProductList[$i]->product->name, $cartProductList[$i]->product->price, $cartProductList[$i]->quantity, $cartProductList[$i]->attribute, $myOrder->id);
+					$myOrderProduct = new Core_OrderProduct($cartProductList[$i]->product->id, $product_name, $price, $cartProductList[$i]->quantity, $cartProductList[$i]->attribute, $myOrder->id);
 					$myOrderProduct->addData();
 					
 					
@@ -1142,14 +1123,14 @@ Class Controller_Site_Checkout Extends Controller_Site_Base
 	* 
 	* @param Core_Product $myProduct
 	*/
-	private function refineProductPrice(Core_Product $myProduct)
+	private function refineProductPrice(Core_NewProduct $myProduct)
 	{
 		$formData = array();
 		
 		//step 1: old order
 		//xu ly thong tin ma user nay da order truoc do
 		$formData['fpaylocation'] = Core_Product::getPayLocation();
-		if($this->registry->me->paidColor == 1)
+		/*if($this->registry->me->paidColor == 1)
 			$formData['fpaymentsection'][] = 'color';
 			
 		if($this->registry->me->paidMono == 1)
@@ -1159,10 +1140,10 @@ Class Controller_Site_Checkout Extends Controller_Site_Base
 			$formData['fpaymentsection'][] = 'nature';
         
         if($this->registry->me->paidTravel == 1)
-            $formData['fpaymentsection'][] = 'travel';
+            $formData['fpaymentsection'][] = 'travel';*/
 			
 		//lay thong tin cua packet ma user nay hien da paid
-		$productOld = new Core_Product();
+		/*$productOld = new Core_Product();
 		if(!empty($formData['fpaymentsection']))
 		{
 			$packIdOld = Core_Product::calculatePackId($formData['fpaylocation'], $formData['fpaymentsection']);
@@ -1185,7 +1166,7 @@ Class Controller_Site_Checkout Extends Controller_Site_Base
 		$productNew->getDataByBinCode($packIdNew);
 		
 		//Check lech gia giua new va old chinh la gia ma user nay se phai tra cho order nay
-		$myProduct->price = $productNew->price - $productOld->price;
+		$myProduct->price = $productNew->price - $productOld->price;*/
 	}
 	
 	

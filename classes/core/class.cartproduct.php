@@ -9,7 +9,7 @@ Class Core_CartProduct extends Core_Object
 	public $encodedattribute = '';
 	public $subtotal = '';
 	
-	public function __construct(Core_Product $product, $quantity, $attribute, $encodedattribute)
+	public function __construct(Core_NewProduct $product, $quantity, $attribute, $encodedattribute)
 	{
 		parent::__construct($id);                
 		
@@ -17,7 +17,12 @@ Class Core_CartProduct extends Core_Object
 		$this->quantity = $quantity;
 		$this->attribute = $attribute;		
 		$this->encodedattribute = $encodedattribute;
-		$this->subtotal = $quantity * $product->realPrice;
+        if (strtolower($this->register->me->country) === 'vn') {
+            $price = $product->price_vn;
+        } else {
+            $price = $product->price_en;
+        }
+		$this->subtotal = $quantity * $price;
 	}
 	
 	

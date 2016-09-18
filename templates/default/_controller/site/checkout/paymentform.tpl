@@ -6,24 +6,23 @@
 		{include file="notify.tpl" notifyError=$error}
 
 		<div id="tabpayment">
-			
-			
-			
-			
 				<div class="infoSelectPayment">{$lang.controller.paymentYourSelect}</div>
 				<div class="paymentOptionList">
-					{if $me->paidColor == 0} {if in_array($packId, $setting.payment.packBinCodeColor)}<img src="{$staticserver}{$currentTemplate}/images/tick_circle.png" alt="YES" />{else}<img src="{$staticserver}{$currentTemplate}/images/cross_circle.png" alt="YES" />{/if} {$lang.global.photoSectionColor} <br />{/if}
-					
-					{if $me->paidMono == 0}{if in_array($packId, $setting.payment.packBinCodeMono)}<img src="{$staticserver}{$currentTemplate}/images/tick_circle.png" alt="YES" />{else}<img src="{$staticserver}{$currentTemplate}/images/cross_circle.png" alt="YES" />{/if} {$lang.global.photoSectionMono} <br />{/if}
-					
-					{if $me->paidNature == 0}{if in_array($packId, $setting.payment.packBinCodeNature)}<img src="{$staticserver}{$currentTemplate}/images/tick_circle.png" alt="YES" />{else}<img src="{$staticserver}{$currentTemplate}/images/cross_circle.png" alt="YES" />{/if} {$lang.global.photoSectionNature} <br />{/if}
-                    {if $me->paidTravel == 0}{if in_array($packId, $setting.payment.packBinCodeTravel)}<img src="{$staticserver}{$currentTemplate}/images/tick_circle.png" alt="YES" />{else}<img src="{$staticserver}{$currentTemplate}/images/cross_circle.png" alt="YES" />{/if} {$lang.global.photoSectionTravel} <br />{/if}
+					{if $packDetail}
+						{if $country|strtolower === 'vn'}
+							{assign var=price value=$packDetail->price_vn}
+							{$packDetail->description_vn}
+						{else}
+							{assign var=price value=$packDetail->price_en}
+							{$packDetail->description_en}
+						{/if}
+					{/if}
 				</div>
-				
+
 				<div><a href="{$conf.rooturl}memberarea.html?tab=payment" title="Back">{$lang.controller.paymentSectionChange}</a></div>
 				
 				<div class="paymentOptionTotal">
-					{$lang.controller.paymentTotal} : <span id="paymentOptionPrice">{$currency->formatPrice($myProduct->price)}</span>
+					{$lang.controller.paymentTotal} : <span id="paymentOptionPrice">{$currency->formatPrice($price)}</span>
 				</div>
 				
 				<div class="paymentMethodSelect">

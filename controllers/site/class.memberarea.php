@@ -20,18 +20,12 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 		{
 			$formData = array_merge($formData, $_POST);
 			$packId = 0;
-			if(count($formData['fpaymentsection']) > 0)
+			if($formData['fpaymentsection'] > 0)
 			{
-				$packId = Core_Product::calculatePackId($formData['fpaylocation'], $formData['fpaymentsection']);
-                if($packId > 0)
-				{
-					//set the pack ID, forward to payment to pay	
-					$_SESSION['paymentEnterPack'] = $packId;
-					header('location: ' . $this->registry->conf['rooturl'] . 'checkout.html');
-					exit();
-				}
-				else
-					$errorPayment[] = $this->registry->lang['controller']['errPaymentSectionEmpty'];
+                //set the pack ID, forward to payment to pay
+                $_SESSION['paymentEnterPack'] = $formData['fpaymentsection'];
+                header('location: ' . $this->registry->conf['rooturl'] . 'checkout.html');
+                exit();
             }
 			else
 			{   
@@ -48,6 +42,8 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
         $data = Helper::displaySelectionPhotoGroupForUser($group, true, $_POST['fsection']);
         $paymentOptionList = Helper::displayPaymentOptionList($sections['detail']);
         $paymentPaidList = Helper::displayPaidPaymentList($sections['detail'], $this->registry->me->paidSection);
+
+        $paymentOptionListNew = Core_NewProduct::getList(' p.pStatus = 1 ');
 
 		//load paymentmethod
 		$myPaymentPage = new Core_Page(0, $this->registry->langCode);
@@ -225,12 +221,14 @@ Class Controller_Site_MemberArea Extends Controller_Site_Base
 												'myPhotoList'	=> $myPhotoList,
                                                 'myPhotoGroupList'	=> $myPhotoGroupList,
 												//'newPhotoList'	=> $newPhotoList,
+                                                'paymentOptionListNew' => $paymentOptionListNew,
 												'myPaymentPage'	=> $myPaymentPage,
 												'formData'	=> $formData,
 												'tab'	=> $tab,
                                                 'paymentOptionList' => $paymentOptionList,
                                                 'paymentPaidList' => $paymentPaidList,
                                                 'totalOptionList' => count($sections['detail']),
+                                                'country' => $this->registry->me->country,
                                                 'data'  => $data
 										)
 		);

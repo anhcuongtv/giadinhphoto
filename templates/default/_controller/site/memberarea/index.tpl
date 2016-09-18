@@ -119,7 +119,19 @@
 			{else}
 				<div class="infoSelectPayment">{$lang.controller.paymentSelect}</div>
 				<div class="paymentOptionList">
-					{$paymentOptionList}
+					{foreach item=payment from=$paymentOptionListNew}
+						<label>
+							<input type="radio" name="fpaymentsection" value="{$payment->id}" id="fpaymentsection">
+							{if $country|strtolower === 'vn'}
+								{$payment->name_vn} ({$currency->formatPrice($payment->price_vn)})<br/>
+								{$payment->description_vn}<br/>
+							{else}
+								{$payment->name_en} ({$currency->formatPrice($payment->price_en)})<br/>
+								{$payment->description_en}<br/>
+							{/if}
+						</label>
+						<br/>
+					{/foreach}
 				</div>
 				{include file="notify.tpl" notifyError=$errorPayment}
 			  

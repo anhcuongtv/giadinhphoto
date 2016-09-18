@@ -187,8 +187,7 @@ Class Core_Cart extends Core_Object
 		{
 			$productIdList[] = $item['id'];
 		}
-		
-		$products = Core_Product::getProducts(array('fidlist' => $productIdList), '', '', '');
+		$products = Core_NewProduct::getProducts(array('fidlist' => $productIdList), '', '', '');
 		$cartProducts = array();
 		foreach($items as $item)
 		{

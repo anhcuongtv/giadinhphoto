@@ -49,7 +49,17 @@ ALTER TABLE `gdcontest_swin`.`pex_contest_photo` ADD COLUMN `p_isGroup` TINYINT(
  `p_isGroup` tinyint( 1  )  NOT  NULL default  '0',
  PRIMARY  KEY (  `p_id`  )  ) ENGINE  =  MyISAM  DEFAULT CHARSET  = utf8;
 
- ALTER TABLE  `pex_contest_photo_group` CHANGE  `p_isGroup`  `p_parentID` INT( 11 ) NOT NULL DEFAULT  '0'
+ALTER TABLE  `pex_contest_photo_group` CHANGE  `p_isGroup`  `p_parentID` INT( 11 ) NOT NULL DEFAULT  '0'
 
+CREATE  TABLE `gdcontest_swin`.`pex_new_product` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `name_vn` VARCHAR NULL ,
+  `name_en` VARCHAR(120) NULL ,
+  `description_vn` TEXT NULL ,
+  `description_en` TEXT NULL ,
+  `price_vn` VARCHAR(50) NULL ,
+  `price_en` VARCHAR(50) NULL ,
+  `pStatus` TINYINT(1) NOT NULL DEFAULT 1 ,
+  PRIMARY KEY (`id`) );
 
 

@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2016-09-17 16:04:10
+<?php /* Smarty version 2.6.26, created on 2016-09-18 17:18:14
          compiled from _controller/site/memberarea/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', '_controller/site/memberarea/index.tpl', 116, false),array('modifier', 'truncate', '_controller/site/memberarea/index.tpl', 163, false),array('modifier', 'date_format', '_controller/site/memberarea/index.tpl', 165, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', '_controller/site/memberarea/index.tpl', 116, false),array('modifier', 'strtolower', '_controller/site/memberarea/index.tpl', 125, false),array('modifier', 'truncate', '_controller/site/memberarea/index.tpl', 175, false),array('modifier', 'date_format', '_controller/site/memberarea/index.tpl', 177, false),)), $this); ?>
 
 <div id="page">
 	
@@ -189,8 +189,28 @@ unset($_smarty_tpl_vars);
 				<div class="infoSelectPayment"><?php echo $this->_tpl_vars['lang']['controller']['paymentSelect']; ?>
 </div>
 				<div class="paymentOptionList">
-					<?php echo $this->_tpl_vars['paymentOptionList']; ?>
-
+					<?php $_from = $this->_tpl_vars['paymentOptionListNew']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['payment']):
+?>
+						<label>
+							<input type="radio" name="fpaymentsection" value="<?php echo $this->_tpl_vars['payment']->id; ?>
+" id="fpaymentsection">
+							<?php if (((is_array($_tmp=$this->_tpl_vars['country'])) ? $this->_run_mod_handler('strtolower', true, $_tmp) : strtolower($_tmp)) === 'vn'): ?>
+								<?php echo $this->_tpl_vars['payment']->name_vn; ?>
+ (<?php echo $this->_tpl_vars['currency']->formatPrice($this->_tpl_vars['payment']->price_vn); ?>
+)<br/>
+								<?php echo $this->_tpl_vars['payment']->description_vn; ?>
+<br/>
+							<?php else: ?>
+								<?php echo $this->_tpl_vars['payment']->name_en; ?>
+ (<?php echo $this->_tpl_vars['currency']->formatPrice($this->_tpl_vars['payment']->price_en); ?>
+)<br/>
+								<?php echo $this->_tpl_vars['payment']->description_en; ?>
+<br/>
+							<?php endif; ?>
+						</label>
+						<br/>
+					<?php endforeach; endif; unset($_from); ?>
 				</div>
 				<?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "notify.tpl", 'smarty_include_vars' => array('notifyError' => $this->_tpl_vars['errorPayment'])));
