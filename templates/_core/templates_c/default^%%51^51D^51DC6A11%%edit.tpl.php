@@ -1,7 +1,5 @@
-<?php /* Smarty version 2.6.26, created on 2016-09-16 10:00:24
+<?php /* Smarty version 2.6.26, created on 2016-09-19 21:53:14
          compiled from _controller/admin/product/edit.tpl */ ?>
-<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'htmlspecialchars', '_controller/admin/product/edit.tpl', 28, false),)), $this); ?>
 <h2><?php echo $this->_tpl_vars['lang']['controller']['head_edit']; ?>
 </h2>
 
@@ -31,37 +29,61 @@ $this->_smarty_include(array('smarty_include_tpl_file' => "notify.tpl", 'smarty_
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-			
+				<p>
+					<label><?php echo $this->_tpl_vars['lang']['controller']['status']; ?>
+: </label>
+					<select name="status" id="status">
+						<option value="1"><?php echo $this->_tpl_vars['lang']['controllergroup']['formYesLabel']; ?>
+</option>
+						<option value="0" <?php if ($this->_tpl_vars['formData']['status'] == '0'): ?>selected="selected"<?php endif; ?>><?php echo $this->_tpl_vars['lang']['controllergroup']['formNoLabel']; ?>
+</option>
+					</select>
+				</p>
+
 				<fieldset>
-				
-				
-				
-				
-				<p>
-					<label><?php echo $this->_tpl_vars['lang']['controller']['formNameLabel']; ?>
+					<hr class="language_seperator_line" />
+					<?php $_from = $this->_tpl_vars['langEditList']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['langedit']):
+?>
+						<?php $this->assign('langeditcode', $this->_tpl_vars['langedit']->code); ?>
+						<?php $this->assign('name', "name_".($this->_tpl_vars['langeditcode'])); ?>
+						<?php $this->assign('price', "price_".($this->_tpl_vars['langeditcode'])); ?>
+						<?php $this->assign('description', "description_".($this->_tpl_vars['langeditcode'])); ?>
+						<h3 class="language_heading"><img src="<?php echo $this->_tpl_vars['conf']['rooturl']; ?>
+<?php echo $this->_tpl_vars['currentTemplate']; ?>
+/images/admin/flag_<?php echo $this->_tpl_vars['langeditcode']; ?>
+.png" alt="<?php echo $this->_tpl_vars['langeditcode']; ?>
+" /> <?php echo $this->_tpl_vars['langedit']->name; ?>
+</h3>
+						<p>
+								<label><?php echo $this->_tpl_vars['lang']['controller']['formNameLabel']; ?>
  : </label>
-					<input disabled="disabled" type="text" name="fname" id="fname" size="50" value="<?php echo htmlspecialchars($this->_tpl_vars['formData']['fname']); ?>
-" style="border:1px solid #eee;">
-				</p>
-				
-				<p>
-					<label><?php echo $this->_tpl_vars['lang']['controller']['formPriceLabel']; ?>
+							<input type="text" name="name_<?php echo $this->_tpl_vars['langeditcode']; ?>
+" id="name_<?php echo $this->_tpl_vars['langeditcode']; ?>
+" size="80" value="<?php echo $this->_tpl_vars['formData'][$this->_tpl_vars['name']]; ?>
+" class="text-input">
+						</p>
+						<p>
+							<label><?php echo $this->_tpl_vars['lang']['controller']['formPriceLabel']; ?>
  : </label>
-					<input type="text" name="fprice" id="fprice" size="10" value="<?php if ($this->_tpl_vars['formData']['fprice'] > 0): ?><?php echo $this->_tpl_vars['currency']->formatPrice($this->_tpl_vars['formData']['fprice'],false); ?>
-<?php endif; ?>" class="text-input"><select name="fcurrency"><option value="usd" <?php if ($this->_tpl_vars['currency']->currencyCode == 'usd'): ?>selected="selected"<?php endif; ?>>USD</option><option value="vnd" <?php if ($this->_tpl_vars['currency']->currencyCode == 'vnd'): ?>selected="selected"<?php endif; ?>>VND</option></select>
-				</p>
-				
-				
-				
-				
+							<input type="text" name="price_<?php echo $this->_tpl_vars['langeditcode']; ?>
+" id="price_<?php echo $this->_tpl_vars['langeditcode']; ?>
+" size="80" value="<?php echo $this->_tpl_vars['formData'][$this->_tpl_vars['price']]; ?>
+" class="text-input">
+						</p>
+						<p>
+							<label><?php echo $this->_tpl_vars['lang']['controller']['title_add']; ?>
+: </label>
+							<textarea class="text-input"  rows="15" name="description_<?php echo $this->_tpl_vars['langeditcode']; ?>
+" id="description_<?php echo $this->_tpl_vars['langeditcode']; ?>
+"><?php echo $this->_tpl_vars['formData'][$this->_tpl_vars['description']]; ?>
+</textarea>
+						</p>
+
+						<hr class="language_seperator_line" />
+					<?php endforeach; endif; unset($_from); ?>
 				</fieldset>
-			
 		</div>
-		
-		
-		
-		
-		
 	</div>
 	
 	<div class="content-box-content-alt">
@@ -77,4 +99,10 @@ unset($_smarty_tpl_vars);
 
     	
 </div>
-</form>
+</form>
+
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "tinymce.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>

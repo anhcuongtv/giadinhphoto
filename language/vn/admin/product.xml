@@ -17,7 +17,8 @@
 
     <lines name="formNameLabel" descr=""><![CDATA[Tên]]></lines>
 	<lines name="formPriceLabel" descr=""><![CDATA[Giá]]></lines>
-	
+
+    <lines name="status" descr=""><![CDATA[Kích Hoạt]]></lines>
 	
     <lines name="errAdd" descr=""><![CDATA[Có lỗi khi thêm sản phẩm]]></lines>
     <lines name="succAdd" descr=""><![CDATA[Thêm sản phẩm với tên <strong>###name###</strong> thành công.]]></lines>

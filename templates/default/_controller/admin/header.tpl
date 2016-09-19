@@ -117,7 +117,6 @@
                 	<a href="#" class="nav-top-item" id="menu_product">{$lang.controllergroup.menuProduct}</a>
                     <ul>
                     	<li><a href="{$conf.rooturl_admin}product" id="menu_productlist">{$lang.controllergroup.menuProductList}</a></li>
-						
 						<li><a href="{$conf.rooturl_admin}order" id="menu_order">{$lang.controllergroup.menuOrder}</a></li>
                     </ul>
                 </li> 

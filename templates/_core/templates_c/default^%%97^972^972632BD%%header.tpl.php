@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2016-09-09 13:39:11
+<?php /* Smarty version 2.6.26, created on 2016-09-19 20:54:22
          compiled from _controller/admin/header.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '_controller/admin/header.tpl', 8, false),)), $this); ?>
@@ -170,7 +170,6 @@ contestphotoready" id="menu_contestphotoreadylist"><?php echo $this->_tpl_vars['
                     	<li><a href="<?php echo $this->_tpl_vars['conf']['rooturl_admin']; ?>
 product" id="menu_productlist"><?php echo $this->_tpl_vars['lang']['controllergroup']['menuProductList']; ?>
 </a></li>
-						
 						<li><a href="<?php echo $this->_tpl_vars['conf']['rooturl_admin']; ?>
 order" id="menu_order"><?php echo $this->_tpl_vars['lang']['controllergroup']['menuOrder']; ?>
 </a></li>

@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2016-09-16 10:00:06
+<?php /* Smarty version 2.6.26, created on 2016-09-19 22:06:22
          compiled from _controller/admin/product/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', '_controller/admin/product/index.tpl', 20, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', '_controller/admin/product/index.tpl', 24, false),)), $this); ?>
 <h2><?php echo $this->_tpl_vars['lang']['controller']['head_list']; ?>
 </h2>
 <div id="page-intro"><?php echo $this->_tpl_vars['lang']['controller']['intro_list']; ?>
@@ -15,6 +15,12 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', '_c
 		<ul class="content-box-tabs">
 			<li><a href="#tab1" class="default-tab"><?php echo $this->_tpl_vars['lang']['controllergroup']['tableTabLabel']; ?>
 </a></li> <!-- href must be unique and match the id of target div -->
+			</ul>
+		<ul class="content-box-link">
+			<li><a href="<?php echo $this->_tpl_vars['conf']['rooturl_admin']; ?>
+product/add"><?php echo $this->_tpl_vars['lang']['controller']['head_add']; ?>
+</a></li>
+
 		</ul>
 		<div class="clear"></div>  
 	</div> <!-- End .content-box-header -->
@@ -39,7 +45,7 @@ unset($_smarty_tpl_vars);
 							<th align="left"><?php echo $this->_tpl_vars['lang']['controller']['formNameLabel']; ?>
 </th>		
 							<th width="80" class="td_right"><?php echo $this->_tpl_vars['lang']['controller']['formPriceLabel']; ?>
-</th>				
+</th>
 							<th width="70"></th>
 						</tr>
 					</thead>
@@ -56,10 +62,10 @@ unset($_smarty_tpl_vars);
 							<td align="left"><a href="<?php echo $this->_tpl_vars['conf']['rooturl_admin']; ?>
 product/edit/id/<?php echo $this->_tpl_vars['myProduct']->id; ?>
 /redirect/<?php echo $this->_tpl_vars['redirectUrl']; ?>
-"><?php echo $this->_tpl_vars['myProduct']->name; ?>
+"><?php echo $this->_tpl_vars['myProduct']->name_vn; ?>
 </a>
 							</td>
-							<td class="td_right"><?php echo $this->_tpl_vars['currency']->formatPrice($this->_tpl_vars['myProduct']->price); ?>
+							<td class="td_right"><?php echo $this->_tpl_vars['currency']->formatPrice($this->_tpl_vars['myProduct']->price_vn); ?>
 </td>
 							
 							<td><a title="<?php echo $this->_tpl_vars['lang']['controllergroup']['formActionEditTooltip']; ?>

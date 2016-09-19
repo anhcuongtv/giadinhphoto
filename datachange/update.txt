@@ -62,4 +62,5 @@ CREATE  TABLE `gdcontest_swin`.`pex_new_product` (
   `pStatus` TINYINT(1) NOT NULL DEFAULT 1 ,
   PRIMARY KEY (`id`) );
 
+ALTER TABLE `gdcontest_swin`.`pex_photogroup` CHANGE COLUMN `name` `name_vn` VARCHAR(200) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NOT NULL  , ADD COLUMN `name_en` VARCHAR(200) NULL  AFTER `name_vn` ;
 

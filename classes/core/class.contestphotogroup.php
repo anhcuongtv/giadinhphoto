@@ -4,7 +4,8 @@ Class Core_ContestPhotoGroup extends Core_Object
 {
 	
 	public $id = 0;
-	public $name = '';
+	public $name_vn = '';
+    public $name_en = '';
 	public $order = '';
 	public $parent = '';
 	public $status = '';
@@ -28,11 +29,12 @@ Class Core_ContestPhotoGroup extends Core_Object
 	
 	public function addData()
 	{
-		$sql = 'INSERT INTO ' . TABLE_PREFIX . 'photogroup(`name`, parent, `order`, `limit`, `status`, isGroup, isSection)
-				VALUES(?, ?, ?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO ' . TABLE_PREFIX . 'photogroup(`name_vn`, `name_en`, parent, `order`, `limit`, `status`, isGroup, isSection)
+				VALUES(?, ?, ?, ?, ?, ?, ?, ?)';
 				
 		$rowCount = $this->db->query($sql, array(
-				(string)$this->name,
+				(string)$this->name_vn,
+                (string)$this->name_en,
 				(int)$this->parent,
 				(int)$this->order,
 				(int)$this->limit,
@@ -56,7 +58,8 @@ Class Core_ContestPhotoGroup extends Core_Object
         global $registry;
 
         $sql = 'UPDATE ' . TABLE_PREFIX . 'photogroup
-        		SET name = ?,
+        		SET name_vn = ?,
+        		    name_en = ?,
         			`parent` = ?,
         			`limit` = ?,
         			`order` = ?,
@@ -66,7 +69,8 @@ Class Core_ContestPhotoGroup extends Core_Object
         		WHERE id = ?';
 
         $stmt = $this->db->query($sql, array(
-            $this->name,
+            $this->name_vn,
+            $this->name_en,
             $this->parent,
             $this->limit,
             $this->order,
@@ -107,7 +111,8 @@ Class Core_ContestPhotoGroup extends Core_Object
 		{
 			$this->id = $row['id'];
             $this->parent = $row['parent'];
-            $this->name = $row['name'];
+            $this->name_vn = $row['name_vn'];
+            $this->name_en = $row['name_en'];
             $this->order = $row['order'];
             $this->limit = $row['limit'];
             $this->status = (int)$row['status'];
@@ -118,7 +123,7 @@ Class Core_ContestPhotoGroup extends Core_Object
 
     public static function getDataSectionName($id, $all = false)
     {
-        global $db;
+        global $db, $langCode;
         $sql = 'SELECT * FROM ' . TABLE_PREFIX . 'photogroup
 				WHERE id = ?';
         $stmt = $db->query($sql, array($id));
@@ -126,7 +131,7 @@ Class Core_ContestPhotoGroup extends Core_Object
         while($row = $stmt->fetch())
         {
             if (!$all) {
-                return $row['name'];
+                return $row['name_'.$langCode];
             } else {
                 return $row;
             }
@@ -155,7 +160,7 @@ Class Core_ContestPhotoGroup extends Core_Object
 
 	public static function getAllSection()
     {
-        global $db;
+        global $db, $langCode;
 
         $sql = 'SELECT * FROM ' . TABLE_PREFIX . 'photogroup
 		        WHERE isSection = 1 and status = 1 order by `order` asc';
@@ -164,7 +169,7 @@ Class Core_ContestPhotoGroup extends Core_Object
         $i = 0;
         while($row = $stmt->fetch())
         {
-            $section['detail'][$row['id']] = $row['name'];
+            $section['detail'][$row['id']] = $row['name_'.$langCode];
             $section['all'][] = $row['id'];
             $i++;
         }
@@ -173,7 +178,7 @@ Class Core_ContestPhotoGroup extends Core_Object
 
     public static function getAllGroupName()
     {
-        global $db;
+        global $db, $langCode;
 
         $sql = 'SELECT * FROM ' . TABLE_PREFIX . 'photogroup
 		        order by `order` asc';
@@ -182,7 +187,7 @@ Class Core_ContestPhotoGroup extends Core_Object
         $i = 0;
         while($row = $stmt->fetch())
         {
-            $section[$row['id']] = $row['name'];
+            $section[$row['id']] = $row['name_'.$langCode];
         }
         return $section;
     }
@@ -220,7 +225,8 @@ Class Core_ContestPhotoGroup extends Core_Object
 		{
             $groupDetail = new Core_ContestPhotoGroup();
             $groupDetail->id = $row['id'];
-            $groupDetail->name = $row['name'];
+            $groupDetail->name_vn = $row['name_vn'];
+            $groupDetail->name_en = $row['name_en'];
             $groupDetail->parent = $row['parent'];
             $groupDetail->status = (int)$row['status'];
             $groupDetail->limit = (int)$row['limit'];
@@ -258,7 +264,8 @@ Class Core_ContestPhotoGroup extends Core_Object
         {
             $groupDetail = new Core_ContestPhotoGroup();
             $groupDetail->id = $row['id'];
-            $groupDetail->name = $row['name'];
+            $groupDetail->name_vn = $row['name_vn'];
+            $groupDetail->name_en = $row['name_en'];
             $groupDetail->parent = $row['parent'];
             $groupDetail->status = (int)$row['status'];
             $groupDetail->limit = (int)$row['limit'];

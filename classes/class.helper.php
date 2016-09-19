@@ -929,6 +929,7 @@ class Helper
 
     public static function displaySelectionPhotoGroupForUser($data, $start = true, $currentID = '')
     {
+        global $langCode;
         $str = '';
         $selected = '';
         foreach($data as $detail) {
@@ -939,12 +940,12 @@ class Helper
                 $selected = '';
             }
             if (!$detail->child) {
-                $str.='<option value="'.$detail->id.'" '.$selected.'>'.$detail->name.' ('.$detail->limit.')</option>';
+                $str.='<option value="'.$detail->id.'" '.$selected.'>'.$detail->{'name_'.$langCode}.' ('.$detail->limit.')</option>';
             } else {
                 if ($detail->limit === 0) {
-                    $str.='<optgroup label="'.$detail->name.'">'.self::displaySelectionPhotoGroupForUser($detail->child, false, $currentID).'</optgroup>';
+                    $str.='<optgroup label="'.$detail->{'name_'.$langCode}.'">'.self::displaySelectionPhotoGroupForUser($detail->child, false, $currentID).'</optgroup>';
                 } else {
-                    $str.='<option value="'.$detail->id.'" '.$selected.'>'.$detail->name.' ('.$detail->limit.')</option>'.self::displaySelectionPhotoGroupForUser($detail->child, false, $currentID);
+                    $str.='<option value="'.$detail->id.'" '.$selected.'>'.$detail->{'name_'.$langCode}.' ('.$detail->limit.')</option>'.self::displaySelectionPhotoGroupForUser($detail->child, false, $currentID);
                 }
             }
         }

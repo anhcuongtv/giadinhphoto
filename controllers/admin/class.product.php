@@ -17,13 +17,13 @@ Class Controller_Admin_Product Extends Controller_Admin_Base
        
         
         //tim tong so
-        $total = Core_Product::getProducts($formData, $sortby, $sorttype, '', true);    
+        $total = Core_NewProduct::getProducts($formData, $sortby, $sorttype, '', true);
         $totalPage = ceil($total/$this->recordPerPage);
         $curPage = $page;
         
             
         //get latest account. $cats: Nhung con meo :)
-        $products = Core_Product::getProducts($formData, '', '', '', false);
+        $products = Core_NewProduct::getProducts($formData, '', '', '', false);
         //build redirect string
         $redirectUrl = $paginateUrl;
         if($curPage > 1)
@@ -62,31 +62,30 @@ Class Controller_Admin_Product Extends Controller_Admin_Base
         $error     = array();
         $success     = array();
         $contents     = ''; //Bien chua noi dung giao dien cua trang!!!!!!!!!!!
-        $formData     = array('fcategory' => array());//Bien chua du lieu trong form
-        
+
         if(!empty($_POST['fsubmit']))//Truong hop da nhan nut submit
         {
+            $formData = array();
             if($_SESSION['productAddToken']==$_POST['ftoken'])
             {
                  $formData = array_merge($formData, $_POST);//Luu cac du lieu trong form nhap lieu vao bien $formData
-                 $formData['fprice'] = $this->registry->currency->refinePriceString($formData['fprice']);
-	                
-	             //calculate currency exchange
-	             $formData['fprice'] = $this->registry->currency->convertCurrency($formData['fprice']);
-                
                 if($this->addActionValidator($formData, $error))//Kiem tra du lieu nhap
                 {
-                    $myProduct = new Core_Product();//Con meo moi
+                    $myProduct = new Core_NewProduct();//Con meo moi
+                    $myProduct->name_vn = $formData['name_vn'];
+                    $myProduct->name_en = $formData['name_en'];
+                    $myProduct->price_vn = $formData['price_vn'];
+                    $myProduct->price_en = $formData['price_en'];
+                    $myProduct->description_vn = $formData['description_vn'];
+                    $myProduct->description_en = $formData['description_en'];
+                    $myProduct->status = $formData['status'];
                      //Neu nguoi dung nhap SeoUrl thi xu li dau cua chuoi nguoi dung nhap
-                    $myProduct->name = $formData['fname'];
-                    $myProduct->price = $formData['fprice'];
-                        
                     $actionResult = $myProduct->addData();
                     
-                    if($actionResult == Core_Product::ERROR_OK)
+                    if($actionResult == Core_NewProduct::ERROR_OK)
                     {
-                        $success[] = str_replace('###name###', $myProduct->name, $this->registry->lang['controller']['succAdd']);
-                        $this->registry->me->writelog('productadd', $myProduct->id, array('name' => $myProduct->name));
+                        $success[] = str_replace('###name###', $myProduct->name_vn, $this->registry->lang['controller']['succAdd']);
+                        $this->registry->me->writelog('productadd', $myProduct->id, array('name' => $myProduct->name_vn));
                         $formData = array('fcategory' => $formData['fcategory']);      
                     }
                     else
@@ -118,7 +117,7 @@ Class Controller_Admin_Product Extends Controller_Admin_Base
     function editAction()
     {                                                 
         $id = (int)$this->registry->router->getArg('id');
-        $myProduct = new Core_Product($id);
+        $myProduct = new Core_NewProduct($id);
         $redirectUrl = $this->getRedirectUrl();
         if($myProduct->id > 0)
         {
@@ -129,34 +128,35 @@ Class Controller_Admin_Product Extends Controller_Admin_Base
             $formData     = array();
             
             $formData['fid'] = $myProduct->id;
-            $formData['fname'] = $myProduct->name;             
-            $formData['fprice'] = $myProduct->price;             
-            
+            $formData['name_vn'] = $myProduct->name_vn;
+            $formData['name_en'] = $myProduct->name_en;
+            $formData['price_vn'] = $myProduct->price_vn;
+            $formData['price_en'] = $myProduct->price_en;
+            $formData['description_vn'] = $myProduct->description_vn;
+            $formData['description_en'] = $myProduct->description_en;
+            $formData['status'] = $myProduct->status;
             if(!empty($_POST['fsubmit']))
             {
-                
                 if($_SESSION['productEditToken']==$_POST['ftoken'])
                 {
                     $formData = array_merge($formData, $_POST);
-                    
-                    $formData['fprice'] = $this->registry->currency->refinePriceString($formData['fprice']);
-                 	
-                 	//calculate currency exchange
-                 	$formData['fprice'] = $this->registry->currency->convertCurrency($formData['fprice']);
-                 	
+                    $myProduct->name_vn = $formData['name_vn'];
+                    $myProduct->name_en = $formData['name_en'];
+                    $myProduct->price_vn = $formData['price_vn'];
+                    $myProduct->price_en = $formData['price_en'];
+                    $myProduct->description_vn = $formData['description_vn'];
+                    $myProduct->description_en = $formData['description_en'];
+                    $myProduct->status = $formData['status'];
                     if($this->editActionValidator($formData, $error))
                     {
-                        
-	                    $myProduct->price = $formData['fprice'];
-                        
+
                         $actionResult = $myProduct->updateData();
-                        if($actionResult == Core_Product::ERROR_OK)
+                        if($actionResult == Core_NewProduct::ERROR_OK)
                         {
-                            $success[] = str_replace('###name###', $myProduct->name, $this->registry->lang['controller']['succUpdate']);
-                            $this->registry->me->writelog('productedit', $myProduct->id, array('name' => $myProduct->name));
-                        
+                            $success[] = str_replace('###name###', $myProduct->name_vn, $this->registry->lang['controller']['succUpdate']);
+                            $this->registry->me->writelog('productedit', $myProduct->id, array('name' => $myProduct->name_vn));
                         }
-                        else if($actionResult == Core_Product::ERROR_UPLOAD_IMAGE)
+                        else if($actionResult == Core_NewProduct::ERROR_UPLOAD_IMAGE)
                         {
                             $error[] = $this->registry->lang['controller']['errEditUpload'];            
                         }
@@ -169,9 +169,6 @@ Class Controller_Admin_Product Extends Controller_Admin_Base
                 }
                 $_SESSION['productEditToken']=Helper::getSecurityToken();//Tao token moi
             }
-            
-            //refresh new price
-            $myProduct->updateRealPrice();
             
             $this->registry->smarty->assign(array(    'formData'     => $formData, 
             											'myProduct'	=> $myProduct,

@@ -17,33 +17,39 @@
 	<div class="content-box-content">
 		<div class="tab-content default-tab" id="tab1">
 			{include file="notify.tpl" notifyError=$error notifySuccess=$success notifyWarning=$warning}
-			
+				<p>
+					<label>{$lang.controller.status}: </label>
+					<select name="status" id="status">
+						<option value="1">{$lang.controllergroup.formYesLabel}</option>
+						<option value="0" {if $formData.status == '0'}selected="selected"{/if}>{$lang.controllergroup.formNoLabel}</option>
+					</select>
+				</p>
+
 				<fieldset>
-				
-				
-				
-				
-				<p>
-					<label>{$lang.controller.formNameLabel} : </label>
-					<input disabled="disabled" type="text" name="fname" id="fname" size="50" value="{$formData.fname|@htmlspecialchars}" style="border:1px solid #eee;">
-				</p>
-				
-				<p>
-					<label>{$lang.controller.formPriceLabel} : </label>
-					<input type="text" name="fprice" id="fprice" size="10" value="{if $formData.fprice > 0}{$currency->formatPrice($formData.fprice, false)}{/if}" class="text-input"><select name="fcurrency"><option value="usd" {if $currency->currencyCode == 'usd'}selected="selected"{/if}>USD</option><option value="vnd" {if $currency->currencyCode == 'vnd'}selected="selected"{/if}>VND</option></select>
-				</p>
-				
-				
-				
-				
+					<hr class="language_seperator_line" />
+					{foreach item=langedit from=$langEditList}
+						{assign var=langeditcode value=$langedit->code}
+						{assign var=name value="name_$langeditcode"}
+						{assign var=price value="price_$langeditcode"}
+						{assign var=description value="description_$langeditcode"}
+						<h3 class="language_heading"><img src="{$conf.rooturl}{$currentTemplate}/images/admin/flag_{$langeditcode}.png" alt="{$langeditcode}" /> {$langedit->name}</h3>
+						<p>
+								<label>{$lang.controller.formNameLabel} : </label>
+							<input type="text" name="name_{$langeditcode}" id="name_{$langeditcode}" size="80" value="{$formData.$name}" class="text-input">
+						</p>
+						<p>
+							<label>{$lang.controller.formPriceLabel} : </label>
+							<input type="text" name="price_{$langeditcode}" id="price_{$langeditcode}" size="80" value="{$formData.$price}" class="text-input">
+						</p>
+						<p>
+							<label>{$lang.controller.title_add}: </label>
+							<textarea class="text-input"  rows="15" name="description_{$langeditcode}" id="description_{$langeditcode}">{$formData.$description}</textarea>
+						</p>
+
+						<hr class="language_seperator_line" />
+					{/foreach}
 				</fieldset>
-			
 		</div>
-		
-		
-		
-		
-		
 	</div>
 	
 	<div class="content-box-content-alt">
@@ -58,3 +64,5 @@
     	
 </div>
 </form>
+
+{include file=tinymce.tpl}

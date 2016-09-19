@@ -56,9 +56,7 @@ Class Core_NewProduct extends Core_Object
     public function updateData()
     {                   
         global $registry;
-                                 
-        $this->datemodified = time();
-            
+
         $sql = 'UPDATE ' . TABLE_PREFIX . 'new_product
                 SET name_vn = ?,
                 	price_vn = ?,
@@ -66,6 +64,7 @@ Class Core_NewProduct extends Core_Object
                 	name_en = ?,
                 	price_en = ?,
                 	description_en = ?,
+                	pStatus = ?
                 WHERE id = ?';
                
         $stmt = $this->db->query($sql, array(
@@ -75,9 +74,10 @@ Class Core_NewProduct extends Core_Object
                 $this->name_en,
                 $this->price_en,
                 $this->description_en,
+                $this->status,
                 $this->id
             ));
-            
+
         if($stmt)
         	return self::ERROR_OK;
         else
@@ -100,6 +100,7 @@ Class Core_NewProduct extends Core_Object
             $this->name_en = $row['name_en'];
             $this->price_en = $row['price_en'];
             $this->description_en = $row['description_en'];
+            $this->status = $row['pStatus'];
         }
     }
     

@@ -231,3 +231,20 @@ Stack trace:
 [18-Sep-2016 17:34:06] PHP Warning:  Smarty error: unable to read resource: "index.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
 [18-Sep-2016 17:34:33] PHP Warning:  Smarty error: unable to read resource: "notfound.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
 [18-Sep-2016 17:34:33] PHP Warning:  Smarty error: unable to read resource: "index.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[19-Sep-2016 21:03:27] PHP Fatal error:  Call to undefined method Core_NewProduct::updateRealPrice() in D:\AppServ\www\giadinhphoto\controllers\admin\class.product.php on line 174
+[19-Sep-2016 21:20:19] PHP Fatal error:  Smarty error: [in _controller/admin/product/edit.tpl line 28]: syntax error: unrecognized tag: $formData.{name_$langeditcode (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[19-Sep-2016 21:21:55] PHP Fatal error:  Smarty error: [in _controller/admin/product/edit.tpl line 29]: syntax error: unrecognized tag: $formData.{name_$langeditcode (Smarty_Compiler.class.php, line 446) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[19-Sep-2016 21:22:35] PHP Fatal error:  Smarty error: [in _controller/admin/product/edit.tpl line 29]: syntax error: unrecognized tag 'name' (Smarty_Compiler.class.php, line 590) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[19-Sep-2016 21:22:55] PHP Fatal error:  Smarty error: [in _controller/admin/product/edit.tpl line 29]: syntax error: unrecognized tag 'name' (Smarty_Compiler.class.php, line 590) in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[19-Sep-2016 21:35:53] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id = '2'' at line 8' in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php:77
+Stack trace:
+#0 D:\AppServ\www\giadinhphoto\classes\class.mypdo.php(77): PDOStatement->execute(Array)
+#1 D:\AppServ\www\giadinhphoto\classes\core\class.newproduct.php(79): MyPDO->query('UPDATE pex_new_...', Array)
+#2 D:\AppServ\www\giadinhphoto\controllers\admin\class.product.php(145): Core_NewProduct->updateData()
+#3 D:\AppServ\www\giadinhphoto\classes\class.router.php(84): Controller_Admin_Product->editAction()
+#4 D:\AppServ\www\giadinhphoto\index.php(24): Router->delegate()
+#5 {main}
+  thrown in D:\AppServ\www\giadinhphoto\classes\class.mypdo.php on line 77
+[19-Sep-2016 22:02:43] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array in D:\AppServ\www\giadinhphoto\controllers\admin\class.product.php on line 70
+[19-Sep-2016 22:08:19] PHP Warning:  Smarty error: unable to read resource: "notfound.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
+[19-Sep-2016 22:08:19] PHP Warning:  Smarty error: unable to read resource: "index.tpl" in D:\AppServ\www\giadinhphoto\libs\smarty\Smarty.class.php on line 1093
