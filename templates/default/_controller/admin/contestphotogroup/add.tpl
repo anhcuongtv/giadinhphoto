@@ -13,8 +13,12 @@
                         </select>
                     </p>
                     <p>
-                        <label>{$lang.controller.group_name} <span class="star_require">*</span> : </label>
-                        <input type="text" name="groupName" id="groupName" size="40" value="{$info->name}" class="text-input">
+                        <label>{$lang.controller.group_name_vn} <span class="star_require">*</span> : </label>
+                        <input type="text" name="name_vn" id="name_vn" size="40" value="{$info->name}" class="text-input">
+                    </p>
+                    <p>
+                        <label>{$lang.controller.group_name_en} <span class="star_require">*</span> : </label>
+                        <input type="text" name="name_en" id="name_en" size="40" value="{$info->name}" class="text-input">
                     </p>
                     <p>
                         <label>{$lang.controller.group_limit} <span class="star_require">*</span> : </label>

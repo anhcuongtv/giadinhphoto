@@ -1,4 +1,4 @@
-CREATE TABLE `gdcontest_swin`.`pex_photogroup` (
+CREATE TABLE `gdpc2016_swin`.`pex_photogroup` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `parent` INT NULL,
   `name` VARCHAR(200) NOT NULL,
@@ -8,27 +8,27 @@ CREATE TABLE `gdcontest_swin`.`pex_photogroup` (
   `createdDate` TIMESTAMP NOT NULL,
   PRIMARY KEY (`id`));
 
-ALTER TABLE `gdcontest_swin`.`pex_photogroup` CHANGE COLUMN `status` `status` TINYINT(1) NOT NULL DEFAULT 1  ;
-ALTER TABLE `gdcontest_swin`.`pex_photogroup` ADD COLUMN `isGroup` TINYINT(1) NOT NULL DEFAULT 0  AFTER `createdDate` ;
+ALTER TABLE `gdpc2016_swin`.`pex_photogroup` CHANGE COLUMN `status` `status` TINYINT(1) NOT NULL DEFAULT 1  ;
+ALTER TABLE `gdpc2016_swin`.`pex_photogroup` ADD COLUMN `isGroup` TINYINT(1) NOT NULL DEFAULT 0  AFTER `createdDate` ;
 
-ALTER TABLE `gdcontest_swin`.`pex_photogroup`
+ALTER TABLE `gdpc2016_swin`.`pex_photogroup`
 ADD COLUMN `isSection` TINYINT(1) NOT NULL DEFAULT 0 AFTER `isGroup`;
 
-CREATE TABLE `gdcontest_swin`.`pex_ac_user_paid` (
+CREATE TABLE `gdpc2016_swin`.`pex_ac_user_paid` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `section_id` INT NOT NULL,
   `createdDate` TIMESTAMP NOT NULL,
   PRIMARY KEY (`id`));
 
-ALTER TABLE `gdcontest_swin`.`pex_ac_user_paid`
+ALTER TABLE `gdpc2016_swin`.`pex_ac_user_paid`
 ADD COLUMN `user_id` INT NOT NULL AFTER `id`;
 
-ALTER TABLE `gdcontest_swin`.`pex_ac_user_judge` ADD COLUMN `uj_photogroup` VARCHAR(120) NULL  AFTER `uj_datecreated` ;
-ALTER TABLE `gdcontest_swin`.`pex_contest_photo` ADD COLUMN `p_parentSection` INT NULL  AFTER `p_datecreated` ;
-ALTER TABLE `gdcontest_swin`.`pex_contest_photo_ready` CHANGE COLUMN `p_section` `p_section` INT NOT NULL  ;
-ALTER TABLE `gdcontest_swin`.`pex_contest_photo` ADD COLUMN `p_isGroup` TINYINT(1) NOT NULL DEFAULT 0  AFTER `p_parentSection` ;
+ALTER TABLE `gdpc2016_swin`.`pex_ac_user_judge` ADD COLUMN `uj_photogroup` VARCHAR(120) NULL  AFTER `uj_datecreated` ;
+ALTER TABLE `gdpc2016_swin`.`pex_contest_photo` ADD COLUMN `p_parentSection` INT NULL  AFTER `p_datecreated` ;
+ALTER TABLE `gdpc2016_swin`.`pex_contest_photo_ready` CHANGE COLUMN `p_section` `p_section` INT NOT NULL  ;
+ALTER TABLE `gdpc2016_swin`.`pex_contest_photo` ADD COLUMN `p_isGroup` TINYINT(1) NOT NULL DEFAULT 0  AFTER `p_parentSection` ;
 
- CREATE  TABLE  `gdcontest_swin`.`pex_contest_photo_group` (  `p_id` int( 11  )  NOT  NULL  auto_increment ,
+ CREATE  TABLE  `gdpc2016_swin`.`pex_contest_photo_group` (  `p_id` int( 11  )  NOT  NULL  auto_increment ,
  `u_id` int( 11  )  NOT  NULL ,
  `p_section` varchar( 30  )  NOT  NULL ,
  `p_name` varchar( 100  )  NOT  NULL ,
@@ -49,11 +49,11 @@ ALTER TABLE `gdcontest_swin`.`pex_contest_photo` ADD COLUMN `p_isGroup` TINYINT(
  `p_isGroup` tinyint( 1  )  NOT  NULL default  '0',
  PRIMARY  KEY (  `p_id`  )  ) ENGINE  =  MyISAM  DEFAULT CHARSET  = utf8;
 
-ALTER TABLE  `pex_contest_photo_group` CHANGE  `p_isGroup`  `p_parentID` INT( 11 ) NOT NULL DEFAULT  '0'
+ALTER TABLE  `gdpc2016_swin`.`pex_contest_photo_group` CHANGE  `p_isGroup`  `p_parentID` INT( 11 ) NOT NULL DEFAULT  '0';
 
-CREATE  TABLE `gdcontest_swin`.`pex_new_product` (
+CREATE  TABLE `gdpc2016_swin`.`pex_new_product` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `name_vn` VARCHAR NULL ,
+  `name_vn` VARCHAR(120) NULL ,
   `name_en` VARCHAR(120) NULL ,
   `description_vn` TEXT NULL ,
   `description_en` TEXT NULL ,
@@ -62,5 +62,5 @@ CREATE  TABLE `gdcontest_swin`.`pex_new_product` (
   `pStatus` TINYINT(1) NOT NULL DEFAULT 1 ,
   PRIMARY KEY (`id`) );
 
-ALTER TABLE `gdcontest_swin`.`pex_photogroup` CHANGE COLUMN `name` `name_vn` VARCHAR(200) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NOT NULL  , ADD COLUMN `name_en` VARCHAR(200) NULL  AFTER `name_vn` ;
+ALTER TABLE `gdpc2016_swin`.`pex_photogroup` CHANGE COLUMN `name` `name_vn` VARCHAR(200) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NOT NULL  , ADD COLUMN `name_en` VARCHAR(200) NULL  AFTER `name_vn` ;
 

@@ -39,7 +39,8 @@ Class Controller_Admin_ContestPhotoGroup Extends Controller_Admin_Base
         if($_POST['fsubmit']) {
             $formData = $_POST;
             $group = new Core_ContestPhotoGroup();
-            $group->name = $formData['groupName'];
+            $group->name_vn = $formData['name_vn'];
+            $group->name_en = $formData['name_en'];
             $group->parent = $formData['groupParent'];
             $group->order = $formData['groupOrder'];
             $group->limit = $formData['groupLimit'];

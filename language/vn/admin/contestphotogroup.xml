@@ -2,7 +2,8 @@
 <data>
 	<lines name="head_list" descr=""><![CDATA[Quản lý Thể Loại]]></lines>
 	<lines name="head_add" descr=""><![CDATA[Thêm Thể Loại]]></lines>
-    <lines name="group_name" descr=""><![CDATA[Tên Thể Loại]]></lines>
+    <lines name="group_name_vn" descr=""><![CDATA[Tên Thể Loại VN]]></lines>
+    <lines name="group_name_en" descr=""><![CDATA[Tên Thể Loại EN]]></lines>
     <lines name="group_parent" descr=""><![CDATA[Thể Loại Cha?]]></lines>
     <lines name="group_order" descr=""><![CDATA[Thứ Tự]]></lines>
     <lines name="group_limit" descr=""><![CDATA[Số hình ảnh]]></lines>
